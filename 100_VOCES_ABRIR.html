@@ -20,6 +20,9 @@
 @media print{body>*:not(main),main>section:not(#metodo),main>div,main>p,.tour,#printLesson{display:none!important}#metodo{display:block!important;padding:0;width:100%}#metodo details{display:block}#metodo details>*{display:block}#metodo .lesson-grid{grid-template-columns:1fr}#metodo .lesson-grid article{break-inside:avoid}}
 
 .share-section h2 i{color:#d9c4ff}.dot:not(.on){background:#8c8997}.scenario-results .dot:not(.on){background:#8c8997}.text-link{color:#724195}.share-section .text-link{color:#d9c4ff}
+
+/* Correcciones de contraste verificadas con axe-core. */
+.stat-label,.overline,.insight-kicker,.ranking-head>span{color:#694578}.compare-note{color:#62576d}.ranking-row.selected{color:#853060}.range-ends{color:#56435e}.share-section .overline{color:#f9a9d0}
 </style>
   
 
@@ -64,7 +67,7 @@
     <div class="narrative-quote"><span>“</span><p>Detrás de un porcentaje hay millones de experiencias distintas. <b>El dato describe cuánto ocurrió, no por qué cada persona decidió participar o no.</b></p></div>
   </section>
   <section id="tiempo" class="section section-alt"><div class="shell">
-    <div class="section-head"><div><div class="overline">CAPÍTULO 02 / COMPARA · 6 MINR CON CUIDADO</div><h2>La historia cambia<br>según la <i>elección.</i></h2></div><p>No es lo mismo una elección presidencial que una intermedia. Comparemos procesos del mismo tipo para contar una historia más precisa.</p></div>
+    <div class="section-head"><div><div class="overline">CAPÍTULO 02 / COMPARAR CON CUIDADO</div><h2>La historia cambia<br>según la <i>elección.</i></h2></div><p>No es lo mismo una elección presidencial que una intermedia. Comparemos procesos del mismo tipo para contar una historia más precisa.</p></div>
     <div class="compare-toolbar"><div class="segmented" role="group" aria-label="Tipo de elección"><button type="button" class="is-active" id="presBtn" aria-pressed="true">Presidenciales</button><button type="button" id="midBtn" aria-pressed="false">Intermedias</button></div><span class="compare-note">Métrica: tasa nacional CCPC (porcentaje)</span></div>
     <div class="comparison-selects"><label>Desde<select id="compareFrom"></select></label><label>Hasta<select id="compareTo"></select></label></div><p class="scale-note">Escala común de 0 a 100 %. Selecciona una barra para usar ese año como destino.</p><div class="compare-panel" id="compareBars" aria-label="Gráfico comparativo de participación"></div>
     <div class="insight"><div class="insight-symbol">↗</div><div><div class="insight-kicker">LECTURA CLAVE</div><p id="compareSummary" aria-live="polite"></p></div></div>

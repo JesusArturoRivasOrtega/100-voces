@@ -10,3 +10,6 @@
 @media print{body>*:not(main),main>section:not(#metodo),main>div,main>p,.tour,#printLesson{display:none!important}#metodo{display:block!important;padding:0;width:100%}#metodo details{display:block}#metodo details>*{display:block}#metodo .lesson-grid{grid-template-columns:1fr}#metodo .lesson-grid article{break-inside:avoid}}
 
 .share-section h2 i{color:#d9c4ff}.dot:not(.on){background:#8c8997}.scenario-results .dot:not(.on){background:#8c8997}.text-link{color:#724195}.share-section .text-link{color:#d9c4ff}
+
+/* Correcciones de contraste verificadas con axe-core. */
+.stat-label,.overline,.insight-kicker,.ranking-head>span{color:#694578}.compare-note{color:#62576d}.ranking-row.selected{color:#853060}.range-ends{color:#56435e}.share-section .overline{color:#f9a9d0}
