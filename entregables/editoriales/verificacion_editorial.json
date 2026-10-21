@@ -1,0 +1,58 @@
+{
+  "100_VOCES_Guion_Narrativo_4_paginas.pdf": {
+    "paginas": 4,
+    "caracteres_por_pagina": [
+      2607,
+      2451,
+      2650,
+      2687
+    ],
+    "resultado": "VERIFICADO: conteo y texto extraíble"
+  },
+  "100_VOCES_Ficha_Aula_15_min.pdf": {
+    "paginas": 2,
+    "caracteres_por_pagina": [
+      1784,
+      1549
+    ],
+    "resultado": "VERIFICADO: conteo y texto extraíble"
+  },
+  "100_VOCES_Presentacion_Ejecutiva_10.pdf": {
+    "paginas": 10,
+    "caracteres_por_pagina": [
+      260,
+      323,
+      278,
+      295,
+      304,
+      251,
+      291,
+      287,
+      307,
+      263
+    ],
+    "resultado": "VERIFICADO: conteo y texto extraíble"
+  },
+  "pptx": {
+    "diapositivas": 10,
+    "notas_presentador": true
+  },
+  "docx": {
+    "secciones_narrativas": 4,
+    "saltos_pagina_explicitos": 3,
+    "paginacion_en_Word": "Pendiente de validar en aplicación de destino"
+  },
+  "srt": {
+    "bloques": 24,
+    "inicio_segundos": 0,
+    "fin_segundos": 170,
+    "sin_huecos_ni_solapamientos": true,
+    "sincronizacion_voz": "Pendiente: requiere voz final"
+  },
+  "limitaciones": [
+    "No acredita pruebas de la aplicación",
+    "No acredita publicación ni envío",
+    "No acredita impacto con usuarios",
+    "PDF de presentación generado desde el mismo contenido; no es exportación de PowerPoint"
+  ]
+}

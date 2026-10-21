@@ -1,0 +1,13 @@
+.sites-runtime/
+.sites-checkout*/
+node_modules/
+__pycache__/
+.tools/
+entregables/video/.tools/
+entregables/video/trabajo/
+*.zip
+evidencia/*.png
+fuentes/*.pdf
+fuentes/*.png
+entregables/video/*.mp4
+entregables/video/*.wav

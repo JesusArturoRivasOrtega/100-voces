@@ -1,0 +1,101 @@
+{
+  "fecha": "2026-10-21T05:42:06.954Z",
+  "navegador": "154.0.4258.37",
+  "resultados": [
+    {
+      "prueba": "Cálculos y validación",
+      "esperado": "−2.7 pp; complemento 40.3; relativo 20; rechazar tasas inválidas",
+      "observado": "Coinciden; cuatro casos inválidos rechazados",
+      "estado": "VERIFICADO"
+    },
+    {
+      "prueba": "Seis años",
+      "esperado": "Tasa, complemento, puntos y evidencia actualizados",
+      "observado": "6/6 años coinciden",
+      "estado": "VERIFICADO"
+    },
+    {
+      "prueba": "Comparador",
+      "esperado": "Separar tipos; −2.7, +4.7 y +7.7 pp",
+      "observado": "Tres diferencias coinciden y cada grupo tiene 3 años",
+      "estado": "VERIFICADO"
+    },
+    {
+      "prueba": "Territorios",
+      "esperado": "8 entidades; diferencias respecto a 2024 nacional",
+      "observado": "8/8 coinciden; selección declarada",
+      "estado": "VERIFICADO"
+    },
+    {
+      "prueba": "Aprendizaje",
+      "esperado": "5 respuestas, feedback, resultado y reinicio",
+      "observado": "5/5; pantalla final; reinicio a cero",
+      "estado": "VERIFICADO"
+    },
+    {
+      "prueba": "Escenarios",
+      "esperado": "0–100; subidas, bajadas, cambio nulo y reinicio",
+      "observado": "5 valores y extremos comprobados; cálculos coinciden",
+      "estado": "VERIFICADO"
+    },
+    {
+      "prueba": "Descargas PNG",
+      "esperado": "Archivos reales 1200×630,1080×1350,1080×1920",
+      "observado": "3 PNG descargados; dimensiones verificadas en cabecera; revisión visual separada",
+      "estado": "VERIFICADO"
+    },
+    {
+      "prueba": "Portapapeles",
+      "esperado": "Texto accesible con tasa, año, denominador y fuente",
+      "observado": "Lectura real del portapapeles coincide",
+      "estado": "VERIFICADO"
+    },
+    {
+      "prueba": "Recorridos",
+      "esperado": "6 pasos y salida por Escape",
+      "observado": "Recorrido completado; modo jurado abierto/cerrado",
+      "estado": "VERIFICADO"
+    },
+    {
+      "prueba": "Responsive",
+      "esperado": "Sin desbordamiento a 320,375,768,1440 px",
+      "observado": "scrollWidth <= clientWidth en los cuatro anchos",
+      "estado": "VERIFICADO"
+    },
+    {
+      "prueba": "Teclado",
+      "esperado": "Saltar al contenido y alcanzar controles principales por Tab",
+      "observado": "Enlaces, selectores, slider, descarga y copia alcanzables",
+      "estado": "VERIFICADO"
+    },
+    {
+      "prueba": "Movimiento reducido",
+      "esperado": "Sin animación de puntos",
+      "observado": "animation-name: none",
+      "estado": "VERIFICADO"
+    },
+    {
+      "prueba": "Archivo autónomo sin red",
+      "esperado": "file:// funcional; cambio de año y exportación",
+      "observado": "Archivo abrió offline, dato actualizado y PNG descargado",
+      "estado": "VERIFICADO"
+    },
+    {
+      "prueba": "Datos inválidos",
+      "esperado": "Mensaje explícito y controles desactivados",
+      "observado": "Rechazo probado con serie vacía; sin datos sustitutos",
+      "estado": "VERIFICADO"
+    },
+    {
+      "prueba": "Consola normal",
+      "esperado": "Sin errores JS ni de recursos",
+      "observado": "0 errores durante uso normal",
+      "estado": "VERIFICADO"
+    }
+  ],
+  "limites": [
+    "No es auditoría WCAG completa",
+    "Pendiente prueba manual con lector de pantalla",
+    "No es piloto de impacto con usuarios"
+  ]
+}
