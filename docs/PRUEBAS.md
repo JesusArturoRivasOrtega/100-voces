@@ -1,6 +1,6 @@
 # Reporte de pruebas reales
 
-Ejecución: 2026-10-21T05:42:06.954Z. Navegador Chromium/Edge 154.0.4258.37. Script: `tests/browser.cjs`. Pruebas sobre HTTP local y archivo autónomo.
+Ejecución: 2026-10-21T14:03:18.926Z. Navegador Chromium/Edge 155.0.4283.62. Script: `tests/browser.cjs`. Pruebas sobre HTTP local y archivo autónomo.
 
 | Prueba | Esperado | Observado | Estado |
 |---|---|---|---|
@@ -29,3 +29,12 @@ No se presenta una puntuación Lighthouse ni una certificación WCAG. La prueba 
 ## Correcciones durante QA
 
 Se corrigió una validación inicial incorrecta de tipo electoral antes de la primera navegación. La primera suite funcional encontró un 404 de favicon; se añadió un icono SVG embebido y se repitió la suite con cero errores en uso normal. Se ajustaron acentos de texto y puntos para legibilidad y se incorporaron fuentes locales. Las pruebas de datos inválidos provocan deliberadamente un error capturado y visible; no se cuentan como error del recorrido normal.
+
+## Revisión automática adicional
+
+Axe-core 4.10.3, reglas WCAG 2 A/AA y 2.1 AA. Se corrigieron once nodos de contraste insuficiente en la primera ejecución. Resultados finales:
+
+- Estado initial: 0 infracciones automáticas, 27 reglas aprobadas, 1 reglas requieren revisión manual.
+- Estado expanded: 0 infracciones automáticas, 29 reglas aprobadas, 1 reglas requieren revisión manual.
+
+El estado expanded abre evidencia y responde incorrectamente un reactivo. Los resultados están en `evidencia/accesibilidad.json`. Cero infracciones detectadas no equivale a certificación WCAG.

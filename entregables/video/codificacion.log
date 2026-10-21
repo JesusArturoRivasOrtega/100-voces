@@ -1,0 +1,46 @@
+Input #0, mov,mp4,m4a,3gp,3g2,mj2, from 'D:\INE_CONCURSO\100-voces\entregables\video\montaje_sin_audio.mp4':
+  Metadata:
+    major_brand     : isom
+    minor_version   : 512
+    compatible_brands: isomiso2avc1mp41
+    encoder         : Lavf61.7.100
+  Duration: 00:02:47.96, start: 0.000000, bitrate: 323 kb/s
+  Stream #0:0[0x1](und): Video: h264 (Constrained Baseline) (avc1 / 0x31637661), yuv420p(progressive), 1920x1080, 322 kb/s, 24 fps, 24 tbr, 12288 tbn (default)
+      Metadata:
+        handler_name    : VideoHandler
+        vendor_id       : [0][0][0][0]
+        encoder         : Lavc61.19.100 libx264
+[aist#1:0/pcm_s16le @ 000001ec749fb600] Guessed Channel Layout: mono
+Input #1, wav, from 'D:\INE_CONCURSO\100-voces\entregables\video\narracion_170s.wav':
+  Duration: 00:02:50.00, bitrate: 705 kb/s
+  Stream #1:0: Audio: pcm_s16le ([1][0][0][0] / 0x0001), 44100 Hz, mono, s16, 705 kb/s
+Stream mapping:
+  Stream #0:0 -> #0:0 (copy)
+  Stream #1:0 -> #0:1 (pcm_s16le (native) -> aac (native))
+Press [q] to stop, [?] for help
+Output #0, mp4, to 'D:\INE_CONCURSO\100-voces\entregables\video\100_VOCES_Pitch_1080p_2m50.mp4':
+  Metadata:
+    major_brand     : isom
+    minor_version   : 512
+    compatible_brands: isomiso2avc1mp41
+    encoder         : Lavf61.7.100
+  Stream #0:0(und): Video: h264 (Constrained Baseline) (avc1 / 0x31637661), yuv420p(progressive), 1920x1080, q=2-31, 322 kb/s, 24 fps, 24 tbr, 12288 tbn (default)
+      Metadata:
+        handler_name    : VideoHandler
+        vendor_id       : [0][0][0][0]
+        encoder         : Lavc61.19.100 libx264
+  Stream #0:1: Audio: aac (LC) (mp4a / 0x6134706D), 44100 Hz, mono, fltp, 160 kb/s
+      Metadata:
+        encoder         : Lavc61.19.100 aac
+frame=  533 fps=0.0 q=-1.0 size=    1280KiB time=00:00:22.10 bitrate= 474.4kbits/s speed=42.8x    
+frame=  919 fps=889 q=-1.0 size=    2304KiB time=00:00:38.17 bitrate= 494.4kbits/s speed=36.9x    
+frame= 1456 fps=935 q=-1.0 size=    3072KiB time=00:01:00.53 bitrate= 415.7kbits/s speed=38.9x    
+frame= 1909 fps=924 q=-1.0 size=    3840KiB time=00:01:19.43 bitrate= 396.0kbits/s speed=38.4x    
+frame= 2443 fps=948 q=-1.0 size=    4864KiB time=00:01:41.68 bitrate= 391.9kbits/s speed=39.5x    
+frame= 2951 fps=953 q=-1.0 size=    5888KiB time=00:02:02.85 bitrate= 392.6kbits/s speed=39.7x    
+frame= 3406 fps=943 q=-1.0 size=    7168KiB time=00:02:21.78 bitrate= 414.2kbits/s speed=39.3x    
+frame= 3982 fps=963 q=-1.0 size=    8448KiB time=00:02:45.79 bitrate= 417.4kbits/s speed=40.1x    
+[mp4 @ 000001ec749fabc0] Starting second pass: moving the moov atom to the beginning of the file
+[out#0/mp4 @ 000001ec748a79c0] video:6608KiB audio:2282KiB subtitle:0KiB other streams:0KiB global headers:0KiB muxing overhead: 1.087858%
+frame= 4031 fps=959 q=-1.0 Lsize=    8986KiB time=00:02:47.95 bitrate= 438.3kbits/s speed=  40x    
+[aac @ 000001ec74af00c0] Qavg: 52107.312

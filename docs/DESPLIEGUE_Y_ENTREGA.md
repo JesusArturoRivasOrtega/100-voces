@@ -19,3 +19,7 @@ No se ha enviado correo, llenado registro ni firmado documento. El equipo debe v
 ## Ensayo recomendado
 
 Abrir el sitio, pulsar “Presentar en 3 minutos” y avanzar manualmente con el guion. Comprobar la base nacional, el ejemplo 2018→2024, Veracruz, un reactivo, el escenario y una descarga. Si falla la conexión, usar el HTML autónomo. La pauta tiene margen antes de tres minutos, pero la dicción y navegación deben ensayarse con la persona que presentará.
+
+## Publicación realizada
+
+Sites confirmó el despliegue privado exitoso de la versión `appgver_bfb1bb4c2d98819197f50fc2c6179a1b` el 21 de octubre de 2026. URL: https://cien-voces-mexico.arthojust.chatgpt.site . Conserva acceso privado del propietario; **no está listo como enlace público del jurado**. La aplicación local no requiere autenticación. Para entregar, habilitar el acceso correspondiente o publicar `dist/` en un alojamiento estático público y comprobar desde una sesión sin acceso. El primer intento de sincronización falló por conexión; el segundo sincronizó, empaquetó y desplegó correctamente.

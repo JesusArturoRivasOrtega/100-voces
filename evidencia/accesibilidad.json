@@ -4,74 +4,6 @@
     "violations": [],
     "incomplete": [
       {
-        "id": "aria-prohibited-attr",
-        "impact": "serious",
-        "tags": [
-          "cat.aria",
-          "wcag2a",
-          "wcag412",
-          "EN-301-549",
-          "EN-9.4.1.2"
-        ],
-        "description": "Ensure ARIA attributes are not prohibited for an element's role",
-        "help": "Elements must only use permitted ARIA attributes",
-        "helpUrl": "https://dequeuniversity.com/rules/axe/4.10/aria-prohibited-attr?application=axeAPI",
-        "nodes": [
-          {
-            "any": [],
-            "all": [],
-            "none": [
-              {
-                "id": "aria-prohibited-attr",
-                "data": {
-                  "role": null,
-                  "nodeName": "div",
-                  "messageKey": "noRoleSingular",
-                  "prohibited": [
-                    "aria-label"
-                  ]
-                },
-                "relatedNodes": [],
-                "impact": "serious",
-                "message": "aria-label attribute is not well supported on a div with no valid role attribute."
-              }
-            ],
-            "impact": "serious",
-            "html": "<div class=\"ticker\" aria-label=\"Temas de la experiencia\"><span>DATOS, NO SUPOSICIONES</span><span>✳</span><span>HISTORIAS PARA ENTENDER</span><span>✳</span><span>UNA DEMOCRACIA QUE SE EXPLICA</span><span>✳</span><span>DATOS, NO SUPOSICIONES</span></div>",
-            "target": [
-              ".ticker"
-            ],
-            "failureSummary": "Fix all of the following:\n  aria-label attribute is not well supported on a div with no valid role attribute."
-          },
-          {
-            "any": [],
-            "all": [],
-            "none": [
-              {
-                "id": "aria-prohibited-attr",
-                "data": {
-                  "role": null,
-                  "nodeName": "div",
-                  "messageKey": "noRoleSingular",
-                  "prohibited": [
-                    "aria-label"
-                  ]
-                },
-                "relatedNodes": [],
-                "impact": "serious",
-                "message": "aria-label attribute is not well supported on a div with no valid role attribute."
-              }
-            ],
-            "impact": "serious",
-            "html": "<div class=\"compare-panel\" id=\"compareBars\" aria-label=\"Gráfico comparativo de participación\">",
-            "target": [
-              "#compareBars"
-            ],
-            "failureSummary": "Fix all of the following:\n  aria-label attribute is not well supported on a div with no valid role attribute."
-          }
-        ]
-      },
-      {
         "id": "color-contrast",
         "impact": "serious",
         "tags": [
@@ -100,7 +32,7 @@
                 },
                 "relatedNodes": [
                   {
-                    "html": "<div class=\"hero-right\">",
+                    "html": "<div class=\"hero-right\" aria-hidden=\"true\">",
                     "target": [
                       ".hero-right"
                     ]
@@ -131,7 +63,7 @@
                 },
                 "relatedNodes": [
                   {
-                    "html": "<div class=\"hero-right\">",
+                    "html": "<div class=\"hero-right\" aria-hidden=\"true\">",
                     "target": [
                       ".hero-right"
                     ]
@@ -162,7 +94,7 @@
                 },
                 "relatedNodes": [
                   {
-                    "html": "<div class=\"hero-right\">",
+                    "html": "<div class=\"hero-right\" aria-hidden=\"true\">",
                     "target": [
                       ".hero-right"
                     ]
@@ -193,7 +125,7 @@
                 },
                 "relatedNodes": [
                   {
-                    "html": "<div class=\"hero-right\">",
+                    "html": "<div class=\"hero-right\" aria-hidden=\"true\">",
                     "target": [
                       ".hero-right"
                     ]
@@ -245,7 +177,7 @@
                 },
                 "relatedNodes": [
                   {
-                    "html": "<div class=\"hero-right\">",
+                    "html": "<div class=\"hero-right\" aria-hidden=\"true\">",
                     "target": [
                       ".hero-right"
                     ]
@@ -276,7 +208,7 @@
                 },
                 "relatedNodes": [
                   {
-                    "html": "<div class=\"hero-right\">",
+                    "html": "<div class=\"hero-right\" aria-hidden=\"true\">",
                     "target": [
                       ".hero-right"
                     ]
@@ -310,9 +242,9 @@
             "all": [],
             "none": [],
             "impact": "serious",
-            "html": "<span>↓</span>",
+            "html": "<span aria-hidden=\"true\">↓</span>",
             "target": [
-              "#downloadCard > span"
+              "#downloadCard > span[aria-hidden=\"true\"]"
             ],
             "failureSummary": "Fix any of the following:\n  Element content contains only non-text characters"
           },
@@ -358,74 +290,6 @@
     "violations": [],
     "incomplete": [
       {
-        "id": "aria-prohibited-attr",
-        "impact": "serious",
-        "tags": [
-          "cat.aria",
-          "wcag2a",
-          "wcag412",
-          "EN-301-549",
-          "EN-9.4.1.2"
-        ],
-        "description": "Ensure ARIA attributes are not prohibited for an element's role",
-        "help": "Elements must only use permitted ARIA attributes",
-        "helpUrl": "https://dequeuniversity.com/rules/axe/4.10/aria-prohibited-attr?application=axeAPI",
-        "nodes": [
-          {
-            "any": [],
-            "all": [],
-            "none": [
-              {
-                "id": "aria-prohibited-attr",
-                "data": {
-                  "role": null,
-                  "nodeName": "div",
-                  "messageKey": "noRoleSingular",
-                  "prohibited": [
-                    "aria-label"
-                  ]
-                },
-                "relatedNodes": [],
-                "impact": "serious",
-                "message": "aria-label attribute is not well supported on a div with no valid role attribute."
-              }
-            ],
-            "impact": "serious",
-            "html": "<div class=\"ticker\" aria-label=\"Temas de la experiencia\"><span>DATOS, NO SUPOSICIONES</span><span>✳</span><span>HISTORIAS PARA ENTENDER</span><span>✳</span><span>UNA DEMOCRACIA QUE SE EXPLICA</span><span>✳</span><span>DATOS, NO SUPOSICIONES</span></div>",
-            "target": [
-              ".ticker"
-            ],
-            "failureSummary": "Fix all of the following:\n  aria-label attribute is not well supported on a div with no valid role attribute."
-          },
-          {
-            "any": [],
-            "all": [],
-            "none": [
-              {
-                "id": "aria-prohibited-attr",
-                "data": {
-                  "role": null,
-                  "nodeName": "div",
-                  "messageKey": "noRoleSingular",
-                  "prohibited": [
-                    "aria-label"
-                  ]
-                },
-                "relatedNodes": [],
-                "impact": "serious",
-                "message": "aria-label attribute is not well supported on a div with no valid role attribute."
-              }
-            ],
-            "impact": "serious",
-            "html": "<div class=\"compare-panel\" id=\"compareBars\" aria-label=\"Gráfico comparativo de participación\">",
-            "target": [
-              "#compareBars"
-            ],
-            "failureSummary": "Fix all of the following:\n  aria-label attribute is not well supported on a div with no valid role attribute."
-          }
-        ]
-      },
-      {
         "id": "color-contrast",
         "impact": "serious",
         "tags": [
@@ -454,7 +318,7 @@
                 },
                 "relatedNodes": [
                   {
-                    "html": "<div class=\"hero-right\">",
+                    "html": "<div class=\"hero-right\" aria-hidden=\"true\">",
                     "target": [
                       ".hero-right"
                     ]
@@ -485,7 +349,7 @@
                 },
                 "relatedNodes": [
                   {
-                    "html": "<div class=\"hero-right\">",
+                    "html": "<div class=\"hero-right\" aria-hidden=\"true\">",
                     "target": [
                       ".hero-right"
                     ]
@@ -516,7 +380,7 @@
                 },
                 "relatedNodes": [
                   {
-                    "html": "<div class=\"hero-right\">",
+                    "html": "<div class=\"hero-right\" aria-hidden=\"true\">",
                     "target": [
                       ".hero-right"
                     ]
@@ -547,7 +411,7 @@
                 },
                 "relatedNodes": [
                   {
-                    "html": "<div class=\"hero-right\">",
+                    "html": "<div class=\"hero-right\" aria-hidden=\"true\">",
                     "target": [
                       ".hero-right"
                     ]
@@ -599,7 +463,7 @@
                 },
                 "relatedNodes": [
                   {
-                    "html": "<div class=\"hero-right\">",
+                    "html": "<div class=\"hero-right\" aria-hidden=\"true\">",
                     "target": [
                       ".hero-right"
                     ]
@@ -630,7 +494,7 @@
                 },
                 "relatedNodes": [
                   {
-                    "html": "<div class=\"hero-right\">",
+                    "html": "<div class=\"hero-right\" aria-hidden=\"true\">",
                     "target": [
                       ".hero-right"
                     ]
@@ -664,9 +528,9 @@
             "all": [],
             "none": [],
             "impact": "serious",
-            "html": "<span>↓</span>",
+            "html": "<span aria-hidden=\"true\">↓</span>",
             "target": [
-              "#downloadCard > span"
+              "#downloadCard > span[aria-hidden=\"true\"]"
             ],
             "failureSummary": "Fix any of the following:\n  Element content contains only non-text characters"
           },

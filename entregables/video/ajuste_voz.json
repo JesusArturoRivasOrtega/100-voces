@@ -1,0 +1,146 @@
+[
+  {
+    "segmento": 1,
+    "voz_original_s": 5.3441496598639455,
+    "velocidad": 1,
+    "salida_s": 7
+  },
+  {
+    "segmento": 2,
+    "voz_original_s": 4.839092970521542,
+    "velocidad": 1,
+    "salida_s": 7
+  },
+  {
+    "segmento": 3,
+    "voz_original_s": 5.124240362811792,
+    "velocidad": 1,
+    "salida_s": 7
+  },
+  {
+    "segmento": 4,
+    "voz_original_s": 6.7540589569161,
+    "velocidad": 1.01564796344603,
+    "salida_s": 7
+  },
+  {
+    "segmento": 5,
+    "voz_original_s": 7.434013605442177,
+    "velocidad": 1.1178967827732595,
+    "salida_s": 7
+  },
+  {
+    "segmento": 6,
+    "voz_original_s": 4.789251700680272,
+    "velocidad": 1,
+    "salida_s": 7
+  },
+  {
+    "segmento": 7,
+    "voz_original_s": 5.154240362811791,
+    "velocidad": 1,
+    "salida_s": 7
+  },
+  {
+    "segmento": 8,
+    "voz_original_s": 5.194104308390022,
+    "velocidad": 1,
+    "salida_s": 7
+  },
+  {
+    "segmento": 9,
+    "voz_original_s": 8.0440589569161,
+    "velocidad": 1.209632925852045,
+    "salida_s": 7
+  },
+  {
+    "segmento": 10,
+    "voz_original_s": 4.279251700680272,
+    "velocidad": 1,
+    "salida_s": 7
+  },
+  {
+    "segmento": 11,
+    "voz_original_s": 7.2890249433106575,
+    "velocidad": 1.096093976437693,
+    "salida_s": 7
+  },
+  {
+    "segmento": 12,
+    "voz_original_s": 5.904013605442177,
+    "velocidad": 1,
+    "salida_s": 7
+  },
+  {
+    "segmento": 13,
+    "voz_original_s": 7.163945578231292,
+    "velocidad": 1.077285049358089,
+    "salida_s": 7
+  },
+  {
+    "segmento": 14,
+    "voz_original_s": 5.429160997732426,
+    "velocidad": 1,
+    "salida_s": 7
+  },
+  {
+    "segmento": 15,
+    "voz_original_s": 5.414081632653061,
+    "velocidad": 1,
+    "salida_s": 7
+  },
+  {
+    "segmento": 16,
+    "voz_original_s": 4.49421768707483,
+    "velocidad": 1,
+    "salida_s": 7
+  },
+  {
+    "segmento": 17,
+    "voz_original_s": 6.783945578231292,
+    "velocidad": 1.0201421922152318,
+    "salida_s": 7
+  },
+  {
+    "segmento": 18,
+    "voz_original_s": 6.87907029478458,
+    "velocidad": 1.0344466608698617,
+    "salida_s": 7
+  },
+  {
+    "segmento": 19,
+    "voz_original_s": 5.569274376417233,
+    "velocidad": 1,
+    "salida_s": 7
+  },
+  {
+    "segmento": 20,
+    "voz_original_s": 5.274058956916099,
+    "velocidad": 1,
+    "salida_s": 7
+  },
+  {
+    "segmento": 21,
+    "voz_original_s": 5.479115646258504,
+    "velocidad": 1,
+    "salida_s": 7
+  },
+  {
+    "segmento": 22,
+    "voz_original_s": 5.6540589569161,
+    "velocidad": 1,
+    "salida_s": 7
+  },
+  {
+    "segmento": 23,
+    "voz_original_s": 6.299024943310657,
+    "velocidad": 1,
+    "salida_s": 7
+  },
+  {
+    "segmento": 24,
+    "voz_original_s": 6.879160997732426,
+    "velocidad": 1,
+    "salida_s": 9
+  }
+]

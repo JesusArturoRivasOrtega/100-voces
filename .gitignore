@@ -11,3 +11,8 @@ fuentes/*.pdf
 fuentes/*.png
 entregables/video/*.mp4
 entregables/video/*.wav
+entregables/video/capturas/
+entregables/video/audio/
+entregables/video/frames/
+entregables/video/frame_*.png
+entregables/video/revision_*.png

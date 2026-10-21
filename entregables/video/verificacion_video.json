@@ -1,0 +1,21 @@
+{
+  "archivo": "100_VOCES_Pitch_1080p_2m50.mp4",
+  "bytes": 9201686,
+  "resolucion": "1920x1080",
+  "duracion_segundos": 170,
+  "fps": 24,
+  "video": "H.264 yuv420p",
+  "audio": "AAC, mono, 44100 Hz",
+  "volumen_medio_db": -21.2,
+  "subtitulos": "integrados en imagen + SRT aparte",
+  "origen_visual": "montaje de capturas reales y PNG descargados del prototipo local; no grabación continua",
+  "voz": "síntesis local Microsoft Sabina Desktop, es-MX",
+  "denominador": "registros Sí votaron + No votaron; excluye no especificados",
+  "publicado": false,
+  "revision_visual": "12 fotogramas extraídos para revisión",
+  "limitaciones": [
+    "No sustituye piloto con usuarios",
+    "No implica aval institucional",
+    "Voz sintética declarada; puede sustituirse por voz humana"
+  ]
+}

@@ -19,6 +19,8 @@ for script in re.findall(r'<script src="([^"]+)" defer></script>',h):h=h.replace
 # Inline scripts run after the DOM is parsed, including local file:// use.
 scripts=re.findall(r'<script defer>([\s\S]*?)</script>',h);h=re.sub(r'<script defer>[\s\S]*?</script>','',h)
 h=h.replace('</body>', ''.join('<script>'+s+'</script>' for s in scripts)+'</body>')
+licenses='\n\n'.join(p.read_text(encoding='utf-8') for p in sorted((dist/'fonts').glob('*-OFL.txt')))
+h=h.replace('</head>','<script type="application/json" id="font-licenses">'+json.dumps({'license':'SIL OFL','text':licenses},ensure_ascii=False)+'</script>\n</head>')
 for file,mime in [('data/ccpc_resumen.json','application/json'),('data/indicadores.csv','text/csv')]:
  h=h.replace('href="'+file+'"','href="data:'+mime+';base64,'+base64.b64encode((dist/file).read_bytes()).decode()+'"')
 (root/'100_VOCES_ABRIR.html').write_text(h,encoding='utf-8')

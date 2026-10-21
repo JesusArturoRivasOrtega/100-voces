@@ -14,10 +14,12 @@ python -m http.server 8765 --bind 127.0.0.1
 
 Visita `http://127.0.0.1:8765/dist/`. No hay instalación de paquetes para usar la aplicación. `dist/` es directamente publicable en cualquier alojamiento estático con HTTPS. El código de la aplicación no necesita autenticación, API ni base de datos.
 
+Vista publicada privada: https://cien-voces-mexico.arthojust.chatgpt.site . Requiere acceso del propietario en Sites; no confundirla con un enlace público listo para el jurado. La aplicación y el archivo autónomo funcionan sin autenticación.
+
 ## Qué incluye
 
 - **IMPLEMENTADO:** seis capítulos; comparador por tipo de elección; selección de ocho entidades; cuestionario de cinco preguntas con resultado y reinicio; escenario de 0 a 100 %; exportación horizontal, publicación vertical e historia; descripciones accesibles; evidencia contextual; recorridos rápido y jurado; aula imprimible; archivo autónomo.
-- **VERIFICADO:** 14 tasas cotejadas con Manual CCPC y Estudio INE; pruebas reales en Edge/Chromium, cuatro anchos desde 320 px, archivos PNG descargados, portapapeles, modo sin conexión y rechazo de datos inválidos. Consulta `evidencia/pruebas.json` y `docs/PRUEBAS.md` para el alcance exacto.
+- **VERIFICADO:** 14 tasas cotejadas con Manual CCPC y Estudio INE; pruebas reales en Edge/Chromium, cuatro anchos desde 320 px, revisión axe-core sin infracciones automáticas en dos estados, archivos PNG descargados, portapapeles, modo sin conexión y rechazo de datos inválidos. Consulta `evidencia/pruebas.json` y `docs/PRUEBAS.md` para el alcance exacto.
 - **PENDIENTE DE VALIDAR:** piloto con personas usuarias, auditoría completa con lectores de pantalla, prueba en teléfonos físicos y Safari/Firefox; revisión del equipo, registro y cartas firmadas; permisos de acceso a entregables antes del envío. Ninguno se presenta como ya realizado.
 - **MEJORA FUTURA:** incorporar las 32 entidades después de validar las bases completas, mapa accesible y PWA. No se han inventado datos faltantes.
 
@@ -33,7 +35,7 @@ Visita `http://127.0.0.1:8765/dist/`. No hay instalación de paquetes para usar 
 | `fuentes/` | Registro de verificación y documentos oficiales consultados |
 | `entregables/editoriales/` | Guion PDF de 4 páginas, presentación de 10 diapositivas, aula, difusión y pitch |
 | `entregables/redes/` | Tarjetas reales exportadas por la aplicación |
-| `entregables/video/` | Video y notas de producción, cuando finalice su generación |
+| `entregables/video/` | Video y notas de producción, con verificación de dimensiones y duración |
 | `evidencia/` | Reporte automático, capturas y exportaciones revisadas |
 | `tests/` | Pruebas funcionales reproducibles |
 | `scripts/build.py` | Genera JS de datos, CSV y HTML autónomo desde fuentes locales |
