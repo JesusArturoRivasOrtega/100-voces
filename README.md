@@ -18,8 +18,8 @@ Vista publicada privada: https://cien-voces-mexico.arthojust.chatgpt.site . Requ
 
 ## Qué incluye
 
-- **IMPLEMENTADO:** seis capítulos; comparador por tipo de elección; selección de ocho entidades; cuestionario de cinco preguntas con resultado y reinicio; escenario de 0 a 100 %; exportación horizontal, publicación vertical e historia; descripciones accesibles; evidencia contextual; recorridos rápido y jurado; aula imprimible; archivo autónomo.
-- **VERIFICADO:** 14 tasas cotejadas con Manual CCPC y Estudio INE; pruebas reales en Edge/Chromium, cuatro anchos desde 320 px, revisión axe-core sin infracciones automáticas en dos estados, archivos PNG descargados, portapapeles, modo sin conexión y rechazo de datos inválidos. Consulta `evidencia/pruebas.json` y `docs/PRUEBAS.md` para el alcance exacto.
+- **IMPLEMENTADO:** seis capítulos; explicación interactiva del denominador; comparador por tipo de elección; vistas de ocho entidades y 18 grupos de edad nacionales; cuestionario de cinco preguntas con resultado y reinicio; escenarios A/B de 0 a 100 %; exportación horizontal, publicación vertical e historia, también por edad; descripciones accesibles; fuentes por documento; recorridos rápido y jurado; aula imprimible; archivo autónomo.
+- **VERIFICADO:** 14 tasas nacionales/estatales y 18 tasas por edad cotejadas con publicaciones INE; pruebas reales en Edge/Chromium, cuatro anchos desde 320 px, revisión axe-core sin infracciones automáticas en cuatro estados, archivos PNG descargados, portapapeles, modo sin conexión y rechazo de datos inválidos. Consulta `evidencia/pruebas.json`, `evidencia/pruebas-mejoras.json`, `evidencia/accesibilidad-mejoras.json` y `fuentes/EDADES_2024.md` para el alcance exacto. No es certificación WCAG ni piloto con usuarios.
 - **PENDIENTE DE VALIDAR:** piloto con personas usuarias, auditoría completa con lectores de pantalla, prueba en teléfonos físicos y Safari/Firefox; revisión del equipo, registro y cartas firmadas; permisos de acceso a entregables antes del envío. Ninguno se presenta como ya realizado.
 - **MEJORA FUTURA:** incorporar las 32 entidades después de validar las bases completas, mapa accesible y PWA. No se han inventado datos faltantes.
 
@@ -39,6 +39,8 @@ Vista publicada privada: https://cien-voces-mexico.arthojust.chatgpt.site . Requ
 | `evidencia/` | Reporte automático, capturas y exportaciones revisadas |
 | `tests/` | Pruebas funcionales reproducibles |
 | `scripts/build.py` | Genera JS de datos, CSV y HTML autónomo desde fuentes locales |
+
+El video actualizado está en `entregables/video/100_VOCES_Pitch_1080p_2m50.mp4`: 2:50, 1080p, narración sintética Sabina identificada y subtítulos integrados. Se verificó resolución, duración y presencia de audio. Es un montaje de capturas reales, no una grabación continua. No está subido a un servicio de video.
 
 ## Mantener y verificar
 

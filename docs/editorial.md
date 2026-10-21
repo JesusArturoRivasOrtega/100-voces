@@ -31,7 +31,7 @@ Los archivos están en `entregables/editoriales/`. Se redactaron a partir de la 
 
 **VERIFICADO:** cuatro páginas del guion, dos de aula y diez de presentación; texto extraíble en todas las páginas; diez diapositivas en el PPTX; cuatro títulos y tres saltos narrativos explícitos en el DOCX; bloques SRT sin huecos ni solapamientos y final a 170 segundos. Las hojas de contacto `revision_visual_*.png` se revisaron visualmente: contenido legible sin superposición ni recortes visibles.
 
-**PENDIENTE DE VALIDAR:** apertura y paginación del DOCX en el procesador de texto del equipo; renderizado del PPTX en el equipo de presentación; sincronización de SRT con una voz final; video definitivo y sus metadatos; publicación y permisos de lectura; prueba piloto y requisitos administrativos. Los controles editoriales no acreditan pruebas de la aplicación. Los PDF no se presentan como documentos PDF/UA certificados.
+**PENDIENTE DE VALIDAR:** apertura y paginación del DOCX en el procesador de texto del equipo; renderizado del PPTX en el equipo de presentación; revisión auditiva por el equipo de la voz sintética y permisos de lectura del video; prueba piloto y requisitos administrativos. Los controles editoriales no acreditan pruebas de la aplicación. Los PDF no se presentan como documentos PDF/UA certificados.
 
 **MEJORA FUTURA:** extender territorios después de cotejar la base completa; traducciones revisadas por hablantes; estudio de aprendizaje con protocolo y resultados documentados.
 
@@ -40,3 +40,7 @@ Los archivos están en `entregables/editoriales/`. Se redactaron a partir de la 
 Ejecutar `entregables/editoriales/generar_editoriales.py` con Python y `reportlab`, `python-docx`, `python-pptx`, `pypdf`, `pypdfium2` y Pillow disponibles. El script usa Arial del sistema Windows, escribe solo en su carpeta y reconstruye los documentos y vistas de revisión. No publica, envía mensajes ni ejecuta pruebas de la aplicación.
 
 Referencia: [INE, Manual CCPC 2009–2024](https://ine.mx/wp-content/uploads/2025/06/Manual-Conteos-Censales-2009-2024.pdf). La convocatoria adjunta exige presentación de máximo diez diapositivas, guion PDF de tres a cinco cuartillas y video MP4 1080p de máximo tres minutos; guion y SRT no sustituyen al video.
+
+## Actualización audiovisual
+
+El montaje final ya está en `entregables/video/100_VOCES_Pitch_1080p_2m50.mp4`: 170 segundos, 1920×1080, voz sintética Sabina declarada y subtítulos integrados. `100_VOCES_Pitch_Final.srt` es la versión correspondiente a ese montaje; el SRT en editoriales es la pauta inicial. Se verificaron códecs, duración, audio real y doce fotogramas. No se ha publicado el video; véase su README y verificacion_video.json.

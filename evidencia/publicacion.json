@@ -3,8 +3,8 @@
   "audience": "owner-private",
   "url": "https://cien-voces-mexico.arthojust.chatgpt.site",
   "project_id": "appgprj_6ad83a98b0588191a6b55f8b4a77b943",
-  "version_id": "appgprj_6ad83a98b0588191a6b55f8b4a77b943~appgver_bfb1bb4c2d98819197f50fc2c6179a1b",
-  "commit_sha": "b913e490073cf5df5e97dd5bd401049330bd13a2",
-  "completed_at": "2026-10-21T14:01:33.410992+00:00",
+  "version_id": "appgprj_6ad83a98b0588191a6b55f8b4a77b943~appgver_653f07017af8819192279267b6271f7d",
+  "commit_sha": "03e67802a4c4285e6bba08fcf7cc36d0c1c725d9",
+  "completed_at": "2026-10-21T14:13:40.051949+00:00",
   "verification": "Confirmación nativa Sites de despliegue exitoso; no se afirma acceso público."
 }

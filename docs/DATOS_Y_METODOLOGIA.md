@@ -1,6 +1,6 @@
 # Diccionario de datos y método
 
-Fuente de verdad: `dist/data/ccpc_resumen.json`. Serie nacional de seis elecciones y selección demostrativa de ocho entidades en 2024. No constituye una muestra probabilística ni un ranking completo de México. Son datos agregados, sin información individual.
+Fuente de verdad: `dist/data/ccpc_resumen.json`. Serie nacional de seis elecciones, selección demostrativa de ocho entidades en 2024 y 18 grupos de edad nacionales de 2024. La selección territorial no constituye una muestra probabilística ni un ranking completo de México. Son datos agregados, sin información individual. Los grupos de edad no se cruzan con entidades ni se promedian sin denominadores; proceden de la gráfica 5 del Estudio de Participación Ciudadana 2024, p. 18. Ver `fuentes/EDADES_2024.md`.
 
 | Campo | Tipo | Significado |
 |---|---|---|
@@ -8,11 +8,13 @@ Fuente de verdad: `dist/data/ccpc_resumen.json`. Serie nacional de seis eleccion
 | `unit` | texto | `porcentaje` |
 | `year` | entero | Año electoral; 2009, 2012, 2015, 2018, 2021, 2024 |
 | `kind` | enumeración | `presidencial` o `intermedia` |
-| `scope` | texto | Nacional o nombre de entidad |
+| `scope` | texto | Nacional, nombre de entidad o México y grupo de edad |
+| `age_group` | texto en edades | Grupo publicado, de 18–19 a 100 años o más |
 | `name` | texto en entidades | Nombre de la entidad, sin inferir cobertura nacional |
-| `source` | URL | Manual INE con número de página |
-| `source_page` | entero | 21 nacional; 16 territorial |
-| `reviewed_at` | fecha ISO | Revisión documental 2026-10-20 |
+| `source` | URL | Documento INE con número de página |
+| `source_title`, `source_short` | texto | Título completo y título breve para la tarjeta |
+| `source_page` | entero | Manual: 21 nacional, 16 territorial; Estudio 2024: 18 edades |
+| `reviewed_at` | fecha ISO | Fecha de revisión documental por registro |
 | `verification` | texto | Cotejo documental realizado; no recálculo desde ZIP |
 | `metadata` | objeto | Procedencia general, precisión, alcance, portal y segunda fuente |
 
@@ -26,7 +28,7 @@ Diferencia en puntos porcentuales = tasa de destino − tasa de origen. Ejemplo 
 
 La visualización de puntos redondea la tasa al entero más cercano. 59,7 % produce 60 puntos activos; el dato junto al gráfico mantiene el decimal publicado. No son cien personas identificables ni una observación directa de una muestra de cien.
 
-El escenario permite cualquier valor de 0 a 100 en pasos de 0,1. Es una simulación aritmética con base observada 2024; no pronostica ni mide efecto causal. Una predicción requeriría datos comparables, validación fuera de muestra, incertidumbre y evaluación de sesgos; inferir efecto de políticas requiere además un diseño causal apropiado.
+Los escenarios A y B permiten cualquier valor de 0 a 100 en pasos de 0,1. Se comparan entre sí y con la base observada 2024. El cambio relativo mostrado usa siempre el observado como denominador. Reiniciar iguala ambos a la tasa observada; el ejemplo los sitúa cinco pp por debajo y por encima. Son simulaciones aritméticas: no pronostican ni miden efectos causales. Una predicción requeriría datos comparables, validación fuera de muestra, incertidumbre y evaluación de sesgos; inferir efecto de políticas requiere además un diseño causal apropiado.
 
 ## Comparabilidad
 

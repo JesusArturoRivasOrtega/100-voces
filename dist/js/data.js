@@ -2,15 +2,15 @@ window.VOCES_DATA = {
   "metadata": {
     "project": "100 VOCES — Así participa México",
     "dataset": "Conteos Censales de Participación Ciudadana 2009–2024 (CCPC)",
-    "scope": "Resultados nacionales y selección demostrativa de ocho entidades. Datos agregados, sin datos personales.",
+    "scope": "Resultados nacionales, selección demostrativa de ocho entidades y 18 grupos de edad nacionales de 2024. Datos agregados, sin datos personales.",
     "national_source": "https://ine.mx/wp-content/uploads/2025/06/Manual-Conteos-Censales-2009-2024.pdf#page=21",
     "state_source": "https://ine.mx/wp-content/uploads/2025/06/Manual-Conteos-Censales-2009-2024.pdf#page=16",
     "portal": "https://ine.mx/transparencia/datos-abiertos/visualizacion-datos/conteos-censales-participacion/",
     "interpretation": "Porcentaje de participación CCPC: sí votaron / (sí votaron + no votaron) × 100. Se excluyen los registros no especificados del denominador. Los indicadores de otros productos del INE pueden diferir por definición y fuente.",
     "rounding": "Un decimal en tasas nacionales y de entidades, como aparece en el manual; los puntos de la visualización de 100 personas se redondean solo para ilustración.",
     "year_comparisons": "Comparar dentro de elecciones presidenciales 2012, 2018, 2024 o intermedias 2009, 2015, 2021. No atribuir causas a las diferencias.",
-    "last_verified": "2026-10-20",
-    "note": "Las 14 tasas coinciden con Manual CCPC pp. 16 y 21 y Estudio INE 2024 pp. 16 y 25. Selección territorial de ocho entidades; no se procesó el ZIP completo. Diferencias derivadas de cifras publicadas a un decimal.",
+    "last_verified": "2026-10-21",
+    "note": "14 tasas nacionales/estatales cotejadas con Manual CCPC y Estudio INE 2024; 18 tasas por edad cotejadas visualmente con gráfica 5 del estudio, p. 18. No se procesó el ZIP completo. Diferencias calculadas sobre cifras publicadas a un decimal. Los desgloses por edad son nacionales, no se cruzan con entidades.",
     "secondary_source": "https://repositoriodocumental.ine.mx/xmlui/bitstream/handle/123456789/186643/Deceyec-Estudio-Participaci%C3%B3n-ciudadada-2024.pdf"
   },
   "years": [
@@ -23,7 +23,9 @@ window.VOCES_DATA = {
       "source": "https://ine.mx/wp-content/uploads/2025/06/Manual-Conteos-Censales-2009-2024.pdf#page=21",
       "source_page": 21,
       "reviewed_at": "2026-10-20",
-      "verification": "Verificado contra Manual CCPC y Estudio INE 2024; no recalculado desde ZIP"
+      "verification": "Verificado contra Manual CCPC y Estudio INE 2024; no recalculado desde ZIP",
+      "source_title": "Manual CCPC 2009–2024",
+      "source_short": "Manual CCPC 2009–2024"
     },
     {
       "year": 2012,
@@ -34,7 +36,9 @@ window.VOCES_DATA = {
       "source": "https://ine.mx/wp-content/uploads/2025/06/Manual-Conteos-Censales-2009-2024.pdf#page=21",
       "source_page": 21,
       "reviewed_at": "2026-10-20",
-      "verification": "Verificado contra Manual CCPC y Estudio INE 2024; no recalculado desde ZIP"
+      "verification": "Verificado contra Manual CCPC y Estudio INE 2024; no recalculado desde ZIP",
+      "source_title": "Manual CCPC 2009–2024",
+      "source_short": "Manual CCPC 2009–2024"
     },
     {
       "year": 2015,
@@ -45,7 +49,9 @@ window.VOCES_DATA = {
       "source": "https://ine.mx/wp-content/uploads/2025/06/Manual-Conteos-Censales-2009-2024.pdf#page=21",
       "source_page": 21,
       "reviewed_at": "2026-10-20",
-      "verification": "Verificado contra Manual CCPC y Estudio INE 2024; no recalculado desde ZIP"
+      "verification": "Verificado contra Manual CCPC y Estudio INE 2024; no recalculado desde ZIP",
+      "source_title": "Manual CCPC 2009–2024",
+      "source_short": "Manual CCPC 2009–2024"
     },
     {
       "year": 2018,
@@ -56,7 +62,9 @@ window.VOCES_DATA = {
       "source": "https://ine.mx/wp-content/uploads/2025/06/Manual-Conteos-Censales-2009-2024.pdf#page=21",
       "source_page": 21,
       "reviewed_at": "2026-10-20",
-      "verification": "Verificado contra Manual CCPC y Estudio INE 2024; no recalculado desde ZIP"
+      "verification": "Verificado contra Manual CCPC y Estudio INE 2024; no recalculado desde ZIP",
+      "source_title": "Manual CCPC 2009–2024",
+      "source_short": "Manual CCPC 2009–2024"
     },
     {
       "year": 2021,
@@ -67,7 +75,9 @@ window.VOCES_DATA = {
       "source": "https://ine.mx/wp-content/uploads/2025/06/Manual-Conteos-Censales-2009-2024.pdf#page=21",
       "source_page": 21,
       "reviewed_at": "2026-10-20",
-      "verification": "Verificado contra Manual CCPC y Estudio INE 2024; no recalculado desde ZIP"
+      "verification": "Verificado contra Manual CCPC y Estudio INE 2024; no recalculado desde ZIP",
+      "source_title": "Manual CCPC 2009–2024",
+      "source_short": "Manual CCPC 2009–2024"
     },
     {
       "year": 2024,
@@ -78,7 +88,9 @@ window.VOCES_DATA = {
       "source": "https://ine.mx/wp-content/uploads/2025/06/Manual-Conteos-Censales-2009-2024.pdf#page=21",
       "source_page": 21,
       "reviewed_at": "2026-10-20",
-      "verification": "Verificado contra Manual CCPC y Estudio INE 2024; no recalculado desde ZIP"
+      "verification": "Verificado contra Manual CCPC y Estudio INE 2024; no recalculado desde ZIP",
+      "source_title": "Manual CCPC 2009–2024",
+      "source_short": "Manual CCPC 2009–2024"
     }
   ],
   "states_2024": [
@@ -92,7 +104,9 @@ window.VOCES_DATA = {
       "source": "https://ine.mx/wp-content/uploads/2025/06/Manual-Conteos-Censales-2009-2024.pdf#page=16",
       "source_page": 16,
       "reviewed_at": "2026-10-20",
-      "verification": "Verificado contra Manual CCPC y Estudio INE 2024; no recalculado desde ZIP"
+      "verification": "Verificado contra Manual CCPC y Estudio INE 2024; no recalculado desde ZIP",
+      "source_title": "Manual CCPC 2009–2024",
+      "source_short": "Manual CCPC 2009–2024"
     },
     {
       "name": "Baja California",
@@ -104,7 +118,9 @@ window.VOCES_DATA = {
       "source": "https://ine.mx/wp-content/uploads/2025/06/Manual-Conteos-Censales-2009-2024.pdf#page=16",
       "source_page": 16,
       "reviewed_at": "2026-10-20",
-      "verification": "Verificado contra Manual CCPC y Estudio INE 2024; no recalculado desde ZIP"
+      "verification": "Verificado contra Manual CCPC y Estudio INE 2024; no recalculado desde ZIP",
+      "source_title": "Manual CCPC 2009–2024",
+      "source_short": "Manual CCPC 2009–2024"
     },
     {
       "name": "Chiapas",
@@ -116,7 +132,9 @@ window.VOCES_DATA = {
       "source": "https://ine.mx/wp-content/uploads/2025/06/Manual-Conteos-Censales-2009-2024.pdf#page=16",
       "source_page": 16,
       "reviewed_at": "2026-10-20",
-      "verification": "Verificado contra Manual CCPC y Estudio INE 2024; no recalculado desde ZIP"
+      "verification": "Verificado contra Manual CCPC y Estudio INE 2024; no recalculado desde ZIP",
+      "source_title": "Manual CCPC 2009–2024",
+      "source_short": "Manual CCPC 2009–2024"
     },
     {
       "name": "Ciudad de México",
@@ -128,7 +146,9 @@ window.VOCES_DATA = {
       "source": "https://ine.mx/wp-content/uploads/2025/06/Manual-Conteos-Censales-2009-2024.pdf#page=16",
       "source_page": 16,
       "reviewed_at": "2026-10-20",
-      "verification": "Verificado contra Manual CCPC y Estudio INE 2024; no recalculado desde ZIP"
+      "verification": "Verificado contra Manual CCPC y Estudio INE 2024; no recalculado desde ZIP",
+      "source_title": "Manual CCPC 2009–2024",
+      "source_short": "Manual CCPC 2009–2024"
     },
     {
       "name": "Sonora",
@@ -140,7 +160,9 @@ window.VOCES_DATA = {
       "source": "https://ine.mx/wp-content/uploads/2025/06/Manual-Conteos-Censales-2009-2024.pdf#page=16",
       "source_page": 16,
       "reviewed_at": "2026-10-20",
-      "verification": "Verificado contra Manual CCPC y Estudio INE 2024; no recalculado desde ZIP"
+      "verification": "Verificado contra Manual CCPC y Estudio INE 2024; no recalculado desde ZIP",
+      "source_title": "Manual CCPC 2009–2024",
+      "source_short": "Manual CCPC 2009–2024"
     },
     {
       "name": "Tlaxcala",
@@ -152,7 +174,9 @@ window.VOCES_DATA = {
       "source": "https://ine.mx/wp-content/uploads/2025/06/Manual-Conteos-Censales-2009-2024.pdf#page=16",
       "source_page": 16,
       "reviewed_at": "2026-10-20",
-      "verification": "Verificado contra Manual CCPC y Estudio INE 2024; no recalculado desde ZIP"
+      "verification": "Verificado contra Manual CCPC y Estudio INE 2024; no recalculado desde ZIP",
+      "source_title": "Manual CCPC 2009–2024",
+      "source_short": "Manual CCPC 2009–2024"
     },
     {
       "name": "Veracruz",
@@ -164,7 +188,9 @@ window.VOCES_DATA = {
       "source": "https://ine.mx/wp-content/uploads/2025/06/Manual-Conteos-Censales-2009-2024.pdf#page=16",
       "source_page": 16,
       "reviewed_at": "2026-10-20",
-      "verification": "Verificado contra Manual CCPC y Estudio INE 2024; no recalculado desde ZIP"
+      "verification": "Verificado contra Manual CCPC y Estudio INE 2024; no recalculado desde ZIP",
+      "source_title": "Manual CCPC 2009–2024",
+      "source_short": "Manual CCPC 2009–2024"
     },
     {
       "name": "Yucatán",
@@ -176,7 +202,263 @@ window.VOCES_DATA = {
       "source": "https://ine.mx/wp-content/uploads/2025/06/Manual-Conteos-Censales-2009-2024.pdf#page=16",
       "source_page": 16,
       "reviewed_at": "2026-10-20",
-      "verification": "Verificado contra Manual CCPC y Estudio INE 2024; no recalculado desde ZIP"
+      "verification": "Verificado contra Manual CCPC y Estudio INE 2024; no recalculado desde ZIP",
+      "source_title": "Manual CCPC 2009–2024",
+      "source_short": "Manual CCPC 2009–2024"
+    }
+  ],
+  "age_2024": [
+    {
+      "age_group": "18–19 años",
+      "participation": 56.8,
+      "year": 2024,
+      "kind": "presidencial",
+      "scope": "México · 18–19 años",
+      "unit": "porcentaje",
+      "source": "https://repositoriodocumental.ine.mx/xmlui/bitstream/handle/123456789/186643/Deceyec-Estudio-Participaci%C3%B3n-ciudadada-2024.pdf#page=18",
+      "source_title": "Estudio de Participación Ciudadana 2024",
+      "source_short": "Estudio de participación 2024",
+      "source_page": 18,
+      "reviewed_at": "2026-10-21",
+      "verification": "Transcripción y cotejo visual de la gráfica 5, página 18; no recalculado desde ZIP"
+    },
+    {
+      "age_group": "20–24 años",
+      "participation": 48.4,
+      "year": 2024,
+      "kind": "presidencial",
+      "scope": "México · 20–24 años",
+      "unit": "porcentaje",
+      "source": "https://repositoriodocumental.ine.mx/xmlui/bitstream/handle/123456789/186643/Deceyec-Estudio-Participaci%C3%B3n-ciudadada-2024.pdf#page=18",
+      "source_title": "Estudio de Participación Ciudadana 2024",
+      "source_short": "Estudio de participación 2024",
+      "source_page": 18,
+      "reviewed_at": "2026-10-21",
+      "verification": "Transcripción y cotejo visual de la gráfica 5, página 18; no recalculado desde ZIP"
+    },
+    {
+      "age_group": "25–29 años",
+      "participation": 47.3,
+      "year": 2024,
+      "kind": "presidencial",
+      "scope": "México · 25–29 años",
+      "unit": "porcentaje",
+      "source": "https://repositoriodocumental.ine.mx/xmlui/bitstream/handle/123456789/186643/Deceyec-Estudio-Participaci%C3%B3n-ciudadada-2024.pdf#page=18",
+      "source_title": "Estudio de Participación Ciudadana 2024",
+      "source_short": "Estudio de participación 2024",
+      "source_page": 18,
+      "reviewed_at": "2026-10-21",
+      "verification": "Transcripción y cotejo visual de la gráfica 5, página 18; no recalculado desde ZIP"
+    },
+    {
+      "age_group": "30–34 años",
+      "participation": 52.0,
+      "year": 2024,
+      "kind": "presidencial",
+      "scope": "México · 30–34 años",
+      "unit": "porcentaje",
+      "source": "https://repositoriodocumental.ine.mx/xmlui/bitstream/handle/123456789/186643/Deceyec-Estudio-Participaci%C3%B3n-ciudadada-2024.pdf#page=18",
+      "source_title": "Estudio de Participación Ciudadana 2024",
+      "source_short": "Estudio de participación 2024",
+      "source_page": 18,
+      "reviewed_at": "2026-10-21",
+      "verification": "Transcripción y cotejo visual de la gráfica 5, página 18; no recalculado desde ZIP"
+    },
+    {
+      "age_group": "35–39 años",
+      "participation": 56.1,
+      "year": 2024,
+      "kind": "presidencial",
+      "scope": "México · 35–39 años",
+      "unit": "porcentaje",
+      "source": "https://repositoriodocumental.ine.mx/xmlui/bitstream/handle/123456789/186643/Deceyec-Estudio-Participaci%C3%B3n-ciudadada-2024.pdf#page=18",
+      "source_title": "Estudio de Participación Ciudadana 2024",
+      "source_short": "Estudio de participación 2024",
+      "source_page": 18,
+      "reviewed_at": "2026-10-21",
+      "verification": "Transcripción y cotejo visual de la gráfica 5, página 18; no recalculado desde ZIP"
+    },
+    {
+      "age_group": "40–44 años",
+      "participation": 60.2,
+      "year": 2024,
+      "kind": "presidencial",
+      "scope": "México · 40–44 años",
+      "unit": "porcentaje",
+      "source": "https://repositoriodocumental.ine.mx/xmlui/bitstream/handle/123456789/186643/Deceyec-Estudio-Participaci%C3%B3n-ciudadada-2024.pdf#page=18",
+      "source_title": "Estudio de Participación Ciudadana 2024",
+      "source_short": "Estudio de participación 2024",
+      "source_page": 18,
+      "reviewed_at": "2026-10-21",
+      "verification": "Transcripción y cotejo visual de la gráfica 5, página 18; no recalculado desde ZIP"
+    },
+    {
+      "age_group": "45–49 años",
+      "participation": 64.1,
+      "year": 2024,
+      "kind": "presidencial",
+      "scope": "México · 45–49 años",
+      "unit": "porcentaje",
+      "source": "https://repositoriodocumental.ine.mx/xmlui/bitstream/handle/123456789/186643/Deceyec-Estudio-Participaci%C3%B3n-ciudadada-2024.pdf#page=18",
+      "source_title": "Estudio de Participación Ciudadana 2024",
+      "source_short": "Estudio de participación 2024",
+      "source_page": 18,
+      "reviewed_at": "2026-10-21",
+      "verification": "Transcripción y cotejo visual de la gráfica 5, página 18; no recalculado desde ZIP"
+    },
+    {
+      "age_group": "50–54 años",
+      "participation": 67.2,
+      "year": 2024,
+      "kind": "presidencial",
+      "scope": "México · 50–54 años",
+      "unit": "porcentaje",
+      "source": "https://repositoriodocumental.ine.mx/xmlui/bitstream/handle/123456789/186643/Deceyec-Estudio-Participaci%C3%B3n-ciudadada-2024.pdf#page=18",
+      "source_title": "Estudio de Participación Ciudadana 2024",
+      "source_short": "Estudio de participación 2024",
+      "source_page": 18,
+      "reviewed_at": "2026-10-21",
+      "verification": "Transcripción y cotejo visual de la gráfica 5, página 18; no recalculado desde ZIP"
+    },
+    {
+      "age_group": "55–59 años",
+      "participation": 69.5,
+      "year": 2024,
+      "kind": "presidencial",
+      "scope": "México · 55–59 años",
+      "unit": "porcentaje",
+      "source": "https://repositoriodocumental.ine.mx/xmlui/bitstream/handle/123456789/186643/Deceyec-Estudio-Participaci%C3%B3n-ciudadada-2024.pdf#page=18",
+      "source_title": "Estudio de Participación Ciudadana 2024",
+      "source_short": "Estudio de participación 2024",
+      "source_page": 18,
+      "reviewed_at": "2026-10-21",
+      "verification": "Transcripción y cotejo visual de la gráfica 5, página 18; no recalculado desde ZIP"
+    },
+    {
+      "age_group": "60–64 años",
+      "participation": 73.0,
+      "year": 2024,
+      "kind": "presidencial",
+      "scope": "México · 60–64 años",
+      "unit": "porcentaje",
+      "source": "https://repositoriodocumental.ine.mx/xmlui/bitstream/handle/123456789/186643/Deceyec-Estudio-Participaci%C3%B3n-ciudadada-2024.pdf#page=18",
+      "source_title": "Estudio de Participación Ciudadana 2024",
+      "source_short": "Estudio de participación 2024",
+      "source_page": 18,
+      "reviewed_at": "2026-10-21",
+      "verification": "Transcripción y cotejo visual de la gráfica 5, página 18; no recalculado desde ZIP"
+    },
+    {
+      "age_group": "65–69 años",
+      "participation": 76.5,
+      "year": 2024,
+      "kind": "presidencial",
+      "scope": "México · 65–69 años",
+      "unit": "porcentaje",
+      "source": "https://repositoriodocumental.ine.mx/xmlui/bitstream/handle/123456789/186643/Deceyec-Estudio-Participaci%C3%B3n-ciudadada-2024.pdf#page=18",
+      "source_title": "Estudio de Participación Ciudadana 2024",
+      "source_short": "Estudio de participación 2024",
+      "source_page": 18,
+      "reviewed_at": "2026-10-21",
+      "verification": "Transcripción y cotejo visual de la gráfica 5, página 18; no recalculado desde ZIP"
+    },
+    {
+      "age_group": "70–74 años",
+      "participation": 75.5,
+      "year": 2024,
+      "kind": "presidencial",
+      "scope": "México · 70–74 años",
+      "unit": "porcentaje",
+      "source": "https://repositoriodocumental.ine.mx/xmlui/bitstream/handle/123456789/186643/Deceyec-Estudio-Participaci%C3%B3n-ciudadada-2024.pdf#page=18",
+      "source_title": "Estudio de Participación Ciudadana 2024",
+      "source_short": "Estudio de participación 2024",
+      "source_page": 18,
+      "reviewed_at": "2026-10-21",
+      "verification": "Transcripción y cotejo visual de la gráfica 5, página 18; no recalculado desde ZIP"
+    },
+    {
+      "age_group": "75–79 años",
+      "participation": 71.4,
+      "year": 2024,
+      "kind": "presidencial",
+      "scope": "México · 75–79 años",
+      "unit": "porcentaje",
+      "source": "https://repositoriodocumental.ine.mx/xmlui/bitstream/handle/123456789/186643/Deceyec-Estudio-Participaci%C3%B3n-ciudadada-2024.pdf#page=18",
+      "source_title": "Estudio de Participación Ciudadana 2024",
+      "source_short": "Estudio de participación 2024",
+      "source_page": 18,
+      "reviewed_at": "2026-10-21",
+      "verification": "Transcripción y cotejo visual de la gráfica 5, página 18; no recalculado desde ZIP"
+    },
+    {
+      "age_group": "80–84 años",
+      "participation": 63.6,
+      "year": 2024,
+      "kind": "presidencial",
+      "scope": "México · 80–84 años",
+      "unit": "porcentaje",
+      "source": "https://repositoriodocumental.ine.mx/xmlui/bitstream/handle/123456789/186643/Deceyec-Estudio-Participaci%C3%B3n-ciudadada-2024.pdf#page=18",
+      "source_title": "Estudio de Participación Ciudadana 2024",
+      "source_short": "Estudio de participación 2024",
+      "source_page": 18,
+      "reviewed_at": "2026-10-21",
+      "verification": "Transcripción y cotejo visual de la gráfica 5, página 18; no recalculado desde ZIP"
+    },
+    {
+      "age_group": "85–89 años",
+      "participation": 51.4,
+      "year": 2024,
+      "kind": "presidencial",
+      "scope": "México · 85–89 años",
+      "unit": "porcentaje",
+      "source": "https://repositoriodocumental.ine.mx/xmlui/bitstream/handle/123456789/186643/Deceyec-Estudio-Participaci%C3%B3n-ciudadada-2024.pdf#page=18",
+      "source_title": "Estudio de Participación Ciudadana 2024",
+      "source_short": "Estudio de participación 2024",
+      "source_page": 18,
+      "reviewed_at": "2026-10-21",
+      "verification": "Transcripción y cotejo visual de la gráfica 5, página 18; no recalculado desde ZIP"
+    },
+    {
+      "age_group": "90–94 años",
+      "participation": 36.7,
+      "year": 2024,
+      "kind": "presidencial",
+      "scope": "México · 90–94 años",
+      "unit": "porcentaje",
+      "source": "https://repositoriodocumental.ine.mx/xmlui/bitstream/handle/123456789/186643/Deceyec-Estudio-Participaci%C3%B3n-ciudadada-2024.pdf#page=18",
+      "source_title": "Estudio de Participación Ciudadana 2024",
+      "source_short": "Estudio de participación 2024",
+      "source_page": 18,
+      "reviewed_at": "2026-10-21",
+      "verification": "Transcripción y cotejo visual de la gráfica 5, página 18; no recalculado desde ZIP"
+    },
+    {
+      "age_group": "95–99 años",
+      "participation": 23.8,
+      "year": 2024,
+      "kind": "presidencial",
+      "scope": "México · 95–99 años",
+      "unit": "porcentaje",
+      "source": "https://repositoriodocumental.ine.mx/xmlui/bitstream/handle/123456789/186643/Deceyec-Estudio-Participaci%C3%B3n-ciudadada-2024.pdf#page=18",
+      "source_title": "Estudio de Participación Ciudadana 2024",
+      "source_short": "Estudio de participación 2024",
+      "source_page": 18,
+      "reviewed_at": "2026-10-21",
+      "verification": "Transcripción y cotejo visual de la gráfica 5, página 18; no recalculado desde ZIP"
+    },
+    {
+      "age_group": "100 años o más",
+      "participation": 18.5,
+      "year": 2024,
+      "kind": "presidencial",
+      "scope": "México · 100 años o más",
+      "unit": "porcentaje",
+      "source": "https://repositoriodocumental.ine.mx/xmlui/bitstream/handle/123456789/186643/Deceyec-Estudio-Participaci%C3%B3n-ciudadada-2024.pdf#page=18",
+      "source_title": "Estudio de Participación Ciudadana 2024",
+      "source_short": "Estudio de participación 2024",
+      "source_page": 18,
+      "reviewed_at": "2026-10-21",
+      "verification": "Transcripción y cotejo visual de la gráfica 5, página 18; no recalculado desde ZIP"
     }
   ]
 };

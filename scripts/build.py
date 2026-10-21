@@ -9,7 +9,7 @@ for d in data['years']+data['states_2024']:
 (dist/'data/ccpc_resumen.json').write_text(json.dumps(data,ensure_ascii=False,indent=2),encoding='utf-8')
 (dist/'js/data.js').write_text('window.VOCES_DATA = '+json.dumps(data,ensure_ascii=False,indent=2)+';\n',encoding='utf-8')
 with (dist/'data/indicadores.csv').open('w',encoding='utf-8-sig',newline='') as f:
- fields=['year','scope','participation','unit','kind','source','source_page','reviewed_at','verification'];w=csv.DictWriter(f,fieldnames=fields,extrasaction='ignore');w.writeheader();w.writerows(data['years']+data['states_2024'])
+ fields=['age_group','source_title','year','scope','participation','unit','kind','source','source_page','reviewed_at','verification'];w=csv.DictWriter(f,fieldnames=fields,extrasaction='ignore');w.writeheader();w.writerows(data['years']+data['states_2024']+data['age_2024'])
 h=(dist/'index.html').read_text(encoding='utf-8');css=(dist/'styles.css').read_text(encoding='utf-8')
 for font in (dist/'fonts').glob('*'):
  if font.suffix not in ['.woff2','.ttf']:continue

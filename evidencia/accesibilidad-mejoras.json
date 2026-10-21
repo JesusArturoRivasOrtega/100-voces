@@ -1,0 +1,92 @@
+[
+  {
+    "state": "ages",
+    "violations": [],
+    "incomplete": [
+      {
+        "id": "color-contrast",
+        "nodes": [
+          [
+            ".hero-visual-top > span:nth-child(1)"
+          ],
+          [
+            ".hero-visual-top > span:nth-child(2)"
+          ],
+          [
+            ".orbit-big"
+          ],
+          [
+            ".orbit-small"
+          ],
+          [
+            ".star-1"
+          ],
+          [
+            ".hero-visual-bottom > span:nth-child(1)"
+          ],
+          [
+            ".hero-visual-bottom > span:nth-child(2)"
+          ],
+          [
+            "button[data-denominator=\"yes\"] > .denominator-symbol"
+          ],
+          [
+            "button[data-denominator=\"no\"] > .denominator-symbol"
+          ],
+          [
+            "#downloadCard > span[aria-hidden=\"true\"]"
+          ],
+          [
+            "#accessibleText"
+          ]
+        ]
+      }
+    ],
+    "passes": 27
+  },
+  {
+    "state": "evidence-and-cards",
+    "violations": [],
+    "incomplete": [
+      {
+        "id": "color-contrast",
+        "nodes": [
+          [
+            ".hero-visual-top > span:nth-child(1)"
+          ],
+          [
+            ".hero-visual-top > span:nth-child(2)"
+          ],
+          [
+            ".orbit-big"
+          ],
+          [
+            ".orbit-small"
+          ],
+          [
+            ".star-1"
+          ],
+          [
+            ".hero-visual-bottom > span:nth-child(1)"
+          ],
+          [
+            ".hero-visual-bottom > span:nth-child(2)"
+          ],
+          [
+            "button[data-denominator=\"yes\"] > .denominator-symbol"
+          ],
+          [
+            "button[data-denominator=\"no\"] > .denominator-symbol"
+          ],
+          [
+            "#downloadCard > span[aria-hidden=\"true\"]"
+          ],
+          [
+            "#accessibleText"
+          ]
+        ]
+      }
+    ],
+    "passes": 29
+  }
+]

@@ -6,7 +6,7 @@ Aplicación estática de seis capítulos; archivo autónomo; quince categorías 
 
 ## VERIFICADO
 
-Catorce tasas contra dos documentos INE. Seis años, ocho entidades, pares de elecciones, cinco reactivos, reinicio, escenarios en ambos sentidos, tres descargas PNG, portapapeles real, teclado, reducción de movimiento, cuatro anchos 320–1440, modo file:// sin red, error de datos y consola normal. Axe-core: cero infracciones automáticas en dos estados; no es certificación WCAG. Guion PDF: 4 páginas; deck: 10 diapositivas; aula: 2 páginas. Ver reportes en evidencia/.
+Catorce tasas contra dos documentos INE. Seis años, ocho entidades, pares de elecciones, cinco reactivos, reinicio, escenarios en ambos sentidos, tres descargas PNG, portapapeles real, teclado, reducción de movimiento, cuatro anchos 320–1440, modo file:// sin red, error de datos y consola normal. Axe-core: cero infracciones automáticas en dos estados; no es certificación WCAG. Guion PDF: 4 páginas; deck: 10 diapositivas; aula: 2 páginas. Video MP4: 170 segundos, 1920×1080, H.264 y audio AAC real, subtítulos integrados. Es un montaje de capturas reales con voz sintética declarada. Ver reportes en evidencia/ y entregables/video/.
 
 ## PENDIENTE DE VALIDAR
 

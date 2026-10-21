@@ -242,6 +242,48 @@
             "all": [],
             "none": [],
             "impact": "serious",
+            "html": "<span class=\"denominator-symbol\">✓</span>",
+            "target": [
+              "button[data-denominator=\"yes\"] > .denominator-symbol"
+            ],
+            "failureSummary": "Fix any of the following:\n  Element content contains only non-text characters"
+          },
+          {
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "messageKey": "nonBmp"
+                },
+                "relatedNodes": [],
+                "impact": "serious",
+                "message": "Element content contains only non-text characters"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": "serious",
+            "html": "<span class=\"denominator-symbol\">○</span>",
+            "target": [
+              "button[data-denominator=\"no\"] > .denominator-symbol"
+            ],
+            "failureSummary": "Fix any of the following:\n  Element content contains only non-text characters"
+          },
+          {
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "messageKey": "nonBmp"
+                },
+                "relatedNodes": [],
+                "impact": "serious",
+                "message": "Element content contains only non-text characters"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": "serious",
             "html": "<span aria-hidden=\"true\">↓</span>",
             "target": [
               "#downloadCard > span[aria-hidden=\"true\"]"
@@ -512,6 +554,48 @@
               ".hero-visual-bottom > span:nth-child(2)"
             ],
             "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a pseudo element"
+          },
+          {
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "messageKey": "nonBmp"
+                },
+                "relatedNodes": [],
+                "impact": "serious",
+                "message": "Element content contains only non-text characters"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": "serious",
+            "html": "<span class=\"denominator-symbol\">✓</span>",
+            "target": [
+              "button[data-denominator=\"yes\"] > .denominator-symbol"
+            ],
+            "failureSummary": "Fix any of the following:\n  Element content contains only non-text characters"
+          },
+          {
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "messageKey": "nonBmp"
+                },
+                "relatedNodes": [],
+                "impact": "serious",
+                "message": "Element content contains only non-text characters"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": "serious",
+            "html": "<span class=\"denominator-symbol\">○</span>",
+            "target": [
+              "button[data-denominator=\"no\"] > .denominator-symbol"
+            ],
+            "failureSummary": "Fix any of the following:\n  Element content contains only non-text characters"
           },
           {
             "any": [

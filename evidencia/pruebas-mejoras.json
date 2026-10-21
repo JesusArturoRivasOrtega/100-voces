@@ -1,0 +1,50 @@
+{
+  "fecha": "2026-10-21T21:34:00.951Z",
+  "resultados": [
+    {
+      "prueba": "Serie por edad y errores",
+      "estado": "VERIFICADO",
+      "detalle": "18 valores cotejados con gráfica 5; seis variantes inválidas rechazadas"
+    },
+    {
+      "prueba": "Denominador",
+      "estado": "VERIFICADO",
+      "detalle": "Tres explicaciones y selección exclusivas"
+    },
+    {
+      "prueba": "Contrastes por edad",
+      "estado": "VERIFICADO",
+      "detalle": "18 selecciones; cambio de vista; fuente del estudio y comparación −12,4 pp"
+    },
+    {
+      "prueba": "Tarjetas por edad",
+      "estado": "VERIFICADO",
+      "detalle": "Transferencia del grupo al generador, cita correcta y tres PNG reales"
+    },
+    {
+      "prueba": "Escenarios A/B",
+      "estado": "VERIFICADO",
+      "detalle": "Extremos, orden inverso, igualdad, reinicio y ejemplo ±5 pp"
+    },
+    {
+      "prueba": "Adaptación de nuevas vistas",
+      "estado": "VERIFICADO",
+      "detalle": "Sin desbordamiento en cuatro anchos; capturas móvil/escritorio"
+    },
+    {
+      "prueba": "Accesibilidad automática",
+      "estado": "VERIFICADO",
+      "detalle": "Cero infracciones en dos estados de las nuevas vistas; no es certificación WCAG"
+    },
+    {
+      "prueba": "Archivo autónomo",
+      "estado": "VERIFICADO",
+      "detalle": "Edades y escenarios A/B funcionan sin red"
+    },
+    {
+      "prueba": "Consola",
+      "estado": "VERIFICADO",
+      "detalle": "Sin errores JavaScript"
+    }
+  ]
+}
