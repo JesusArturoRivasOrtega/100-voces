@@ -16,17 +16,17 @@ La convocatoria adjunta (p. 5) enumera cinco criterios. Esta matriz vincula cada
 |---|---|---|
 | 00:00–00:30 | Cap. 1, 2024; abrir evidencia | 59,7%, puntos redondeados y denominador |
 | 00:30–01:00 | Comparador presidencial | −2,7 pp no es −2,7%; no explica causas |
-| 01:00–01:25 | Veracruz, 2024 | −1,3 pp frente al nacional; ocho entidades demostrativas |
-| 01:25–01:50 | Una pregunta del quiz | Mostrar explicación; cierre y reinicio disponibles |
-| 01:50–02:15 | Escenario 64,7% | +5,0 pp; ≈ +8,4% relativo; no predicción |
+| 01:00–01:25 | Territorio y edad 25–29, 2024 | Ocho entidades; 18 grupos nacionales. 25–29: 47,3%; no dato estatal |
+| 01:25–01:50 | Una de siete preguntas del quiz | Explicar denominador o alcance de edades; mostrar retroalimentación |
+| 01:50–02:15 | A=54,7% y B=64,7%; referencia=59,7% | −5,0 y +5,0 pp; separación 10,0 pp; no predicción |
 | 02:15–02:45 | Generador, PNG y texto accesible | Dato, año, contexto y fuente viajan juntos |
-| 02:45–03:00 | Aula, respaldo local y cierre | Reutilización sujeta a revisión; no impacto inventado |
+| 02:45–03:00 | Kit docente, carrusel y respaldo local | Taller 15 minutos; acceso público y piloto pendientes |
 
-La ruta es manual: los tiempos son una pauta de exposición, no un avance automático ni una medición. El pitch de grabación separado dura 2:50 en su planificación. Antes de exponer, verificar el comportamiento actual en el reporte real de pruebas.
+La ruta es manual: los tiempos son una pauta de exposición, no un avance automático ni una medición. El pitch local separado se regenera con una duración de 2:50; consultar su verificación de archivo. Antes de exponer, verificar el comportamiento actual en el reporte real de pruebas.
 
 ## Estados de los materiales
 
 - IMPLEMENTADO: archivos editoriales PDF, DOCX, PPTX, Markdown y SRT generados localmente.
 - VERIFICADO: conteos y texto de los PDF, número de diapositivas, estructura del DOCX y cronología SRT según `verificacion_editorial.json`.
-- PENDIENTE DE VALIDAR: piloto con público, reproducción del PPTX/DOCX en el equipo de exposición, voz y sincronización final de video, publicación, permisos de enlaces y requisitos administrativos del equipo.
+- PENDIENTE DE VALIDAR: piloto con público, reproducción del PPTX/DOCX en el equipo de exposición, publicación y permisos de enlaces y requisitos administrativos del equipo.
 - MEJORA FUTURA: cobertura de 32 entidades tras validar base completa; traducciones revisadas y evaluación de aprendizaje.

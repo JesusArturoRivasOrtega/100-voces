@@ -1,5 +1,5 @@
 {
-  "fecha": "2026-10-21T21:31:37.673Z",
+  "fecha": "2026-10-23T04:43:07.084Z",
   "navegador": "155.0.4283.62",
   "resultados": [
     {
@@ -28,8 +28,8 @@
     },
     {
       "prueba": "Aprendizaje",
-      "esperado": "5 respuestas, feedback, resultado y reinicio",
-      "observado": "5/5; pantalla final; reinicio a cero",
+      "esperado": "7 respuestas, feedback, resultado y reinicio",
+      "observado": "7/7; pantalla final; reinicio a cero",
       "estado": "VERIFICADO"
     },
     {

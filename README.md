@@ -1,65 +1,78 @@
 # 100 VOCES — Así participa México
 
-Experiencia educativa independiente para el Reto 3 del Hackathon INE 2026. Seis capítulos funcionales, datos CCPC rastreables, cinco preguntas con retroalimentación y tarjetas PNG reutilizables. No es una herramienta oficial ni cuenta con aval del INE.
+Experiencia educativa independiente para comprender la participación ciudadana con datos publicados por el INE. **Versión 1.1.0** · Reto 3 · Sin aval institucional.
 
-## Abrir ahora
+[Repositorio](https://github.com/JesusArturoRivasOrtega/100-voces) · [Índice de entrega](LEEME_ENTREGA.md) · [Pruebas ejecutadas](docs/PRUEBAS.md) · [Cambios](CHANGELOG.md)
 
-Abre **100_VOCES_ABRIR.html** con doble clic. Incluye código, datos y fuentes tipográficas; funciona sin conexión ni servidor. Los enlaces a documentos del INE requieren conexión. Las descargas funcionan; si el navegador impide el portapapeles, queda disponible un campo de texto seleccionable.
+## Abrir y explorar
 
-Para ejecutar la versión modular desde esta carpeta:
+Abre **100_VOCES_ABRIR.html** con doble clic. La aplicación incluye código, datos y tipografías: sus interacciones funcionan sin conexión. Para abrir el kit, carrusel y video, conserva también la carpeta `dist/recursos/`. Consultar fuentes oficiales en línea requiere internet.
+
+Para servir la versión modular desde la raíz:
 
 ```sh
 python -m http.server 8765 --bind 127.0.0.1
 ```
 
-Visita `http://127.0.0.1:8765/dist/`. No hay instalación de paquetes para usar la aplicación. `dist/` es directamente publicable en cualquier alojamiento estático con HTTPS. El código de la aplicación no necesita autenticación, API ni base de datos.
+Visita http://127.0.0.1:8765/dist/ . No se necesita instalar paquetes para usar el sitio.
 
-Vista publicada privada: https://cien-voces-mexico.arthojust.chatgpt.site . Requiere acceso del propietario en Sites; no confundirla con un enlace público listo para el jurado. La aplicación y el archivo autónomo funcionan sin autenticación.
+El sitio en https://cien-voces-mexico.arthojust.chatgpt.site conserva acceso privado del propietario. El repositorio y el sitio tienen permisos independientes. No se presenta ese enlace como acceso ya comprobado para el jurado.
 
 ## Qué incluye
 
-- **IMPLEMENTADO:** seis capítulos; explicación interactiva del denominador; comparador por tipo de elección; vistas de ocho entidades y 18 grupos de edad nacionales; cuestionario de cinco preguntas con resultado y reinicio; escenarios A/B de 0 a 100 %; exportación horizontal, publicación vertical e historia, también por edad; descripciones accesibles; fuentes por documento; recorridos rápido y jurado; aula imprimible; archivo autónomo.
-- **VERIFICADO:** 14 tasas nacionales/estatales y 18 tasas por edad cotejadas con publicaciones INE; pruebas reales en Edge/Chromium, cuatro anchos desde 320 px, revisión axe-core sin infracciones automáticas en cuatro estados, archivos PNG descargados, portapapeles, modo sin conexión y rechazo de datos inválidos. Consulta `evidencia/pruebas.json`, `evidencia/pruebas-mejoras.json`, `evidencia/accesibilidad-mejoras.json` y `fuentes/EDADES_2024.md` para el alcance exacto. No es certificación WCAG ni piloto con usuarios.
-- **PENDIENTE DE VALIDAR:** piloto con personas usuarias, auditoría completa con lectores de pantalla, prueba en teléfonos físicos y Safari/Firefox; revisión del equipo, registro y cartas firmadas; permisos de acceso a entregables antes del envío. Ninguno se presenta como ya realizado.
-- **MEJORA FUTURA:** incorporar las 32 entidades después de validar las bases completas, mapa accesible y PWA. No se han inventado datos faltantes.
+- Seis capítulos, seis elecciones nacionales, ocho entidades y 18 grupos de edad nacionales de 2024.
+- Denominador interactivo: sí votaron, no votaron y exclusión de no especificados.
+- Comparador por tipo electoral y escenarios A/B con tasas, puntos porcentuales y referencia observada.
+- Siete preguntas con retroalimentación, resultado y reinicio; ninguna respuesta se almacena.
+- Tarjetas PNG horizontal, vertical e historia, con descripción accesible y fuente.
+- Menú móvil, indicador de capítulo y recorridos breve/jurado con ejemplos reproducibles.
+- Kit docente PDF y editable, protocolo de piloto y registro vacío.
+- Carrusel de cinco láminas con textos alternativos, guion narrativo de cuatro páginas y presentación de diez diapositivas.
+- Pitch MP4 1080p de 170 segundos: montaje de capturas actuales, voz sintética Sabina declarada, subtítulos y transcripción.
 
-## Archivos
+## Materiales
 
-| Carpeta / archivo | Contenido |
+| Archivo | Uso |
 |---|---|
-| `dist/` | Aplicación y código fuente publicable |
-| `dist/data/ccpc_resumen.json` | Fuente única de indicadores y metadatos |
-| `dist/js/` | Datos, cálculo, visualización, narrativa, aprendizaje, escenarios, exportación y arranque |
-| `100_VOCES_ABRIR.html` | Distribución autónoma generada |
-| `docs/` | Auditoría, diseño, componentes, datos, metodología, pruebas y despliegue |
-| `fuentes/` | Registro de verificación y documentos oficiales consultados |
-| `entregables/editoriales/` | Guion PDF de 4 páginas, presentación de 10 diapositivas, aula, difusión y pitch |
-| `entregables/redes/` | Tarjetas reales exportadas por la aplicación |
-| `entregables/video/` | Video y notas de producción, con verificación de dimensiones y duración |
-| `evidencia/` | Reporte automático, capturas y exportaciones revisadas |
-| `tests/` | Pruebas funcionales reproducibles |
-| `scripts/build.py` | Genera JS de datos, CSV y HTML autónomo desde fuentes locales |
+| [Kit docente PDF](dist/recursos/100_VOCES_Kit_Docente.pdf) | Actividad de 15 minutos, respuestas y piloto |
+| [Kit editable ZIP](dist/recursos/100_VOCES_Kit_Docente.zip) | Documentos y plantilla sin resultados |
+| [Carrusel ZIP](dist/recursos/100_VOCES_Carrusel.zip) | Cinco imágenes y descripciones |
+| [Video MP4](dist/recursos/100_VOCES_Pitch_1080p_2m50.mp4) | Pitch actualizado |
+| [Presentación PDF](dist/recursos/100_VOCES_Presentacion_Ejecutiva_10.pdf) | Diez diapositivas |
+| [Guion PDF](entregables/editoriales/100_VOCES_Guion_Narrativo_4_paginas.pdf) | Historia y difusión |
+| [Datos JSON](dist/data/ccpc_resumen.json) | Indicadores y fuentes por registro |
 
-El video actualizado está en `entregables/video/100_VOCES_Pitch_1080p_2m50.mp4`: 2:50, 1080p, narración sintética Sabina identificada y subtítulos integrados. Se verificó resolución, duración y presencia de audio. Es un montaje de capturas reales, no una grabación continua. No está subido a un servicio de video.
+## Desarrollo y pruebas
 
-## Mantener y verificar
-
-Modifica módulos en `dist/js/`, estructura en `dist/index.html`, estilos en `dist/styles.css` e indicadores únicamente en el JSON. Después ejecuta:
+Node.js 20+ y Python 3 son suficientes para las pruebas y la construcción de la aplicación. Instalar las dependencias fijadas:
 
 ```sh
+npm ci
 python scripts/build.py
+npm test
 ```
 
-Para las pruebas de navegador se necesita Node.js, Playwright y Microsoft Edge. El script usa el paquete instalado en el entorno de trabajo; en otro equipo instala Playwright como dependencia de desarrollo (`npm install --no-save playwright`) o adapta su ruta. Con el servidor anterior activo:
+Por defecto las pruebas usan Microsoft Edge instalado. En otro entorno, ejecutar `npx playwright install chromium` y establecer `VOCES_BROWSER=chromium` antes de `npm test`. En PowerShell: `$env:VOCES_BROWSER='chromium'`; en bash: `VOCES_BROWSER=chromium npm test`. El flujo de GitHub Actions hace esa preparación en Linux; su resultado se comprueba en Actions después del envío.
+
+`npm test` inicia su propio servidor en un puerto disponible y ejecuta cuatro suites. Se verificaron localmente **30 grupos funcionales y seis estados de axe sin infracciones**. No es certificación WCAG ni prueba con usuarios.
+
+El código mantenido está en `dist/js/`, `dist/index.html` y `dist/styles.css`; en este proyecto estático, `dist/` contiene las fuentes publicables. Los datos se editan únicamente en `dist/data/ccpc_resumen.json`. `scripts/build.py` sincroniza JS, CSV, materiales y HTML autónomo. `scripts/prepare.py` es un registro histórico y no se debe ejecutar como build.
+
+Para regenerar el carrusel, mantener el servidor local en 8765 y ejecutar `npm run resources`, después `npm run build`. Los generadores editoriales requieren las bibliotecas de `requirements-editoriales.txt`; el video necesita además FFmpeg, Windows y voz Sabina para síntesis.
+
+## Empaque
 
 ```sh
-node tests/browser.cjs
+python scripts/report.py
+python scripts/package.py
 ```
 
-El reporte guarda resultados observados y límites. La ejecución revisa tanto HTTP como el HTML autónomo. `scripts/prepare.py` documenta la transformación inicial del prototipo y **no debe ejecutarse como build**: restauraría la base inicial anterior a los ajustes finales. `scripts/fonts.py` describe la descarga inicial; las fuentes y licencias ya están incluidas y no hace falta descargar nada.
+El paquete, `100_VOCES_RETO3_ENTREGA.zip`, se crea en la carpeta superior junto a su SHA-256. Incluye manifiesto interno; verifica datos de edades, escenarios A/B y materiales. El nombre administrativo definitivo depende del equipo y su inscripción.
 
-## Fuentes y derechos
+## Alcance y pendientes
 
-Las tasas son publicadas a un decimal. Denominador: registros con sí votaron o no votaron; no incluye los no especificados. No se recalcularon desde la base ZIP nacional. Las diferencias se derivan de valores publicados redondeados. Véase `docs/DATOS_Y_METODOLOGIA.md` y `fuentes/VERIFICACION_CCPC.md`.
+Las tasas son transcripciones de publicaciones oficiales, no cálculos desde la base completa. El denominador excluye no especificados. Las ocho entidades son ilustrativas y heredadas del prototipo, no una muestra probabilística. Las edades son nacionales y no se cruzan con la selección de entidad. Los escenarios no son predicciones.
 
-Diseño y código continúan el prototipo proporcionado. Manrope y DM Sans se distribuyen con sus licencias SIL OFL en `dist/fonts/`. No se utilizan logotipos institucionales, imágenes de terceros ni datos personales. El equipo debe revisar su autoría y las condiciones de cesión de la convocatoria antes de firmar. Este paquete no incluye firmas ni prueba de inscripción y no se ha enviado al INE.
+Pendientes reales: realizar el piloto, probar lectores de pantalla y teléfonos físicos, revisar Safari/Firefox, comprobar acceso para evaluadores y completar registro/cartas con evidencias del equipo. No se firmaron documentos ni se envió la postulación.
+
+Manrope y DM Sans incluyen sus licencias SIL OFL. No se usa identidad institucional ni se solicitan datos personales. El equipo debe verificar autoría y permisos antes de cualquier cesión.

@@ -1,0 +1,22 @@
+{
+  "name": "100-voces",
+  "version": "1.1.0",
+  "private": true,
+  "description": "Experiencia educativa independiente de participación ciudadana",
+  "scripts": {
+    "build": "python scripts/build.py",
+    "test": "node tests/run.cjs",
+    "test:browser": "node tests/browser.cjs",
+    "test:improvements": "node tests/improvements.cjs",
+    "test:release": "node tests/release.cjs",
+    "test:accessibility": "node tests/accessibility.cjs",
+    "resources": "node scripts/carousel.cjs",
+    "package:delivery": "python scripts/package.py"
+  },
+  "engines": { "node": ">=20" },
+  "devDependencies": {
+    "playwright": "1.62.1",
+    "axe-core": "4.10.3",
+    "prettier": "3.6.2"
+  }
+}

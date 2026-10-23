@@ -1,6 +1,18 @@
 /* Las narrativas solo describen observaciones y límites. */
-Object.assign(Voces,{
- contexts:{aula:'¿Qué podemos concluir y qué no podemos concluir de este dato?',comunidad:'¿Qué otra información necesitamos para entender nuestro contexto?',redes:'Un dato abre preguntas. Consulta su fuente antes de compartir.'},
- evidence(d){return `<dl><dt>Indicador</dt><dd>Participación · ${d.scope} · ${d.year} · elección ${d.kind}</dd><dt>Valor publicado</dt><dd>${Voces.fmt(d.participation)} % (un decimal)</dd><dt>Cálculo CCPC</dt><dd>Sí votaron ÷ (sí votaron + no votaron) × 100. Excluye registros no especificados.</dd><dt>Procedencia</dt><dd><a href="${d.source}" target="_blank" rel="noopener">INE · ${d.source_title} · p. ${d.source_page} ↗</a></dd><dt>Revisión</dt><dd>${d.reviewed_at} · ${d.verification}</dd><dt>Límites</dt><dd>Transcripción de un agregado publicado. No permite identificar motivos individuales ni efectos causales. No se recalculó desde la base completa.</dd></dl>`;},
- compareText(a,b){const n=Voces.delta(a.participation,b.participation);return a.year===b.year?`Elegiste ${a.year} en ambos extremos: diferencia de 0,0 pp. Selecciona otro año del mismo tipo para comparar.`:`De ${a.year} a ${b.year}, la tasa ${n>0?'aumenta':n<0?'disminuye':'se mantiene'} de ${Voces.fmt(a.participation)} % a ${Voces.fmt(b.participation)} %: ${Voces.pp(n)}. Son elecciones ${a.kind==='presidencial'?'presidenciales':'intermedias'}. La diferencia no explica sus causas.`;}
+Object.assign(Voces, {
+  contexts: {
+    aula: "¿Qué podemos concluir y qué no podemos concluir de este dato?",
+    comunidad:
+      "¿Qué otra información necesitamos para entender nuestro contexto?",
+    redes: "Un dato abre preguntas. Consulta su fuente antes de compartir.",
+  },
+  evidence(d) {
+    return `<dl><dt>Indicador</dt><dd>Participación · ${d.scope} · ${d.year} · elección ${d.kind}</dd><dt>Valor publicado</dt><dd>${Voces.fmt(d.participation)} % (un decimal)</dd><dt>Cálculo CCPC</dt><dd>Sí votaron ÷ (sí votaron + no votaron) × 100. Excluye registros no especificados.</dd><dt>Procedencia</dt><dd><a href="${d.source}" target="_blank" rel="noopener">INE · ${d.source_title} · p. ${d.source_page} ↗</a></dd><dt>Revisión</dt><dd>${d.reviewed_at} · ${d.verification}</dd><dt>Límites</dt><dd>Transcripción de un agregado publicado. No permite identificar motivos individuales ni efectos causales. No se recalculó desde la base completa.</dd></dl>`;
+  },
+  compareText(a, b) {
+    const n = Voces.delta(a.participation, b.participation);
+    return a.year === b.year
+      ? `Elegiste ${a.year} en ambos extremos: diferencia de 0,0 pp. Selecciona otro año del mismo tipo para comparar.`
+      : `De ${a.year} a ${b.year}, la tasa ${n > 0 ? "aumenta" : n < 0 ? "disminuye" : "se mantiene"} de ${Voces.fmt(a.participation)} % a ${Voces.fmt(b.participation)} %: ${Voces.pp(n)}. Son elecciones ${a.kind === "presidencial" ? "presidenciales" : "intermedias"}. La diferencia no explica sus causas.`;
+  },
 });

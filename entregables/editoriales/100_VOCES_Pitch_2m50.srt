@@ -15,8 +15,8 @@ reconocer sus límites.
 
 4
 00:00:21,000 --> 00:00:28,000
-Usamos los Conteos Censales de Participación
-Ciudadana del INE.
+La tasa excluye los registros no especificados
+de su denominador.
 
 5
 00:00:28,000 --> 00:00:35,000
@@ -57,33 +57,33 @@ selección demostrativa de 2024.
 
 13
 00:01:24,000 --> 00:01:31,000
-Veracruz registra 58,4 por ciento: 1,3 puntos
-menos que la tasa nacional.
+Por edad, de 25 a 29 años, la tasa nacional es
+47,3 por ciento.
 
 14
 00:01:31,000 --> 00:01:38,000
-La comparación describe una diferencia. No
-demuestra sus causas.
+Son dieciocho grupos nacionales. No describen
+cada estado ni explican causas.
 
 15
 00:01:38,000 --> 00:01:45,000
-Cinco preguntas con retroalimentación convierten
-esa lectura crítica en práctica.
+Siete preguntas explican errores, denominadores
+y edades con alcance nacional.
 
 16
 00:01:45,000 --> 00:01:52,000
-El laboratorio distingue el valor observado de
-un escenario hipotético.
+Comparamos dos escenarios con la referencia de
+59,7 por ciento.
 
 17
 00:01:52,000 --> 00:01:59,000
-Pasar de 59,7 a 64,7 suma cinco puntos
-porcentuales.
+A resta cinco puntos; B suma cinco. Entre ambos
+hay diez puntos.
 
 18
 00:01:59,000 --> 00:02:06,000
-Es un cambio relativo de aproximadamente 8,4 por
-ciento. No es una predicción.
+Son hipótesis aritméticas para comparar. No
+predicen lo que sucederá.
 
 19
 00:02:06,000 --> 00:02:13,000
@@ -92,13 +92,13 @@ contexto y fuente.
 
 20
 00:02:13,000 --> 00:02:20,000
-Tres tamaños y una descripción accesible
-permiten reutilizar la explicación.
+Tarjetas en tres tamaños y un carrusel de cinco
+láminas incluyen texto accesible.
 
 21
 00:02:20,000 --> 00:02:27,000
-La experiencia incluye una ruta rápida, un modo
-jurado y una ficha de aula.
+El kit docente propone un primer taller de
+quince minutos con jóvenes.
 
 22
 00:02:27,000 --> 00:02:34,000
@@ -107,8 +107,8 @@ conexión, con los archivos disponibles.
 
 23
 00:02:34,000 --> 00:02:41,000
-Su adopción requiere revisión institucional. El
-impacto educativo está por evaluar.
+El sitio está privado. El acceso público y el
+aprendizaje deben comprobarse.
 
 24
 00:02:41,000 --> 00:02:50,000

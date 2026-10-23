@@ -1,14 +1,12 @@
 from pathlib import Path
-import json,runpy,subprocess,wave,struct,math,sys,re
+import json,runpy,subprocess,wave,struct,math,sys,re,hashlib,textwrap
 from PIL import Image,ImageDraw,ImageFont,ImageOps
 
 ROOT=Path(__file__).resolve().parent; PROJECT=ROOT.parent.parent
 FFMPEG=PROJECT/'.tools/video/imageio_ffmpeg/binaries/ffmpeg-win-x86_64-v7.1.exe'
 segments=runpy.run_path(str(ROOT.parent/'editoriales/generar_editoriales.py'))['captions']
-segments[3]=(21,28,'La tasa cuenta registros con voto o no voto definido. Excluye los no especificados.')
-segments[4]=(28,35,'Según CCPC, en 2024 la tasa nacional fue 59,7 por ciento.')
 voices=[]
-spell={'59,7':'cincuenta y nueve coma siete','62,4':'sesenta y dos coma cuatro','64,7':'sesenta y cuatro coma siete','58,4':'cincuenta y ocho coma cuatro','2,7':'dos coma siete','4,3':'cuatro coma tres','1,3':'uno coma tres','8,4':'ocho coma cuatro','2024':'dos mil veinticuatro','2018':'dos mil dieciocho','CCPC':'Conteos Censales','100 VOCES':'Cien Voces'}
+spell={'59,7':'cincuenta y nueve coma siete','62,4':'sesenta y dos coma cuatro','64,7':'sesenta y cuatro coma siete','54,7':'cincuenta y cuatro coma siete','47,3':'cuarenta y siete coma tres','58,4':'cincuenta y ocho coma cuatro','2,7':'dos coma siete','4,3':'cuatro coma tres','1,3':'uno coma tres','8,4':'ocho coma cuatro','2024':'dos mil veinticuatro','2018':'dos mil dieciocho','CCPC':'Conteos Censales','100 VOCES':'Cien Voces'}
 for i,(a,b,t) in enumerate(segments):
  v=t
  for old,new in spell.items():v=v.replace(old,new)
@@ -32,7 +30,7 @@ shots=[
  ('01_portada.png','Un dato. Una pregunta.','¿Qué significa 59,7%?'),
  ('01_portada.png','100 VOCES','Así participa México.'),
  ('02_nacional.png','Comprender con contexto','Ver · comparar · reconocer límites'),
- ('03_evidencia.png','La base del cálculo','Sí votaron / (Sí votaron + No votaron) × 100'),
+ ('12_denominador.png','La base del cálculo','Sí votaron / (Sí votaron + No votaron) × 100'),
  ('02_nacional.png','La cifra observada','2024 · Nacional · 59,7%'),
  ('02_nacional.png','Una ilustración','Aproximadamente 60 puntos.'),
  ('02_nacional.png','Conservar la precisión','59,7% en la cifra; redondeo en los puntos.'),
@@ -41,20 +39,21 @@ shots=[
  ('04_comparador.png','Puntos porcentuales','59,7 − 62,4 = −2,7 pp'),
  ('04_comparador.png','Cambio relativo','−2,7 / 62,4 × 100 ≈ −4,3%'),
  ('05_territorio.png','Ocho miradas','Selección demostrativa · 2024'),
- ('05_territorio.png','Veracruz','58,4% · −1,3 pp frente al nacional'),
- ('05_territorio.png','Reconocer el límite','Una diferencia no explica sus causas.'),
- ('06_quiz.png','Aprender con el error','Cinco preguntas y retroalimentación.'),
- ('07_escenario.png','Imaginar sin inventar','Valor observado ≠ escenario hipotético'),
- ('07_escenario.png','Una operación','64,7 − 59,7 = +5,0 pp'),
- ('07_escenario.png','No es una predicción','Cambio relativo ≈ +8,4%'),
+ ('13_edades.png','25–29 años','47,3% · Nacional · 2024'),
+ ('13_edades.png','Reconocer el límite','18 grupos nacionales; no datos por estado.'),
+ ('06_quiz.png','Aprender con el error','Siete preguntas y retroalimentación.'),
+ ('07_escenario.png','Dos escenarios','Referencia: 59,7% · A: 54,7% · B: 64,7%'),
+ ('07_escenario.png','Comparar en puntos','A: −5,0 pp · B: +5,0 pp · B−A: 10,0 pp'),
+ ('07_escenario.png','No es una predicción','Hipótesis aritméticas para aprender.'),
  ('tarjeta_horizontal.png','Compartir con fuente','PNG generado por la aplicación.'),
- ('tarjeta_vertical.png','Tres tamaños','1200×630 · 1080×1350 · 1080×1920'),
- ('09_aula.png','Llevarlo al aula','Observar 4 min · comparar 6 · conversar 5'),
+ ('14_carrusel.png','Explicar y compartir','Tres formatos de tarjeta + carrusel de cinco piezas.'),
+ ('09_aula.png','Primer taller: 15 min','Kit docente · jóvenes sin formación estadística'),
  ('11_offline.png','Respaldo sin conexión','Captura del HTML local con la red desactivada.'),
- ('10_fuentes.png','Una propuesta adaptable','Revisión institucional y evaluación pendientes.'),
+ ('10_fuentes.png','Estado transparente','Sitio privado. Acceso público y piloto por comprobar.'),
  ('01_portada.png','Los datos ya hablan.','Hagamos que se entiendan.')]
 
 def frames():
+ assert len(voices)==len(shots)==24
  for i,(seg,shot) in enumerate(zip(voices,shots)):
   im=Image.new('RGB',(1920,1080),'#12142B');d=ImageDraw.Draw(im)
   d.rectangle((54,46,104,53),fill='#EE5D9C');d.text((124,34),'100 VOCES / ASÍ PARTICIPA MÉXICO',font=font(28,True),fill='#F9F7F2')
@@ -65,7 +64,7 @@ def frames():
   px=475+(1370-pic.width)//2;py=128+(742-pic.height)//2
   d.rounded_rectangle((px-3,py-3,px+pic.width+3,py+pic.height+3),radius=4,fill='#D9C4FF');im.paste(pic,(px,py))
   d.rectangle((0,900,1920,1080),fill='#090B18')
-  sublines=lines(seg['text'],font(39),1750);sy=922 if len(sublines)==2 else 945
+  sublines=lines(seg['text'],font(39),1750);assert len(sublines)<=2,seg['text'];sy=922 if len(sublines)==2 else 945
   for line in sublines:
    x=(1920-d.textlength(line,font=font(39)))/2;d.text((x,sy),line,font=font(39),fill='#FFFFFF');sy+=49
   d.text((54,1044),'Voz sintética local: Microsoft Sabina · Proyecto independiente, sin aval del INE',font=font(17),fill='#C9CBD8')
@@ -101,12 +100,10 @@ def encode(video_only=False):
  concat=''
  for seg in voices:concat+=f"file 'frame_{seg['index']:02}.png'\nduration {seg['end']-seg['start']}\n"
  concat+="file 'frame_23.png'\n";(ROOT/'frames.txt').write_text(concat,encoding='utf-8')
- srt='\n\n'.join(f"{i+1}\n{stamp(s['start'])} --> {stamp(s['end'])}\n{s['text']}" for i,s in enumerate(voices))+'\n'
+ srt='\n\n'.join(f"{i+1}\n{stamp(s['start'])} --> {stamp(s['end'])}\n{textwrap.fill(s['text'],width=48,break_long_words=False)}" for i,s in enumerate(voices))+'\n'
  (ROOT/'100_VOCES_Pitch_Final.srt').write_text(srt,encoding='utf-8')
  if video_only:
   log=cmd(['-f','concat','-safe','0','-i',str(ROOT/'frames.txt'),'-t','170','-r','24','-c:v','libx264','-preset','ultrafast','-crf','21','-pix_fmt','yuv420p','-an',str(ROOT/'montaje_sin_audio.mp4')])
- elif (ROOT/'montaje_sin_audio.mp4').exists():
-  log=cmd(['-i',str(ROOT/'montaje_sin_audio.mp4'),'-i',str(ROOT/'narracion_170s.wav'),'-t','170','-c:v','copy','-c:a','aac','-b:a','160k','-movflags','+faststart',str(ROOT/'100_VOCES_Pitch_1080p_2m50.mp4')])
  else:
   log=cmd(['-f','concat','-safe','0','-i',str(ROOT/'frames.txt'),'-i',str(ROOT/'narracion_170s.wav'),'-t','170','-r','24','-c:v','libx264','-preset','ultrafast','-crf','21','-pix_fmt','yuv420p','-c:a','aac','-b:a','160k','-movflags','+faststart',str(ROOT/'100_VOCES_Pitch_1080p_2m50.mp4')])
  (ROOT/'codificacion.log').write_text(log,encoding='utf-8');print('MP4 codificado.',flush=True)
@@ -124,7 +121,16 @@ def verify():
  sheet=Image.new('RGB',(1280,2160),'#FFFFFF')
  for i,im in enumerate(thumbs):sheet.paste(im,((i%2)*640,(i//2)*360))
  sheet.save(ROOT/'revision_fotogramas.jpg',quality=90)
- result={'archivo':mp4.name,'bytes':mp4.stat().st_size,'resolucion':'1920x1080','duracion_segundos':170,'fps':24,'video':'H.264 yuv420p','audio':'AAC, mono, 44100 Hz','volumen_medio_db':float(volume.group(1)),'subtitulos':'integrados en imagen + SRT aparte','origen_visual':'montaje de capturas reales y PNG descargados del prototipo local; no grabación continua','voz':'síntesis local Microsoft Sabina Desktop, es-MX','denominador':'registros Sí votaron + No votaron; excluye no especificados','publicado':False,'revision_visual':'12 fotogramas extraídos para revisión','limitaciones':['No sustituye piloto con usuarios','No implica aval institucional','Voz sintética declarada; puede sustituirse por voz humana']}
+ result={'archivo':mp4.name,'bytes':mp4.stat().st_size,'resolucion':'1920x1080','duracion_segundos':170,'fps':24,'video':'H.264 yuv420p','audio':'AAC, mono, 44100 Hz','volumen_medio_db':float(volume.group(1)),'subtitulos':'integrados en imagen + SRT aparte','origen_visual':'montaje de capturas actuales y PNG descargados del prototipo local; no grabación continua','voz':'síntesis local Microsoft Sabina Desktop, es-MX','denominador':'registros Sí votaron + No votaron; excluye no especificados','contenido':{'preguntas':7,'edades_nacionales':18,'edad_ejemplo':'25–29 años: 47,3%','referencia':59.7,'escenario_A':54.7,'escenario_B':64.7,'taller_minutos':15,'carrusel_piezas':5},'publicado':False,'revision_visual':'12 fotogramas extraídos para revisión','limitaciones':['No sustituye piloto con usuarios','No implica aval institucional','Voz sintética declarada; puede sustituirse por voz humana']}
+ result['sha256']=hashlib.sha256(mp4.read_bytes()).hexdigest()
+ result['huellas_produccion']={str(p.relative_to(ROOT)):hashlib.sha256(p.read_bytes()).hexdigest() for p in [ROOT/'segmentos.json',ROOT/'narracion_170s.wav',*[ROOT/f'frame_{i:02}.png' for i in range(24)]]}
+ result['audio_por_segmento']=[]
+ for seg in voices:
+  with wave.open(str(ROOT/f"audio_{seg['index']:02}.wav"),'rb') as w:
+   pcm=w.readframes(w.getnframes()); samples=struct.unpack('<'+'h'*(len(pcm)//2),pcm)
+   peak=max(abs(n) for n in samples);rms=math.sqrt(sum(n*n for n in samples)/len(samples))
+   assert peak>100 and rms>50,seg['index']
+   result['audio_por_segmento'].append({'segmento':seg['index']+1,'pico_pcm':peak,'rms_pcm':round(rms,1)})
  (ROOT/'verificacion_video.json').write_text(json.dumps(result,ensure_ascii=False,indent=2),encoding='utf-8');print(json.dumps(result,ensure_ascii=False),flush=True)
 
 if __name__=='__main__':

@@ -1,40 +1,64 @@
-# Reporte de pruebas reales
+# Pruebas de 100 VOCES · v1.1.0
 
-Ejecución: 2026-10-21T14:03:18.926Z. Navegador Chromium/Edge 155.0.4283.62. Script: `tests/browser.cjs`. Pruebas sobre HTTP local y archivo autónomo.
+Ejecución reproducible: npm ci y npm test. El ejecutor inicia y detiene su servidor local. Los resultados siguientes proceden de los reportes guardados; no se infieren de la presencia del código.
 
-| Prueba | Esperado | Observado | Estado |
-|---|---|---|---|
-| Cálculos y validación | −2.7 pp; complemento 40.3; relativo 20; rechazar tasas inválidas | Coinciden; cuatro casos inválidos rechazados | VERIFICADO |
-| Seis años | Tasa, complemento, puntos y evidencia actualizados | 6/6 años coinciden | VERIFICADO |
-| Comparador | Separar tipos; −2.7, +4.7 y +7.7 pp | Tres diferencias coinciden y cada grupo tiene 3 años | VERIFICADO |
-| Territorios | 8 entidades; diferencias respecto a 2024 nacional | 8/8 coinciden; selección declarada | VERIFICADO |
-| Aprendizaje | 5 respuestas, feedback, resultado y reinicio | 5/5; pantalla final; reinicio a cero | VERIFICADO |
-| Escenarios | 0–100; subidas, bajadas, cambio nulo y reinicio | 5 valores y extremos comprobados; cálculos coinciden | VERIFICADO |
-| Descargas PNG | Archivos reales 1200×630,1080×1350,1080×1920 | 3 PNG descargados; dimensiones verificadas en cabecera; revisión visual separada | VERIFICADO |
-| Portapapeles | Texto accesible con tasa, año, denominador y fuente | Lectura real del portapapeles coincide | VERIFICADO |
-| Recorridos | 6 pasos y salida por Escape | Recorrido completado; modo jurado abierto/cerrado | VERIFICADO |
-| Responsive | Sin desbordamiento a 320,375,768,1440 px | scrollWidth <= clientWidth en los cuatro anchos | VERIFICADO |
-| Teclado | Saltar al contenido y alcanzar controles principales por Tab | Enlaces, selectores, slider, descarga y copia alcanzables | VERIFICADO |
-| Movimiento reducido | Sin animación de puntos | animation-name: none | VERIFICADO |
-| Archivo autónomo sin red | file:// funcional; cambio de año y exportación | Archivo abrió offline, dato actualizado y PNG descargado | VERIFICADO |
-| Datos inválidos | Mensaje explícito y controles desactivados | Rechazo probado con serie vacía; sin datos sustitutos | VERIFICADO |
-| Consola normal | Sin errores JS ni de recursos | 0 errores durante uso normal | VERIFICADO |
+## Base
 
-## Revisión visual y límites
+Fecha UTC: 2026-10-23T04:43:07.084Z
 
-Se inspeccionaron capturas de escritorio y móvil, además de las tres tarjetas PNG generadas y descargadas. Las piezas muestran cifra, año, contexto, denominador y referencia sin cortes en los ejemplos examinados. Las fuentes Manrope y DM Sans se cargan localmente. El diseño no desborda horizontalmente en los cuatro anchos comprobados.
+| Prueba | Resultado observado |
+|---|---|
+| Cálculos y validación | Coinciden; cuatro casos inválidos rechazados |
+| Seis años | 6/6 años coinciden |
+| Comparador | Tres diferencias coinciden y cada grupo tiene 3 años |
+| Territorios | 8/8 coinciden; selección declarada |
+| Aprendizaje | 7/7; pantalla final; reinicio a cero |
+| Escenarios | 5 valores y extremos comprobados; cálculos coinciden |
+| Descargas PNG | 3 PNG descargados; dimensiones verificadas en cabecera; revisión visual separada |
+| Portapapeles | Lectura real del portapapeles coincide |
+| Recorridos | Recorrido completado; modo jurado abierto/cerrado |
+| Responsive | scrollWidth <= clientWidth en los cuatro anchos |
+| Teclado | Enlaces, selectores, slider, descarga y copia alcanzables |
+| Movimiento reducido | animation-name: none |
+| Archivo autónomo sin red | Archivo abrió offline, dato actualizado y PNG descargado |
+| Datos inválidos | Rechazo probado con serie vacía; sin datos sustitutos |
+| Consola normal | 0 errores durante uso normal |
 
-No se presenta una puntuación Lighthouse ni una certificación WCAG. La prueba automatizada de teclado comprueba accesibilidad de controles principales; no reemplaza la evaluación de lector de pantalla. Pendientes: Safari/Firefox, teléfonos físicos, contraste completo de todos los estados y piloto de comprensión con personas usuarias. No hay métricas de impacto educativo obtenidas.
+## Ampliaciones
 
-## Correcciones durante QA
+Fecha UTC: 2026-10-23T04:43:23.604Z
 
-Se corrigió una validación inicial incorrecta de tipo electoral antes de la primera navegación. La primera suite funcional encontró un 404 de favicon; se añadió un icono SVG embebido y se repitió la suite con cero errores en uso normal. Se ajustaron acentos de texto y puntos para legibilidad y se incorporaron fuentes locales. Las pruebas de datos inválidos provocan deliberadamente un error capturado y visible; no se cuentan como error del recorrido normal.
+| Prueba | Resultado observado |
+|---|---|
+| Serie por edad y errores | 18 valores cotejados con gráfica 5; seis variantes inválidas rechazadas |
+| Denominador | Tres explicaciones y selección exclusivas |
+| Contrastes por edad | 18 selecciones; cambio de vista; fuente del estudio y comparación −12,4 pp |
+| Tarjetas por edad | Transferencia del grupo al generador, cita correcta y tres PNG reales |
+| Escenarios A/B | Extremos, orden inverso, igualdad, reinicio y ejemplo ±5 pp |
+| Adaptación de nuevas vistas | Sin desbordamiento en cuatro anchos; capturas móvil/escritorio |
+| Accesibilidad automática | Cero infracciones en dos estados de las nuevas vistas; no es certificación WCAG |
+| Archivo autónomo | Edades y escenarios A/B funcionan sin red |
+| Consola | Sin errores JavaScript |
 
-## Revisión automática adicional
+## Versión 1.1
 
-Axe-core 4.10.3, reglas WCAG 2 A/AA y 2.1 AA. Se corrigieron once nodos de contraste insuficiente en la primera ejecución. Resultados finales:
+Fecha UTC: 2026-10-23T04:43:50.516Z
 
-- Estado initial: 0 infracciones automáticas, 27 reglas aprobadas, 1 reglas requieren revisión manual.
-- Estado expanded: 0 infracciones automáticas, 29 reglas aprobadas, 1 reglas requieren revisión manual.
+| Prueba | Resultado observado |
+|---|---|
+| Foco territorial | Enter conserva el botón y la entidad seleccionada |
+| Demostración repetible | Entidad, edad, A/B, quiz y tarjeta restablecidos |
+| Navegación móvil | Menú, Escape, foco en destino; portada 768 px a 375×812 |
+| Recursos y texto ampliado | Carrusel sin desborde en 4 anchos; texto base 200% a 640px |
+| Recursos descargables | 14 destinos locales existen y responden con contenido |
+| Distribución autónoma | Siete preguntas y rutas al kit local correctas sin red |
 
-El estado expanded abre evidencia y responde incorrectamente un reactivo. Los resultados están en `evidencia/accesibilidad.json`. Cero infracciones detectadas no equivale a certificación WCAG.
+## Accesibilidad automática
+
+6 estados examinados con axe-core: initial, expanded, resources, mobile-menu, ages, evidence-and-cards. Cero infracciones detectadas. La suite devuelve salida de error si aparecen infracciones.
+
+## Alcance y límites
+
+30 grupos de comprobaciones funcionales aprobados. El piloto sigue sin ejecutarse. Las pruebas no certifican WCAG ni sustituyen lector de pantalla, Safari/Firefox o teléfonos físicos. La ampliación de texto se comprobó como tamaño base 200% a 640px; no equivale a una auditoría completa de zoom. Las tasas se comparan con referencias locales ya cotejadas, no se vuelven a extraer del PDF oficial en cada ejecución.
+
+Se revisaron capturas móviles/escritorio y PNG del carrusel. Los archivos generados se conservan en evidencia/. El informe de video está en entregables/video/verificacion_video.json.

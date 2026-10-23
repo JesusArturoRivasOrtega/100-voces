@@ -1,21 +1,182 @@
 {
   "archivo": "100_VOCES_Pitch_1080p_2m50.mp4",
-  "bytes": 9201686,
+  "bytes": 9324206,
   "resolucion": "1920x1080",
   "duracion_segundos": 170,
   "fps": 24,
   "video": "H.264 yuv420p",
   "audio": "AAC, mono, 44100 Hz",
-  "volumen_medio_db": -21.2,
+  "volumen_medio_db": -21.4,
   "subtitulos": "integrados en imagen + SRT aparte",
-  "origen_visual": "montaje de capturas reales y PNG descargados del prototipo local; no grabación continua",
+  "origen_visual": "montaje de capturas actuales y PNG descargados del prototipo local; no grabación continua",
   "voz": "síntesis local Microsoft Sabina Desktop, es-MX",
   "denominador": "registros Sí votaron + No votaron; excluye no especificados",
+  "contenido": {
+    "preguntas": 7,
+    "edades_nacionales": 18,
+    "edad_ejemplo": "25–29 años: 47,3%",
+    "referencia": 59.7,
+    "escenario_A": 54.7,
+    "escenario_B": 64.7,
+    "taller_minutos": 15,
+    "carrusel_piezas": 5
+  },
   "publicado": false,
   "revision_visual": "12 fotogramas extraídos para revisión",
   "limitaciones": [
     "No sustituye piloto con usuarios",
     "No implica aval institucional",
     "Voz sintética declarada; puede sustituirse por voz humana"
+  ],
+  "sha256": "bb57922db0deef99f4fe240ced895c8a2652e75b3e30fd2b4a51b70f2b5fddda",
+  "huellas_produccion": {
+    "segmentos.json": "98dbe6fd96f4b94e40856d3cad9a34867a524b4a9da2eb0539e58df37a3440d2",
+    "narracion_170s.wav": "d5e470522e160dc3b43fe8f52a1f5b68b4969ff74c60060661031b608682a743",
+    "frame_00.png": "7135a45163d006d9acdcf5bad0a2617041afd8eebd250d255a63986c16f7e500",
+    "frame_01.png": "605da18ad2637a8ae7c497b6c1c246debac045e095dc127872029ebd6c1a937a",
+    "frame_02.png": "becca2d4b6c7d370d0f8143e3addffbe8df8c65330636958ac0a68b71fb940eb",
+    "frame_03.png": "3bf451406d9dec099fb1e76481ce55b743b6e1f9cc11335be339d12aa71749aa",
+    "frame_04.png": "cba3ed6124d631a87b7c2bb04356d68458d2bee07ef2e569023913b67d03e51e",
+    "frame_05.png": "32f085e5d6a3a2657483f508b79b0db17793d7e210eb9fcff8db735992505340",
+    "frame_06.png": "68963f3f2c58c07693cc2263407e38ec0f5343995698d7e04b8b8de35954e391",
+    "frame_07.png": "911bd9db23f98c30671873326bc5dd190c66a915a02f471327b9242e46e1d223",
+    "frame_08.png": "d465a652c991cf718db6d7ebd30eac3baf5f3a7367ea96e0588021d6732e93a9",
+    "frame_09.png": "a89ebae8914384a8062cc413e63f6b3d795f7cb974cdbbe18f05714a52bcf0bd",
+    "frame_10.png": "fb6b6f08dd2f3d43cf3e74e052707dbe46b1808ecf3d6089df4cac8ed6d8c38f",
+    "frame_11.png": "9ab54bad4aa9ccd1fd4c3dc2d42037f580767f0ba7925ee9e88ba5045d1e697d",
+    "frame_12.png": "a752049f9b1f41c7038e4cd251302fe5af26ee7e7a6498fe247ddea024fb58ed",
+    "frame_13.png": "b4823baa00bcbba2c35909c1f3d6c4f902e755e8ca6ca91694a399057d8ee0ad",
+    "frame_14.png": "9be01515e454241ae910dbedd634b8b5019b0c6ba1bde942343c28afdc768829",
+    "frame_15.png": "7306a6198e516c723eac19603ffcc0816fedc53ebb66c810a72384c6404af3b0",
+    "frame_16.png": "716dbbbe118f4b4580de521dfea46b0706c1feb8318d106a76f0c9fa22ebb823",
+    "frame_17.png": "3ed354d4a2dc17b51078c1d76e8e7b5262b206e8452b32d74eacdf5afa8d634d",
+    "frame_18.png": "a9d6df39419b419a07cf58704f392d1be2ca70154d97cfc3f4e0808d16c2eb81",
+    "frame_19.png": "30ef3654d041d9bfc2f413c25d614f5617d4151cd238549b32981a003b86fca0",
+    "frame_20.png": "57e43a0510ed4b6e31bbf4cf5c68d13172bba7c16f42916d5e8afb1c2af351fc",
+    "frame_21.png": "ce5ca75e2061a1c77150f45ae9127e6384ea7eb955dda347957d39ec04764665",
+    "frame_22.png": "57a367ef2fa03afdb168c617df25f4b50b41dc56addba51b44352cee420f6cf4",
+    "frame_23.png": "32cd5a45d9f72d60c0920ba6754c7a3114068c5507cc96e1535f826d20bceb32"
+  },
+  "audio_por_segmento": [
+    {
+      "segmento": 1,
+      "pico_pcm": 20369,
+      "rms_pcm": 2726.9
+    },
+    {
+      "segmento": 2,
+      "pico_pcm": 18291,
+      "rms_pcm": 2618.1
+    },
+    {
+      "segmento": 3,
+      "pico_pcm": 20695,
+      "rms_pcm": 2653.5
+    },
+    {
+      "segmento": 4,
+      "pico_pcm": 25629,
+      "rms_pcm": 2440.0
+    },
+    {
+      "segmento": 5,
+      "pico_pcm": 23140,
+      "rms_pcm": 3177.2
+    },
+    {
+      "segmento": 6,
+      "pico_pcm": 17965,
+      "rms_pcm": 2589.5
+    },
+    {
+      "segmento": 7,
+      "pico_pcm": 25418,
+      "rms_pcm": 2529.0
+    },
+    {
+      "segmento": 8,
+      "pico_pcm": 20898,
+      "rms_pcm": 2774.7
+    },
+    {
+      "segmento": 9,
+      "pico_pcm": 21129,
+      "rms_pcm": 3366.5
+    },
+    {
+      "segmento": 10,
+      "pico_pcm": 22969,
+      "rms_pcm": 2447.6
+    },
+    {
+      "segmento": 11,
+      "pico_pcm": 20391,
+      "rms_pcm": 3032.6
+    },
+    {
+      "segmento": 12,
+      "pico_pcm": 19924,
+      "rms_pcm": 3099.7
+    },
+    {
+      "segmento": 13,
+      "pico_pcm": 23510,
+      "rms_pcm": 3141.6
+    },
+    {
+      "segmento": 14,
+      "pico_pcm": 21628,
+      "rms_pcm": 2873.5
+    },
+    {
+      "segmento": 15,
+      "pico_pcm": 19681,
+      "rms_pcm": 2931.6
+    },
+    {
+      "segmento": 16,
+      "pico_pcm": 21260,
+      "rms_pcm": 2948.1
+    },
+    {
+      "segmento": 17,
+      "pico_pcm": 24933,
+      "rms_pcm": 2565.8
+    },
+    {
+      "segmento": 18,
+      "pico_pcm": 18987,
+      "rms_pcm": 2619.0
+    },
+    {
+      "segmento": 19,
+      "pico_pcm": 25552,
+      "rms_pcm": 2773.6
+    },
+    {
+      "segmento": 20,
+      "pico_pcm": 21567,
+      "rms_pcm": 2799.5
+    },
+    {
+      "segmento": 21,
+      "pico_pcm": 19551,
+      "rms_pcm": 2610.4
+    },
+    {
+      "segmento": 22,
+      "pico_pcm": 23650,
+      "rms_pcm": 2804.8
+    },
+    {
+      "segmento": 23,
+      "pico_pcm": 22671,
+      "rms_pcm": 2805.6
+    },
+    {
+      "segmento": 24,
+      "pico_pcm": 25661,
+      "rms_pcm": 2542.5
+    }
   ]
 }

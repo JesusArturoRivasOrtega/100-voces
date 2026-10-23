@@ -1,658 +1,1131 @@
-[
-  {
-    "state": "initial",
-    "violations": [],
-    "incomplete": [
-      {
-        "id": "color-contrast",
-        "impact": "serious",
-        "tags": [
-          "cat.color",
-          "wcag2aa",
-          "wcag143",
-          "TTv5",
-          "TT13.c",
-          "EN-301-549",
-          "EN-9.1.4.3",
-          "ACT"
-        ],
-        "description": "Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds",
-        "help": "Elements must meet minimum color contrast ratio thresholds",
-        "helpUrl": "https://dequeuniversity.com/rules/axe/4.10/color-contrast?application=axeAPI",
-        "nodes": [
-          {
-            "any": [
-              {
-                "id": "color-contrast",
-                "data": {
-                  "fontSize": "7.5pt (10px)",
-                  "fontWeight": "bold",
-                  "messageKey": "pseudoContent",
-                  "expectedContrastRatio": "4.5:1"
-                },
-                "relatedNodes": [
-                  {
-                    "html": "<div class=\"hero-right\" aria-hidden=\"true\">",
-                    "target": [
-                      ".hero-right"
-                    ]
-                  }
-                ],
-                "impact": "serious",
-                "message": "Element's background color could not be determined due to a pseudo element"
-              }
-            ],
-            "all": [],
-            "none": [],
-            "impact": "serious",
-            "html": "<span>VISUALIZACIÓN / 001</span>",
-            "target": [
-              ".hero-visual-top > span:nth-child(1)"
-            ],
-            "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a pseudo element"
-          },
-          {
-            "any": [
-              {
-                "id": "color-contrast",
-                "data": {
-                  "fontSize": "7.5pt (10px)",
-                  "fontWeight": "bold",
-                  "messageKey": "pseudoContent",
-                  "expectedContrastRatio": "4.5:1"
-                },
-                "relatedNodes": [
-                  {
-                    "html": "<div class=\"hero-right\" aria-hidden=\"true\">",
-                    "target": [
-                      ".hero-right"
-                    ]
-                  }
-                ],
-                "impact": "serious",
-                "message": "Element's background color could not be determined due to a pseudo element"
-              }
-            ],
-            "all": [],
-            "none": [],
-            "impact": "serious",
-            "html": "<span>CCPC — 2024</span>",
-            "target": [
-              ".hero-visual-top > span:nth-child(2)"
-            ],
-            "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a pseudo element"
-          },
-          {
-            "any": [
-              {
-                "id": "color-contrast",
-                "data": {
-                  "fontSize": "84.0pt (112px)",
-                  "fontWeight": "bold",
-                  "messageKey": "pseudoContent",
-                  "expectedContrastRatio": "3:1"
-                },
-                "relatedNodes": [
-                  {
-                    "html": "<div class=\"hero-right\" aria-hidden=\"true\">",
-                    "target": [
-                      ".hero-right"
-                    ]
-                  }
-                ],
-                "impact": "serious",
-                "message": "Element's background color could not be determined due to a pseudo element"
-              }
-            ],
-            "all": [],
-            "none": [],
-            "impact": "serious",
-            "html": "<span class=\"orbit-big\">100</span>",
-            "target": [
-              ".orbit-big"
-            ],
-            "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a pseudo element"
-          },
-          {
-            "any": [
-              {
-                "id": "color-contrast",
-                "data": {
-                  "fontSize": "9.0pt (12px)",
-                  "fontWeight": "bold",
-                  "messageKey": "pseudoContent",
-                  "expectedContrastRatio": "4.5:1"
-                },
-                "relatedNodes": [
-                  {
-                    "html": "<div class=\"hero-right\" aria-hidden=\"true\">",
-                    "target": [
-                      ".hero-right"
-                    ]
-                  }
-                ],
-                "impact": "serious",
-                "message": "Element's background color could not be determined due to a pseudo element"
-              }
-            ],
-            "all": [],
-            "none": [],
-            "impact": "serious",
-            "html": "<span class=\"orbit-small\">puntos para<br>entendernos</span>",
-            "target": [
-              ".orbit-small"
-            ],
-            "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a pseudo element"
-          },
-          {
-            "any": [
-              {
-                "id": "color-contrast",
-                "data": {
-                  "messageKey": "nonBmp"
-                },
-                "relatedNodes": [],
-                "impact": "serious",
-                "message": "Element content contains only non-text characters"
-              }
-            ],
-            "all": [],
-            "none": [],
-            "impact": "serious",
-            "html": "<span class=\"orbit-star star-1\">✦</span>",
-            "target": [
-              ".star-1"
-            ],
-            "failureSummary": "Fix any of the following:\n  Element content contains only non-text characters"
-          },
-          {
-            "any": [
-              {
-                "id": "color-contrast",
-                "data": {
-                  "fontSize": "7.5pt (10px)",
-                  "fontWeight": "bold",
-                  "messageKey": "pseudoContent",
-                  "expectedContrastRatio": "4.5:1"
-                },
-                "relatedNodes": [
-                  {
-                    "html": "<div class=\"hero-right\" aria-hidden=\"true\">",
-                    "target": [
-                      ".hero-right"
-                    ]
-                  }
-                ],
-                "impact": "serious",
-                "message": "Element's background color could not be determined due to a pseudo element"
-              }
-            ],
-            "all": [],
-            "none": [],
-            "impact": "serious",
-            "html": "<span>01 / ENTENDER</span>",
-            "target": [
-              ".hero-visual-bottom > span:nth-child(1)"
-            ],
-            "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a pseudo element"
-          },
-          {
-            "any": [
-              {
-                "id": "color-contrast",
-                "data": {
-                  "fontSize": "7.5pt (10px)",
-                  "fontWeight": "bold",
-                  "messageKey": "pseudoContent",
-                  "expectedContrastRatio": "4.5:1"
-                },
-                "relatedNodes": [
-                  {
-                    "html": "<div class=\"hero-right\" aria-hidden=\"true\">",
-                    "target": [
-                      ".hero-right"
-                    ]
-                  }
-                ],
-                "impact": "serious",
-                "message": "Element's background color could not be determined due to a pseudo element"
-              }
-            ],
-            "all": [],
-            "none": [],
-            "impact": "serious",
-            "html": "<span>DESLIZA PARA EXPLORAR ↓</span>",
-            "target": [
-              ".hero-visual-bottom > span:nth-child(2)"
-            ],
-            "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a pseudo element"
-          },
-          {
-            "any": [
-              {
-                "id": "color-contrast",
-                "data": {
-                  "messageKey": "nonBmp"
-                },
-                "relatedNodes": [],
-                "impact": "serious",
-                "message": "Element content contains only non-text characters"
-              }
-            ],
-            "all": [],
-            "none": [],
-            "impact": "serious",
-            "html": "<span class=\"denominator-symbol\">✓</span>",
-            "target": [
-              "button[data-denominator=\"yes\"] > .denominator-symbol"
-            ],
-            "failureSummary": "Fix any of the following:\n  Element content contains only non-text characters"
-          },
-          {
-            "any": [
-              {
-                "id": "color-contrast",
-                "data": {
-                  "messageKey": "nonBmp"
-                },
-                "relatedNodes": [],
-                "impact": "serious",
-                "message": "Element content contains only non-text characters"
-              }
-            ],
-            "all": [],
-            "none": [],
-            "impact": "serious",
-            "html": "<span class=\"denominator-symbol\">○</span>",
-            "target": [
-              "button[data-denominator=\"no\"] > .denominator-symbol"
-            ],
-            "failureSummary": "Fix any of the following:\n  Element content contains only non-text characters"
-          },
-          {
-            "any": [
-              {
-                "id": "color-contrast",
-                "data": {
-                  "messageKey": "nonBmp"
-                },
-                "relatedNodes": [],
-                "impact": "serious",
-                "message": "Element content contains only non-text characters"
-              }
-            ],
-            "all": [],
-            "none": [],
-            "impact": "serious",
-            "html": "<span aria-hidden=\"true\">↓</span>",
-            "target": [
-              "#downloadCard > span[aria-hidden=\"true\"]"
-            ],
-            "failureSummary": "Fix any of the following:\n  Element content contains only non-text characters"
-          },
-          {
-            "any": [
-              {
-                "id": "color-contrast",
-                "data": {
-                  "contrastRatio": 0,
-                  "fontSize": "9.0pt (12px)",
-                  "fontWeight": "normal",
-                  "messageKey": "elmPartiallyObscured",
-                  "expectedContrastRatio": "4.5:1"
-                },
-                "relatedNodes": [
-                  {
-                    "html": "<textarea id=\"accessibleText\" rows=\"6\" readonly=\"\"></textarea>",
-                    "target": [
-                      "#accessibleText"
-                    ]
-                  }
-                ],
-                "impact": "serious",
-                "message": "Element's background color could not be determined because it's partially obscured by another element"
-              }
-            ],
-            "all": [],
-            "none": [],
-            "impact": "serious",
-            "html": "<textarea id=\"accessibleText\" rows=\"6\" readonly=\"\"></textarea>",
-            "target": [
-              "#accessibleText"
-            ],
-            "failureSummary": "Fix any of the following:\n  Element's background color could not be determined because it's partially obscured by another element"
-          }
-        ]
-      }
-    ],
-    "passes": 27
-  },
-  {
-    "state": "expanded",
-    "violations": [],
-    "incomplete": [
-      {
-        "id": "color-contrast",
-        "impact": "serious",
-        "tags": [
-          "cat.color",
-          "wcag2aa",
-          "wcag143",
-          "TTv5",
-          "TT13.c",
-          "EN-301-549",
-          "EN-9.1.4.3",
-          "ACT"
-        ],
-        "description": "Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds",
-        "help": "Elements must meet minimum color contrast ratio thresholds",
-        "helpUrl": "https://dequeuniversity.com/rules/axe/4.10/color-contrast?application=axeAPI",
-        "nodes": [
-          {
-            "any": [
-              {
-                "id": "color-contrast",
-                "data": {
-                  "fontSize": "7.5pt (10px)",
-                  "fontWeight": "bold",
-                  "messageKey": "pseudoContent",
-                  "expectedContrastRatio": "4.5:1"
-                },
-                "relatedNodes": [
-                  {
-                    "html": "<div class=\"hero-right\" aria-hidden=\"true\">",
-                    "target": [
-                      ".hero-right"
-                    ]
-                  }
-                ],
-                "impact": "serious",
-                "message": "Element's background color could not be determined due to a pseudo element"
-              }
-            ],
-            "all": [],
-            "none": [],
-            "impact": "serious",
-            "html": "<span>VISUALIZACIÓN / 001</span>",
-            "target": [
-              ".hero-visual-top > span:nth-child(1)"
-            ],
-            "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a pseudo element"
-          },
-          {
-            "any": [
-              {
-                "id": "color-contrast",
-                "data": {
-                  "fontSize": "7.5pt (10px)",
-                  "fontWeight": "bold",
-                  "messageKey": "pseudoContent",
-                  "expectedContrastRatio": "4.5:1"
-                },
-                "relatedNodes": [
-                  {
-                    "html": "<div class=\"hero-right\" aria-hidden=\"true\">",
-                    "target": [
-                      ".hero-right"
-                    ]
-                  }
-                ],
-                "impact": "serious",
-                "message": "Element's background color could not be determined due to a pseudo element"
-              }
-            ],
-            "all": [],
-            "none": [],
-            "impact": "serious",
-            "html": "<span>CCPC — 2024</span>",
-            "target": [
-              ".hero-visual-top > span:nth-child(2)"
-            ],
-            "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a pseudo element"
-          },
-          {
-            "any": [
-              {
-                "id": "color-contrast",
-                "data": {
-                  "fontSize": "84.0pt (112px)",
-                  "fontWeight": "bold",
-                  "messageKey": "pseudoContent",
-                  "expectedContrastRatio": "3:1"
-                },
-                "relatedNodes": [
-                  {
-                    "html": "<div class=\"hero-right\" aria-hidden=\"true\">",
-                    "target": [
-                      ".hero-right"
-                    ]
-                  }
-                ],
-                "impact": "serious",
-                "message": "Element's background color could not be determined due to a pseudo element"
-              }
-            ],
-            "all": [],
-            "none": [],
-            "impact": "serious",
-            "html": "<span class=\"orbit-big\">100</span>",
-            "target": [
-              ".orbit-big"
-            ],
-            "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a pseudo element"
-          },
-          {
-            "any": [
-              {
-                "id": "color-contrast",
-                "data": {
-                  "fontSize": "9.0pt (12px)",
-                  "fontWeight": "bold",
-                  "messageKey": "pseudoContent",
-                  "expectedContrastRatio": "4.5:1"
-                },
-                "relatedNodes": [
-                  {
-                    "html": "<div class=\"hero-right\" aria-hidden=\"true\">",
-                    "target": [
-                      ".hero-right"
-                    ]
-                  }
-                ],
-                "impact": "serious",
-                "message": "Element's background color could not be determined due to a pseudo element"
-              }
-            ],
-            "all": [],
-            "none": [],
-            "impact": "serious",
-            "html": "<span class=\"orbit-small\">puntos para<br>entendernos</span>",
-            "target": [
-              ".orbit-small"
-            ],
-            "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a pseudo element"
-          },
-          {
-            "any": [
-              {
-                "id": "color-contrast",
-                "data": {
-                  "messageKey": "nonBmp"
-                },
-                "relatedNodes": [],
-                "impact": "serious",
-                "message": "Element content contains only non-text characters"
-              }
-            ],
-            "all": [],
-            "none": [],
-            "impact": "serious",
-            "html": "<span class=\"orbit-star star-1\">✦</span>",
-            "target": [
-              ".star-1"
-            ],
-            "failureSummary": "Fix any of the following:\n  Element content contains only non-text characters"
-          },
-          {
-            "any": [
-              {
-                "id": "color-contrast",
-                "data": {
-                  "fontSize": "7.5pt (10px)",
-                  "fontWeight": "bold",
-                  "messageKey": "pseudoContent",
-                  "expectedContrastRatio": "4.5:1"
-                },
-                "relatedNodes": [
-                  {
-                    "html": "<div class=\"hero-right\" aria-hidden=\"true\">",
-                    "target": [
-                      ".hero-right"
-                    ]
-                  }
-                ],
-                "impact": "serious",
-                "message": "Element's background color could not be determined due to a pseudo element"
-              }
-            ],
-            "all": [],
-            "none": [],
-            "impact": "serious",
-            "html": "<span>01 / ENTENDER</span>",
-            "target": [
-              ".hero-visual-bottom > span:nth-child(1)"
-            ],
-            "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a pseudo element"
-          },
-          {
-            "any": [
-              {
-                "id": "color-contrast",
-                "data": {
-                  "fontSize": "7.5pt (10px)",
-                  "fontWeight": "bold",
-                  "messageKey": "pseudoContent",
-                  "expectedContrastRatio": "4.5:1"
-                },
-                "relatedNodes": [
-                  {
-                    "html": "<div class=\"hero-right\" aria-hidden=\"true\">",
-                    "target": [
-                      ".hero-right"
-                    ]
-                  }
-                ],
-                "impact": "serious",
-                "message": "Element's background color could not be determined due to a pseudo element"
-              }
-            ],
-            "all": [],
-            "none": [],
-            "impact": "serious",
-            "html": "<span>DESLIZA PARA EXPLORAR ↓</span>",
-            "target": [
-              ".hero-visual-bottom > span:nth-child(2)"
-            ],
-            "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a pseudo element"
-          },
-          {
-            "any": [
-              {
-                "id": "color-contrast",
-                "data": {
-                  "messageKey": "nonBmp"
-                },
-                "relatedNodes": [],
-                "impact": "serious",
-                "message": "Element content contains only non-text characters"
-              }
-            ],
-            "all": [],
-            "none": [],
-            "impact": "serious",
-            "html": "<span class=\"denominator-symbol\">✓</span>",
-            "target": [
-              "button[data-denominator=\"yes\"] > .denominator-symbol"
-            ],
-            "failureSummary": "Fix any of the following:\n  Element content contains only non-text characters"
-          },
-          {
-            "any": [
-              {
-                "id": "color-contrast",
-                "data": {
-                  "messageKey": "nonBmp"
-                },
-                "relatedNodes": [],
-                "impact": "serious",
-                "message": "Element content contains only non-text characters"
-              }
-            ],
-            "all": [],
-            "none": [],
-            "impact": "serious",
-            "html": "<span class=\"denominator-symbol\">○</span>",
-            "target": [
-              "button[data-denominator=\"no\"] > .denominator-symbol"
-            ],
-            "failureSummary": "Fix any of the following:\n  Element content contains only non-text characters"
-          },
-          {
-            "any": [
-              {
-                "id": "color-contrast",
-                "data": {
-                  "messageKey": "nonBmp"
-                },
-                "relatedNodes": [],
-                "impact": "serious",
-                "message": "Element content contains only non-text characters"
-              }
-            ],
-            "all": [],
-            "none": [],
-            "impact": "serious",
-            "html": "<span aria-hidden=\"true\">↓</span>",
-            "target": [
-              "#downloadCard > span[aria-hidden=\"true\"]"
-            ],
-            "failureSummary": "Fix any of the following:\n  Element content contains only non-text characters"
-          },
-          {
-            "any": [
-              {
-                "id": "color-contrast",
-                "data": {
-                  "contrastRatio": 0,
-                  "fontSize": "9.0pt (12px)",
-                  "fontWeight": "normal",
-                  "messageKey": "elmPartiallyObscured",
-                  "expectedContrastRatio": "4.5:1"
-                },
-                "relatedNodes": [
-                  {
-                    "html": "<textarea id=\"accessibleText\" rows=\"6\" readonly=\"\"></textarea>",
-                    "target": [
-                      "#accessibleText"
-                    ]
-                  }
-                ],
-                "impact": "serious",
-                "message": "Element's background color could not be determined because it's partially obscured by another element"
-              }
-            ],
-            "all": [],
-            "none": [],
-            "impact": "serious",
-            "html": "<textarea id=\"accessibleText\" rows=\"6\" readonly=\"\"></textarea>",
-            "target": [
-              "#accessibleText"
-            ],
-            "failureSummary": "Fix any of the following:\n  Element's background color could not be determined because it's partially obscured by another element"
-          }
-        ]
-      }
-    ],
-    "passes": 29
-  }
-]
+{
+  "fecha": "2026-10-23T04:43:40.350Z",
+  "states": [
+    {
+      "state": "initial",
+      "violations": [],
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "impact": "serious",
+          "tags": [
+            "cat.color",
+            "wcag2aa",
+            "wcag143",
+            "TTv5",
+            "TT13.c",
+            "EN-301-549",
+            "EN-9.1.4.3",
+            "ACT"
+          ],
+          "description": "Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds",
+          "help": "Elements must meet minimum color contrast ratio thresholds",
+          "helpUrl": "https://dequeuniversity.com/rules/axe/4.10/color-contrast?application=axeAPI",
+          "nodes": [
+            {
+              "any": [
+                {
+                  "id": "color-contrast",
+                  "data": {
+                    "fontSize": "7.5pt (10px)",
+                    "fontWeight": "bold",
+                    "messageKey": "pseudoContent",
+                    "expectedContrastRatio": "4.5:1"
+                  },
+                  "relatedNodes": [
+                    {
+                      "html": "<div class=\"hero-right\" aria-hidden=\"true\">",
+                      "target": [
+                        ".hero-right"
+                      ]
+                    }
+                  ],
+                  "impact": "serious",
+                  "message": "Element's background color could not be determined due to a pseudo element"
+                }
+              ],
+              "all": [],
+              "none": [],
+              "impact": "serious",
+              "html": "<span>VISUALIZACIÓN / 001</span>",
+              "target": [
+                ".hero-visual-top > span:nth-child(1)"
+              ],
+              "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a pseudo element"
+            },
+            {
+              "any": [
+                {
+                  "id": "color-contrast",
+                  "data": {
+                    "fontSize": "7.5pt (10px)",
+                    "fontWeight": "bold",
+                    "messageKey": "pseudoContent",
+                    "expectedContrastRatio": "4.5:1"
+                  },
+                  "relatedNodes": [
+                    {
+                      "html": "<div class=\"hero-right\" aria-hidden=\"true\">",
+                      "target": [
+                        ".hero-right"
+                      ]
+                    }
+                  ],
+                  "impact": "serious",
+                  "message": "Element's background color could not be determined due to a pseudo element"
+                }
+              ],
+              "all": [],
+              "none": [],
+              "impact": "serious",
+              "html": "<span>CCPC — 2024</span>",
+              "target": [
+                ".hero-visual-top > span:nth-child(2)"
+              ],
+              "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a pseudo element"
+            },
+            {
+              "any": [
+                {
+                  "id": "color-contrast",
+                  "data": {
+                    "fontSize": "84.0pt (112px)",
+                    "fontWeight": "bold",
+                    "messageKey": "pseudoContent",
+                    "expectedContrastRatio": "3:1"
+                  },
+                  "relatedNodes": [
+                    {
+                      "html": "<div class=\"hero-right\" aria-hidden=\"true\">",
+                      "target": [
+                        ".hero-right"
+                      ]
+                    }
+                  ],
+                  "impact": "serious",
+                  "message": "Element's background color could not be determined due to a pseudo element"
+                }
+              ],
+              "all": [],
+              "none": [],
+              "impact": "serious",
+              "html": "<span class=\"orbit-big\">100</span>",
+              "target": [
+                ".orbit-big"
+              ],
+              "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a pseudo element"
+            },
+            {
+              "any": [
+                {
+                  "id": "color-contrast",
+                  "data": {
+                    "fontSize": "9.0pt (12px)",
+                    "fontWeight": "bold",
+                    "messageKey": "pseudoContent",
+                    "expectedContrastRatio": "4.5:1"
+                  },
+                  "relatedNodes": [
+                    {
+                      "html": "<div class=\"hero-right\" aria-hidden=\"true\">",
+                      "target": [
+                        ".hero-right"
+                      ]
+                    }
+                  ],
+                  "impact": "serious",
+                  "message": "Element's background color could not be determined due to a pseudo element"
+                }
+              ],
+              "all": [],
+              "none": [],
+              "impact": "serious",
+              "html": "<span class=\"orbit-small\">puntos para<br>entendernos</span>",
+              "target": [
+                ".orbit-small"
+              ],
+              "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a pseudo element"
+            },
+            {
+              "any": [
+                {
+                  "id": "color-contrast",
+                  "data": {
+                    "messageKey": "nonBmp"
+                  },
+                  "relatedNodes": [],
+                  "impact": "serious",
+                  "message": "Element content contains only non-text characters"
+                }
+              ],
+              "all": [],
+              "none": [],
+              "impact": "serious",
+              "html": "<span class=\"orbit-star star-1\">✦</span>",
+              "target": [
+                ".star-1"
+              ],
+              "failureSummary": "Fix any of the following:\n  Element content contains only non-text characters"
+            },
+            {
+              "any": [
+                {
+                  "id": "color-contrast",
+                  "data": {
+                    "fontSize": "7.5pt (10px)",
+                    "fontWeight": "bold",
+                    "messageKey": "pseudoContent",
+                    "expectedContrastRatio": "4.5:1"
+                  },
+                  "relatedNodes": [
+                    {
+                      "html": "<div class=\"hero-right\" aria-hidden=\"true\">",
+                      "target": [
+                        ".hero-right"
+                      ]
+                    }
+                  ],
+                  "impact": "serious",
+                  "message": "Element's background color could not be determined due to a pseudo element"
+                }
+              ],
+              "all": [],
+              "none": [],
+              "impact": "serious",
+              "html": "<span>01 / ENTENDER</span>",
+              "target": [
+                ".hero-visual-bottom > span:nth-child(1)"
+              ],
+              "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a pseudo element"
+            },
+            {
+              "any": [
+                {
+                  "id": "color-contrast",
+                  "data": {
+                    "fontSize": "7.5pt (10px)",
+                    "fontWeight": "bold",
+                    "messageKey": "pseudoContent",
+                    "expectedContrastRatio": "4.5:1"
+                  },
+                  "relatedNodes": [
+                    {
+                      "html": "<div class=\"hero-right\" aria-hidden=\"true\">",
+                      "target": [
+                        ".hero-right"
+                      ]
+                    }
+                  ],
+                  "impact": "serious",
+                  "message": "Element's background color could not be determined due to a pseudo element"
+                }
+              ],
+              "all": [],
+              "none": [],
+              "impact": "serious",
+              "html": "<span>DESLIZA PARA EXPLORAR ↓</span>",
+              "target": [
+                ".hero-visual-bottom > span:nth-child(2)"
+              ],
+              "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a pseudo element"
+            },
+            {
+              "any": [
+                {
+                  "id": "color-contrast",
+                  "data": {
+                    "messageKey": "nonBmp"
+                  },
+                  "relatedNodes": [],
+                  "impact": "serious",
+                  "message": "Element content contains only non-text characters"
+                }
+              ],
+              "all": [],
+              "none": [],
+              "impact": "serious",
+              "html": "<span class=\"denominator-symbol\">✓</span>",
+              "target": [
+                "button[data-denominator=\"yes\"] > .denominator-symbol"
+              ],
+              "failureSummary": "Fix any of the following:\n  Element content contains only non-text characters"
+            },
+            {
+              "any": [
+                {
+                  "id": "color-contrast",
+                  "data": {
+                    "messageKey": "nonBmp"
+                  },
+                  "relatedNodes": [],
+                  "impact": "serious",
+                  "message": "Element content contains only non-text characters"
+                }
+              ],
+              "all": [],
+              "none": [],
+              "impact": "serious",
+              "html": "<span class=\"denominator-symbol\">○</span>",
+              "target": [
+                "button[data-denominator=\"no\"] > .denominator-symbol"
+              ],
+              "failureSummary": "Fix any of the following:\n  Element content contains only non-text characters"
+            },
+            {
+              "any": [
+                {
+                  "id": "color-contrast",
+                  "data": {
+                    "messageKey": "nonBmp"
+                  },
+                  "relatedNodes": [],
+                  "impact": "serious",
+                  "message": "Element content contains only non-text characters"
+                }
+              ],
+              "all": [],
+              "none": [],
+              "impact": "serious",
+              "html": "<span aria-hidden=\"true\">↓</span>",
+              "target": [
+                "#downloadCard > span[aria-hidden=\"true\"]"
+              ],
+              "failureSummary": "Fix any of the following:\n  Element content contains only non-text characters"
+            },
+            {
+              "any": [
+                {
+                  "id": "color-contrast",
+                  "data": {
+                    "contrastRatio": 0,
+                    "fontSize": "9.0pt (12px)",
+                    "fontWeight": "normal",
+                    "messageKey": "elmPartiallyObscured",
+                    "expectedContrastRatio": "4.5:1"
+                  },
+                  "relatedNodes": [
+                    {
+                      "html": "<textarea id=\"accessibleText\" rows=\"6\" readonly=\"\"></textarea>",
+                      "target": [
+                        "#accessibleText"
+                      ]
+                    }
+                  ],
+                  "impact": "serious",
+                  "message": "Element's background color could not be determined because it's partially obscured by another element"
+                }
+              ],
+              "all": [],
+              "none": [],
+              "impact": "serious",
+              "html": "<textarea id=\"accessibleText\" rows=\"6\" readonly=\"\"></textarea>",
+              "target": [
+                "#accessibleText"
+              ],
+              "failureSummary": "Fix any of the following:\n  Element's background color could not be determined because it's partially obscured by another element"
+            }
+          ]
+        }
+      ],
+      "passes": 27
+    },
+    {
+      "state": "expanded",
+      "violations": [],
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "impact": "serious",
+          "tags": [
+            "cat.color",
+            "wcag2aa",
+            "wcag143",
+            "TTv5",
+            "TT13.c",
+            "EN-301-549",
+            "EN-9.1.4.3",
+            "ACT"
+          ],
+          "description": "Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds",
+          "help": "Elements must meet minimum color contrast ratio thresholds",
+          "helpUrl": "https://dequeuniversity.com/rules/axe/4.10/color-contrast?application=axeAPI",
+          "nodes": [
+            {
+              "any": [
+                {
+                  "id": "color-contrast",
+                  "data": {
+                    "fontSize": "7.5pt (10px)",
+                    "fontWeight": "bold",
+                    "messageKey": "pseudoContent",
+                    "expectedContrastRatio": "4.5:1"
+                  },
+                  "relatedNodes": [
+                    {
+                      "html": "<div class=\"hero-right\" aria-hidden=\"true\">",
+                      "target": [
+                        ".hero-right"
+                      ]
+                    }
+                  ],
+                  "impact": "serious",
+                  "message": "Element's background color could not be determined due to a pseudo element"
+                }
+              ],
+              "all": [],
+              "none": [],
+              "impact": "serious",
+              "html": "<span>VISUALIZACIÓN / 001</span>",
+              "target": [
+                ".hero-visual-top > span:nth-child(1)"
+              ],
+              "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a pseudo element"
+            },
+            {
+              "any": [
+                {
+                  "id": "color-contrast",
+                  "data": {
+                    "fontSize": "7.5pt (10px)",
+                    "fontWeight": "bold",
+                    "messageKey": "pseudoContent",
+                    "expectedContrastRatio": "4.5:1"
+                  },
+                  "relatedNodes": [
+                    {
+                      "html": "<div class=\"hero-right\" aria-hidden=\"true\">",
+                      "target": [
+                        ".hero-right"
+                      ]
+                    }
+                  ],
+                  "impact": "serious",
+                  "message": "Element's background color could not be determined due to a pseudo element"
+                }
+              ],
+              "all": [],
+              "none": [],
+              "impact": "serious",
+              "html": "<span>CCPC — 2024</span>",
+              "target": [
+                ".hero-visual-top > span:nth-child(2)"
+              ],
+              "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a pseudo element"
+            },
+            {
+              "any": [
+                {
+                  "id": "color-contrast",
+                  "data": {
+                    "fontSize": "84.0pt (112px)",
+                    "fontWeight": "bold",
+                    "messageKey": "pseudoContent",
+                    "expectedContrastRatio": "3:1"
+                  },
+                  "relatedNodes": [
+                    {
+                      "html": "<div class=\"hero-right\" aria-hidden=\"true\">",
+                      "target": [
+                        ".hero-right"
+                      ]
+                    }
+                  ],
+                  "impact": "serious",
+                  "message": "Element's background color could not be determined due to a pseudo element"
+                }
+              ],
+              "all": [],
+              "none": [],
+              "impact": "serious",
+              "html": "<span class=\"orbit-big\">100</span>",
+              "target": [
+                ".orbit-big"
+              ],
+              "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a pseudo element"
+            },
+            {
+              "any": [
+                {
+                  "id": "color-contrast",
+                  "data": {
+                    "fontSize": "9.0pt (12px)",
+                    "fontWeight": "bold",
+                    "messageKey": "pseudoContent",
+                    "expectedContrastRatio": "4.5:1"
+                  },
+                  "relatedNodes": [
+                    {
+                      "html": "<div class=\"hero-right\" aria-hidden=\"true\">",
+                      "target": [
+                        ".hero-right"
+                      ]
+                    }
+                  ],
+                  "impact": "serious",
+                  "message": "Element's background color could not be determined due to a pseudo element"
+                }
+              ],
+              "all": [],
+              "none": [],
+              "impact": "serious",
+              "html": "<span class=\"orbit-small\">puntos para<br>entendernos</span>",
+              "target": [
+                ".orbit-small"
+              ],
+              "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a pseudo element"
+            },
+            {
+              "any": [
+                {
+                  "id": "color-contrast",
+                  "data": {
+                    "messageKey": "nonBmp"
+                  },
+                  "relatedNodes": [],
+                  "impact": "serious",
+                  "message": "Element content contains only non-text characters"
+                }
+              ],
+              "all": [],
+              "none": [],
+              "impact": "serious",
+              "html": "<span class=\"orbit-star star-1\">✦</span>",
+              "target": [
+                ".star-1"
+              ],
+              "failureSummary": "Fix any of the following:\n  Element content contains only non-text characters"
+            },
+            {
+              "any": [
+                {
+                  "id": "color-contrast",
+                  "data": {
+                    "fontSize": "7.5pt (10px)",
+                    "fontWeight": "bold",
+                    "messageKey": "pseudoContent",
+                    "expectedContrastRatio": "4.5:1"
+                  },
+                  "relatedNodes": [
+                    {
+                      "html": "<div class=\"hero-right\" aria-hidden=\"true\">",
+                      "target": [
+                        ".hero-right"
+                      ]
+                    }
+                  ],
+                  "impact": "serious",
+                  "message": "Element's background color could not be determined due to a pseudo element"
+                }
+              ],
+              "all": [],
+              "none": [],
+              "impact": "serious",
+              "html": "<span>01 / ENTENDER</span>",
+              "target": [
+                ".hero-visual-bottom > span:nth-child(1)"
+              ],
+              "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a pseudo element"
+            },
+            {
+              "any": [
+                {
+                  "id": "color-contrast",
+                  "data": {
+                    "fontSize": "7.5pt (10px)",
+                    "fontWeight": "bold",
+                    "messageKey": "pseudoContent",
+                    "expectedContrastRatio": "4.5:1"
+                  },
+                  "relatedNodes": [
+                    {
+                      "html": "<div class=\"hero-right\" aria-hidden=\"true\">",
+                      "target": [
+                        ".hero-right"
+                      ]
+                    }
+                  ],
+                  "impact": "serious",
+                  "message": "Element's background color could not be determined due to a pseudo element"
+                }
+              ],
+              "all": [],
+              "none": [],
+              "impact": "serious",
+              "html": "<span>DESLIZA PARA EXPLORAR ↓</span>",
+              "target": [
+                ".hero-visual-bottom > span:nth-child(2)"
+              ],
+              "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a pseudo element"
+            },
+            {
+              "any": [
+                {
+                  "id": "color-contrast",
+                  "data": {
+                    "messageKey": "nonBmp"
+                  },
+                  "relatedNodes": [],
+                  "impact": "serious",
+                  "message": "Element content contains only non-text characters"
+                }
+              ],
+              "all": [],
+              "none": [],
+              "impact": "serious",
+              "html": "<span class=\"denominator-symbol\">✓</span>",
+              "target": [
+                "button[data-denominator=\"yes\"] > .denominator-symbol"
+              ],
+              "failureSummary": "Fix any of the following:\n  Element content contains only non-text characters"
+            },
+            {
+              "any": [
+                {
+                  "id": "color-contrast",
+                  "data": {
+                    "messageKey": "nonBmp"
+                  },
+                  "relatedNodes": [],
+                  "impact": "serious",
+                  "message": "Element content contains only non-text characters"
+                }
+              ],
+              "all": [],
+              "none": [],
+              "impact": "serious",
+              "html": "<span class=\"denominator-symbol\">○</span>",
+              "target": [
+                "button[data-denominator=\"no\"] > .denominator-symbol"
+              ],
+              "failureSummary": "Fix any of the following:\n  Element content contains only non-text characters"
+            },
+            {
+              "any": [
+                {
+                  "id": "color-contrast",
+                  "data": {
+                    "messageKey": "nonBmp"
+                  },
+                  "relatedNodes": [],
+                  "impact": "serious",
+                  "message": "Element content contains only non-text characters"
+                }
+              ],
+              "all": [],
+              "none": [],
+              "impact": "serious",
+              "html": "<span aria-hidden=\"true\">↓</span>",
+              "target": [
+                "#downloadCard > span[aria-hidden=\"true\"]"
+              ],
+              "failureSummary": "Fix any of the following:\n  Element content contains only non-text characters"
+            },
+            {
+              "any": [
+                {
+                  "id": "color-contrast",
+                  "data": {
+                    "contrastRatio": 0,
+                    "fontSize": "9.0pt (12px)",
+                    "fontWeight": "normal",
+                    "messageKey": "elmPartiallyObscured",
+                    "expectedContrastRatio": "4.5:1"
+                  },
+                  "relatedNodes": [
+                    {
+                      "html": "<textarea id=\"accessibleText\" rows=\"6\" readonly=\"\"></textarea>",
+                      "target": [
+                        "#accessibleText"
+                      ]
+                    }
+                  ],
+                  "impact": "serious",
+                  "message": "Element's background color could not be determined because it's partially obscured by another element"
+                }
+              ],
+              "all": [],
+              "none": [],
+              "impact": "serious",
+              "html": "<textarea id=\"accessibleText\" rows=\"6\" readonly=\"\"></textarea>",
+              "target": [
+                "#accessibleText"
+              ],
+              "failureSummary": "Fix any of the following:\n  Element's background color could not be determined because it's partially obscured by another element"
+            }
+          ]
+        }
+      ],
+      "passes": 29
+    },
+    {
+      "state": "resources",
+      "violations": [],
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "impact": "serious",
+          "tags": [
+            "cat.color",
+            "wcag2aa",
+            "wcag143",
+            "TTv5",
+            "TT13.c",
+            "EN-301-549",
+            "EN-9.1.4.3",
+            "ACT"
+          ],
+          "description": "Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds",
+          "help": "Elements must meet minimum color contrast ratio thresholds",
+          "helpUrl": "https://dequeuniversity.com/rules/axe/4.10/color-contrast?application=axeAPI",
+          "nodes": [
+            {
+              "any": [
+                {
+                  "id": "color-contrast",
+                  "data": {
+                    "fontSize": "7.5pt (10px)",
+                    "fontWeight": "bold",
+                    "messageKey": "pseudoContent",
+                    "expectedContrastRatio": "4.5:1"
+                  },
+                  "relatedNodes": [
+                    {
+                      "html": "<div class=\"hero-right\" aria-hidden=\"true\">",
+                      "target": [
+                        ".hero-right"
+                      ]
+                    }
+                  ],
+                  "impact": "serious",
+                  "message": "Element's background color could not be determined due to a pseudo element"
+                }
+              ],
+              "all": [],
+              "none": [],
+              "impact": "serious",
+              "html": "<span>VISUALIZACIÓN / 001</span>",
+              "target": [
+                ".hero-visual-top > span:nth-child(1)"
+              ],
+              "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a pseudo element"
+            },
+            {
+              "any": [
+                {
+                  "id": "color-contrast",
+                  "data": {
+                    "fontSize": "7.5pt (10px)",
+                    "fontWeight": "bold",
+                    "messageKey": "pseudoContent",
+                    "expectedContrastRatio": "4.5:1"
+                  },
+                  "relatedNodes": [
+                    {
+                      "html": "<div class=\"hero-right\" aria-hidden=\"true\">",
+                      "target": [
+                        ".hero-right"
+                      ]
+                    }
+                  ],
+                  "impact": "serious",
+                  "message": "Element's background color could not be determined due to a pseudo element"
+                }
+              ],
+              "all": [],
+              "none": [],
+              "impact": "serious",
+              "html": "<span>CCPC — 2024</span>",
+              "target": [
+                ".hero-visual-top > span:nth-child(2)"
+              ],
+              "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a pseudo element"
+            },
+            {
+              "any": [
+                {
+                  "id": "color-contrast",
+                  "data": {
+                    "fontSize": "84.0pt (112px)",
+                    "fontWeight": "bold",
+                    "messageKey": "pseudoContent",
+                    "expectedContrastRatio": "3:1"
+                  },
+                  "relatedNodes": [
+                    {
+                      "html": "<div class=\"hero-right\" aria-hidden=\"true\">",
+                      "target": [
+                        ".hero-right"
+                      ]
+                    }
+                  ],
+                  "impact": "serious",
+                  "message": "Element's background color could not be determined due to a pseudo element"
+                }
+              ],
+              "all": [],
+              "none": [],
+              "impact": "serious",
+              "html": "<span class=\"orbit-big\">100</span>",
+              "target": [
+                ".orbit-big"
+              ],
+              "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a pseudo element"
+            },
+            {
+              "any": [
+                {
+                  "id": "color-contrast",
+                  "data": {
+                    "fontSize": "9.0pt (12px)",
+                    "fontWeight": "bold",
+                    "messageKey": "pseudoContent",
+                    "expectedContrastRatio": "4.5:1"
+                  },
+                  "relatedNodes": [
+                    {
+                      "html": "<div class=\"hero-right\" aria-hidden=\"true\">",
+                      "target": [
+                        ".hero-right"
+                      ]
+                    }
+                  ],
+                  "impact": "serious",
+                  "message": "Element's background color could not be determined due to a pseudo element"
+                }
+              ],
+              "all": [],
+              "none": [],
+              "impact": "serious",
+              "html": "<span class=\"orbit-small\">puntos para<br>entendernos</span>",
+              "target": [
+                ".orbit-small"
+              ],
+              "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a pseudo element"
+            },
+            {
+              "any": [
+                {
+                  "id": "color-contrast",
+                  "data": {
+                    "messageKey": "nonBmp"
+                  },
+                  "relatedNodes": [],
+                  "impact": "serious",
+                  "message": "Element content contains only non-text characters"
+                }
+              ],
+              "all": [],
+              "none": [],
+              "impact": "serious",
+              "html": "<span class=\"orbit-star star-1\">✦</span>",
+              "target": [
+                ".star-1"
+              ],
+              "failureSummary": "Fix any of the following:\n  Element content contains only non-text characters"
+            },
+            {
+              "any": [
+                {
+                  "id": "color-contrast",
+                  "data": {
+                    "fontSize": "7.5pt (10px)",
+                    "fontWeight": "bold",
+                    "messageKey": "pseudoContent",
+                    "expectedContrastRatio": "4.5:1"
+                  },
+                  "relatedNodes": [
+                    {
+                      "html": "<div class=\"hero-right\" aria-hidden=\"true\">",
+                      "target": [
+                        ".hero-right"
+                      ]
+                    }
+                  ],
+                  "impact": "serious",
+                  "message": "Element's background color could not be determined due to a pseudo element"
+                }
+              ],
+              "all": [],
+              "none": [],
+              "impact": "serious",
+              "html": "<span>01 / ENTENDER</span>",
+              "target": [
+                ".hero-visual-bottom > span:nth-child(1)"
+              ],
+              "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a pseudo element"
+            },
+            {
+              "any": [
+                {
+                  "id": "color-contrast",
+                  "data": {
+                    "fontSize": "7.5pt (10px)",
+                    "fontWeight": "bold",
+                    "messageKey": "pseudoContent",
+                    "expectedContrastRatio": "4.5:1"
+                  },
+                  "relatedNodes": [
+                    {
+                      "html": "<div class=\"hero-right\" aria-hidden=\"true\">",
+                      "target": [
+                        ".hero-right"
+                      ]
+                    }
+                  ],
+                  "impact": "serious",
+                  "message": "Element's background color could not be determined due to a pseudo element"
+                }
+              ],
+              "all": [],
+              "none": [],
+              "impact": "serious",
+              "html": "<span>DESLIZA PARA EXPLORAR ↓</span>",
+              "target": [
+                ".hero-visual-bottom > span:nth-child(2)"
+              ],
+              "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a pseudo element"
+            },
+            {
+              "any": [
+                {
+                  "id": "color-contrast",
+                  "data": {
+                    "messageKey": "nonBmp"
+                  },
+                  "relatedNodes": [],
+                  "impact": "serious",
+                  "message": "Element content contains only non-text characters"
+                }
+              ],
+              "all": [],
+              "none": [],
+              "impact": "serious",
+              "html": "<span class=\"denominator-symbol\">✓</span>",
+              "target": [
+                "button[data-denominator=\"yes\"] > .denominator-symbol"
+              ],
+              "failureSummary": "Fix any of the following:\n  Element content contains only non-text characters"
+            },
+            {
+              "any": [
+                {
+                  "id": "color-contrast",
+                  "data": {
+                    "messageKey": "nonBmp"
+                  },
+                  "relatedNodes": [],
+                  "impact": "serious",
+                  "message": "Element content contains only non-text characters"
+                }
+              ],
+              "all": [],
+              "none": [],
+              "impact": "serious",
+              "html": "<span class=\"denominator-symbol\">○</span>",
+              "target": [
+                "button[data-denominator=\"no\"] > .denominator-symbol"
+              ],
+              "failureSummary": "Fix any of the following:\n  Element content contains only non-text characters"
+            },
+            {
+              "any": [
+                {
+                  "id": "color-contrast",
+                  "data": {
+                    "messageKey": "nonBmp"
+                  },
+                  "relatedNodes": [],
+                  "impact": "serious",
+                  "message": "Element content contains only non-text characters"
+                }
+              ],
+              "all": [],
+              "none": [],
+              "impact": "serious",
+              "html": "<span aria-hidden=\"true\">↓</span>",
+              "target": [
+                "#downloadCard > span[aria-hidden=\"true\"]"
+              ],
+              "failureSummary": "Fix any of the following:\n  Element content contains only non-text characters"
+            },
+            {
+              "any": [
+                {
+                  "id": "color-contrast",
+                  "data": {
+                    "contrastRatio": 0,
+                    "fontSize": "9.0pt (12px)",
+                    "fontWeight": "normal",
+                    "messageKey": "elmPartiallyObscured",
+                    "expectedContrastRatio": "4.5:1"
+                  },
+                  "relatedNodes": [
+                    {
+                      "html": "<textarea id=\"accessibleText\" rows=\"6\" readonly=\"\"></textarea>",
+                      "target": [
+                        "#accessibleText"
+                      ]
+                    }
+                  ],
+                  "impact": "serious",
+                  "message": "Element's background color could not be determined because it's partially obscured by another element"
+                }
+              ],
+              "all": [],
+              "none": [],
+              "impact": "serious",
+              "html": "<textarea id=\"accessibleText\" rows=\"6\" readonly=\"\"></textarea>",
+              "target": [
+                "#accessibleText"
+              ],
+              "failureSummary": "Fix any of the following:\n  Element's background color could not be determined because it's partially obscured by another element"
+            }
+          ]
+        }
+      ],
+      "passes": 32
+    },
+    {
+      "state": "mobile-menu",
+      "violations": [],
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "impact": "serious",
+          "tags": [
+            "cat.color",
+            "wcag2aa",
+            "wcag143",
+            "TTv5",
+            "TT13.c",
+            "EN-301-549",
+            "EN-9.1.4.3",
+            "ACT"
+          ],
+          "description": "Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds",
+          "help": "Elements must meet minimum color contrast ratio thresholds",
+          "helpUrl": "https://dequeuniversity.com/rules/axe/4.10/color-contrast?application=axeAPI",
+          "nodes": [
+            {
+              "any": [
+                {
+                  "id": "color-contrast",
+                  "data": {
+                    "messageKey": "nonBmp"
+                  },
+                  "relatedNodes": [],
+                  "impact": "serious",
+                  "message": "Element content contains only non-text characters"
+                }
+              ],
+              "all": [],
+              "none": [],
+              "impact": "serious",
+              "html": "<span aria-hidden=\"true\">☰</span>",
+              "target": [
+                "#menuToggle > span[aria-hidden=\"true\"]"
+              ],
+              "failureSummary": "Fix any of the following:\n  Element content contains only non-text characters"
+            },
+            {
+              "any": [
+                {
+                  "id": "color-contrast",
+                  "data": {
+                    "messageKey": "nonBmp"
+                  },
+                  "relatedNodes": [],
+                  "impact": "serious",
+                  "message": "Element content contains only non-text characters"
+                }
+              ],
+              "all": [],
+              "none": [],
+              "impact": "serious",
+              "html": "<span class=\"denominator-symbol\">✓</span>",
+              "target": [
+                "button[data-denominator=\"yes\"] > .denominator-symbol"
+              ],
+              "failureSummary": "Fix any of the following:\n  Element content contains only non-text characters"
+            },
+            {
+              "any": [
+                {
+                  "id": "color-contrast",
+                  "data": {
+                    "messageKey": "nonBmp"
+                  },
+                  "relatedNodes": [],
+                  "impact": "serious",
+                  "message": "Element content contains only non-text characters"
+                }
+              ],
+              "all": [],
+              "none": [],
+              "impact": "serious",
+              "html": "<span class=\"denominator-symbol\">○</span>",
+              "target": [
+                "button[data-denominator=\"no\"] > .denominator-symbol"
+              ],
+              "failureSummary": "Fix any of the following:\n  Element content contains only non-text characters"
+            },
+            {
+              "any": [
+                {
+                  "id": "color-contrast",
+                  "data": {
+                    "messageKey": "nonBmp"
+                  },
+                  "relatedNodes": [],
+                  "impact": "serious",
+                  "message": "Element content contains only non-text characters"
+                }
+              ],
+              "all": [],
+              "none": [],
+              "impact": "serious",
+              "html": "<span aria-hidden=\"true\">↓</span>",
+              "target": [
+                "#downloadCard > span[aria-hidden=\"true\"]"
+              ],
+              "failureSummary": "Fix any of the following:\n  Element content contains only non-text characters"
+            },
+            {
+              "any": [
+                {
+                  "id": "color-contrast",
+                  "data": {
+                    "contrastRatio": 0,
+                    "fontSize": "9.0pt (12px)",
+                    "fontWeight": "normal",
+                    "messageKey": "elmPartiallyObscured",
+                    "expectedContrastRatio": "4.5:1"
+                  },
+                  "relatedNodes": [
+                    {
+                      "html": "<textarea id=\"accessibleText\" rows=\"6\" readonly=\"\"></textarea>",
+                      "target": [
+                        "#accessibleText"
+                      ]
+                    }
+                  ],
+                  "impact": "serious",
+                  "message": "Element's background color could not be determined because it's partially obscured by another element"
+                }
+              ],
+              "all": [],
+              "none": [],
+              "impact": "serious",
+              "html": "<textarea id=\"accessibleText\" rows=\"6\" readonly=\"\"></textarea>",
+              "target": [
+                "#accessibleText"
+              ],
+              "failureSummary": "Fix any of the following:\n  Element's background color could not be determined because it's partially obscured by another element"
+            }
+          ]
+        }
+      ],
+      "passes": 32
+    }
+  ]
+}

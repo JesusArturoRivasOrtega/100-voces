@@ -4,7 +4,7 @@
 
 El reto es comprender una cifra, compararla y reconocer sus límites.
 
-Usamos los Conteos Censales de Participación Ciudadana del INE.
+La tasa excluye los registros no especificados de su denominador.
 
 En 2024, la tasa nacional fue 59,7 por ciento.
 
@@ -22,26 +22,26 @@ El cambio relativo es aproximadamente menos 4,3 por ciento. Son unidades distint
 
 El explorador conserva ocho entidades como selección demostrativa de 2024.
 
-Veracruz registra 58,4 por ciento: 1,3 puntos menos que la tasa nacional.
+Por edad, de 25 a 29 años, la tasa nacional es 47,3 por ciento.
 
-La comparación describe una diferencia. No demuestra sus causas.
+Son dieciocho grupos nacionales. No describen cada estado ni explican causas.
 
-Cinco preguntas con retroalimentación convierten esa lectura crítica en práctica.
+Siete preguntas explican errores, denominadores y edades con alcance nacional.
 
-El laboratorio distingue el valor observado de un escenario hipotético.
+Comparamos dos escenarios con la referencia de 59,7 por ciento.
 
-Pasar de 59,7 a 64,7 suma cinco puntos porcentuales.
+A resta cinco puntos; B suma cinco. Entre ambos hay diez puntos.
 
-Es un cambio relativo de aproximadamente 8,4 por ciento. No es una predicción.
+Son hipótesis aritméticas para comparar. No predicen lo que sucederá.
 
 Al compartir, la imagen conserva dato, año, contexto y fuente.
 
-Tres tamaños y una descripción accesible permiten reutilizar la explicación.
+Tarjetas en tres tamaños y un carrusel de cinco láminas incluyen texto accesible.
 
-La experiencia incluye una ruta rápida, un modo jurado y una ficha de aula.
+El kit docente propone un primer taller de quince minutos con jóvenes.
 
 La versión local permite demostrarla sin conexión, con los archivos disponibles.
 
-Su adopción requiere revisión institucional. El impacto educativo está por evaluar.
+El sitio está privado. El acceso público y el aprendizaje deben comprobarse.
 
 Somos un proyecto independiente. Los datos ya hablan. Hagamos que se entiendan.

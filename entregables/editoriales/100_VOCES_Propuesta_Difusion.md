@@ -1,17 +1,17 @@
 # 100 VOCES · Propuesta de difusión
 
-Estado: propuesta editorial preparada. No hay campaña publicada ni resultados de alcance reportados. Público: personas jóvenes, docentes, estudiantes y promotores de educación cívica. Los contextos aula/comunidad/redes ajustan formato y explicación; no segmentan personas por preferencias políticas.
+Estado: materiales locales preparados, sin campaña publicada ni resultados de alcance reportados. El sitio permanece privado en la cuenta propietaria; su acceso público debe comprobarse. Público: personas jóvenes, docentes, estudiantes y promotores de educación cívica. Los contextos aula/comunidad/redes ajustan formato y explicación; no segmentan personas por preferencias políticas.
 
 | Canal | Pieza y público | Mensaje | Acción propuesta | Control previo |
 |---|---|---|---|---|
 | Micrositio | Historia de seis capítulos; público general | Entiende, compara y verifica | Explorar evidencia | Probar enlace cuando exista publicación |
 | Instagram | Carrusel de cinco láminas; jóvenes | 59,7% y aproximadamente 60 puntos | Abrir historia completa | Tasa, año, fuente y texto alternativo |
 | Reels/TikTok/Shorts | Video de 20–40 s; público general | Una cifra no demuestra causas | Formular una pregunta | Subtítulos y sin recortes de fuente |
-| Aula | Ficha de 15 min; docentes y estudiantes | Diferenciar tasa, pp y cambio relativo | Resolver y explicar | Ofrecer versión impresa/oral |
+| Aula | Kit docente de 15 min; jóvenes sin formación estadística | Diferenciar tasa, pp y cambio relativo | Resolver y explicar | Ofrecer versión impresa/oral |
 | Comunidad | Lámina PNG; facilitadores | Comparar con contexto | Discutir evidencia y límites | Llevar archivo local |
 | Evaluación institucional | Kit, código y metodología; revisores | Reutilización sujeta a revisión | Evaluar adaptación | No usar identidad ni aval del INE |
 
-## Carrusel propuesto: cinco láminas
+## Carrusel entregable: cinco láminas
 
 1. Pregunta: «¿Qué significa 59,7%?». Subtítulo: participación nacional CCPC, 2024.
 2. «La cifra es 59,7%; los puntos ilustran aproximadamente 60 de 100». Cada punto aproxima un punto porcentual, no una persona identificada.
@@ -27,9 +27,11 @@ Estado: propuesta editorial preparada. No hay campaña publicada ni resultados d
 
 **Territorio.** Veracruz registró 58,4% de participación CCPC en 2024, frente a 59,7% nacional: −1,3 pp. La aplicación presenta una selección demostrativa de ocho entidades; no un ranking nacional completo. Fuente: INE, Manual CCPC, pp. 16 y 21. La diferencia no prueba causas.
 
-**Escenario educativo.** ¿Cómo se vería una tasa de 64,7%? Respecto a 59,7%, serían +5,0 pp y aproximadamente +8,4% relativo. Es un escenario aritmético hipotético, no una predicción ni el efecto estimado de una intervención.
+**Escenario educativo.** A = 54,7% y B = 64,7% se comparan con 59,7% observado: −5,0 pp y +5,0 pp, respectivamente. Entre A y B hay 10,0 pp. El aumento relativo de B frente al observado es aproximadamente +8,4%. Es un escenario aritmético hipotético, no una predicción ni el efecto estimado de una intervención.
 
 **Descripción accesible de la pieza nacional.** Tarjeta de 100 VOCES sobre participación nacional CCPC, elección presidencial 2024. Muestra la tasa de 59,7% y cien puntos, de los cuales aproximadamente sesenta aparecen resaltados. El complemento es 40,3%. Los puntos son una aproximación. Fuente: INE, Manual CCPC 2009–2024, página 21. Proyecto independiente, sin aval institucional.
+
+**Edad nacional.** En 2024, el grupo de 25–29 años registra 47,3%. Los 18 grupos de edad son nacionales: no corresponden a la entidad elegida. Fuente: INE, Estudio de Participación Ciudadana 2024, gráfica 5, p. 18. El dato no permite inferir motivos individuales.
 
 ## Secuencia propuesta y evaluación
 

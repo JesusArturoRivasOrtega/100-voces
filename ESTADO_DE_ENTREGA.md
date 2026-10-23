@@ -1,17 +1,15 @@
-# Estado de entrega — 100 VOCES
+# Estado de entrega · v1.1.0
 
-## IMPLEMENTADO
+## Implementado
 
-Aplicación estática de seis capítulos; archivo autónomo; quince categorías de pruebas funcionales; recursos y documentación técnica/editorial. Sitio privado desplegado mediante Sites. No requiere servidor privado ni datos de usuarios.
+Seis capítulos; seis elecciones, ocho entidades y 18 grupos de edad; denominador interactivo; siete preguntas; escenarios A/B; tarjetas PNG; menú móvil; recorridos reiniciables; archivo autónomo; kit docente, carrusel de cinco piezas, guion y presentación actualizados. Video de 170 segundos y sus subtítulos en dist/recursos y entregables/video.
 
-## VERIFICADO
+## Verificado
 
-Catorce tasas contra dos documentos INE. Seis años, ocho entidades, pares de elecciones, cinco reactivos, reinicio, escenarios en ambos sentidos, tres descargas PNG, portapapeles real, teclado, reducción de movimiento, cuatro anchos 320–1440, modo file:// sin red, error de datos y consola normal. Axe-core: cero infracciones automáticas en dos estados; no es certificación WCAG. Guion PDF: 4 páginas; deck: 10 diapositivas; aula: 2 páginas. Video MP4: 170 segundos, 1920×1080, H.264 y audio AAC real, subtítulos integrados. Es un montaje de capturas reales con voz sintética declarada. Ver reportes en evidencia/ y entregables/video/.
+30 grupos de comprobaciones funcionales y seis estados axe sin infracciones detectadas. Pruebas de foco territorial, menú móvil, reinicio del modo jurado, recursos descargables y archivo sin red. Las pruebas ejecutadas y límites están en docs/PRUEBAS.md. Las verificaciones editoriales y del video están junto a sus entregables.
 
-## PENDIENTE DE VALIDAR
+## Pendiente de personas o accesos
 
-Prueba con usuarios y lectores de pantalla; Safari/Firefox y teléfonos físicos; revisión editorial del equipo; render final en Word/PowerPoint; acceso público o concedido al jurado para sitio y video; cumplimiento de registro, nombre de equipo, autoría y cartas firmadas. No se realizó el envío al INE. La publicación de Sites mantiene acceso privado del propietario.
+Piloto con 5–8 personas, evaluación con lector de pantalla, Safari/Firefox y teléfonos físicos; revisión final en Word/PowerPoint; inscripción y elegibilidad; cartas con firmas; nombre oficial del equipo; permisos de lectura para evaluadores y envío. El CSV de piloto está vacío. No se simulan resultados ni firmas.
 
-## MEJORA FUTURA
-
-Ampliación a 32 entidades y desgloses tras verificar bases completas; mapa accesible; PWA; evaluación longitudinal de aprendizaje. Ninguna está prometida como ya implementada.
+La publicación de Sites conserva acceso privado del propietario. Subir el código a GitHub no modifica ese permiso. El índice LEEME_ENTREGA.md distingue materiales y requisitos pendientes.

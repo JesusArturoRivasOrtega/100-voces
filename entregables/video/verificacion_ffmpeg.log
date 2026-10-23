@@ -4,17 +4,17 @@ Input #0, mov,mp4,m4a,3gp,3g2,mj2, from 'D:\INE_CONCURSO\100-voces\entregables\v
     minor_version   : 512
     compatible_brands: isomiso2avc1mp41
     encoder         : Lavf61.7.100
-  Duration: 00:02:50.00, start: 0.000000, bitrate: 433 kb/s
-  Stream #0:0[0x1](und): Video: h264 (Constrained Baseline) (avc1 / 0x31637661), yuv420p(progressive), 1920x1080, 322 kb/s, 24 fps, 24 tbr, 12288 tbn (default)
+  Duration: 00:02:50.00, start: 0.000000, bitrate: 438 kb/s
+  Stream #0:0[0x1](und): Video: h264 (Constrained Baseline) (avc1 / 0x31637661), yuv420p(progressive), 1920x1080, 332 kb/s, 24 fps, 24 tbr, 12288 tbn (default)
       Metadata:
         handler_name    : VideoHandler
         vendor_id       : [0][0][0][0]
         encoder         : Lavc61.19.100 libx264
-  Stream #0:1[0x2](und): Audio: aac (LC) (mp4a / 0x6134706D), 44100 Hz, mono, fltp, 109 kb/s (default)
+  Stream #0:1[0x2](und): Audio: aac (LC) (mp4a / 0x6134706D), 44100 Hz, mono, fltp, 106 kb/s (default)
       Metadata:
         handler_name    : SoundHandler
         vendor_id       : [0][0][0][0]
-[Parsed_volumedetect_0 @ 0000024891eee3c0] n_samples: 0
+[Parsed_volumedetect_0 @ 000002082a455840] n_samples: 0
 Stream mapping:
   Stream #0:1 -> #0:0 (aac (native) -> pcm_s16le (native))
 Press [q] to stop, [?] for help
@@ -29,13 +29,13 @@ Output #0, null, to 'NUL':
         handler_name    : SoundHandler
         vendor_id       : [0][0][0][0]
         encoder         : Lavc61.19.100 pcm_s16le
-[Parsed_volumedetect_0 @ 0000024891f11d80] n_samples: 7497728
-[Parsed_volumedetect_0 @ 0000024891f11d80] mean_volume: -21.2 dB
-[Parsed_volumedetect_0 @ 0000024891f11d80] max_volume: -2.1 dB
-[Parsed_volumedetect_0 @ 0000024891f11d80] histogram_2db: 76
-[Parsed_volumedetect_0 @ 0000024891f11d80] histogram_3db: 315
-[Parsed_volumedetect_0 @ 0000024891f11d80] histogram_4db: 1345
-[Parsed_volumedetect_0 @ 0000024891f11d80] histogram_5db: 4291
-[Parsed_volumedetect_0 @ 0000024891f11d80] histogram_6db: 8384
-[out#0/null @ 0000024891ee70c0] video:0KiB audio:14644KiB subtitle:0KiB other streams:0KiB global headers:0KiB muxing overhead: unknown
-size=N/A time=00:02:50.01 bitrate=N/A speed=1.02e+03x    
+[Parsed_volumedetect_0 @ 000002082a212c40] n_samples: 7497728
+[Parsed_volumedetect_0 @ 000002082a212c40] mean_volume: -21.4 dB
+[Parsed_volumedetect_0 @ 000002082a212c40] max_volume: -2.1 dB
+[Parsed_volumedetect_0 @ 000002082a212c40] histogram_2db: 81
+[Parsed_volumedetect_0 @ 000002082a212c40] histogram_3db: 335
+[Parsed_volumedetect_0 @ 000002082a212c40] histogram_4db: 1410
+[Parsed_volumedetect_0 @ 000002082a212c40] histogram_5db: 3947
+[Parsed_volumedetect_0 @ 000002082a212c40] histogram_6db: 7746
+[out#0/null @ 000002082a160300] video:0KiB audio:14644KiB subtitle:0KiB other streams:0KiB global headers:0KiB muxing overhead: unknown
+size=N/A time=00:02:50.01 bitrate=N/A speed= 819x    

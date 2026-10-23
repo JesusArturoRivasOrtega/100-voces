@@ -2,20 +2,34 @@ from pathlib import Path
 import zipfile,hashlib,json
 root=Path(__file__).resolve().parents[1]
 target=root.parent/'100_VOCES_RETO3_ENTREGA.zip'
-skip_dirs={'.git','.tools','node_modules','__pycache__','.sites-runtime','trabajo'}
+skip_dirs={'.git','.openai','.tools','node_modules','__pycache__','.sites-runtime','trabajo','capturas','audio','frames','.qa'}
 files=[]
 for p in root.rglob('*'):
  if not p.is_file() or any(x in skip_dirs for x in p.relative_to(root).parts):continue
- if p.suffix in ['.zip','.pyc'] or p.name=='MANIFIESTO_SHA256.json':continue
- if p.suffix=='.wav' or any(x in ['audio','frames'] for x in p.relative_to(root).parts):continue
- if 'video' in p.relative_to(root).parts and (p.name.startswith('frame_') or (p.name.startswith('revision_') and p.suffix=='.png')):continue
- if p.suffix=='.mp4' and not p.name.startswith('100_VOCES'):continue
+ rel=p.relative_to(root)
+ if p.name=='MANIFIESTO_SHA256.json' or p.suffix in ['.pyc','.wav','.log']:continue
+ if p.suffix=='.zip' and not ('recursos' in rel.parts or 'kit' in rel.parts):continue
+ if 'evidencia' in rel.parts and p.suffix=='.png':continue
+ if 'video' in rel.parts and (p.name.startswith('frame_') or p.name.startswith('revision_') or p.suffix=='.mp4' or p.name=='frames.txt'):continue
  files.append(p)
-manifest={str(p.relative_to(root)).replace('\\','/'):{'bytes':p.stat().st_size,'sha256':hashlib.sha256(p.read_bytes()).hexdigest()} for p in sorted(files)}
-mp=root/'MANIFIESTO_SHA256.json';mp.write_text(json.dumps(manifest,ensure_ascii=False,indent=2),encoding='utf-8');files.append(mp)
+# Normalize text before hashing so Git checkouts and delivery files agree.
+text_extensions={'.md','.txt','.json','.html','.css','.js','.cjs','.py','.ps1','.csv','.srt','.vtt','.yml','.yaml','.sha256'}
+for p in files:
+ if p.suffix in text_extensions or p.name in {'.gitignore','.gitattributes'}:
+  raw=p.read_bytes().replace(b'\r\n',b'\n')
+  p.write_bytes(raw)
+digest=lambda p:hashlib.sha256(p.read_bytes()).hexdigest()
+manifest={p.relative_to(root).as_posix():{'bytes':p.stat().st_size,'sha256':digest(p)} for p in sorted(files)}
+mp=root/'MANIFIESTO_SHA256.json';mp.write_text(json.dumps(manifest,ensure_ascii=False,indent=2)+'\n',encoding='utf-8');files.append(mp)
 with zipfile.ZipFile(target,'w',zipfile.ZIP_DEFLATED,compresslevel=6) as z:
- for p in files:z.write(p,'100_VOCES_RETO3/'+str(p.relative_to(root)).replace('\\','/'))
+ for p in files:z.write(p,'100_VOCES_RETO3/'+p.relative_to(root).as_posix())
 with zipfile.ZipFile(target) as z:
  assert z.testzip() is None
- for name,info in manifest.items():assert hashlib.sha256(z.read('100_VOCES_RETO3/'+name)).hexdigest()==info['sha256']
-print(json.dumps({'archivo':str(target),'archivos':len(files),'bytes':target.stat().st_size,'sha256':hashlib.sha256(target.read_bytes()).hexdigest(),'integridad':'VERIFICADA'},ensure_ascii=False))
+ for name,info in manifest.items():assert hashlib.sha256(z.read('100_VOCES_RETO3/'+name)).hexdigest()==info['sha256'],name
+ data=json.loads(z.read('100_VOCES_RETO3/dist/data/ccpc_resumen.json'))
+ assert len(data['age_2024'])==18
+ assert b'scenarioSliderA' in z.read('100_VOCES_RETO3/dist/index.html')
+ for name in ['dist/js/navigation.js','dist/recursos/100_VOCES_Kit_Docente.zip','dist/recursos/100_VOCES_Carrusel.zip','dist/recursos/100_VOCES_Pitch_1080p_2m50.mp4','LEEME_ENTREGA.md']:assert '100_VOCES_RETO3/'+name in z.namelist()
+sha=digest(target)
+target.with_suffix('.sha256.txt').write_text(sha+'  '+target.name+'\n',encoding='ascii')
+print(json.dumps({'archivo':str(target),'archivos':len(files),'bytes':target.stat().st_size,'sha256':sha,'version':json.loads((root/'version.json').read_text())['version'],'integridad':'VERIFICADA'},ensure_ascii=False))

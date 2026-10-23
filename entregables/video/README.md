@@ -1,28 +1,24 @@
 # 100 VOCES · Video actualizado
 
-Archivo final: **100_VOCES_Pitch_1080p_2m50.mp4**.
+Archivo final: **100_VOCES_Pitch_1080p_2m50.mp4**. Duración prevista y verificada por el productor: **170 segundos (2:50)**, resolución 1920 × 1080, 24 fps, H.264/yuv420p y audio AAC mono de 44.100 Hz.
 
-Es un montaje de capturas reales del prototipo local y tarjetas descargadas desde su generador, acompañado de rótulos, subtítulos integrados y narración sintética local **Microsoft Sabina Desktop (es-MX)**. No es una grabación continua de pantalla. El aviso de síntesis y la independencia institucional permanecen visibles.
+Es un montaje de capturas actuales del prototipo local, tarjetas descargadas desde su generador y el carrusel final. Incluye rótulos, subtítulos integrados y narración sintética local **Microsoft Sabina Desktop (es-MX)**. El aviso de síntesis y la independencia institucional permanecen visibles. No es una grabación continua de pantalla.
 
-## Verificación del archivo final
+El guion cubre el denominador con exclusión de no especificados, siete preguntas, 18 grupos nacionales de edad (ejemplo 25–29: 47,3%), los escenarios A=54,7% y B=64,7% frente a 59,7% observado, el kit docente de 15 minutos, las tarjetas y el carrusel de cinco láminas. El sitio está privado en la cuenta propietaria; el material no afirma acceso público ni resultados de un piloto.
 
-- Resolución: **1920 × 1080**; duración: **170 segundos (2:50)**; 24 fps.
-- Video H.264, formato de píxel yuv420p; audio AAC mono a 44.100 Hz.
-- Tamaño: 9.201.686 bytes. FFmpeg detectó audio real con volumen medio de −21,2 dB.
-- Subtítulos visibles integrados en imagen; archivo editable aparte `100_VOCES_Pitch_Final.srt`.
-- Doce fotogramas extraídos del MP4 revisados para legibilidad y ausencia de cortes. Hoja de contacto: `revision_fotogramas.jpg`.
-- Se explicita que la tasa utiliza registros con voto/no voto definido y excluye no especificados. No se presenta como tasa sobre toda la lista nominal.
+## Comprobación
 
-`verificacion_video.json` y `verificacion_ffmpeg.log` conservan las comprobaciones. `capturas/registro_capturas.json` describe el origen de las imágenes; incluye una captura del HTML local con red desactivada. Las tarjetas fueron descargadas realmente desde los controles del sitio.
+`verificacion_video.json` registra tamaño, duración, formato, volumen medio, huella SHA-256, huellas de producción y amplitud de audio por cada uno de los 24 segmentos. `verificacion_ffmpeg.log` conserva la decodificación completa. Doce fotogramas del MP4 se reúnen en `revision_fotogramas.jpg` para revisión visual. `capturas/registro_capturas.json` identifica imágenes y descargas, incluida la versión local con la red desactivada.
 
-## Archivos a entregar
+El pitch editorial y el productor usan exactamente los mismos textos y tiempos. `ajuste_voz.json` registra duración y velocidad por bloque: las frases se ajustan a su intervalo sin cortar su final. El SRT final usa un máximo de 48 caracteres por línea y acompaña a los subtítulos visibles.
 
-El MP4, el SRT, este README y el registro de verificación son suficientes para distribuir el video. Los fotogramas, WAV, capturas, listas de concatenación y scripts restantes son archivos de producción, no entregables obligatorios; pueden excluirse del ZIP público para reducir su tamaño.
+## Reproducción del proceso
 
-La voz está ajustada a bloques de siete segundos (el último de nueve), sin recortar frases. `ajuste_voz.json` registra las duraciones originales y el factor de velocidad aplicado cuando hizo falta. Los subtítulos finales sustituyen un bloque del guion editorial para explicar expresamente el denominador.
+1. Ejecutar `../editoriales/generar_editoriales.py` si cambia el contenido.
+2. Servir el proyecto en `http://127.0.0.1:8765/dist/` y ejecutar `capturar.cjs` con Node y Playwright/Edge instalados.
+3. Ejecutar `producir.py all` con Python, Pillow y FFmpeg disponibles. `voz.ps1` usa System.Speech y la voz Sabina instalada.
+4. Revisar la hoja de fotogramas y la verificación antes de distribuir el MP4.
 
-El archivo se creó localmente; **no fue subido ni enviado a terceros** por este proceso. La URL de publicación y los permisos de lectura del video deberán comprobarse por separado. No demuestra impacto educativo ni representa aval del INE. Sustituir la voz sintética por narración humana es una mejora opcional.
+El modo `encode` siempre codifica desde los fotogramas actuales. No reutiliza un montaje base antiguo. `montaje_sin_audio.mp4`, si existe, es solo un archivo auxiliar y no se incorpora al resultado final. Los WAV, fotogramas y scripts son archivos de producción; pueden excluirse del paquete de distribución, conservando MP4, SRT, README y verificaciones.
 
-## Reproducibilidad
-
-`capturar.cjs` usa Playwright/Edge para capturas y descargas. `voz.ps1` usa System.Speech con Microsoft Sabina Desktop. `producir.py` compone fotogramas, ajusta voz, codifica con FFmpeg y verifica. Requiere las dependencias locales descritas en esos scripts. La síntesis SAPI puede requerir una sesión con acceso a las voces instaladas; aquí se ejecutó desde la sesión principal para resolver la restricción del proceso secundario.
+No se subió ni envió el video a terceros mediante estos scripts. Los permisos del enlace y su reproducción desde una sesión ajena deben comprobarse al publicarlo. La verificación de archivos no sustituye pruebas con personas ni implica aval institucional.

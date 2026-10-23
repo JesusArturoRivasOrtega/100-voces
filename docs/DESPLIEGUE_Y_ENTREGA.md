@@ -1,25 +1,20 @@
-# Despliegue y entrega
+# Despliegue y entrega · v1.1.0
 
-## Sitio estático
+Publicar el contenido de dist/ como raíz estática HTTPS, incluyendo recursos/, data/, js/ y fonts/. La aplicación no requiere backend, API, variables de entorno ni autenticación propia.
 
-Publicar el contenido de `dist/` como raíz en un alojamiento estático HTTPS. `index.html` debe quedar en la raíz publicada y conservar `js/`, `data/` y `fonts/`. No hay secretos, variables de entorno, API ni instalaciones de servidor. Funciona en subcarpetas porque las rutas son relativas. Revisar que el proveedor no inyecte analítica o un login no deseado para la distribución final.
+El sitio asociado es https://cien-voces-mexico.arthojust.chatgpt.site . Mantiene acceso privado del propietario. El último resultado de publicación verificable se conserva en evidencia/publicacion.json; no confundir el permiso del repositorio con el del sitio.
 
-Después de publicar, abrir sin sesión, recorrer las seis secciones, abrir dos fuentes, descargar PNG, probar la copia de texto y cargar en móvil. Guardar la URL y el resultado real. Un enlace privado para revisión del propietario no es una entrega accesible al jurado. La disponibilidad futura depende del proveedor.
+Antes de enviar al jurado: probar página, MP4, fuentes y descargas desde una sesión ajena con el acceso que se vaya a conceder. No basta con que funcione para el propietario.
 
-## Respaldo sin conexión
+## Construcción y entrega
 
-`100_VOCES_ABRIR.html` incluye fuentes, código, datos y enlaces descargables de JSON/CSV. Copiarlo a una memoria USB para la presentación. La evidencia documental también se entrega en `fuentes/`; los enlaces web del sitio requieren conexión. No es una PWA ni necesita instalar un service worker.
+1. Ejecutar python scripts/build.py.
+2. Ejecutar npm test. No necesita un servidor iniciado manualmente.
+3. Ejecutar python scripts/report.py.
+4. Ejecutar python scripts/package.py.
+5. Extraer el ZIP y abrir 100_VOCES_ABRIR.html conservando dist/recursos. Verificar edades, A/B, siete preguntas y archivos descargables.
+6. Consultar LEEME_ENTREGA.md y completar la documentación administrativa real.
 
-## Requisitos documentales del concurso
+El empaquetador excluye configuración de Sites, herramientas locales, node_modules y archivos intermedios; actualiza manifiesto y checksum externo. El MP4 final aparece una sola vez en dist/recursos. El kit incluye un registro vacío y el protocolo para un piloto futuro.
 
-La convocatoria PDF proporcionada establece presentación de máximo diez diapositivas, código cuando corresponda, guion narrativo de tres a cinco cuartillas PDF, prototipo y video explicativo máximo tres minutos MP4 1080p alojado con lectura. Los materiales editoriales se generaron con esas dimensiones y conteos. La convocatoria adjunta indica cierre de entrega 31 de octubre de 2026 a las 23:59; el equipo debe comprobar cualquier cambio oficial y su registro previo.
-
-No se ha enviado correo, llenado registro ni firmado documento. El equipo debe verificar su inscripción, requisitos de integrantes, autoría, cartas de cesión y declaratoria firmadas, nombre del equipo y enlaces de lectura del video/prototipo. Este trabajo no sustituye esas acciones personales. Los borradores originales permanecen separados para evitar presentar una versión anterior accidentalmente.
-
-## Ensayo recomendado
-
-Abrir el sitio, pulsar “Presentar en 3 minutos” y avanzar manualmente con el guion. Comprobar la base nacional, el ejemplo 2018→2024, Veracruz, un reactivo, el escenario y una descarga. Si falla la conexión, usar el HTML autónomo. La pauta tiene margen antes de tres minutos, pero la dicción y navegación deben ensayarse con la persona que presentará.
-
-## Publicación realizada
-
-Sites confirmó el despliegue privado exitoso de la versión `appgver_653f07017af8819192279267b6271f7d` el 21 de octubre de 2026. URL: https://cien-voces-mexico.arthojust.chatgpt.site . Conserva acceso privado del propietario; **no está listo como enlace público del jurado**. La aplicación local no requiere autenticación. Para entregar, habilitar el acceso correspondiente o publicar `dist/` en un alojamiento estático público y comprobar desde una sesión sin acceso. El primer intento de sincronización falló por conexión; el segundo sincronizó, empaquetó y desplegó correctamente.
+Los requisitos, plazos, cartas y alojamiento del video deben cotejarse con la convocatoria vigente. No hay envío automatizado ni firmas en este proyecto.

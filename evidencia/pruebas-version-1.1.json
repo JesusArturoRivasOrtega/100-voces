@@ -1,0 +1,35 @@
+{
+  "fecha": "2026-10-23T04:43:50.516Z",
+  "resultados": [
+    {
+      "prueba": "Foco territorial",
+      "estado": "VERIFICADO",
+      "detalle": "Enter conserva el botón y la entidad seleccionada"
+    },
+    {
+      "prueba": "Demostración repetible",
+      "estado": "VERIFICADO",
+      "detalle": "Entidad, edad, A/B, quiz y tarjeta restablecidos"
+    },
+    {
+      "prueba": "Navegación móvil",
+      "estado": "VERIFICADO",
+      "detalle": "Menú, Escape, foco en destino; portada 768 px a 375×812"
+    },
+    {
+      "prueba": "Recursos y texto ampliado",
+      "estado": "VERIFICADO",
+      "detalle": "Carrusel sin desborde en 4 anchos; texto base 200% a 640px"
+    },
+    {
+      "prueba": "Recursos descargables",
+      "estado": "VERIFICADO",
+      "detalle": "14 destinos locales existen y responden con contenido"
+    },
+    {
+      "prueba": "Distribución autónoma",
+      "estado": "VERIFICADO",
+      "detalle": "Siete preguntas y rutas al kit local correctas sin red"
+    }
+  ]
+}

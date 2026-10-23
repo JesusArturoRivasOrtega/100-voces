@@ -6,6 +6,10 @@ __pycache__/
 entregables/video/.tools/
 entregables/video/trabajo/
 *.zip
+!dist/recursos/*.zip
+!entregables/kit/100_VOCES_Kit_Docente.zip
+entregables/kit/.qa/
+entregables/kit/__pycache__/
 evidencia/*.png
 fuentes/*.pdf
 fuentes/*.png

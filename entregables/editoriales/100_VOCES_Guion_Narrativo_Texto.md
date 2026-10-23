@@ -44,17 +44,17 @@ La participación CCPC se expresa como Sí votaron / (Sí votaron + No votaron) 
 
 ### Procedencia y límite de cobertura
 
-El manual oficial CCPC es la referencia documental: la serie nacional se presenta en la página 21; la visualización territorial de 2024 en la 16; el contexto metodológico se consulta en las páginas 17 y 30. El registro de fuentes y la evidencia de cotejo acompañan a los datos del proyecto. La ampliación territorial requiere verificar la base completa; la selección actual no se rellena con estimaciones ni cifras inventadas.
+El manual oficial CCPC es la referencia documental: la serie nacional se presenta en la página 21; la visualización territorial de 2024 en la 16; el contexto metodológico se consulta en las páginas 17 y 30. El registro de fuentes y la evidencia de cotejo acompañan a los datos del proyecto. El módulo de edades añade 18 grupos nacionales, cotejados con el Estudio de Participación Ciudadana 2024, gráfica 5, p. 18. El grupo de 25–29 años registra 47,3%; no es un dato estatal ni una conducta individual.
 
 ## Aprender, imaginar y explicar
 
-### Cuarta escena: cinco decisiones
+### Cuarta escena: siete decisiones
 
-El mini-reto propone cinco preguntas sobre porcentajes, puntos porcentuales y cambio relativo, comparación entre elecciones, límites de los datos y lectura crítica de gráficas. Cada respuesta conduce a una explicación, incluso cuando es incorrecta. El avance, el cierre con lo aprendido y el reinicio convierten el error en una oportunidad de revisión. Los aciertos no son una medición validada de competencia cívica ni se vinculan a una identidad personal.
+El mini-reto propone siete preguntas sobre porcentajes, unidades, comparación entre elecciones, límites, gráficas, exclusión de registros no especificados e interpretación de edades nacionales. Cada respuesta conduce a una explicación, incluso cuando es incorrecta. El avance, el cierre con lo aprendido y el reinicio convierten el error en una oportunidad de revisión. Los aciertos no son una medición validada de competencia cívica ni se vinculan a una identidad personal.
 
 ### Quinta escena: una hipótesis visible
 
-El laboratorio mueve una tasa absoluta entre 0% y 100% y mantiene visible la referencia observada de 59,7% en 2024. Para un escenario de 64,7%, el cambio es +5,0 pp y aproximadamente +8,4% relativo a la referencia. Los cien puntos cambian como ilustración. La etiqueta «escenario hipotético» acompaña al resultado: es una operación aritmética, no una predicción ni la estimación del efecto de una política pública.
+El laboratorio compara dos tasas hipotéticas entre 0% y 100% con la referencia observada de 59,7% en 2024. A = 54,7% representa −5,0 pp; B = 64,7%, +5,0 pp. Entre A y B hay 10,0 pp. B implica aproximadamente +8,4% relativo a la referencia. Los cien puntos cambian como ilustración. La etiqueta «escenario hipotético» acompaña al resultado: es una operación aritmética, no una predicción ni la estimación del efecto de una política pública.
 
 ### Qué exigiría una predicción
 
@@ -62,21 +62,21 @@ Predecir responsablemente requeriría, como mínimo, definir el fenómeno y la u
 
 ### Sexta escena: una explicación que viaja
 
-El generador permite preparar una pieza nacional, su complemento o una entidad de 2024, y elegir aula, comunidad o redes como contexto. Las salidas previstas en el producto son PNG horizontal de 1200 × 630, publicación de 1080 × 1350 e historia de 1080 × 1920 píxeles, acompañadas de texto accesible. El valor, el año, el alcance y la referencia deben viajar dentro de la imagen; la descripción escrita permite explicar la misma información sin depender de la gráfica.
+El generador permite preparar una pieza nacional, su complemento, una entidad o un grupo de edad de 2024, y elegir aula, comunidad o redes como contexto. Las salidas previstas en el producto son PNG horizontal de 1200 × 630, publicación de 1080 × 1350 e historia de 1080 × 1920 píxeles, acompañadas de texto accesible. El valor, el año, el alcance y la referencia deben viajar dentro de la imagen; la descripción escrita permite explicar la misma información sin depender de la gráfica.
 
 ### Un cierre sin exageraciones
 
-La persona termina con una afirmación verificable y una pregunta mejor formulada. Por ejemplo: «La participación nacional CCPC de 2024 fue 59,7%; ¿qué fuente y denominador sustentan esa cifra?». El recurso local funciona como respaldo para conectividad limitada y la demostración manual organiza seis escenas en tres minutos. La grabación, la publicación y los resultados de pruebas se documentan por separado cuando existan; este guion no los da por realizados.
+La persona termina con una afirmación verificable y una pregunta mejor formulada. Por ejemplo: «La participación nacional CCPC de 2024 fue 59,7%; ¿qué fuente y denominador sustentan esa cifra?». El recurso local funciona como respaldo para conectividad limitada y la demostración manual organiza seis escenas en tres minutos. El video local se verifica por separado. El sitio está privado en la cuenta propietaria; el acceso público, los requisitos administrativos y el piloto no se dan por cumplidos.
 
 ## Difundir con la fuente a la vista
 
 ### Plan de canales y formatos
 
-La puerta de entrada es una pieza breve que conduce a la experiencia completa. En Instagram, un carrusel de cinco láminas presenta la pregunta inicial, 59,7%, los cien puntos redondeados, una comparación en pp y la fuente. En Reels, TikTok o Shorts, un video de veinte a cuarenta segundos explica la diferencia entre tasa y representación. La invitación es explorar y comprobar, sin mensajes partidistas ni segmentación política.
+La puerta de entrada es una pieza breve que conduce a la experiencia completa. El carrusel entregable consta de cinco láminas y textos alternativos. Presenta la pregunta inicial, 59,7%, los cien puntos redondeados, una comparación en pp y la fuente. En Reels, TikTok o Shorts, un video de veinte a cuarenta segundos explica la diferencia entre tasa y representación. La invitación es explorar y comprobar, sin mensajes partidistas ni segmentación política.
 
 ### Aula y comunidad
 
-La ficha de aula propone quince minutos: cuatro para observar el 59,7% y sus puntos; seis para comparar 2018–2024 y 2015–2021; cinco para discutir una afirmación válida y otra no sustentada. En comunidad, una lámina descargada permite conversar sin conexión. La persona facilitadora lee el texto equivalente en voz alta y describe las barras. Un enlace o QR se incorpora únicamente cuando exista una dirección pública comprobada.
+El primer caso de uso es un taller de quince minutos con jóvenes sin formación estadística. El kit docente descargable incluye ficha, respuestas y observación: una secuencia breve para observar, explorar denominador, comparar, ubicar edades, probar hipótesis y explicar un resultado. En comunidad, una lámina descargada permite conversar sin conexión. La persona facilitadora lee el texto equivalente en voz alta y describe las barras. Un enlace o QR se incorpora únicamente cuando exista una dirección pública comprobada.
 
 ### Cadena editorial propuesta
 
@@ -91,3 +91,5 @@ Un piloto propuesto observa tareas concretas: explicar el 59,7%, distinguir pp d
 El código estático, los datos agregados, el guion editable y la ficha docente favorecen la revisión y adaptación. La posible incorporación a actividades del INE requeriría validación metodológica, editorial, de accesibilidad y operativa. Actualizar cifras, atender incidencias y mantener materiales requiere responsables. La presentación ejecutiva expone esta viabilidad en diez diapositivas y el pitch reserva dos minutos cincuenta segundos. Frase de cierre: «Los datos ya hablan. Hagamos que se entiendan».
 
 Fuente documental: https://ine.mx/wp-content/uploads/2025/06/Manual-Conteos-Censales-2009-2024.pdf
+
+Edades nacionales 2024, gráfica 5, p. 18: https://repositoriodocumental.ine.mx/xmlui/bitstream/handle/123456789/186643/Deceyec-Estudio-Participaci%C3%B3n-ciudadada-2024.pdf#page=18

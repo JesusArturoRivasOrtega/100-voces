@@ -24,15 +24,15 @@
     "index": 3,
     "start": 21,
     "end": 28,
-    "text": "La tasa cuenta registros con voto o no voto definido. Excluye los no especificados.",
-    "voice": "La tasa cuenta registros con voto o no voto definido. Excluye los no especificados."
+    "text": "La tasa excluye los registros no especificados de su denominador.",
+    "voice": "La tasa excluye los registros no especificados de su denominador."
   },
   {
     "index": 4,
     "start": 28,
     "end": 35,
-    "text": "Según CCPC, en 2024 la tasa nacional fue 59,7 por ciento.",
-    "voice": "Según Conteos Censales, en dos mil veinticuatro la tasa nacional fue cincuenta y nueve coma siete por ciento."
+    "text": "En 2024, la tasa nacional fue 59,7 por ciento.",
+    "voice": "En dos mil veinticuatro, la tasa nacional fue cincuenta y nueve coma siete por ciento."
   },
   {
     "index": 5,
@@ -87,43 +87,43 @@
     "index": 12,
     "start": 84,
     "end": 91,
-    "text": "Veracruz registra 58,4 por ciento: 1,3 puntos menos que la tasa nacional.",
-    "voice": "Veracruz registra cincuenta y ocho coma cuatro por ciento: uno coma tres puntos menos que la tasa nacional."
+    "text": "Por edad, de 25 a 29 años, la tasa nacional es 47,3 por ciento.",
+    "voice": "Por edad, de 25 a 29 años, la tasa nacional es cuarenta y siete coma tres por ciento."
   },
   {
     "index": 13,
     "start": 91,
     "end": 98,
-    "text": "La comparación describe una diferencia. No demuestra sus causas.",
-    "voice": "La comparación describe una diferencia. No demuestra sus causas."
+    "text": "Son dieciocho grupos nacionales. No describen cada estado ni explican causas.",
+    "voice": "Son dieciocho grupos nacionales. No describen cada estado ni explican causas."
   },
   {
     "index": 14,
     "start": 98,
     "end": 105,
-    "text": "Cinco preguntas con retroalimentación convierten esa lectura crítica en práctica.",
-    "voice": "Cinco preguntas con retroalimentación convierten esa lectura crítica en práctica."
+    "text": "Siete preguntas explican errores, denominadores y edades con alcance nacional.",
+    "voice": "Siete preguntas explican errores, denominadores y edades con alcance nacional."
   },
   {
     "index": 15,
     "start": 105,
     "end": 112,
-    "text": "El laboratorio distingue el valor observado de un escenario hipotético.",
-    "voice": "El laboratorio distingue el valor observado de un escenario hipotético."
+    "text": "Comparamos dos escenarios con la referencia de 59,7 por ciento.",
+    "voice": "Comparamos dos escenarios con la referencia de cincuenta y nueve coma siete por ciento."
   },
   {
     "index": 16,
     "start": 112,
     "end": 119,
-    "text": "Pasar de 59,7 a 64,7 suma cinco puntos porcentuales.",
-    "voice": "Pasar de cincuenta y nueve coma siete a sesenta y cuatro coma siete suma cinco puntos porcentuales."
+    "text": "A resta cinco puntos; B suma cinco. Entre ambos hay diez puntos.",
+    "voice": "A resta cinco puntos; B suma cinco. Entre ambos hay diez puntos."
   },
   {
     "index": 17,
     "start": 119,
     "end": 126,
-    "text": "Es un cambio relativo de aproximadamente 8,4 por ciento. No es una predicción.",
-    "voice": "Es un cambio relativo de aproximadamente ocho coma cuatro por ciento. No es una predicción."
+    "text": "Son hipótesis aritméticas para comparar. No predicen lo que sucederá.",
+    "voice": "Son hipótesis aritméticas para comparar. No predicen lo que sucederá."
   },
   {
     "index": 18,
@@ -136,15 +136,15 @@
     "index": 19,
     "start": 133,
     "end": 140,
-    "text": "Tres tamaños y una descripción accesible permiten reutilizar la explicación.",
-    "voice": "Tres tamaños y una descripción accesible permiten reutilizar la explicación."
+    "text": "Tarjetas en tres tamaños y un carrusel de cinco láminas incluyen texto accesible.",
+    "voice": "Tarjetas en tres tamaños y un carrusel de cinco láminas incluyen texto accesible."
   },
   {
     "index": 20,
     "start": 140,
     "end": 147,
-    "text": "La experiencia incluye una ruta rápida, un modo jurado y una ficha de aula.",
-    "voice": "La experiencia incluye una ruta rápida, un modo jurado y una ficha de aula."
+    "text": "El kit docente propone un primer taller de quince minutos con jóvenes.",
+    "voice": "El kit docente propone un primer taller de quince minutos con jóvenes."
   },
   {
     "index": 21,
@@ -157,8 +157,8 @@
     "index": 22,
     "start": 154,
     "end": 161,
-    "text": "Su adopción requiere revisión institucional. El impacto educativo está por evaluar.",
-    "voice": "Su adopción requiere revisión institucional. El impacto educativo está por evaluar."
+    "text": "El sitio está privado. El acceso público y el aprendizaje deben comprobarse.",
+    "voice": "El sitio está privado. El acceso público y el aprendizaje deben comprobarse."
   },
   {
     "index": 23,

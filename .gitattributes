@@ -1,0 +1,10 @@
+# Canonical source line endings; packaging normalizes text before hashing.
+* text=auto eol=lf
+*.pdf binary
+*.docx binary
+*.pptx binary
+*.png binary
+*.jpg binary
+*.mp4 binary
+*.zip binary
+*.ttf binary

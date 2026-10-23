@@ -1,6 +1,23 @@
 from pathlib import Path
-import json,csv,io,re,base64
+import json,csv,io,re,base64,shutil,zipfile
 root=Path(__file__).resolve().parents[1]; dist=root/'dist'
+resources=dist/'recursos';resources.mkdir(exist_ok=True)
+for folder,names in [('kit',['100_VOCES_Kit_Docente.pdf','100_VOCES_Kit_Docente.zip','seleccion_entidades.md']),('editoriales',['100_VOCES_Presentacion_Ejecutiva_10.pdf']),('video',['100_VOCES_Pitch_1080p_2m50.mp4'])]:
+ for name in names:
+  source=root/'entregables'/folder/name
+  if source.exists():shutil.copyfile(source,resources/name)
+carousel=resources/'carrusel'
+if carousel.exists():
+ with zipfile.ZipFile(resources/'100_VOCES_Carrusel.zip','w',zipfile.ZIP_DEFLATED) as z:
+  for p in sorted(carousel.iterdir()):
+   if p.is_file():z.write(p,p.name)
+segments=root/'entregables/video/segmentos.json'
+if segments.exists():
+ parts=json.loads(segments.read_text(encoding='utf-8'))
+ stamp=lambda n:f'{int(n)//3600:02}:{int(n)//60%60:02}:{int(n)%60:02}.000'
+ (resources/'pitch.vtt').write_text('WEBVTT\n\n'+'\n\n'.join(f'{stamp(p["start"])} --> {stamp(p["end"])}\n{p["text"]}' for p in parts)+'\n',encoding='utf-8')
+ (resources/'pitch-transcripcion.txt').write_text('100 VOCES · Pitch · Voz sintética Microsoft Sabina\n\n'+'\n\n'.join(p['text'] for p in parts),encoding='utf-8')
+shutil.copyfile(root/'version.json',dist/'version.json')
 data=json.loads((dist/'data/ccpc_resumen.json').read_text(encoding='utf-8-sig'))
 for d in data['years']+data['states_2024']:
  d.setdefault('year',2024);d.setdefault('kind','presidencial');d.setdefault('scope',d.get('name','Nacional'));d.setdefault('unit','porcentaje')
@@ -23,5 +40,7 @@ licenses='\n\n'.join(p.read_text(encoding='utf-8') for p in sorted((dist/'fonts'
 h=h.replace('</head>','<script type="application/json" id="font-licenses">'+json.dumps({'license':'SIL OFL','text':licenses},ensure_ascii=False)+'</script>\n</head>')
 for file,mime in [('data/ccpc_resumen.json','application/json'),('data/indicadores.csv','text/csv')]:
  h=h.replace('href="'+file+'"','href="data:'+mime+';base64,'+base64.b64encode((dist/file).read_bytes()).decode()+'"')
+# The app itself is standalone; the optional PDFs, PNGs and video travel in dist/recursos.
+h=h.replace('href="recursos/','href="dist/recursos/').replace('src="recursos/','src="dist/recursos/')
 (root/'100_VOCES_ABRIR.html').write_text(h,encoding='utf-8')
 print('JSON, JS y CSV sincronizados; HTML autónomo generado.')
