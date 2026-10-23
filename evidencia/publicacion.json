@@ -1,10 +1,13 @@
 {
-  "status": "succeeded",
-  "audience": "owner-private",
-  "url": "https://cien-voces-mexico.arthojust.chatgpt.site",
   "project_id": "appgprj_6ad83a98b0588191a6b55f8b4a77b943",
-  "version_id": "appgprj_6ad83a98b0588191a6b55f8b4a77b943~appgver_653f07017af8819192279267b6271f7d",
-  "commit_sha": "03e67802a4c4285e6bba08fcf7cc36d0c1c725d9",
-  "completed_at": "2026-10-21T14:13:40.051949+00:00",
-  "verification": "Confirmación nativa Sites de despliegue exitoso; no se afirma acceso público."
+  "deployment_id": "appgdep_6adae87626688191a58b197720c8a70d",
+  "version_id": "appgprj_6ad83a98b0588191a6b55f8b4a77b943~appgver_b1971cdc46408191b8d81823ce534c7a",
+  "release": "1.1.0",
+  "commit_sha": "745d409ddb6a179ff684974e2d711f0a8353961b",
+  "status": "succeeded",
+  "url": "https://cien-voces-mexico.arthojust.chatgpt.site",
+  "updated_at": "2026-10-23T04:54:22.466808+00:00",
+  "audiencia": "Privado del propietario; permisos conservados",
+  "video": "recursos/100_VOCES_Pitch_1080p_2m50.mp4",
+  "limite": "El despliegue exitoso no acredita acceso del jurado ni envio al concurso."
 }
