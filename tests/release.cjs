@@ -12,7 +12,7 @@ const root = path.resolve(__dirname, ".."),
       viewport: { width: 1440, height: 1000 },
       reducedMotion: "reduce",
     });
-    await p.goto(baseURL + "/dist/");
+    await p.goto(baseURL + "/public/");
     await p.waitForFunction(
       () => document.documentElement.dataset.ready === "true",
     );
@@ -114,7 +114,7 @@ const root = path.resolve(__dirname, ".."),
         ),
       ]);
     for (const url of urls) {
-      const r = await p.request.get(baseURL + "/dist/" + url);
+      const r = await p.request.get(baseURL + "/public/" + url);
       assert.equal(r.status(), 200, url);
       assert.ok((await r.body()).length > 0, url);
     }
@@ -140,7 +140,7 @@ const root = path.resolve(__dirname, ".."),
       await offline
         .locator('a[href$="100_VOCES_Kit_Docente.pdf"]')
         .getAttribute("href"),
-      /^dist\/recursos\//,
+      /^public\/recursos\//,
     );
     results.push({
       prueba: "Distribución autónoma",

@@ -1,5 +1,5 @@
 {
-  "fecha": "2026-10-23T04:43:40.350Z",
+  "fecha": "2026-10-25T23:58:01.372Z",
   "states": [
     {
       "state": "initial",
@@ -323,11 +323,43 @@
                 "#accessibleText"
               ],
               "failureSummary": "Fix any of the following:\n  Element's background color could not be determined because it's partially obscured by another element"
+            },
+            {
+              "any": [
+                {
+                  "id": "color-contrast",
+                  "data": {
+                    "contrastRatio": 0,
+                    "fontSize": "12.0pt (16px)",
+                    "fontWeight": "normal",
+                    "messageKey": "elmPartiallyObscured",
+                    "expectedContrastRatio": "4.5:1"
+                  },
+                  "relatedNodes": [
+                    {
+                      "html": "<textarea id=\"lensText\" rows=\"5\" maxlength=\"3000\" placeholder=\"La participación cayó 2.7 % entre 2018 y 2024.\"></textarea>",
+                      "target": [
+                        "#lensText"
+                      ]
+                    }
+                  ],
+                  "impact": "serious",
+                  "message": "Element's background color could not be determined because it's partially obscured by another element"
+                }
+              ],
+              "all": [],
+              "none": [],
+              "impact": "serious",
+              "html": "<textarea id=\"lensText\" rows=\"5\" maxlength=\"3000\" placeholder=\"La participación cayó 2.7 % entre 2018 y 2024.\"></textarea>",
+              "target": [
+                "#lensText"
+              ],
+              "failureSummary": "Fix any of the following:\n  Element's background color could not be determined because it's partially obscured by another element"
             }
           ]
         }
       ],
-      "passes": 27
+      "passes": 28
     },
     {
       "state": "expanded",
@@ -651,11 +683,43 @@
                 "#accessibleText"
               ],
               "failureSummary": "Fix any of the following:\n  Element's background color could not be determined because it's partially obscured by another element"
+            },
+            {
+              "any": [
+                {
+                  "id": "color-contrast",
+                  "data": {
+                    "contrastRatio": 0,
+                    "fontSize": "12.0pt (16px)",
+                    "fontWeight": "normal",
+                    "messageKey": "elmPartiallyObscured",
+                    "expectedContrastRatio": "4.5:1"
+                  },
+                  "relatedNodes": [
+                    {
+                      "html": "<textarea id=\"lensText\" rows=\"5\" maxlength=\"3000\" placeholder=\"La participación cayó 2.7 % entre 2018 y 2024.\"></textarea>",
+                      "target": [
+                        "#lensText"
+                      ]
+                    }
+                  ],
+                  "impact": "serious",
+                  "message": "Element's background color could not be determined because it's partially obscured by another element"
+                }
+              ],
+              "all": [],
+              "none": [],
+              "impact": "serious",
+              "html": "<textarea id=\"lensText\" rows=\"5\" maxlength=\"3000\" placeholder=\"La participación cayó 2.7 % entre 2018 y 2024.\"></textarea>",
+              "target": [
+                "#lensText"
+              ],
+              "failureSummary": "Fix any of the following:\n  Element's background color could not be determined because it's partially obscured by another element"
             }
           ]
         }
       ],
-      "passes": 29
+      "passes": 30
     },
     {
       "state": "resources",
@@ -979,11 +1043,43 @@
                 "#accessibleText"
               ],
               "failureSummary": "Fix any of the following:\n  Element's background color could not be determined because it's partially obscured by another element"
+            },
+            {
+              "any": [
+                {
+                  "id": "color-contrast",
+                  "data": {
+                    "contrastRatio": 0,
+                    "fontSize": "12.0pt (16px)",
+                    "fontWeight": "normal",
+                    "messageKey": "elmPartiallyObscured",
+                    "expectedContrastRatio": "4.5:1"
+                  },
+                  "relatedNodes": [
+                    {
+                      "html": "<textarea id=\"lensText\" rows=\"5\" maxlength=\"3000\" placeholder=\"La participación cayó 2.7 % entre 2018 y 2024.\"></textarea>",
+                      "target": [
+                        "#lensText"
+                      ]
+                    }
+                  ],
+                  "impact": "serious",
+                  "message": "Element's background color could not be determined because it's partially obscured by another element"
+                }
+              ],
+              "all": [],
+              "none": [],
+              "impact": "serious",
+              "html": "<textarea id=\"lensText\" rows=\"5\" maxlength=\"3000\" placeholder=\"La participación cayó 2.7 % entre 2018 y 2024.\"></textarea>",
+              "target": [
+                "#lensText"
+              ],
+              "failureSummary": "Fix any of the following:\n  Element's background color could not be determined because it's partially obscured by another element"
             }
           ]
         }
       ],
-      "passes": 32
+      "passes": 33
     },
     {
       "state": "mobile-menu",
@@ -1026,6 +1122,38 @@
                 "#menuToggle > span[aria-hidden=\"true\"]"
               ],
               "failureSummary": "Fix any of the following:\n  Element content contains only non-text characters"
+            },
+            {
+              "any": [
+                {
+                  "id": "color-contrast",
+                  "data": {
+                    "contrastRatio": 0,
+                    "fontSize": "12.0pt (16px)",
+                    "fontWeight": "normal",
+                    "messageKey": "elmPartiallyObscured",
+                    "expectedContrastRatio": "4.5:1"
+                  },
+                  "relatedNodes": [
+                    {
+                      "html": "<header class=\"nav-wrap\">",
+                      "target": [
+                        "header"
+                      ]
+                    }
+                  ],
+                  "impact": "serious",
+                  "message": "Element's background color could not be determined because it's partially obscured by another element"
+                }
+              ],
+              "all": [],
+              "none": [],
+              "impact": "serious",
+              "html": "<a href=\"#fuentes\">Fuentes</a>",
+              "target": [
+                "#chapterMenu > a[href$=\"#fuentes\"]"
+              ],
+              "failureSummary": "Fix any of the following:\n  Element's background color could not be determined because it's partially obscured by another element"
             },
             {
               "any": [
@@ -1121,11 +1249,43 @@
                 "#accessibleText"
               ],
               "failureSummary": "Fix any of the following:\n  Element's background color could not be determined because it's partially obscured by another element"
+            },
+            {
+              "any": [
+                {
+                  "id": "color-contrast",
+                  "data": {
+                    "contrastRatio": 0,
+                    "fontSize": "12.0pt (16px)",
+                    "fontWeight": "normal",
+                    "messageKey": "elmPartiallyObscured",
+                    "expectedContrastRatio": "4.5:1"
+                  },
+                  "relatedNodes": [
+                    {
+                      "html": "<textarea id=\"lensText\" rows=\"5\" maxlength=\"3000\" placeholder=\"La participación cayó 2.7 % entre 2018 y 2024.\"></textarea>",
+                      "target": [
+                        "#lensText"
+                      ]
+                    }
+                  ],
+                  "impact": "serious",
+                  "message": "Element's background color could not be determined because it's partially obscured by another element"
+                }
+              ],
+              "all": [],
+              "none": [],
+              "impact": "serious",
+              "html": "<textarea id=\"lensText\" rows=\"5\" maxlength=\"3000\" placeholder=\"La participación cayó 2.7 % entre 2018 y 2024.\"></textarea>",
+              "target": [
+                "#lensText"
+              ],
+              "failureSummary": "Fix any of the following:\n  Element's background color could not be determined because it's partially obscured by another element"
             }
           ]
         }
       ],
-      "passes": 32
+      "passes": 34
     }
   ]
 }

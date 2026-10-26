@@ -20,3 +20,14 @@ entregables/video/audio/
 entregables/video/frames/
 entregables/video/frame_*.png
 entregables/video/revision_*.png
+
+# Hosted Worker build and local sessions
+dist/
+.wrangler/
+.vinext/
+.env*
+.dev.vars*
+*.tsbuildinfo
+outputs/
+!public/recursos/*.zip
+.next/

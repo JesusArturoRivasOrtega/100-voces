@@ -1,12 +1,12 @@
 # 100 VOCES — Así participa México
 
-Experiencia educativa independiente para comprender la participación ciudadana con datos publicados por el INE. **Versión 1.1.0** · Reto 3 · Sin aval institucional.
+Experiencia educativa independiente para comprender la participación ciudadana con datos publicados por el INE. **Versión 1.2.0** · Reto 3 · Sin aval institucional.
 
 [Repositorio](https://github.com/JesusArturoRivasOrtega/100-voces) · [Índice de entrega](LEEME_ENTREGA.md) · [Pruebas ejecutadas](docs/PRUEBAS.md) · [Cambios](CHANGELOG.md)
 
 ## Abrir y explorar
 
-Abre **100_VOCES_ABRIR.html** con doble clic. La aplicación incluye código, datos y tipografías: sus interacciones funcionan sin conexión. Para abrir el kit, carrusel y video, conserva también la carpeta `dist/recursos/`. Consultar fuentes oficiales en línea requiere internet.
+Abre **100_VOCES_ABRIR.html** con doble clic. La aplicación incluye código, datos y tipografías: sus interacciones funcionan sin conexión. Para abrir el kit, carrusel y video, conserva también la carpeta `public/recursos/`. Consultar fuentes oficiales en línea requiere internet.
 
 Para servir la versión modular desde la raíz:
 
@@ -14,11 +14,13 @@ Para servir la versión modular desde la raíz:
 python -m http.server 8765 --bind 127.0.0.1
 ```
 
-Visita http://127.0.0.1:8765/dist/ . No se necesita instalar paquetes para usar el sitio.
+Visita http://127.0.0.1:8765/public/ . No se necesita instalar paquetes para usar el sitio.
 
 El sitio en https://cien-voces-mexico.arthojust.chatgpt.site conserva acceso privado del propietario. El repositorio y el sitio tienen permisos independientes. No se presenta ese enlace como acceso ya comprobado para el jurado.
 
 ## Qué incluye
+
+**Nuevo en 1.2:** [100 VOCES EN VIVO y Lente Ciudadana](docs/EN_VIVO_Y_LENTE.md). Salas compartidas con QR, tres rondas, controles del presentador y resumen; contraste numérico de texto o capturas, con fuentes y ficha PNG. La demo de sala y el contraste de texto funcionan sin conexión. Las salas compartidas requieren el servidor D1; el OCR requiere HTTP(S).
 
 - Seis capítulos, seis elecciones nacionales, ocho entidades y 18 grupos de edad nacionales de 2024.
 - Denominador interactivo: sí votaron, no votaron y exclusión de no especificados.
@@ -34,17 +36,17 @@ El sitio en https://cien-voces-mexico.arthojust.chatgpt.site conserva acceso pri
 
 | Archivo | Uso |
 |---|---|
-| [Kit docente PDF](dist/recursos/100_VOCES_Kit_Docente.pdf) | Actividad de 15 minutos, respuestas y piloto |
-| [Kit editable ZIP](dist/recursos/100_VOCES_Kit_Docente.zip) | Documentos y plantilla sin resultados |
-| [Carrusel ZIP](dist/recursos/100_VOCES_Carrusel.zip) | Cinco imágenes y descripciones |
-| [Video MP4](dist/recursos/100_VOCES_Pitch_1080p_2m50.mp4) | Pitch actualizado |
-| [Presentación PDF](dist/recursos/100_VOCES_Presentacion_Ejecutiva_10.pdf) | Diez diapositivas |
+| [Kit docente PDF](public/recursos/100_VOCES_Kit_Docente.pdf) | Actividad de 15 minutos, respuestas y piloto |
+| [Kit editable ZIP](public/recursos/100_VOCES_Kit_Docente.zip) | Documentos y plantilla sin resultados |
+| [Carrusel ZIP](public/recursos/100_VOCES_Carrusel.zip) | Cinco imágenes y descripciones |
+| [Video MP4](public/recursos/100_VOCES_Pitch_1080p_2m50.mp4) | Pitch actualizado |
+| [Presentación PDF](public/recursos/100_VOCES_Presentacion_Ejecutiva_10.pdf) | Diez diapositivas |
 | [Guion PDF](entregables/editoriales/100_VOCES_Guion_Narrativo_4_paginas.pdf) | Historia y difusión |
-| [Datos JSON](dist/data/ccpc_resumen.json) | Indicadores y fuentes por registro |
+| [Datos JSON](public/data/ccpc_resumen.json) | Indicadores y fuentes por registro |
 
 ## Desarrollo y pruebas
 
-Node.js 20+ y Python 3 son suficientes para las pruebas y la construcción de la aplicación. Instalar las dependencias fijadas:
+Node.js 22.13+ y Python 3 son suficientes para las pruebas y la construcción de la aplicación. Instalar las dependencias fijadas:
 
 ```sh
 npm ci
@@ -56,7 +58,7 @@ Por defecto las pruebas usan Microsoft Edge instalado. En otro entorno, ejecutar
 
 `npm test` inicia su propio servidor en un puerto disponible y ejecuta cuatro suites. Se verificaron localmente **30 grupos funcionales y seis estados de axe sin infracciones**. No es certificación WCAG ni prueba con usuarios.
 
-El código mantenido está en `dist/js/`, `dist/index.html` y `dist/styles.css`; en este proyecto estático, `dist/` contiene las fuentes publicables. Los datos se editan únicamente en `dist/data/ccpc_resumen.json`. `scripts/build.py` sincroniza JS, CSV, materiales y HTML autónomo. `scripts/prepare.py` es un registro histórico y no se debe ejecutar como build.
+El contenido mantenido está en `public/`; los módulos nuevos se editan en `lib/client/`. La API está en `lib/live-service.mjs`. `dist/` contiene exclusivamente el Worker generado. Los datos se editan en `public/data/ccpc_resumen.json`. `scripts/build.py` sincroniza bundles, CSV, materiales y HTML autónomo; `npm run build` también construye el servidor. `scripts/prepare.py` es histórico y no se debe ejecutar como build.
 
 Para regenerar el carrusel, mantener el servidor local en 8765 y ejecutar `npm run resources`, después `npm run build`. Los generadores editoriales requieren las bibliotecas de `requirements-editoriales.txt`; el video necesita además FFmpeg, Windows y voz Sabina para síntesis.
 

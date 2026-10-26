@@ -1,7 +1,7 @@
 const fs = require("fs"),
   path = require("path");
 const { chromium, browserOptions, baseURL } = require("../tests/runtime.cjs");
-const out = path.join(__dirname, "../dist/recursos/carrusel");
+const out = path.join(__dirname, "../public/recursos/carrusel");
 fs.mkdirSync(out, { recursive: true });
 const slides = [
   {
@@ -49,7 +49,7 @@ const slides = [
   const b = await chromium.launch(browserOptions);
   try {
     const p = await b.newPage();
-    await p.goto(baseURL + "/dist/");
+    await p.goto(baseURL + "/public/");
     await p.evaluate(() => document.fonts.ready);
     for (let i = 0; i < slides.length; i++) {
       const data = await p.evaluate(

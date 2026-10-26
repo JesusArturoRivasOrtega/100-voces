@@ -5,6 +5,8 @@ const { spawn } = require("child_process");
 const root = path.resolve(__dirname, "..");
 const mime = {
   ".html": "text/html; charset=utf-8",
+  ".wasm": "application/wasm",
+  ".mjs": "text/javascript; charset=utf-8",
   ".js": "text/javascript; charset=utf-8",
   ".css": "text/css; charset=utf-8",
   ".json": "application/json",
@@ -15,7 +17,14 @@ const mime = {
   ".zip": "application/zip",
   ".mp4": "video/mp4",
 };
-const server = http.createServer((req, res) => {
+const liveReady = Promise.all([import('../lib/live-service.mjs'),import('./live-api.mjs')]).then(([api,test])=>({handler:api.handleLive,db:test.testDb()}));
+const server = http.createServer(async (req, res) => {
+  if(req.url.startsWith('/api/live')) {
+    const {handler,db}=await liveReady;
+    const chunks=[];for await(const chunk of req)chunks.push(chunk);
+    const response=await handler(new Request(`http://${req.headers.host}${req.url}`,{method:req.method,headers:req.headers,...(req.method==='POST'?{body:Buffer.concat(chunks)}:{})}),db);
+    res.writeHead(response.status,Object.fromEntries(response.headers));res.end(await response.text());return;
+  }
   let name;
   try {
     name = decodeURIComponent(new URL(req.url, "http://localhost").pathname);
@@ -45,12 +54,15 @@ const server = http.createServer((req, res) => {
 server.listen(0, "127.0.0.1", async () => {
   const baseURL = `http://127.0.0.1:${server.address().port}`;
   try {
-    for (const name of [
+    const suites = [
       "browser.cjs",
       "improvements.cjs",
       "accessibility.cjs",
       "release.cjs",
-    ]) {
+      "features.cjs",
+      "live-api.mjs",
+    ];
+    for (const name of (process.argv.length>2 ? suites.filter(n=>process.argv.slice(2).includes(n)) : suites)) {
       console.log(`Verificando ${name}`);
       await new Promise((resolve, reject) => {
         const child = spawn(process.execPath, [path.join(__dirname, name)], {
@@ -69,5 +81,6 @@ server.listen(0, "127.0.0.1", async () => {
     process.exitCode = 1;
   } finally {
     server.close();
+    (await liveReady).db.close();
   }
 });

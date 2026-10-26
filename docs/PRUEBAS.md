@@ -1,10 +1,10 @@
-# Pruebas de 100 VOCES · v1.1.0
+# Pruebas de 100 VOCES · v1.2.0
 
 Ejecución reproducible: npm ci y npm test. El ejecutor inicia y detiene su servidor local. Los resultados siguientes proceden de los reportes guardados; no se infieren de la presencia del código.
 
 ## Base
 
-Fecha UTC: 2026-10-23T04:43:07.084Z
+Fecha UTC: 2026-10-25T23:57:39.570Z
 
 | Prueba | Resultado observado |
 |---|---|
@@ -26,7 +26,7 @@ Fecha UTC: 2026-10-23T04:43:07.084Z
 
 ## Ampliaciones
 
-Fecha UTC: 2026-10-23T04:43:23.604Z
+Fecha UTC: 2026-10-25T23:57:52.270Z
 
 | Prueba | Resultado observado |
 |---|---|
@@ -42,7 +42,7 @@ Fecha UTC: 2026-10-23T04:43:23.604Z
 
 ## Versión 1.1
 
-Fecha UTC: 2026-10-23T04:43:50.516Z
+Fecha UTC: 2026-10-25T23:58:07.818Z
 
 | Prueba | Resultado observado |
 |---|---|
@@ -53,12 +53,24 @@ Fecha UTC: 2026-10-23T04:43:50.516Z
 | Recursos descargables | 14 destinos locales existen y responden con contenido |
 | Distribución autónoma | Siete preguntas y rutas al kit local correctas sin red |
 
+## En vivo y Lente
+
+Fecha UTC: 2026-10-25T23:58:30.541Z
+
+| Prueba | Resultado observado |
+|---|---|
+| Contraste numérico y ámbitos | Tasas, complementos, edad, unidades, signos y ámbitos no disponibles |
+| Sala compartida | Presentador y dos contextos independientes; sincronización, recuperación y control de rondas |
+| Demo y exportaciones | Tres rondas ficticias, resumen y ficha PNG descargados |
+| OCR local | Captura sintética leída en español, sin subida ni solicitudes a otro origen |
+| Accesibilidad y adaptación | Sin infracciones axe en el estado expandido; sin desbordamiento en 320,375,768,1440 px |
+
 ## Accesibilidad automática
 
 6 estados examinados con axe-core: initial, expanded, resources, mobile-menu, ages, evidence-and-cards. Cero infracciones detectadas. La suite devuelve salida de error si aparecen infracciones.
 
 ## Alcance y límites
 
-30 grupos de comprobaciones funcionales aprobados. El piloto sigue sin ejecutarse. Las pruebas no certifican WCAG ni sustituyen lector de pantalla, Safari/Firefox o teléfonos físicos. La ampliación de texto se comprobó como tamaño base 200% a 640px; no equivale a una auditoría completa de zoom. Las tasas se comparan con referencias locales ya cotejadas, no se vuelven a extraer del PDF oficial en cada ejecución.
+35 grupos de comprobaciones funcionales aprobados. El piloto sigue sin ejecutarse. Las pruebas no certifican WCAG ni sustituyen lector de pantalla, Safari/Firefox o teléfonos físicos. La ampliación de texto se comprobó como tamaño base 200% a 640px; no equivale a una auditoría completa de zoom. Las tasas se comparan con referencias locales ya cotejadas, no se vuelven a extraer del PDF oficial en cada ejecución.
 
 Se revisaron capturas móviles/escritorio y PNG del carrusel. Los archivos generados se conservan en evidencia/. El informe de video está en entregables/video/verificacion_video.json.

@@ -1,5 +1,15 @@
 # Cambios
 
+## 1.2.0 · 25 de octubre de 2026
+
+- 100 VOCES EN VIVO: salas por código/QR, tres rondas, controles del presentador, resumen y demostración local.
+- API Vinext y almacenamiento D1 con caducidad, validación y controles de acceso por sala.
+- Lente Ciudadana: lectura local de capturas, contraste numérico confirmado, explicación con fuentes y ficha PNG.
+- Estados de carga, reconexión y caducidad; accesibilidad y diseño adaptable.
+- Fuentes estáticas trasladadas a `public/`; `dist/` ahora contiene la compilación del Worker.
+- Pruebas de navegadores independientes, OCR, seguridad de la API y regresión de los capítulos originales.
+- Los materiales narrativos de 1.1 se conservan; el alcance nuevo está documentado en `docs/EN_VIVO_Y_LENTE.md`.
+
 ## 1.1.0 · 22 de octubre de 2026
 
 - Menú de capítulos en móvil, indicador de ubicación y portada compacta.

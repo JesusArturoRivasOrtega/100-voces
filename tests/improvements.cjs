@@ -4,8 +4,8 @@ const fs = require("fs"),
 const { chromium, browserOptions, baseURL, axePath } = require("./runtime.cjs");
 const root = path.resolve(__dirname, ".."),
   out = path.join(root, "evidencia"),
-  V = require("../dist/js/core.js"),
-  data = require("../dist/data/ccpc_resumen.json");
+  V = require("../public/js/core.js"),
+  data = require("../public/data/ccpc_resumen.json");
 const expected = [
   56.8, 48.4, 47.3, 52, 56.1, 60.2, 64.1, 67.2, 69.5, 73, 76.5, 75.5, 71.4,
   63.6, 51.4, 36.7, 23.8, 18.5,
@@ -45,7 +45,7 @@ const pass = (name, detail) =>
   });
   const p = await context.newPage();
   p.on("pageerror", (e) => errors.push(e.message));
-  await p.goto(baseURL + "/dist/");
+  await p.goto(baseURL + "/public/");
   await p.waitForFunction(
     () => document.documentElement.dataset.ready === "true",
   );

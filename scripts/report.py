@@ -1,8 +1,8 @@
 from pathlib import Path
 import json
 root=Path(__file__).resolve().parents[1]
-reports=[('Base','pruebas.json'),('Ampliaciones','pruebas-mejoras.json'),('Versión 1.1','pruebas-version-1.1.json')]
-lines=['# Pruebas de 100 VOCES · v1.1.0','', 'Ejecución reproducible: npm ci y npm test. El ejecutor inicia y detiene su servidor local. Los resultados siguientes proceden de los reportes guardados; no se infieren de la presencia del código.','']
+reports=[('Base','pruebas.json'),('Ampliaciones','pruebas-mejoras.json'),('Versión 1.1','pruebas-version-1.1.json'),('En vivo y Lente','pruebas-version-1.2.json')]
+lines=['# Pruebas de 100 VOCES · v1.2.0','', 'Ejecución reproducible: npm ci y npm test. El ejecutor inicia y detiene su servidor local. Los resultados siguientes proceden de los reportes guardados; no se infieren de la presencia del código.','']
 total=0
 for label,file in reports:
  data=json.loads((root/'evidencia'/file).read_text(encoding='utf-8'))

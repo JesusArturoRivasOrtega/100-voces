@@ -1,0 +1,30 @@
+{
+  "fecha": "2026-10-25T23:58:30.541Z",
+  "resultados": [
+    {
+      "prueba": "Contraste numérico y ámbitos",
+      "estado": "VERIFICADO",
+      "detalle": "Tasas, complementos, edad, unidades, signos y ámbitos no disponibles"
+    },
+    {
+      "prueba": "Sala compartida",
+      "estado": "VERIFICADO",
+      "detalle": "Presentador y dos contextos independientes; sincronización, recuperación y control de rondas"
+    },
+    {
+      "prueba": "Demo y exportaciones",
+      "estado": "VERIFICADO",
+      "detalle": "Tres rondas ficticias, resumen y ficha PNG descargados"
+    },
+    {
+      "prueba": "OCR local",
+      "estado": "VERIFICADO",
+      "detalle": "Captura sintética leída en español, sin subida ni solicitudes a otro origen"
+    },
+    {
+      "prueba": "Accesibilidad y adaptación",
+      "estado": "VERIFICADO",
+      "detalle": "Sin infracciones axe en el estado expandido; sin desbordamiento en 320,375,768,1440 px"
+    }
+  ]
+}

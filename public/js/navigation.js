@@ -44,6 +44,8 @@ Voces.initNavigation = function () {
     aprender: "04 / Practicar",
     escenarios: "05 / Escenarios A/B",
     compartir: "06 / Crear una tarjeta",
+    "en-vivo": "07 / Sala en vivo",
+    lente: "08 / Lente Ciudadana",
     metodo: "Actividad · 15 minutos",
     recursos: "Materiales para llevar",
     fuentes: "Fuentes y metodología",

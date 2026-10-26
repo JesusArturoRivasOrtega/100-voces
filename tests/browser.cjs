@@ -5,8 +5,8 @@ const { chromium, browserOptions, baseURL, axePath } = require("./runtime.cjs");
 const root = path.resolve(__dirname, ".."),
   out = path.join(root, "evidencia");
 fs.mkdirSync(out, { recursive: true });
-const V = require("../dist/js/core.js"),
-  data = require("../dist/data/ccpc_resumen.json");
+const V = require("../public/js/core.js"),
+  data = require("../public/data/ccpc_resumen.json");
 const results = [],
   errors = [];
 let browser;
@@ -44,7 +44,7 @@ const record = (name, expected, observed) =>
   p.on("console", (m) => {
     if (m.type() === "error") errors.push(m.text());
   });
-  const r = await p.goto(baseURL + "/dist/");
+  const r = await p.goto(baseURL + "/public/");
   assert.equal(r.status(), 200);
   await p.waitForFunction(
     () => document.documentElement.dataset.ready === "true",
@@ -210,7 +210,7 @@ const record = (name, expected, observed) =>
     "scrollWidth <= clientWidth en los cuatro anchos",
   );
   await p.setViewportSize({ width: 1280, height: 900 });
-  await p.goto(baseURL + "/dist/");
+  await p.goto(baseURL + "/public/");
   await p.keyboard.press("Tab");
   assert.equal(
     await p.evaluate(() => document.activeElement.className),
@@ -284,7 +284,7 @@ const record = (name, expected, observed) =>
       body: "window.VOCES_DATA={years:[],states_2024:[]}",
     }),
   );
-  await broken.goto(baseURL + "/dist/");
+  await broken.goto(baseURL + "/public/");
   assert.equal(
     await broken.locator("html").getAttribute("data-ready"),
     "error",

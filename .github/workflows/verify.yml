@@ -18,7 +18,7 @@ jobs:
           python-version: '3.12'
       - run: npm ci
       - run: npx playwright install --with-deps chromium
-      - run: python scripts/build.py
+      - run: npm run build
       - run: npm test
         env:
           VOCES_BROWSER: chromium

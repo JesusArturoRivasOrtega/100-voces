@@ -9,7 +9,7 @@ const { chromium, browserOptions, baseURL, axePath } = require("./runtime.cjs");
       viewport: { width: 1440, height: 1000 },
       reducedMotion: "reduce",
     });
-    await p.goto(baseURL + "/dist/");
+    await p.goto(baseURL + "/public/");
     await p.waitForFunction(
       () => document.documentElement.dataset.ready === "true",
     );

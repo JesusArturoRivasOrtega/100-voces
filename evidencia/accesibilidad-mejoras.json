@@ -38,11 +38,14 @@
           ],
           [
             "#accessibleText"
+          ],
+          [
+            "#lensText"
           ]
         ]
       }
     ],
-    "passes": 27
+    "passes": 28
   },
   {
     "state": "evidence-and-cards",
@@ -83,10 +86,13 @@
           ],
           [
             "#accessibleText"
+          ],
+          [
+            "#lensText"
           ]
         ]
       }
     ],
-    "passes": 29
+    "passes": 30
   }
 ]
