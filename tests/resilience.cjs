@@ -1,0 +1,30 @@
+const assert=require('node:assert/strict'),fs=require('node:fs'),path=require('node:path');
+const {chromium,browserOptions,baseURL,axePath}=require('./runtime.cjs');
+(async()=>{const browser=await chromium.launch(browserOptions);const results=[];try{
+ const page=await browser.newPage({viewport:{width:1440,height:1000},reducedMotion:'reduce'}),errors=[];page.on('pageerror',e=>errors.push(e.message));
+ await page.goto(baseURL+'/public/');
+ await page.locator('#lensText').fill('2018: 62.4 %, 2024: 59.7 %');await page.locator('#lensDetect').click();
+ assert.equal(await page.locator('#lensCandidates button').count(),2);assert.equal(await page.locator('#lensNumber').inputValue(),'');assert.equal(await page.locator('#lensYear').inputValue(),'');
+ await page.locator('#lensCandidates button').nth(1).click();await page.locator('#lensYear').selectOption('2024');await page.locator('#lensConfirm').check();await page.locator('#lensForm button[type=submit]').click();assert.match(await page.locator('#lensVerdict').innerText(),/coincide/);
+ await page.locator('#lensText').fill('La tasa es 59.7 %');await page.locator('#lensDetect').click();assert.equal(await page.locator('#lensYear').inputValue(),'');
+ await page.locator('#lensText').fill('Yucatán y Sonora: 59.7 % en 2024');await page.locator('#lensDetect').click();assert.equal(await page.locator('#lensScope').inputValue(),'other');assert.equal(await page.locator('#lensEntityField').isVisible(),false);
+ results.push({prueba:'Selección de cifras y contexto ambiguo',estado:'VERIFICADO',detalle:'Dos cifras seleccionables, año ausente sin valor heredado y ámbitos mezclados sin inferencia automática.'});
+ await page.locator('#liveCreate').click();await page.locator('#liveRoomCode').filter({hasText:/^[A-Z2-9]{6}$/}).waitFor();const code=await page.locator('#liveRoomCode').innerText();
+ assert.equal(await page.locator('#liveInvite').evaluate(e=>e.open),true);assert.ok(!(await page.locator('#liveInviteLink').inputValue()).includes('hostToken'));
+ await page.locator('#liveLeave').click();await page.locator('#liveResume').click();assert.equal(await page.locator('#liveRoomCode').innerText(),code);
+ await page.evaluate(()=>window.originalBar=document.getElementById('liveCloud').firstChild);
+ await page.route('**/api/live/'+code,r=>r.abort('failed'));await page.locator('#liveConnection').filter({hasText:'interrumpida'}).waitFor({timeout:15000});
+ await page.unroute('**/api/live/'+code);await page.locator('#liveConnection').filter({hasText:'Conectado'}).waitFor({timeout:15000});assert.equal(await page.evaluate(()=>window.originalBar===document.getElementById('liveCloud').firstChild),true);
+ await page.locator('#liveClose').click();results.push({prueba:'Recuperación de sala y gráfico estable',estado:'VERIFICADO',detalle:'Salir y retomar conserva control; error de red y recuperación; barras conservan sus nodos.'});
+ const sample=await page.evaluate(()=>{const c=document.createElement('canvas');c.width=1200;c.height=330;const g=c.getContext('2d');g.fillStyle='#171826';g.fillRect(0,0,c.width,c.height);g.fillStyle='white';g.font='48px Arial';g.fillText('2018: 62.4 %',40,110);g.fillText('2024: 59.7 %',40,220);return c.toDataURL('image/png').split(',')[1];});
+ const file={name:'captura-oscura.png',mimeType:'image/png',buffer:Buffer.from(sample,'base64')};
+ await page.locator('#lensImage').setInputFiles(file);await page.locator('#lensOcrCancel').click();assert.match(await page.locator('#lensStatus').innerText(),/cancelada/);assert.equal(await page.locator('#lensImage').isEnabled(),true);
+ await page.locator('#lensImage').setInputFiles(file);await page.locator('#lensStatus').filter({hasText:'Texto extraído'}).waitFor({timeout:120000});assert.match(await page.locator('#lensText').inputValue(),/59[.,]7/);assert.equal(await page.locator('#lensCandidates button').count(),2);
+ assert.equal(await page.locator('#lensOcrProgress').isVisible(),false);
+ results.push({prueba:'OCR cancelado y captura oscura',estado:'VERIFICADO',detalle:'Cancelar y repetir el mismo archivo; dos cifras detectadas en captura sintética de fondo oscuro.'});
+ await page.addScriptTag({path:axePath});const violations=await page.evaluate(async()=>(await axe.run(document,{runOnly:{type:'tag',values:['wcag2a','wcag2aa','wcag21aa']}})).violations);assert.deepEqual(violations,[]);
+ for(const width of [320,375,768,1024,1440]){await page.setViewportSize({width,height:900});assert.ok(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth));}
+ assert.equal(await page.evaluate(()=>document.getAnimations().filter(a=>a.playState==='running').length),0);
+ assert.deepEqual(errors,[]);results.push({prueba:'Interacciones nuevas accesibles',estado:'VERIFICADO',detalle:'Cero infracciones axe; cinco anchos sin desbordamiento y sin animaciones activas con movimiento reducido.'});
+ fs.writeFileSync(path.join(__dirname,'../evidencia/pruebas-resiliencia.json'),JSON.stringify({fecha:new Date().toISOString(),resultados:results},null,2));console.log('Contexto ambiguo, selección, OCR oscuro y cancelación, recuperación de red, reanudar y accesibilidad: OK');
+}finally{await browser.close();}})().catch(e=>{console.error(e);process.exitCode=1;});

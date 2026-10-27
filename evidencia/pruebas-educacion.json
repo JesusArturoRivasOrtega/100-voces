@@ -1,0 +1,20 @@
+{
+  "fecha": "2026-10-27T14:01:29.585Z",
+  "resultados": [
+    {
+      "prueba": "Repaso y exploración territorial",
+      "estado": "VERIFICADO",
+      "detalle": "Siete preguntas conservadas, recomendaciones según errores, tres casos opcionales, búsqueda y transferencia territorial a tarjeta."
+    },
+    {
+      "prueba": "Lente y recorrido con acciones reales",
+      "estado": "VERIFICADO",
+      "detalle": "Complemento 40,3 %, causa no comprobable, entidad ausente, archivo inválido, tarjeta con conclusión, seis acciones registradas y resumen; visita y demo guiada no suman actividad."
+    },
+    {
+      "prueba": "Accesibilidad y ocho anchos",
+      "estado": "VERIFICADO",
+      "detalle": "Estado educativo expandido sin infracciones axe, incluidas reglas WCAG 2.2 disponibles; 320,375,390,430,768,1024,1366,1440 px sin desbordamiento. No certifica WCAG."
+    }
+  ]
+}

@@ -1,0 +1,88 @@
+{
+  "fecha": "2026-10-27T14:01:23.579Z",
+  "nota": "Una carga local sin caché de este contexto; no es una medición de usuarios reales.",
+  "navigation": [
+    {
+      "domInteractiveMs": 56.60000002384186,
+      "domContentLoadedMs": 730.6999999880791
+    }
+  ],
+  "resources": [
+    {
+      "path": "/public/styles.css",
+      "bytes": 45544
+    },
+    {
+      "path": "/public/features.css",
+      "bytes": 9264
+    },
+    {
+      "path": "/public/js/data.js",
+      "bytes": 36024
+    },
+    {
+      "path": "/public/js/core.js",
+      "bytes": 3196
+    },
+    {
+      "path": "/public/js/narrative.js",
+      "bytes": 1903
+    },
+    {
+      "path": "/public/js/visualization.js",
+      "bytes": 7369
+    },
+    {
+      "path": "/public/js/contrasts.js",
+      "bytes": 4309
+    },
+    {
+      "path": "/public/js/learning.js",
+      "bytes": 9303
+    },
+    {
+      "path": "/public/js/scenarios.js",
+      "bytes": 1981
+    },
+    {
+      "path": "/public/js/export.js",
+      "bytes": 9538
+    },
+    {
+      "path": "/public/js/navigation.js",
+      "bytes": 2888
+    },
+    {
+      "path": "/public/js/app.js",
+      "bytes": 6845
+    },
+    {
+      "path": "/public/js/live.js",
+      "bytes": 36326
+    },
+    {
+      "path": "/public/js/lens.js",
+      "bytes": 32530
+    },
+    {
+      "path": "/public/js/polish.js",
+      "bytes": 1596
+    },
+    {
+      "path": "/public/js/journey.js",
+      "bytes": 3550
+    },
+    {
+      "path": "/public/recursos/pitch.vtt",
+      "bytes": 2713
+    },
+    {
+      "path": "/public/fonts/dmsans.ttf",
+      "bytes": 240464
+    },
+    {
+      "path": "/public/fonts/manrope.ttf",
+      "bytes": 165000
+    }
+  ]
+}

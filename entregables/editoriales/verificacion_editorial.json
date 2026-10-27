@@ -3,44 +3,45 @@
     "paginas": 4,
     "caracteres_por_pagina": [
       2598,
-      2519,
-      2740,
-      2798
+      2455,
+      2697,
+      2759
     ],
     "resultado": "VERIFICADO: conteo y texto extraíble"
   },
   "100_VOCES_Ficha_Aula_15_min.pdf": {
     "paginas": 2,
     "caracteres_por_pagina": [
-      1837,
-      1724
+      1833,
+      1722
     ],
     "resultado": "VERIFICADO: conteo y texto extraíble"
   },
   "100_VOCES_Presentacion_Ejecutiva_10.pdf": {
     "paginas": 10,
     "caracteres_por_pagina": [
-      275,
-      338,
-      293,
-      310,
-      336,
-      266,
-      287,
-      312,
-      343,
+      269,
+      337,
+      292,
+      313,
+      334,
+      265,
+      286,
+      286,
+      298,
       278
     ],
     "resultado": "VERIFICADO: conteo y texto extraíble"
   },
   "pptx": {
     "diapositivas": 10,
-    "notas_presentador": true
+    "notas_presentador": true,
+    "revision_visual": "Diez diapositivas renderizadas e inspeccionadas; cobertura de 32 entidades actualizada y validada con artifact-tool"
   },
   "docx": {
     "secciones_narrativas": 4,
     "saltos_pagina_explicitos": 3,
-    "paginacion_en_Word": "Pendiente de validar en aplicación de destino"
+    "paginacion_en_Word": "VERIFICADA: exportación con Word instalado, cuatro páginas renderizadas; página territorial actualizada inspeccionada"
   },
   "srt": {
     "bloques": 24,

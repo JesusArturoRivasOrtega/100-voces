@@ -1,4 +1,6 @@
-# Auditoría y decisiones
+# Auditoría y decisiones iniciales
+
+Documento histórico de la fase estática. Para el estado 1.3, incluido el backend D1 y su tratamiento de datos, consultar [auditoría final](AUDITORIA_FINAL.md) y [privacidad](SEGURIDAD_PRIVACIDAD.md). Las afirmaciones siguientes sobre ausencia de servidor describen únicamente la arquitectura inicial.
 
 ## Material revisado
 

@@ -40,7 +40,7 @@ Guion sincronizado con el montaje local de 170 segundos. La verificación técni
 
 **00:01:10–00:01:17** El cambio relativo es aproximadamente menos 4,3 por ciento. Son unidades distintas.
 
-**00:01:17–00:01:24** El explorador conserva ocho entidades como selección demostrativa de 2024.
+**00:01:17–00:01:24** El explorador reúne las treinta y dos entidades, con tasas verificadas de 2024.
 
 **00:01:24–00:01:31** Por edad, de 25 a 29 años, la tasa nacional es 47,3 por ciento.
 
@@ -48,19 +48,19 @@ Guion sincronizado con el montaje local de 170 segundos. La verificación técni
 
 **00:01:38–00:01:45** Siete preguntas explican errores, denominadores y edades con alcance nacional.
 
-**00:01:45–00:01:52** Comparamos dos escenarios con la referencia de 59,7 por ciento.
+**00:01:45–00:01:52** Los escenarios son hipótesis para comparar, sin predecir resultados.
 
-**00:01:52–00:01:59** A resta cinco puntos; B suma cinco. Entre ambos hay diez puntos.
+**00:01:52–00:01:59** En vivo, el grupo entra con un código y estima una cifra.
 
-**00:01:59–00:02:06** Son hipótesis aritméticas para comparar. No predicen lo que sucederá.
+**00:01:59–00:02:06** El presentador revela la evidencia y conduce tres rondas.
 
-**00:02:06–00:02:13** Al compartir, la imagen conserva dato, año, contexto y fuente.
+**00:02:06–00:02:13** El resumen muestra la sesión; no prueba aprendizaje duradero.
 
-**00:02:13–00:02:20** Tarjetas en tres tamaños y un carrusel de cinco láminas incluyen texto accesible.
+**00:02:13–00:02:20** La Lente lee capturas en tu dispositivo, sin subirlas.
 
-**00:02:20–00:02:27** El kit docente propone un primer taller de quince minutos con jóvenes.
+**00:02:20–00:02:27** Elige una cifra, confirma su contexto y contrástala con fuentes.
 
-**00:02:27–00:02:34** La versión local permite demostrarla sin conexión, con los archivos disponibles.
+**00:02:27–00:02:34** Descarga la explicación. El respaldo local conserva texto y demo.
 
 **00:02:34–00:02:41** El sitio está privado. El acceso público y el aprendizaje deben comprobarse.
 

@@ -36,6 +36,15 @@
       "1:50–2:15 · Compara A 54,7 % y B 64,7 % con el observado: −5 y +5 pp. No son efectos estimados de campañas.",
       "2:15–2:55 · Descarga una tarjeta por edad y muestra Recursos: kit, carrusel y video. El piloto está preparado, aún sin resultados.",
     ];
+    const jurySections=['historia','tiempo','territorio','aprender','lente','compartir','en-vivo'];
+    jury.splice(4,2,
+      '1:35–2:00 · En Lente, prueba «¿Porcentaje o puntos?», confirma el contexto y contrasta. −2,7 % debe distinguirse de −2,7 pp.',
+      '2:00–2:25 · Descarga una tarjeta con descripción y fuente. El resumen del recorrido registra acciones, no aprendizaje demostrado.',
+      '2:25–2:55 · Abre la demostración local, añade respuestas ficticias y revela evidencia. Las salas compartidas requieren servidor y permisos de acceso.');
+    jury[0]='0:00–0:25 · Explica 59,7 %, los puntos redondeados y quién entra en el denominador.';
+    jury[1]='0:25–0:50 · Muestra 2018→2024: −2,7 pp. El tercer año es contexto; la diferencia no prueba causas.';
+    jury[2]='0:50–1:10 · Distingue una entidad de 25–29 años: 47,3 % nacional. No hay cruce edad por entidad.';
+    jury[3]='1:10–1:35 · Responde un reactivo y muestra su explicación. El cierre recomienda conceptos por repasar.';
     let tourAt = 0,
       mode = "quick",
       returnFocus = null;
@@ -46,12 +55,12 @@
           : "Presentación · 3 min") +
         " · " +
         (tourAt + 1) +
-        " / 6";
+        " / " + (mode==='quick'?sections.length:jurySections.length);
       $("tourText").textContent = (mode === "quick" ? quick : jury)[tourAt];
       $("tourBack").disabled = tourAt === 0;
       $("tourNext").textContent =
-        tourAt === 5 ? "Terminar recorrido" : "Siguiente →";
-      $(sections[tourAt]).scrollIntoView({
+        tourAt === (mode==='quick'?sections.length:jurySections.length)-1 ? "Terminar recorrido" : "Siguiente →";
+      $((mode==='quick'?sections:jurySections)[tourAt]).scrollIntoView({
         behavior: matchMedia("(prefers-reduced-motion: reduce)").matches
           ? "instant"
           : "smooth",
@@ -64,6 +73,7 @@
       returnFocus?.focus({ preventScroll: true });
     }
     function begin(m, button) {
+      document.body.classList.add("tour-active");
       mode = m;
       tourAt = 0;
       returnFocus = button;
@@ -80,6 +90,7 @@
         ["cardAge", "25–29 años"],
         ["cardAudience", "aula"],
         ["cardFormat", "horizontal"],
+        ["cardMessage", "question"],
       ]) {
         $(id).value = value;
         $(id).dispatchEvent(new Event("change"));
@@ -95,7 +106,7 @@
     $("quickMode").onclick = (e) => begin("quick", e.currentTarget);
     $("juryMode").onclick = (e) => begin("jury", e.currentTarget);
     $("tourNext").onclick = () => {
-      if (tourAt === 5) closeTour();
+      if (tourAt === (mode==='quick'?sections.length:jurySections.length)-1) closeTour();
       else {
         tourAt++;
         showTour();

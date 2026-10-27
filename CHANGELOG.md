@@ -1,5 +1,16 @@
 # Cambios
 
+## 1.3.0 · 27 de octubre de 2026
+
+- Sala: recuperación tras salir, recargar o perder red; histogramas estables; cupos atómicos y límites por participante que permiten grupos en una misma red.
+- Lente: selección de varias cifras, años sin heredar contexto anterior, ámbitos ausentes explícitos, OCR cancelable con validación del archivo, límites de tamaño/píxeles y avisos de legibilidad.
+- Datos: cobertura de 32 entidades cotejada en dos documentos INE, conservando las ocho cifras originales; pruebas de las 32 tasas y ámbitos.
+- Educación: diagnóstico de errores, tres casos opcionales, búsqueda de entidades, transferencia a tarjeta, conclusiones prudentes y registro de seis acciones en memoria.
+- Comparador: origen, destino y contexto explícitos; recorrido del jurado ampliado; animaciones suaves con movimiento reducido.
+- Seguridad: actualización de dependencias y revisión documentada en SEGURIDAD_PRIVACIDAD.
+- Nuevas pruebas de concurrencia, resiliencia, educación y motores Firefox/WebKit; sin atribuirles validación humana.
+- Guion, presentación, kit y pitch actualizados; índice de entrega y auditoría por funcionalidades.
+
 ## 1.2.0 · 25 de octubre de 2026
 
 - 100 VOCES EN VIVO: salas por código/QR, tres rondas, controles del presentador, resumen y demostración local.

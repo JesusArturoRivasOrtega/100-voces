@@ -67,8 +67,8 @@ Voces.initContrasts = function (data) {
       $(id).classList.toggle("is-active", on);
     }
     $("contrastContext").textContent = age
-      ? "Grupos de edad · México · elección presidencial 2024"
-      : "Ocho entidades ilustrativas · elección presidencial 2024";
+      ? "Grupos de edad · México · elección presidencial 2024. Son datos nacionales; no representan específicamente la entidad seleccionada."
+      : "32 entidades verificadas · elección presidencial 2024";
   }
   $("viewStates").onclick = () => view("states");
   $("viewAges").onclick = () => view("age");

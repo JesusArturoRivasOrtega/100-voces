@@ -227,34 +227,25 @@ Edición 21/10/2026 · Todas las casillas parten sin marcar. Son comprobaciones 
 ## Evaluación y límites
 - [ ] Aplicar el piloto si el calendario lo permite y reportar resultados reales. Si no se realiza, mantener «pendiente» y entregar el protocolo como tal.
 - [ ] Declarar el alcance de revisión con lectores de pantalla, teléfonos físicos y navegadores. No convertir resultados automáticos en certificación de accesibilidad.
-- [ ] Conservar la nota de selección ilustrativa de ocho entidades, el ámbito nacional de edades y la exclusión de no especificados.
+- [ ] Conservar la nota de cobertura de 32 entidades y su cotejo, el ámbito nacional de edades y la exclusión de no especificados.
 - [ ] Identificar el proyecto como experiencia independiente, sin afirmar aval institucional.
 
 ## Evidencia por casilla
 Al completar una comprobación, añadir fecha, responsable y ruta o enlace de la prueba. No marcar una casilla sólo porque existe un archivo con ese nombre. Fuentes de datos y copias locales: FUENTES.md.
 ''',
-'seleccion_entidades.md': '''# Por qué aparecen ocho entidades
-Edición 21/10/2026 · Nota de alcance para la aplicación y sus materiales.
+'seleccion_entidades.md': '''# Cobertura territorial: las 32 entidades
+Edición 27/10/2026 · Nota de alcance para la aplicación y sus materiales.
 
-## Lo que sí sabemos
-La selección se heredó del prototipo recibido. Incluye Aguascalientes (58.7 %), Baja California (47.0 %), Chiapas (61.8 %), Ciudad de México (69.3 %), Sonora (49.6 %), Tlaxcala (70.1 %), Veracruz (58.4 %) y Yucatán (71.4 %), con tasas de participación de 2024 publicadas por el INE.
+## De ocho ejemplos a cobertura completa
+El prototipo incluía ocho entidades ilustrativas. En 1.3 se cotejaron las 32 tasas de 2024 en la tabla del Manual CCPC, página 16, y la gráfica 13 del Estudio de Participación Ciudadana 2024, página 25. Los dos documentos coinciden a un decimal. Las ocho tasas anteriores no cambiaron. El registro fila por fila está en fuentes/ENTIDADES_2024_COTEJO.csv.
 
-Los valores se cotejaron con el Manual CCPC, página 16, y el Estudio de participación 2024, página 25. No hay en el registro revisado una justificación documentada del proceso original para elegir esas ocho entidades. No atribuimos al equipo criterios que no estén acreditados.
+## Interpretar con contexto
+La lista se ordena alfabéticamente; permite buscar una entidad, compararla con 59,7 % nacional y generar una tarjeta. Estado de México aparece como México en las fuentes. No se debe calcular la tasa nacional como promedio simple de las 32 tasas, porque sus denominadores son diferentes.
 
-## Cómo debe interpretarse
-Es una selección ilustrativa, no probabilística. Permite practicar lectura y comparación de tasas. No representa por sí sola la diversidad de México ni constituye un ranking de las 32 entidades. No se debe calcular la tasa nacional como promedio simple de estas ocho tasas ni inferir causas de las diferencias.
+Las edades siguen siendo nacionales: no se combinan con las entidades. Una diferencia territorial no explica causas ni decisiones individuales. No se ofrecen tasas territoriales de otros años sin una base cotejada.
 
-Las cifras por edad pertenecen al ámbito nacional. No se combinan con estas entidades: el proyecto no contiene el cruce edad por entidad. La tasa de un territorio no describe la decisión o el motivo de una persona.
-
-## Criterios propuestos para ampliar
-1. Priorizar cobertura completa de las 32 entidades si se dispone de valores comparables del mismo año, tipo de elección y definición de tasa.
-2. Usar una fuente primaria y cotejar etiqueta, valor, precisión y página por entidad; conservar evidencia y fecha de revisión.
-3. Distinguir ausencia de datos de cero. No interpolar ni estimar tasas para completar una lista.
-4. Si se requiere otra selección, definir y publicar antes sus criterios educativos, cobertura y límites. No llamarla representativa sin un diseño que lo sustente.
-5. Mantener escala común, navegación por teclado y alternativa textual. Ordenar de forma explícita; no convertir diferencias en juicios sobre comunidades.
-6. Para agregaciones futuras, usar conteos o ponderadores compatibles y explicar el cálculo. Una media simple de porcentajes con poblaciones distintas puede inducir a error.
-
-Texto breve reutilizable: «Mostramos ocho entidades heredadas del prototipo como ejemplos. La selección no es probabilística ni representa a todo México. Consulta fuente, año y ámbito antes de interpretar las diferencias».
+## Mantener la cobertura
+Conservar originales y huellas, cotejar nombre, año, definición y valor a un decimal; documentar cualquier cambio. Distinguir ausencia de cero, sin interpolar. Mantener escala común, búsqueda, teclado y fuente. Nuevos años requieren su propio cotejo y regeneración de materiales.
 ''',
 'FUENTES.md': '''# Fuentes y uso del kit
 Edición 21/10/2026 · Kit educativo de 100 VOCES · Experiencia independiente, sin aval del INE.
@@ -282,6 +273,31 @@ Las tasas están publicadas a un decimal; las diferencias usan esos valores redo
 '''
 }
 
+documents['sala_y_lente.md']='''# Sala en vivo y Lente Ciudadana
+Complemento docente · versión 1.3 · 27/10/2026
+
+## Feria o taller con sala compartida
+Preparación: comprobar internet y permisos de acceso desde otro dispositivo antes de invitar. Un enlace privado no se vuelve público por convertirlo en QR. El facilitador crea la sala y proyecta el código; cada participante abre el enlace y responde sin cuenta propia de la aplicación.
+
+Ronda 1: estimar la tasa de 2024. Revelar 59,7 % y explicar el denominador. Ronda 2: restar 2024 menos 2018; resultado −2,7 puntos porcentuales. Ronda 3: recuperar 59,7 %. La última ronda evalúa recuerdo inmediato. Pregunta posterior: ¿la diferencia revela sus causas? No; hacen falta más datos y un diseño que permita evaluarlas.
+
+El presentador decide cuándo revelar, avanzar y cerrar. Puede salir de la vista y retomar durante la misma sesión del navegador. No compartir sus controles. Descargar el resumen con números de respuestas por ronda; los grupos pueden cambiar entre preguntas. No inferir representatividad, identidad de personas ni aprendizaje duradero.
+
+Las salas caducan a las dos horas. La aplicación almacena respuestas numéricas, identificadores aleatorios y hashes temporales usados contra abuso. La limpieza ocurre durante actividad del servicio; sin actividad no se garantiza borrado físico inmediato. No solicitar nombre, voto ni preferencia partidista. Ante pérdida de red, esperar la recuperación. Sin servidor, usar la demostración local, claramente ficticia.
+
+## Una afirmación para contrastar
+En Lente, elegir «¿Porcentaje o puntos?». Antes del contraste, pedir año inicial, año final, ámbito, indicador y unidad. Comparar −2,7 pp con aproximadamente −4,3 % relativo. Una tasa aislada se expresa en porcentaje.
+
+Una captura puede contener varias cifras: seleccionar una, revisar el texto y confirmar el contexto. El OCR procesa PNG, JPG o WebP en el dispositivo; puede equivocarse. El complemento de 59,7 % es 40,3 % dentro del mismo denominador. Una coincidencia numérica no verifica toda una afirmación ni una explicación causal.
+
+## Cierre y accesibilidad
+Ofrecer texto pegado y lectura en voz alta como alternativas al OCR. Permitir respuestas orales o escritas sin teléfono personal. El registro «Mi recorrido» solo refleja acciones realizadas en esa página; no certifica comprensión. Descargar una tarjeta con fuente y formular una pregunta que el dato no responda.
+
+## Evaluación y límites
+Observar si la persona identifica unidad, ámbito y fuente, y si evita atribuir causas. Registrar barreras con el protocolo de PILOTO.md. El CSV sigue sin resultados. No transformar una demostración automatizada en evidencia de un piloto humano.
+'''
+for name in documents:
+    documents[name]=documents[name].replace('dist/data/','public/data/').replace('21/10/2026','27/10/2026')
 for name, body in documents.items():
     (ROOT / name).write_text(body, encoding='utf-8')
 
@@ -302,7 +318,7 @@ styles.add(ParagraphStyle(name='KitBullet', parent=styles['KitBody'], leftIndent
 styles.add(ParagraphStyle(name='KitLink', parent=styles['KitBody'], fontSize=8, leading=11, wordWrap='CJK'))
 
 story=[]
-order=['guia_facilitacion.md','PILOTO.md','seleccion_entidades.md','MANTENIMIENTO.md','ENTREGA.md','FUENTES.md']
+order=['guia_facilitacion.md','sala_y_lente.md','PILOTO.md','seleccion_entidades.md','MANTENIMIENTO.md','ENTREGA.md','FUENTES.md']
 for doc_index, name in enumerate(order):
     if doc_index:
         story.append(PageBreak())
@@ -334,7 +350,7 @@ def footer(canvas, doc):
     canvas.line(42,43,553,43)
     canvas.setFillColor(HexColor('#50666D'))
     canvas.setFont('Arial',8)
-    canvas.drawString(42,29,'100 VOCES · Kit educativo · 21/10/2026')
+    canvas.drawString(42,29,'100 VOCES · Kit educativo · 27/10/2026')
     canvas.drawRightString(553,29,f'{doc.page}')
     canvas.restoreState()
 

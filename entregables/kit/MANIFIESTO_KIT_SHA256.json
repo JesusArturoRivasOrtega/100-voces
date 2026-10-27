@@ -1,11 +1,12 @@
 {
-  "guia_facilitacion.md": "f4efa624423840e735a94092007b37a2057a54ef841be32ad0ec0e63251c90f7",
-  "PILOTO.md": "ab0c24888ae040aa5f332ab52b7c0804f90e1a35ca906cc2152e1f9ab02deb40",
-  "MANTENIMIENTO.md": "92049ac6141d8cf35ff0cf1dcecf61eb7a6fb6e1c86ecbb7a5d86574aeea41e5",
-  "ENTREGA.md": "e71c765515ffafdbd02c1e3f0acd3c058663eb8a68a4607d3d7c6cf4ec77910c",
-  "seleccion_entidades.md": "26e5a36fd6d568cabe02a0dca06e93f56e2191dad8053b226d66a954190aea28",
-  "FUENTES.md": "22921c2fcf74b6d4a2b7e4d4d6101d630439f0895067108eca5670ff19808de5",
+  "guia_facilitacion.md": "80e71f6d81c15833d643e915fecd5a05078862ffa711db656203855d87478347",
+  "PILOTO.md": "533e224c7793b75777805076af0dafefdcf9e72c47c944b2b4d4fbc8a9524734",
+  "MANTENIMIENTO.md": "83e1c0177f4c1dc8ffe5787d59f570400338b066395057ff158e95e78d3874d1",
+  "ENTREGA.md": "b9f0d7ae37dbc2d1840f1360c55380ac7bda2ab808e145c872440e6a9cc71bfb",
+  "seleccion_entidades.md": "6192d8463da659cb22f6f4c554fdec19df9a85a7389c4097d378cf2b28e3e083",
+  "FUENTES.md": "97644f3f52a17d1b845d0d2d009aef02d8ef79cacddc0dbdb750ab6df0e2b431",
+  "sala_y_lente.md": "1f0576b992d0dfc7e9af10d9bdcf5f9fb95f072ac6843b69a052ebeeed39e588",
   "registro_piloto.csv": "42a135e382d69942230fa2bf3ebae5bc11c8dc3dc50118174e64b5c050fe247d",
-  "100_VOCES_Kit_Docente.pdf": "9b9d7d262c97a9919230a01c885a7315acf451c20cb75ea141e9ea7429d29122",
-  "generar_kit.py": "5a00aa6b8f72df52ab8f8eaf9bf1cf08dbb1364c46628e3fda4f7ef2a1aa962a"
+  "100_VOCES_Kit_Docente.pdf": "4738d0e7bf0b34abff2e88f8d37d8a8b4a3b85b6830f1a60097362833a506923",
+  "generar_kit.py": "328f1b662e9da68576487b865f1437013dfc7c2f39a704c35092e187bf47f92d"
 }

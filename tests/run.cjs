@@ -61,6 +61,11 @@ server.listen(0, "127.0.0.1", async () => {
       "release.cjs",
       "features.cjs",
       "live-api.mjs",
+      "hardening.mjs",
+      "resilience.cjs",
+      "education.cjs",
+      "territory.cjs",
+      ...(process.env.VOCES_CROSS_BROWSER==='1'||process.argv.includes('engines.cjs')?["engines.cjs"]:[]),
     ];
     for (const name of (process.argv.length>2 ? suites.filter(n=>process.argv.slice(2).includes(n)) : suites)) {
       console.log(`Verificando ${name}`);

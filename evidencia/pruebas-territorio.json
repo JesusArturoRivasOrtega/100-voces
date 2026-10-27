@@ -1,0 +1,10 @@
+{
+  "fecha": "2026-10-27T14:03:55.507Z",
+  "resultados": [
+    {
+      "prueba": "32 entidades y contextos territoriales",
+      "estado": "VERIFICADO",
+      "detalle": "32 tasas comparadas contra CSV de doble cotejo; cada selección renderiza su valor y cada afirmación identifica ámbito y coincide. Nombres solapados, México nacional, acentos y búsqueda comprobados."
+    }
+  ]
+}

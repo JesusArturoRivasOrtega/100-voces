@@ -19,7 +19,7 @@ Los archivos están en `entregables/editoriales/`. Se redactaron a partir de la 
 
 ## Reglas de contenido
 
-- Mantener la serie nacional 2009–2024 y la selección demostrativa de ocho entidades de 2024. El registro de fuentes del proyecto determina el estado de verificación de cada dato; estos materiales no añaden nuevas entidades.
+- Mantener la serie nacional 2009–2024 y las 32 entidades verificadas de 2024. El registro de fuentes del proyecto determina el estado de verificación de cada dato; la cobertura se actualizó tras cotejar las 32 entidades en dos fuentes.
 - Las tasas usan un decimal; los cien puntos son una aproximación. El complemento se calcula sobre la misma base definida. Diferencia en pp = tasa final − inicial; cambio relativo = diferencia / inicial × 100.
 - No atribuir causas a las diferencias ni confundir escenarios con predicción. Los ejemplos 2018→2024 y 59,7→64,7 se distinguen por su carácter observado o hipotético.
 - Evitar recomendaciones partidistas, perfiles políticos inferidos y supuestos avales del INE. Mantener el aviso de independencia en las piezas.

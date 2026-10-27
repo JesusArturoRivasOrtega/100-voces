@@ -1,6 +1,6 @@
 {
   "name": "100-voces",
-  "version": "1.2.0",
+  "version": "1.3.0",
   "private": true,
   "engines": {
     "node": ">=22.13.0"
@@ -12,43 +12,49 @@
     "start": "node --import ./scripts/sites-env.mjs ./node_modules/wrangler/bin/wrangler.js dev --config dist/server/wrangler.json --local --persist-to .wrangler/state --ip 127.0.0.1 --inspector-port 0",
     "db:generate": "drizzle-kit generate",
     "test": "node tests/run.cjs",
-    "test:browser": "node tests/browser.cjs",
-    "test:improvements": "node tests/improvements.cjs",
-    "test:release": "node tests/release.cjs",
-    "test:accessibility": "node tests/accessibility.cjs",
+    "test:browser": "node tests/run.cjs browser.cjs",
+    "test:improvements": "node tests/run.cjs improvements.cjs",
+    "test:release": "node tests/run.cjs release.cjs",
+    "test:accessibility": "node tests/run.cjs accessibility.cjs",
     "resources": "node scripts/carousel.cjs",
     "package:delivery": "python scripts/package.py",
-    "build:content": "python scripts/build.py"
+    "build:content": "python scripts/build.py",
+    "test:engines": "node tests/run.cjs engines.cjs"
   },
   "dependencies": {
     "drizzle-orm": "0.45.2",
-    "next": "16.3.4",
-    "react": "19.2.6",
-    "react-dom": "19.2.6",
+    "next": "16.4.3",
     "qrcode": "1.5.4",
+    "react": "19.3.1",
+    "react-dom": "19.3.1",
     "tesseract.js": "6.0.1"
   },
   "devDependencies": {
-    "@cloudflare/vite-plugin": "1.37.1",
-    "@cloudflare/workers-types": "4.20260515.1",
+    "@cloudflare/vite-plugin": "1.65.0",
+    "@cloudflare/workers-types": "5.20261023.1",
     "@types/node": "22.19.19",
     "@types/react": "19.2.14",
     "@types/react-dom": "19.2.3",
     "@vitejs/plugin-react": "6.0.2",
-    "@vitejs/plugin-rsc": "0.5.26",
-    "drizzle-kit": "0.31.10",
-    "json-rpc-2.0": "1.7.1",
-    "raw-body": "3.0.2",
-    "react-server-dom-webpack": "19.2.6",
-    "typescript": "5.9.3",
-    "vinext": "1.0.0-beta.5",
-    "vite": "8.0.13",
-    "wrangler": "4.92.0",
-    "playwright": "1.62.1",
+    "@vitejs/plugin-rsc": "0.5.38",
     "axe-core": "4.10.3",
+    "drizzle-kit": "0.31.10",
+    "esbuild": "0.28.2",
+    "json-rpc-2.0": "1.7.1",
+    "playwright": "1.62.1",
     "prettier": "3.6.2",
-    "esbuild": "0.28.2"
+    "raw-body": "3.0.2",
+    "react-server-dom-webpack": "19.3.1",
+    "typescript": "5.9.3",
+    "vinext": "1.3.1",
+    "vite": "8.3.5",
+    "wrangler": "4.153.0"
   },
   "type": "module",
-  "description": "100 VOCES"
+  "description": "100 VOCES",
+  "overrides": {
+    "undici": "7.30.1",
+    "fflate": "0.7.5",
+    "esbuild": "$esbuild"
+  }
 }

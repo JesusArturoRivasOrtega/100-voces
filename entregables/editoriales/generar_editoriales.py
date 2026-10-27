@@ -44,7 +44,7 @@ pages=[
 ('02 / El nudo y sus límites','Comparar también requiere contexto',[
 ('Segunda escena: tiempo','El comparador separa elecciones presidenciales (2012, 2018 y 2024) e intermedias (2009, 2015 y 2021). La serie nacional conserva los valores publicados: 44,1%; 62,1%; 47,1%; 62,4%; 51,8% y 59,7%, respectivamente. La división por tipo de elección facilita una comparación contextualizada, aunque no elimina todas las diferencias entre procesos. No son mediciones repetidas de las mismas personas.'),
 ('La diferencia que sí podemos calcular','Entre las presidenciales de 2018 y 2024, 59,7 menos 62,4 equivale a −2,7 puntos porcentuales (pp). El cambio relativo es aproximadamente −4,3%, calculado al dividir −2,7 entre 62,4 y multiplicar por cien. No son la misma unidad. Entre las intermedias de 2015 y 2021, 51,8 menos 47,1 equivale a +4,7 pp. Una diferencia describe lo observado; por sí sola no demuestra qué produjo ese cambio.'),
-('Tercera escena: territorio','El explorador conserva una selección demostrativa de ocho entidades en 2024: Aguascalientes, Baja California, Chiapas, Ciudad de México, Sonora, Tlaxcala, Veracruz y Yucatán. No representa una muestra probabilística ni un ranking de las treinta y dos entidades. Por ejemplo, Veracruz registra 58,4%, frente a 59,7% nacional: una diferencia de −1,3 pp. Esta comparación no justifica etiquetar a una comunidad como apática o inferir causas individuales.'),
+('Tercera escena: territorio','El explorador reúne las 32 entidades de 2024 con búsqueda y orden alfabético. Las tasas se cotejaron en el Manual CCPC y el Estudio de Participación 2024; las ocho cifras originales se conservaron. Por ejemplo, Veracruz registra 58,4%, frente a 59,7% nacional: una diferencia de −1,3 pp. Esta comparación no justifica etiquetar a una comunidad como apática o inferir causas individuales.'),
 ('Lo que mide la tasa','La participación CCPC se expresa como Sí votaron / (Sí votaron + No votaron) × 100. Los registros no especificados no forman parte de este denominador. Por eso no debe tratarse como una tasa calculada sin más sobre toda la lista nominal ni mezclarse automáticamente con indicadores de otros productos electorales. El complemento 100 − tasa usa la misma base definida, con el mismo redondeo de publicación.'),
 ('Procedencia y límite de cobertura','El manual oficial CCPC es la referencia documental: la serie nacional se presenta en la página 21; la visualización territorial de 2024 en la 16; el contexto metodológico se consulta en las páginas 17 y 30. El registro de fuentes y la evidencia de cotejo acompañan a los datos del proyecto. El módulo de edades añade 18 grupos nacionales, cotejados con el Estudio de Participación Ciudadana 2024, gráfica 5, p. 18. El grupo de 25–29 años registra 47,3%; no es un dato estatal ni una conducta individual.')
 ]),
@@ -62,6 +62,11 @@ pages=[
 ('Cómo evaluar sin inventar impacto','Un piloto propuesto observa tareas concretas: explicar el 59,7%, distinguir pp de cambio relativo, comparar procesos del mismo tipo, localizar una entidad y exportar una imagen con fuente. Se documentarán número de participantes, fecha, respuestas, dificultades y correcciones, sin identificadores personales. Antes y después pueden utilizar preguntas equivalentes. Las metas orientan el diseño; solo los resultados registrados podrán describirse como evidencia de aprendizaje.'),
 ('Adaptación institucional y cierre','El código estático, los datos agregados, el guion editable y la ficha docente favorecen la revisión y adaptación. La posible incorporación a actividades del INE requeriría validación metodológica, editorial, de accesibilidad y operativa. Actualizar cifras, atender incidencias y mantener materiales requiere responsables. La presentación ejecutiva expone esta viabilidad en diez diapositivas y el pitch reserva dos minutos cincuenta segundos. Frase de cierre: «Los datos ya hablan. Hagamos que se entiendan».')
 ])]
+
+# Ampliación 1.3: mantener cuatro páginas y diez diapositivas.
+pages[2][2][3]=('Sala en vivo para el aula','Una sala compartida permite estimar la tasa de 2024, calcular la diferencia respecto a 2018 y recuperar el dato después de explicarlo. El presentador invita con QR, revela evidencia y controla tres rondas. El servidor guarda respuestas numéricas con identificadores aleatorios temporales; no solicita nombres ni preferencias políticas. Caducan a las dos horas. El resumen describe la sesión y el recuerdo inmediato, no una muestra representativa ni aprendizaje duradero.')
+pages[2][2][4]=('Lente Ciudadana y cierre','La Lente extrae texto de una captura en el dispositivo o recibe una afirmación escrita. Permite elegir entre varias cifras y exige confirmar año, ámbito, indicador, signo y unidad. Contrasta con la base local y ofrece fuentes y una ficha PNG; no verifica toda la afirmación ni la autenticidad de la imagen. Los seis capítulos originales, la demo de sala y el contraste de texto tienen respaldo local. Las salas compartidas requieren internet; el acceso público y el piloto siguen pendientes.')
+pages[3][2][4]=('Adaptación institucional y mantenimiento','La aplicación combina recursos estáticos con una API y base D1 para salas. Sus datos agregados, guion editable y kit docente permiten revisión. Una adopción institucional requiere validación metodológica, editorial, de accesibilidad y operativa. La presentación mantiene diez diapositivas; el video dura dos minutos cincuenta segundos. Las pruebas automáticas no sustituyen participantes ni dispositivos físicos. El sitio conserva los permisos de su propietario.')
 
 def para(c,text,x,y,width,style=BODY):
     p=Paragraph(escape(text),style); w,h=p.wrap(width,1000)
@@ -114,7 +119,7 @@ def aula():
     ('00:00–02:00 / Observar','Mostrar 59,7% nacional CCPC en 2024 y aproximadamente 60 de 100 puntos. ¿Por qué difieren? El decimal pertenece al dato; los puntos son una ilustración redondeada.'),
     ('02:00–05:00 / Denominador','Explicar Sí votaron / (Sí votaron + No votaron) × 100. Los no especificados quedan fuera del cálculo; no se suman a la abstención. Pedir una explicación con palabras propias.'),
     ('05:00–08:00 / Comparar','Presidenciales: 2018 = 62,4% y 2024 = 59,7%. Intermedias: 2015 = 47,1% y 2021 = 51,8%. Restar destino menos origen, escribir la unidad y conservar el tipo de elección.'),
-    ('08:00–10:00 / Ubicar','Distinguir ocho entidades seleccionadas y 18 grupos nacionales de edad. Localizar 25–29 años: 47,3% en 2024. La cifra por edad no corresponde a una entidad ni describe motivos individuales.'),
+    ('08:00–10:00 / Ubicar','Distinguir 32 entidades verificadas y 18 grupos nacionales de edad. Localizar 25–29 años: 47,3% en 2024. La cifra por edad no corresponde a una entidad ni describe motivos individuales.'),
     ('10:00–12:00 / Imaginar','Ejemplo del kit: A=50% y B=60%. La diferencia es 10 pp y el cambio relativo sobre A es 20%. Son hipótesis. Ejemplo de la demostración: A=54,7% y B=64,7%, frente a 59,7% observado.'),
     ('12:00–14:00 / Practicar','Resolver una o dos de las siete preguntas y leer su explicación. Priorizar denominador o alcance de edades. Completar las restantes después si hace falta. El puntaje no es una escala validada.'),
     ('14:00–15:00 / Explicar','Crear una tarjeta o decir: «Este dato muestra…, su fuente es…, no permite concluir…». Verificar año, ámbito y fuente. Leer cifras y describir gráficas en voz alta; no depender del color.')]
@@ -128,7 +133,7 @@ def aula():
     ('Ámbito y edad','25–29 años: 47,3%, México, 2024. Es uno de 18 grupos publicados en la gráfica 5 del Estudio de Participación Ciudadana 2024, p. 18. La selección territorial tiene otro ámbito. No se deben combinar ambas vistas como si ofrecieran tasas estatales por edad.'),
     ('Escenarios A/B','Ejemplo 50→60: +10 pp y (10 / 50) × 100 = +20% relativo. Demo: A=54,7 y B=64,7 frente a 59,7 observado: −5,0 y +5,0 pp; B−A=10,0 pp. El cambio relativo de B frente al observado es ≈ +8,4%. Ninguno predice resultados.'),
     ('Salida y evaluación','Comprobar que la explicación conserve dato, año, ámbito, fuente y un límite. Si aparece una confusión, volver a la explicación. El kit incluye guía y protocolo de piloto; sus resultados solo pueden reportarse después de aplicarlo. No hay evidencia de impacto educativo en esta ficha.'),
-    ('Fuentes y alcance','Manual CCPC 2009–2024, pp. 16, 17, 21 y 30: serie de seis elecciones y selección de ocho entidades. Estudio de Participación Ciudadana 2024, gráfica 5, p. 18: edades nacionales. Consultar enlaces y metadatos por dato en la aplicación.')]:
+    ('Fuentes y alcance','Manual CCPC 2009–2024, pp. 16, 17, 21 y 30: serie de seis elecciones y cobertura de 32 entidades. Estudio de Participación Ciudadana 2024, gráfica 5, p. 18: edades nacionales. Consultar enlaces y metadatos por dato en la aplicación.')]:
         y=para(c,h,44,y-5,524,HEAD);y=para(c,t,44,y+3,524)
     y=para(c,'Manual CCPC oficial · abrir fuente',44,y-4,524,SMALL);c.linkURL(SOURCE,(44,y,568,y+18),relative=0)
     y=para(c,'Estudio 2024 · gráfica 5 por edad · abrir fuente',44,y-4,524,SMALL);c.linkURL(AGE_SOURCE,(44,y,568,y+18),relative=0)
@@ -140,45 +145,42 @@ slides=[
 ('01 / El problema','Los datos necesitan contexto','Un porcentaje aislado no explica\nqué mide ni qué permite concluir.', 'Público: jóvenes, aula y divulgación cívica.\nPropósito: comprensión e interpretación crítica.','Distinguir la hipótesis de comprensión de cualquier impacto electoral. No hay piloto reportado.'),
 ('02 / La primera escena','Una cifra, cien puntos','59,7%\n2024 · Participación nacional CCPC', 'Cien puntos: ilustración redondeada.\nTasa: un decimal. Complemento: 40,3%.','Mostrar los puntos y explicar denominador. Fuente nacional: manual p. 21.'),
 ('03 / La historia','Observar → comparar → explorar','Aprender → imaginar → compartir', 'Seis capítulos con datos, explicación y evidencia.\nRecorrido rápido: pauta de 60 s. Jurado: 3 min.','Las duraciones de recorridos son pautas editoriales. Demostración manual con notas.'),
-('04 / El rigor','La fuente viaja con el dato','6 elecciones · 8 entidades seleccionadas\n18 grupos de edad nacionales (2024)', 'Sí votaron / (Sí votaron + No votaron) × 100.\nSin no especificados en el denominador.','Mostrar revelar evidencia: valor, ámbito, fuente, revisión y límites. Consultar registro de fuentes para estado de verificación.'),
+('04 / El rigor','La fuente viaja con el dato','6 elecciones · 32 entidades verificadas\n18 grupos de edad nacionales (2024)', 'Sí votaron / (Sí votaron + No votaron) × 100.\nSin no especificados en el denominador.','Mostrar revelar evidencia: valor, ámbito, fuente, revisión y límites. Consultar registro de fuentes para estado de verificación.'),
 ('05 / Comparar bien','−2,7 pp ≠ −2,7%','2018 62,4% → 2024 59,7%', 'Presidenciales: −2,7 pp (≈ −4,3% relativo).\nIntermedias 2015→2021: +4,7 pp.','No atribuir cambios a motivaciones o intervenciones. Separar tipo de elección conserva contexto.'),
 ('06 / La práctica','Siete preguntas con explicación','Edad 25–29: 47,3% nacional en 2024', 'Denominador · edad · lectura crítica.\nPrimer uso: taller de 15 minutos.','Mostrar una respuesta incorrecta y explicar por qué aprender no es solo acertar. No presentar puntuación como escala validada.'),
 ('07 / Imaginar y compartir','Un escenario no es una predicción','Referencia: 59,7% · A: 54,7% · B: 64,7%', 'A: −5,0 pp · B: +5,0 pp · B−A: 10,0 pp.\nTarjetas y carrusel con texto accesible.','El control absoluto va de 0 a 100. Exportación nacional, complemento, entidad o edad nacional de 2024. Incluir fuente dentro de la imagen.'),
-('08 / Viabilidad','Una herramienta que puede adaptarse','Web estática y versión local\nDatos agregados, sin registro de personas', 'Kit docente descargable · respaldo sin red.\nSitio privado; acceso público por comprobar.','Distinguir construcción de verificación. La publicación, video final, firmas y piloto tienen controles separados. Mantener requiere responsables.'),
+('08 / Viabilidad','Una herramienta que puede adaptarse','Web con API para salas y versión local\nDatos agregados, sin registro de personas', 'Kit docente descargable · respaldo sin red.\nSitio privado; acceso público por comprobar.','Distinguir construcción de verificación. La publicación, video final, firmas y piloto tienen controles separados. Mantener requiere responsables.'),
 ('09 / La invitación','Los datos ya hablan.','Hagamos que se entiendan.', 'Observar una cifra. Reconocer sus límites.\nCompartir una explicación con fuente.','Cerrar a los 2:50. No afirmar publicación, aval institucional ni impacto medido. Consultar el reporte real de pruebas.')
 ]
 
+# Conservar el contenido como fuente compartida del PDF y del PPTX editable.
+slides[0]=('RETO 3 / STORYTELLING CON DATOS','100 VOCES','Así participa México.\nDatos para explorar y contrastar.',slides[0][3],slides[0][4])
+slides[3]=('03 / La experiencia','Explorar y aprender con evidencia','Seis capítulos + sala en vivo + Lente', 'Respaldo local para explorar y contrastar texto.\nLas salas compartidas necesitan internet.', 'Distinguir las funciones locales del servicio con D1. Mostrar los nuevos accesos desde la portada.')
+slides[7]=('07 / Conversación en grupo','100 VOCES en vivo','QR → estimación → evidencia', 'Tres rondas y resumen de la sesión.\nRecuerdo inmediato; no aprendizaje demostrado.', 'Crear una sala o usar demo ficticia. El presentador controla las rondas. Hay identificadores temporales y caducidad de dos horas. No se solicita intención de voto.')
+slides[8]=('08 / Lectura crítica','Lente Ciudadana','Una captura. Una cifra con contexto.', 'OCR local y selección entre varias cifras.\nConfirmar año, ámbito y unidad; consultar fuentes.', 'El contraste numérico no verifica toda una afirmación. Mostrar el ejemplo de porcentaje frente a puntos y descargar la ficha. El acceso del sitio sigue privado y el piloto está pendiente.')
 def deck():
-    prs=Presentation();prs.slide_width=Inches(13.333333);prs.slide_height=Inches(7.5)
-    c=canvas.Canvas(str(OUT/'100_VOCES_Presentacion_Ejecutiva_10.pdf'),pagesize=(960,540));c.setTitle('100 VOCES — Presentación ejecutiva')
-    def box(slide,text,x,y,w,h,size=20,color=IVORY,bold=False):
-        tf=slide.shapes.add_textbox(Inches(x/72),Inches(y/72),Inches(w/72),Inches(h/72)).text_frame;tf.word_wrap=True
-        tf.margin_left=0;tf.margin_right=0;tf.margin_top=0;tf.margin_bottom=0
-        for j,line in enumerate(text.split('\n')):
-            p=tf.paragraphs[0] if j==0 else tf.add_paragraph();p.text=line;p.font.name='Arial';p.font.size=Pt(size);p.font.bold=bold;p.font.color.rgb=RGBColor.from_string(color[1:]);p.space_after=Pt(9)
-        st=ParagraphStyle('Slide',fontName='ArialB' if bold else 'Arial',fontSize=size,leading=size*1.17,textColor=colors.HexColor(color))
-        p=Paragraph('<br/>'.join(escape(q) for q in text.split('\n')),st);_,hh=p.wrap(w,h);p.drawOn(c,x,540-y-hh)
+    (OUT/'contenido_presentacion.json').write_text(json.dumps(slides,ensure_ascii=False,indent=2),encoding='utf-8')
+    c=canvas.Canvas(str(OUT/'100_VOCES_Presentacion_Ejecutiva_10.pdf'),pagesize=(960,540))
+    c.setTitle('100 VOCES — Presentación ejecutiva 1.3')
     for i,(eyebrow,title,hero,detail,notes) in enumerate(slides,1):
-        sl=prs.slides.add_slide(prs.slide_layouts[6]);sl.background.fill.solid();sl.background.fill.fore_color.rgb=RGBColor.from_string(INK[1:])
         c.setFillColor(colors.HexColor(INK));c.rect(0,0,960,540,fill=1,stroke=0)
-        sh=sl.shapes.add_shape(MSO_SHAPE.RECTANGLE,Inches(.6),Inches(.52),Inches(.5),Inches(.06));sh.fill.solid();sh.fill.fore_color.rgb=RGBColor.from_string(PINK[1:]);sh.line.fill.background()
-        c.setFillColor(colors.HexColor(PINK));c.rect(43.2,498.2,36,4.32,fill=1,stroke=0)
-        box(sl,eyebrow.upper(),43,59,865,35,13,LAV,True)
-        box(sl,title,43,120,855,100,39,IVORY,True)
+        def text(t,y,size,color,bold=False):
+            st=ParagraphStyle('Slide',fontName='ArialB' if bold else 'Arial',fontSize=size,leading=size*1.17,textColor=colors.HexColor(color))
+            p=Paragraph('<br/>'.join(escape(q) for q in t.split('\n')),st);_,h=p.wrap(860,540);p.drawOn(c,43,540-y-h)
+        text(eyebrow.upper(),59,13,LAV,True);text(title,120,39,IVORY,True)
         if i==3:
-            for n in range(100):
-                x=50+(n%20)*22;y=270+(n//20)*22;col=PINK if n<60 else '#45465A'
-                sh=sl.shapes.add_shape(MSO_SHAPE.OVAL,Inches(x/72),Inches(y/72),Inches(12/72),Inches(12/72));sh.fill.solid();sh.fill.fore_color.rgb=RGBColor.from_string(col[1:]);sh.line.fill.background();c.setFillColor(colors.HexColor(col));c.circle(x+6,540-y-6,6,fill=1,stroke=0)
-            box(sl,hero,515,276,385,85,21,MINT)
-        else:box(sl,hero,43,260,855,116,28,MINT)
-        box(sl,detail,43,399,860,78,19,LAV)
-        box(sl,'INE: Manual CCPC, pp. 16, 17, 21, 30 · Edades: Estudio Participación 2024, p. 18',43,481,860,17,9,'#C2C3CC')
-        c.linkURL(SOURCE,(43,42,520,60),relative=0); c.linkURL(AGE_SOURCE,(521,42,903,60),relative=0)
-        box(sl,'Proyecto independiente · Sin aval del INE',43,508,800,16,9,'#C2C3CC')
-        box(sl,f'{i:02} / 10',857,508,70,16,9,'#C2C3CC')
-        sl.notes_slide.notes_text_frame.text=notes+'\nFuente: '+SOURCE+' (pp. 16, 17, 21 y 30 según el dato).\nEdades: '+AGE_SOURCE+'\n'+INDEPENDENCE
-        c.showPage()
-    prs.save(str(OUT/'100_VOCES_Presentacion_Ejecutiva_10.pptx'));c.save()
+            for dot in range(100):
+                c.setFillColor(colors.HexColor(PINK if dot<60 else '#45475B'))
+                c.circle(56+(dot%20)*22,264-(dot//20)*22,6,fill=1,stroke=0)
+            st=ParagraphStyle('Data',fontName='Arial',fontSize=21,leading=31,textColor=colors.HexColor(MINT))
+            p=Paragraph('59,7%<br/>2024 · Participación nacional CCPC',st);_,h=p.wrap(400,160);p.drawOn(c,515,258-h)
+        else:
+            text(hero,260,28,MINT)
+        text(detail,399,19,LAV)
+        text('INE: Manual CCPC, pp. 16, 17, 21, 30 · Edades: Estudio Participación 2024, p. 18',481,9,'#C2C3CC')
+        text('Proyecto independiente · Sin aval del INE     '+str(i)+' / 10',508,9,'#C2C3CC')
+        c.linkURL(SOURCE,(43,42,520,60),relative=0);c.linkURL(AGE_SOURCE,(521,42,903,60),relative=0);c.showPage()
+    c.save()
 
 # Subtítulos por bloques cortos; la voz debe grabarse siguiendo estos tiempos.
 captions=[
@@ -193,7 +195,7 @@ captions=[
 (56,63,'En 2018 la tasa fue 62,4; en 2024, 59,7.'),
 (63,70,'La diferencia es menos 2,7 puntos porcentuales.'),
 (70,77,'El cambio relativo es aproximadamente menos 4,3 por ciento. Son unidades distintas.'),
-(77,84,'El explorador conserva ocho entidades como selección demostrativa de 2024.'),
+(77,84,'El explorador reúne las treinta y dos entidades, con tasas verificadas de 2024.'),
 (84,91,'Por edad, de 25 a 29 años, la tasa nacional es 47,3 por ciento.'),
 (91,98,'Son dieciocho grupos nacionales. No describen cada estado ni explican causas.'),
 (98,105,'Siete preguntas explican errores, denominadores y edades con alcance nacional.'),
@@ -206,6 +208,14 @@ captions=[
 (147,154,'La versión local permite demostrarla sin conexión, con los archivos disponibles.'),
 (154,161,'El sitio está privado. El acceso público y el aprendizaje deben comprobarse.'),
 (161,170,'Somos un proyecto independiente. Los datos ya hablan. Hagamos que se entiendan.')]
+
+captions[15]=(105,112,'Los escenarios son hipótesis para comparar, sin predecir resultados.')
+captions[16]=(112,119,'En vivo, el grupo entra con un código y estima una cifra.')
+captions[17]=(119,126,'El presentador revela la evidencia y conduce tres rondas.')
+captions[18]=(126,133,'El resumen muestra la sesión; no prueba aprendizaje duradero.')
+captions[19]=(133,140,'La Lente lee capturas en tu dispositivo, sin subirlas.')
+captions[20]=(140,147,'Elige una cifra, confirma su contexto y contrástala con fuentes.')
+captions[21]=(147,154,'Descarga la explicación. El respaldo local conserva texto y demo.')
 
 def timestamp(n):
     return f'{n//3600:02}:{n//60%60:02}:{n%60:02},000'
@@ -237,7 +247,7 @@ Estado: materiales locales preparados, sin campaña publicada ni resultados de a
 
 | Canal | Pieza y público | Mensaje | Acción propuesta | Control previo |
 |---|---|---|---|---|
-| Micrositio | Historia de seis capítulos; público general | Entiende, compara y verifica | Explorar evidencia | Probar enlace cuando exista publicación |
+| Micrositio | Seis capítulos, sala y Lente; público general | Entiende, compara y verifica | Explorar evidencia | Probar enlace cuando exista publicación |
 | Instagram | Carrusel de cinco láminas; jóvenes | 59,7% y aproximadamente 60 puntos | Abrir historia completa | Tasa, año, fuente y texto alternativo |
 | Reels/TikTok/Shorts | Video de 20–40 s; público general | Una cifra no demuestra causas | Formular una pregunta | Subtítulos y sin recortes de fuente |
 | Aula | Kit docente de 15 min; jóvenes sin formación estadística | Diferenciar tasa, pp y cambio relativo | Resolver y explicar | Ofrecer versión impresa/oral |
@@ -258,7 +268,7 @@ Estado: materiales locales preparados, sin campaña publicada ni resultados de a
 
 **Comparación.** En elecciones presidenciales, la tasa CCPC pasó de 62,4% en 2018 a 59,7% en 2024: −2,7 puntos porcentuales. El cambio relativo es aproximadamente −4,3%. Distinguir las unidades evita contar otra historia. Fuente: INE, Manual CCPC, p. 21.
 
-**Territorio.** Veracruz registró 58,4% de participación CCPC en 2024, frente a 59,7% nacional: −1,3 pp. La aplicación presenta una selección demostrativa de ocho entidades; no un ranking nacional completo. Fuente: INE, Manual CCPC, pp. 16 y 21. La diferencia no prueba causas.
+**Territorio.** Veracruz registró 58,4% de participación CCPC en 2024, frente a 59,7% nacional: −1,3 pp. La aplicación presenta las 32 entidades verificadas, en orden alfabético. Fuente: INE, Manual CCPC, pp. 16 y 21. La diferencia no prueba causas.
 
 **Escenario educativo.** A = 54,7% y B = 64,7% se comparan con 59,7% observado: −5,0 pp y +5,0 pp, respectivamente. Entre A y B hay 10,0 pp. El aumento relativo de B frente al observado es aproximadamente +8,4%. Es un escenario aritmético hipotético, no una predicción ni el efecto estimado de una intervención.
 
@@ -281,8 +291,8 @@ La convocatoria adjunta (p. 5) enumera cinco criterios. Esta matriz vincula cada
 |---|---|---|---|
 | Apego a la temática | Cap. 1; guion narrativo de cuatro páginas | Elegir 2024, leer 59,7% y explicar cien puntos | Es comunicación con CCPC; no predicción electoral |
 | Claridad y solidez | Comparador; revelar evidencia; registro de fuentes | Mostrar 2018→2024 = −2,7 pp y distinguir ≈ −4,3% relativo | Revisar evidencia por dato y denominador; no atribuir causas |
-| Originalidad y creatividad | Quiz; escenario; generador | Responder, recibir explicación, mover escenario y crear pieza con fuente | El escenario es aritmético; creatividad no equivale a eficacia demostrada |
-| Viabilidad para aprovechamiento institucional | Versión local; código estático; ficha aula | Abrir respaldo local y explicar actividad de quince minutos | Requiere revisión editorial, técnica y de accesibilidad; mantenimiento tiene responsables |
+| Originalidad y creatividad | Quiz, Lente y Sala en vivo | Contrastar una captura y estimar en grupo antes de revelar una fuente | El escenario es aritmético; creatividad no equivale a eficacia demostrada |
+| Viabilidad para aprovechamiento institucional | Respaldo local; Worker/D1; ficha aula | Abrir respaldo local y explicar actividad de quince minutos | Requiere revisión editorial, técnica y de accesibilidad; mantenimiento tiene responsables |
 | Potencial de aplicación institucional | Generador, difusión, guion y presentación editables | Cambiar contexto aula/comunidad/redes y describir transferencia | Adopción institucional y aprendizaje efectivo aún deben evaluarse |
 
 ## Ruta manual para jurado: pauta de tres minutos
@@ -291,11 +301,11 @@ La convocatoria adjunta (p. 5) enumera cinco criterios. Esta matriz vincula cada
 |---|---|---|
 | 00:00–00:30 | Cap. 1, 2024; abrir evidencia | 59,7%, puntos redondeados y denominador |
 | 00:30–01:00 | Comparador presidencial | −2,7 pp no es −2,7%; no explica causas |
-| 01:00–01:25 | Territorio y edad 25–29, 2024 | Ocho entidades; 18 grupos nacionales. 25–29: 47,3%; no dato estatal |
+| 01:00–01:25 | Territorio y edad 25–29, 2024 | 32 entidades; 18 grupos nacionales. 25–29: 47,3%; no dato estatal |
 | 01:25–01:50 | Una de siete preguntas del quiz | Explicar denominador o alcance de edades; mostrar retroalimentación |
-| 01:50–02:15 | A=54,7% y B=64,7%; referencia=59,7% | −5,0 y +5,0 pp; separación 10,0 pp; no predicción |
+| 01:50–02:15 | Lente: porcentaje frente a puntos | Confirmar cifra y contexto; explicación con fuente; no verifica causas |
 | 02:15–02:45 | Generador, PNG y texto accesible | Dato, año, contexto y fuente viajan juntos |
-| 02:45–03:00 | Kit docente, carrusel y respaldo local | Taller 15 minutos; acceso público y piloto pendientes |
+| 02:45–03:00 | Sala, kit y respaldo local | Demo ficticia o sala compartida; recuerdo inmediato, no impacto demostrado |
 
 La ruta es manual: los tiempos son una pauta de exposición, no un avance automático ni una medición. El pitch local separado se regenera con una duración de 2:50; consultar su verificación de archivo. Antes de exponer, verificar el comportamiento actual en el reporte real de pruebas.
 
@@ -304,7 +314,7 @@ La ruta es manual: los tiempos son una pauta de exposición, no un avance autom�
 - IMPLEMENTADO: archivos editoriales PDF, DOCX, PPTX, Markdown y SRT generados localmente.
 - VERIFICADO: conteos y texto de los PDF, número de diapositivas, estructura del DOCX y cronología SRT según `verificacion_editorial.json`.
 - PENDIENTE DE VALIDAR: piloto con público, reproducción del PPTX/DOCX en el equipo de exposición, publicación y permisos de enlaces y requisitos administrativos del equipo.
-- MEJORA FUTURA: cobertura de 32 entidades tras validar base completa; traducciones revisadas y evaluación de aprendizaje.
+- MEJORA FUTURA: nuevos años territoriales tras validar bases completas; traducciones revisadas y evaluación de aprendizaje.
 '''
     (OUT/'100_VOCES_Matriz_Criterios_y_Demo.md').write_text(matrix,encoding='utf-8')
 

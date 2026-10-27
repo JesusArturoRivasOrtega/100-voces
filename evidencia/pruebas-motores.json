@@ -1,0 +1,15 @@
+{
+  "fecha": "2026-10-27T14:02:06.089Z",
+  "resultados": [
+    {
+      "prueba": "Firefox de escritorio automatizado",
+      "estado": "VERIFICADO",
+      "detalle": "Motor 153.0: datos, edades, escenarios, quiz, contraste, PNG, demo, sala real local y OCR. Cuatro anchos y cero infracciones axe. WebKit no equivale a Safari físico."
+    },
+    {
+      "prueba": "WebKit de escritorio automatizado",
+      "estado": "VERIFICADO",
+      "detalle": "Motor 26.5: datos, edades, escenarios, quiz, contraste, PNG, demo, sala real local y OCR. Cuatro anchos y cero infracciones axe. WebKit no equivale a Safari físico."
+    }
+  ]
+}

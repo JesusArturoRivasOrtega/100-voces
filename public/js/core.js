@@ -68,8 +68,8 @@
         data.states_2024.length
     )
       throw Error("Territorios inconsistentes.");
-    if (data.states_2024.length === 0)
-      throw Error("No hay entidades disponibles.");
+    if (data.states_2024.length !== 32)
+      throw Error("El catálogo debe contener las 32 entidades verificadas.");
     if (
       data.age_2024.length !== 18 ||
       new Set(data.age_2024.map((d) => d.age_group)).size !== 18 ||

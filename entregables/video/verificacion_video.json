@@ -1,12 +1,12 @@
 {
   "archivo": "100_VOCES_Pitch_1080p_2m50.mp4",
-  "bytes": 9324206,
+  "bytes": 8702551,
   "resolucion": "1920x1080",
   "duracion_segundos": 170,
   "fps": 24,
   "video": "H.264 yuv420p",
   "audio": "AAC, mono, 44100 Hz",
-  "volumen_medio_db": -21.4,
+  "volumen_medio_db": -21.5,
   "subtitulos": "integrados en imagen + SRT aparte",
   "origen_visual": "montaje de capturas actuales y PNG descargados del prototipo local; no grabación continua",
   "voz": "síntesis local Microsoft Sabina Desktop, es-MX",
@@ -28,34 +28,34 @@
     "No implica aval institucional",
     "Voz sintética declarada; puede sustituirse por voz humana"
   ],
-  "sha256": "bb57922db0deef99f4fe240ced895c8a2652e75b3e30fd2b4a51b70f2b5fddda",
+  "sha256": "6eaf7affed0d6a1308cc67c7a723f86c01c649830cd3a55a610db2792d41f59e",
   "huellas_produccion": {
-    "segmentos.json": "98dbe6fd96f4b94e40856d3cad9a34867a524b4a9da2eb0539e58df37a3440d2",
-    "narracion_170s.wav": "d5e470522e160dc3b43fe8f52a1f5b68b4969ff74c60060661031b608682a743",
-    "frame_00.png": "7135a45163d006d9acdcf5bad0a2617041afd8eebd250d255a63986c16f7e500",
-    "frame_01.png": "605da18ad2637a8ae7c497b6c1c246debac045e095dc127872029ebd6c1a937a",
-    "frame_02.png": "becca2d4b6c7d370d0f8143e3addffbe8df8c65330636958ac0a68b71fb940eb",
-    "frame_03.png": "3bf451406d9dec099fb1e76481ce55b743b6e1f9cc11335be339d12aa71749aa",
-    "frame_04.png": "cba3ed6124d631a87b7c2bb04356d68458d2bee07ef2e569023913b67d03e51e",
-    "frame_05.png": "32f085e5d6a3a2657483f508b79b0db17793d7e210eb9fcff8db735992505340",
-    "frame_06.png": "68963f3f2c58c07693cc2263407e38ec0f5343995698d7e04b8b8de35954e391",
-    "frame_07.png": "911bd9db23f98c30671873326bc5dd190c66a915a02f471327b9242e46e1d223",
-    "frame_08.png": "d465a652c991cf718db6d7ebd30eac3baf5f3a7367ea96e0588021d6732e93a9",
-    "frame_09.png": "a89ebae8914384a8062cc413e63f6b3d795f7cb974cdbbe18f05714a52bcf0bd",
-    "frame_10.png": "fb6b6f08dd2f3d43cf3e74e052707dbe46b1808ecf3d6089df4cac8ed6d8c38f",
-    "frame_11.png": "9ab54bad4aa9ccd1fd4c3dc2d42037f580767f0ba7925ee9e88ba5045d1e697d",
-    "frame_12.png": "a752049f9b1f41c7038e4cd251302fe5af26ee7e7a6498fe247ddea024fb58ed",
-    "frame_13.png": "b4823baa00bcbba2c35909c1f3d6c4f902e755e8ca6ca91694a399057d8ee0ad",
-    "frame_14.png": "9be01515e454241ae910dbedd634b8b5019b0c6ba1bde942343c28afdc768829",
-    "frame_15.png": "7306a6198e516c723eac19603ffcc0816fedc53ebb66c810a72384c6404af3b0",
-    "frame_16.png": "716dbbbe118f4b4580de521dfea46b0706c1feb8318d106a76f0c9fa22ebb823",
-    "frame_17.png": "3ed354d4a2dc17b51078c1d76e8e7b5262b206e8452b32d74eacdf5afa8d634d",
-    "frame_18.png": "a9d6df39419b419a07cf58704f392d1be2ca70154d97cfc3f4e0808d16c2eb81",
-    "frame_19.png": "30ef3654d041d9bfc2f413c25d614f5617d4151cd238549b32981a003b86fca0",
-    "frame_20.png": "57e43a0510ed4b6e31bbf4cf5c68d13172bba7c16f42916d5e8afb1c2af351fc",
-    "frame_21.png": "ce5ca75e2061a1c77150f45ae9127e6384ea7eb955dda347957d39ec04764665",
-    "frame_22.png": "57a367ef2fa03afdb168c617df25f4b50b41dc56addba51b44352cee420f6cf4",
-    "frame_23.png": "32cd5a45d9f72d60c0920ba6754c7a3114068c5507cc96e1535f826d20bceb32"
+    "segmentos.json": "dfd01f53a443419a3a160ff34925cf0ef4faef4beecc22e0948248d3e2bf6dda",
+    "narracion_170s.wav": "213fd45c65967f19ecffb2d0511cfb55f7e7f698570ed6ee7061ff9ef72d2ff2",
+    "frame_00.png": "efe8af38e0a5cccb4a1dca3ca01503b6684a281b43371dcf2390c99542a5f3bc",
+    "frame_01.png": "5c1d1199acc10b6856c42f530c32d239b52d6c4434ff0749bcdcfcecf8e54c12",
+    "frame_02.png": "b9b907d732f82a73d96b7b6bc65808d44ee72884cdf8a9653b4915bc3b226c9c",
+    "frame_03.png": "bbecd49bf2a38012f31251c8136e876c7a68a420e3f319f2e64cf9fbf9c381ae",
+    "frame_04.png": "3ed214a31814633633c4259d5e060be68bd4e5b26c19d1c9981ca5589f6c1491",
+    "frame_05.png": "0a0ab850615274047b3203756449c71a3c226d95f57c7ec6f0b41caee2a0e8dc",
+    "frame_06.png": "c61425bdf610b22df550faac284e333dba13482f174d31453a27b086645e70b3",
+    "frame_07.png": "de086c8c48b47676863e7e536a87acc56e9ceffab5ce8bb4177ca17ac38e82df",
+    "frame_08.png": "6d5c1c72b0f317332b61fa3feea9d748f9e6de97b1713438f501c23f7369899c",
+    "frame_09.png": "105f882538df3ded9ef5721f30a67fff2f7e920dabb40ad0582e15e4a78118a7",
+    "frame_10.png": "f3503d451ad2ca8a368a8cfb7b8697024b46b98bd1b84ae60ef007f7da388374",
+    "frame_11.png": "b7b10b69cf1144d55f99ec9460d84102107e7b8ae45930b4c70c528997dba645",
+    "frame_12.png": "f2fbe03dc588983de639e654c76807e8bcd82fa3e798cf49a50c5872111909df",
+    "frame_13.png": "b68953945c4610c01470de774cf18bd99e482782a7ecadb5f661b173b999c192",
+    "frame_14.png": "4bba51546eac66c1c533eae36a3721cd37443be217b76a2395f414eff54224f8",
+    "frame_15.png": "a6f21f98baf1045820c67eae392abb9fdc8e2bfa6625e2fcb2e10442344cafef",
+    "frame_16.png": "64d2d782577737327dd0a282eb2a96c0991488151c46af5891997403befbbf05",
+    "frame_17.png": "db74f637ec0336caf7a76a44cbda440ff5f8d6c01366ada8b8e0ddaf7994079a",
+    "frame_18.png": "a40b6330dc3ac09dc9c4bc7bd914209654e00865bf23ea395b51f7dfacab50de",
+    "frame_19.png": "4f04497e80f8c47e9b50d47b1b10b7b1bb9c668e1547aa4d76e552d5018190ce",
+    "frame_20.png": "30426829246485a37e7ff5b7e3c7e50cce5761909502b514f7fe5e08cc1039c6",
+    "frame_21.png": "2b74b30c0be9f0b3c731e35d2d089316d409250c034b54c21e74012de07f3d57",
+    "frame_22.png": "76213d0572a48a9f5cbb24570e67459c138d6203cff85493c2075565bbc41b5c",
+    "frame_23.png": "a4ed0434f69e29f2a47e426015edec6d7b1a6a16a6e1a332b1ef4af968219c36"
   },
   "audio_por_segmento": [
     {
@@ -115,8 +115,8 @@
     },
     {
       "segmento": 12,
-      "pico_pcm": 19924,
-      "rms_pcm": 3099.7
+      "pico_pcm": 22801,
+      "rms_pcm": 3325.3
     },
     {
       "segmento": 13,
@@ -135,38 +135,38 @@
     },
     {
       "segmento": 16,
-      "pico_pcm": 21260,
-      "rms_pcm": 2948.1
+      "pico_pcm": 19006,
+      "rms_pcm": 2639.3
     },
     {
       "segmento": 17,
-      "pico_pcm": 24933,
-      "rms_pcm": 2565.8
+      "pico_pcm": 19550,
+      "rms_pcm": 2545.0
     },
     {
       "segmento": 18,
-      "pico_pcm": 18987,
-      "rms_pcm": 2619.0
+      "pico_pcm": 19656,
+      "rms_pcm": 2518.4
     },
     {
       "segmento": 19,
-      "pico_pcm": 25552,
-      "rms_pcm": 2773.6
+      "pico_pcm": 21713,
+      "rms_pcm": 2569.3
     },
     {
       "segmento": 20,
-      "pico_pcm": 21567,
-      "rms_pcm": 2799.5
+      "pico_pcm": 24945,
+      "rms_pcm": 2488.2
     },
     {
       "segmento": 21,
-      "pico_pcm": 19551,
-      "rms_pcm": 2610.4
+      "pico_pcm": 21039,
+      "rms_pcm": 2661.4
     },
     {
       "segmento": 22,
-      "pico_pcm": 23650,
-      "rms_pcm": 2804.8
+      "pico_pcm": 22116,
+      "rms_pcm": 2741.6
     },
     {
       "segmento": 23,

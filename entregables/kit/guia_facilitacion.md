@@ -1,5 +1,5 @@
 # Guía de facilitación · 100 VOCES
-Jóvenes sin formación estadística y docentes · 15 minutos · Edición 21/10/2026
+Jóvenes sin formación estadística y docentes · 15 minutos · Edición 27/10/2026
 
 ## Objetivo y preparación
 Al terminar, cada persona podrá leer una tasa, comparar elecciones del mismo tipo y explicar una limitación del dato. La actividad enseña interpretación; no evalúa preferencias políticas ni calidad ciudadana.

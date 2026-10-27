@@ -28,6 +28,7 @@ with zipfile.ZipFile(target) as z:
  for name,info in manifest.items():assert hashlib.sha256(z.read('100_VOCES_RETO3/'+name)).hexdigest()==info['sha256'],name
  data=json.loads(z.read('100_VOCES_RETO3/public/data/ccpc_resumen.json'))
  assert len(data['age_2024'])==18
+ assert len(data['states_2024'])==32
  assert b'scenarioSliderA' in z.read('100_VOCES_RETO3/public/index.html')
  for name in ['public/js/navigation.js','public/recursos/100_VOCES_Kit_Docente.zip','public/recursos/100_VOCES_Carrusel.zip','public/recursos/100_VOCES_Pitch_1080p_2m50.mp4','LEEME_ENTREGA.md']:assert '100_VOCES_RETO3/'+name in z.namelist()
 sha=digest(target)

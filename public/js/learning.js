@@ -74,7 +74,9 @@ Voces.initLearning = function () {
   ];
   let at = 0,
     score = 0,
-    answered = false;
+    answered = false,
+    mistakes = [];
+  const topics=[['Redondeo','historia'],['Porcentajes y puntos porcentuales','tiempo'],['Comparación entre elecciones','tiempo'],['Contexto y causalidad','territorio'],['Lectura de escalas','tiempo'],['Denominador','historia'],['Ámbito de los datos por edad','territorio']];
   $("quizProgress").max = qs.length;
   function draw(focus = false) {
     answered = false;
@@ -106,6 +108,8 @@ Voces.initLearning = function () {
     answered = true;
     const q = qs[at];
     if (i === q.ok) score++;
+    else mistakes.push(at);
+    document.dispatchEvent(new CustomEvent('voces:activity',{detail:{step:'limits',text:topics[at][0]+': '+q.f}}));
     Array.from($("quizAnswers").children).forEach((b, j) => {
       b.disabled = true;
       if (j === q.ok) {
@@ -133,11 +137,24 @@ Voces.initLearning = function () {
       $("quizResult").innerHTML =
         `<div class="overline">RECORRIDO COMPLETADO</div><h3>${score} de ${qs.length} respuestas correctas</h3><p>Ya practicaste siete ideas para compartir datos con cuidado:</p><ul><li>Los puntos ilustran; la tasa conserva su decimal.</li><li>Puntos porcentuales y cambio relativo son distintos.</li><li>El tipo de elección importa.</li><li>Un agregado no explica a cada persona.</li><li>Escala, etiquetas y fuente hacen legible una gráfica.</li><li>Los registros no especificados quedan fuera del denominador.</li><li>Los grupos de edad son nacionales; no son un cruce con entidad.</li></ul><p>Puedes repetirlo: aprender no requiere acertar todo a la primera.</p>`;
       $("quizResult").focus();
+      const heading=document.createElement('h4');heading.textContent=mistakes.length?'Conceptos que puedes repasar':'Completaste correctamente estas siete preguntas';
+      const review=document.createElement('ul');
+      for(const index of mistakes){const li=document.createElement('li'),a=document.createElement('a');a.href='#'+topics[index][1];a.textContent='Repasar '+topics[index][0].toLowerCase();li.append(a);review.append(li);}
+      const note=document.createElement('p');note.textContent='Este resultado describe tu actividad de hoy; no mide aprendizaje duradero. Las respuestas permanecen en esta página y se borran al recargar.';
+      $("quizResult").append(heading,review,note);
+      const extra=document.createElement('details'),summary=document.createElement('summary');summary.textContent='Practicar tres casos adicionales';extra.append(summary);
+      for(const [question,options,correct,feedback] of [
+        ['Un escenario pasa de 50 % a 60 %. ¿Es un resultado observado?',['Sí, porque el cálculo es exacto','No; sigue siendo una hipótesis'],1,'La aritmética puede ser correcta sin describir un hecho observado ni el efecto de una intervención.'],
+        ['Una tarjeta no incluye su fuente. ¿Qué conviene hacer?',['Compartirla si parece profesional','Buscar indicador, año, ámbito y fuente'],1,'El diseño no demuestra procedencia. Necesitamos una referencia específica para comprobar la cifra.'],
+        ['Una tasa bajó. ¿Eso demuestra que los jóvenes perdieron interés?',['No; faltan datos y un diseño que permita explicar causas','Sí; toda disminución demuestra desinterés'],0,'Un agregado no identifica motivos individuales ni demuestra una causa.']
+      ]){const item=document.createElement('div'),title=document.createElement('p'),response=document.createElement('p');title.textContent=question;response.setAttribute('role','status');item.append(title);options.forEach((option,i)=>{const b=document.createElement('button');b.type='button';b.className='quiz-option';b.textContent=option;b.onclick=()=>{response.textContent=(i===correct?'Correcto. ':'Revisemos. ')+feedback;item.querySelectorAll('button').forEach(x=>x.disabled=true);};item.append(b);});item.append(response);extra.append(item);}
+      $("quizResult").append(extra);
     }
   };
   $("restartQuiz").onclick = () => {
     at = 0;
     score = 0;
+    mistakes = [];
     $("quizProgress").value = 0;
     draw(true);
   };
@@ -146,6 +163,7 @@ Voces.initLearning = function () {
     reset: () => {
       at = 0;
       score = 0;
+      mistakes = [];
       $("quizProgress").value = 0;
       draw();
     },

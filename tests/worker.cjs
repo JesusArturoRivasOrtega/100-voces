@@ -1,0 +1,13 @@
+// Run separately against a built Worker with migrated local D1: VOCES_WORKER_URL=http://127.0.0.1:8787 node tests/worker.cjs
+const assert=require('node:assert/strict'),fs=require('node:fs'),path=require('node:path');
+const {chromium,browserOptions}=require('./runtime.cjs');
+const origin=process.env.VOCES_WORKER_URL||'http://127.0.0.1:8787';
+(async()=>{const health=await fetch(origin+'/api/live/health');assert.equal(health.status,200);const browser=await chromium.launch(browserOptions);try{
+ const host=await browser.newPage(),errors=[];host.on('pageerror',e=>errors.push(e.message));await host.goto(origin);await host.waitForFunction(()=>document.documentElement.dataset.ready==='true');assert.equal(await host.locator('#stateSelect option').count(),32);
+ await host.locator('#liveCreate').click();await host.locator('#liveRoomCode').filter({hasText:/^[A-Z2-9]{6}$/}).waitFor();const code=await host.locator('#liveRoomCode').textContent();
+ const guests=[];for(const value of ['50','60']){const p=await browser.newPage();guests.push(p);await p.goto(origin);await p.locator('#liveJoinCode').fill(code);await p.locator('#liveJoinForm button').click();await p.locator('#liveValue').fill(value);await p.locator('#liveAnswerForm button').click();await p.locator('#liveAnswerStatus').filter({hasText:'recibida'}).waitFor();assert.equal(await p.locator('#liveHostControls').isVisible(),false);}
+ await host.waitForFunction(()=>document.getElementById('liveCount').textContent==='2');await host.locator('#liveReveal').click();for(const p of guests)await p.locator('#liveEvidence').waitFor({state:'visible'});
+ await host.reload();await host.locator('#liveResume').click();await host.locator('#liveNext').click();for(const p of guests)await p.locator('#liveRound').filter({hasText:'RONDA 2'}).waitFor();await host.locator('#liveClose').click();assert.deepEqual(errors,[]);
+ const response=await fetch(origin+'/recursos/100_VOCES_Pitch_1080p_2m50.mp4');assert.equal(response.status,200);assert.ok(Number(response.headers.get('content-length'))>8000000);
+ fs.writeFileSync(path.join(__dirname,'../evidencia/integracion-worker.json'),JSON.stringify({fecha:new Date().toISOString(),entorno:'Worker construido, Wrangler local y D1 persistente; no prueba de producción',estado:'VERIFICADO',comprobaciones:['Health 200','32 entidades en aplicación servida por Worker','Presentador y dos navegadores participantes','Respuestas sincronizadas, evidencia, reanudación, avance y cierre','Video servido 200 y tamaño >8 MB','Sin errores JavaScript en presentador']},null,2));console.log('Worker + D1: salud, aplicación, dos participantes, recuperación, controles y video OK');
+}finally{await browser.close();}})().catch(e=>{console.error(e);process.exitCode=1;});

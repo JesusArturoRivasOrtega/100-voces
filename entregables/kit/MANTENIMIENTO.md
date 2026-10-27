@@ -1,5 +1,5 @@
 # Mantenimiento · responsables y flujo
-Edición 21/10/2026 · Asignar nombres reales antes de operar este plan.
+Edición 27/10/2026 · Asignar nombres reales antes de operar este plan.
 
 ## Roles propuestos, todavía sin asignar
 - Responsable de datos: verifica fuente, año, ámbito, denominador, precisión y transcripción; conserva evidencia.
@@ -10,7 +10,7 @@ Una persona puede cubrir varios roles. Procurar una segunda revisión de datos y
 
 ## Flujo por cambio
 1. Registrar problema, alcance y criterio de aceptación. Anotar versión o fecha; guardar respaldo del estado anterior.
-2. Para indicadores, editar sólo dist/data/ccpc_resumen.json después de cotejar la publicación primaria. No completar datos faltantes por inferencia ni promediar tasas sin sus denominadores.
+2. Para indicadores, editar sólo public/data/ccpc_resumen.json después de cotejar la publicación primaria. No completar datos faltantes por inferencia ni promediar tasas sin sus denominadores.
 3. Editar módulos de dist/js/, estructura de dist/index.html y estilos de dist/styles.css. Actualizar fuente, glosario, preguntas, materiales y descripción de alcance cuando corresponda.
 4. Ejecutar scripts/build.py para regenerar datos derivados y HTML autónomo. scripts/prepare.py es una transformación inicial y no debe usarse para actualizar la versión final.
 5. Ejecutar las comprobaciones documentadas en el proyecto: datos, cuestionario, escenarios, teclado, móvil, exportación y archivo sin conexión. Revisar visualmente PDF y tarjetas. Los resultados automáticos no certifican WCAG.

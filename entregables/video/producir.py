@@ -38,7 +38,7 @@ shots=[
  ('04_comparador.png','2018 → 2024','62,4% → 59,7%'),
  ('04_comparador.png','Puntos porcentuales','59,7 − 62,4 = −2,7 pp'),
  ('04_comparador.png','Cambio relativo','−2,7 / 62,4 × 100 ≈ −4,3%'),
- ('05_territorio.png','Ocho miradas','Selección demostrativa · 2024'),
+ ('05_territorio.png','32 entidades','Cobertura nacional · 2024'),
  ('13_edades.png','25–29 años','47,3% · Nacional · 2024'),
  ('13_edades.png','Reconocer el límite','18 grupos nacionales; no datos por estado.'),
  ('06_quiz.png','Aprender con el error','Siete preguntas y retroalimentación.'),
@@ -51,6 +51,14 @@ shots=[
  ('11_offline.png','Respaldo sin conexión','Captura del HTML local con la red desactivada.'),
  ('10_fuentes.png','Estado transparente','Sitio privado. Acceso público y piloto por comprobar.'),
  ('01_portada.png','Los datos ya hablan.','Hagamos que se entiendan.')]
+
+shots[15]=('07_escenario.png','Escenarios hipotéticos','Comparar sin predecir.')
+shots[16]=('15_sala.png','100 VOCES en vivo','Estimar en grupo · demostración ficticia')
+shots[17]=('15_sala.png','Revelar la evidencia','Tres rondas conducidas por el presentador.')
+shots[18]=('15_sala.png','Resumen de la sesión','Recuerdo inmediato; sin impacto demostrado.')
+shots[19]=('16_lente.png','Lente Ciudadana','OCR en el dispositivo; sin subir imágenes.')
+shots[20]=('16_lente.png','Confirmar el contexto','Cifra · año · ámbito · unidad')
+shots[21]=('16_lente.png','Explicación con fuente','Contraste numérico; no verifica toda la afirmación.')
 
 def frames():
  assert len(voices)==len(shots)==24

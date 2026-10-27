@@ -1,4 +1,4 @@
-# 100 VOCES · Índice de entrega · v1.2.0
+# 100 VOCES · Índice de entrega · v1.3.0
 
 1. **Abrir el proyecto:** `100_VOCES_ABRIR.html`. Para usar materiales descargables, conservar la carpeta `public/` junto al HTML.
 2. **Sitio modular:** `public/index.html`, servido por HTTP. La exploración y el contraste numérico funcionan de forma estática. Las salas compartidas requieren el servidor y D1; consulta `docs/EN_VIVO_Y_LENTE.md`.
@@ -9,7 +9,8 @@
 7. **Carrusel:** cinco PNG 1080×1350 en `public/recursos/carrusel/`, con textos accesibles; ZIP en `public/recursos/100_VOCES_Carrusel.zip`.
 8. **Código y pruebas:** `lib/`, `app/`, `db/`, `drizzle/`, `public/js/`, `public/styles.css`, `tests/`, `package.json`, `package-lock.json` y `scripts/`.
 9. **Datos:** `public/data/ccpc_resumen.json`, CSV y fuentes documentales en `fuentes/`.
-10. **Verificación:** `evidencia/`, `docs/PRUEBAS.md` y `MANIFIESTO_SHA256.json`.
+10. **Auditoría y pendientes:** `docs/AUDITORIA_FINAL.md`, `docs/PENDIENTES_HUMANOS.md`, `docs/SEGURIDAD_PRIVACIDAD.md`.
+11. **Verificación:** `evidencia/`, `docs/PRUEBAS.md` y `MANIFIESTO_SHA256.json`.
 
 Repositorio: https://github.com/JesusArturoRivasOrtega/100-voces
 

@@ -2,10 +2,10 @@ const fs=require('fs'),path=require('path');
 const {chromium,browserOptions,baseURL}=require('../../tests/runtime.cjs');
 const out=path.join(__dirname,'capturas');fs.mkdirSync(out,{recursive:true});
 (async()=>{
- const browser=await chromium.launch(browserOptions);
+ const browser=await chromium.launch({...browserOptions,downloadsPath:path.join(out,'downloads')});
  const context=await browser.newContext({viewport:{width:1440,height:1000},deviceScaleFactor:1,reducedMotion:'reduce',permissions:['clipboard-read','clipboard-write']});
  const p=await context.newPage();const log=[];
- await p.goto(baseURL+'/dist/');await p.waitForFunction(()=>document.documentElement.dataset.ready==='true');await p.evaluate(()=>document.fonts.ready);
+ await p.goto(baseURL+'/public/');await p.waitForFunction(()=>document.documentElement.dataset.ready==='true');await p.evaluate(()=>document.fonts.ready);
  async function snap(name,selector){await p.locator(selector).scrollIntoViewIfNeeded();await p.locator(selector).screenshot({path:path.join(out,name+'.png')});log.push({archivo:name+'.png',selector,url:p.url(),fecha:new Date().toISOString()});}
  await snap('01_portada','#inicio');
  await p.locator('[data-year="2024"]').first().click();await snap('02_nacional','.data-panel');
@@ -23,7 +23,8 @@ const out=path.join(__dirname,'capturas');fs.mkdirSync(out,{recursive:true});
  for(const fmt of ['horizontal','vertical','story']){await p.locator('#cardFormat').selectOption(fmt);const [download]=await Promise.all([p.waitForEvent('download'),p.locator('#downloadCard').click()]);await download.saveAs(path.join(out,'tarjeta_'+fmt+'.png'));}
  await p.locator('#cardFormat').selectOption('horizontal');await snap('08_exportar','.share-preview');
  await p.locator('#copyText').click();fs.writeFileSync(path.join(out,'descripcion_copiada.txt'),await p.evaluate(()=>navigator.clipboard.readText()));
- fs.copyFileSync(path.resolve(__dirname,'../../dist/recursos/carrusel/05.png'),path.join(out,'14_carrusel.png'));log.push({archivo:'14_carrusel.png',origen:'dist/recursos/carrusel/05.png',tipo:'lámina generada por el script del carrusel'});await snap('09_aula','#metodo');await snap('10_fuentes','.sources-grid');
+ fs.copyFileSync(path.resolve(__dirname,'../../public/recursos/carrusel/05.png'),path.join(out,'14_carrusel.png'));log.push({archivo:'14_carrusel.png',origen:'public/recursos/carrusel/05.png',tipo:'lámina generada por el script del carrusel'});await snap('09_aula','#metodo');await snap('10_fuentes','.sources-grid');
+ await p.locator('#liveDemo').click();await p.locator('#liveDemoAdd').click();await p.locator('#liveReveal').click();await snap('15_sala','#liveRoom');await p.locator('[data-lens-example="0"]').click();await p.locator('#lensConfirm').check();await p.locator('#lensForm button[type=submit]').click();await snap('16_lente','#lensResult');
  const offline=await context.newPage();await context.setOffline(true);await offline.goto(require('url').pathToFileURL(path.resolve(__dirname,'../../100_VOCES_ABRIR.html')).href);await offline.waitForFunction(()=>document.documentElement.dataset.ready==='true');await offline.locator('.data-panel').screenshot({path:path.join(out,'11_offline.png')});log.push({archivo:'11_offline.png',selector:'.data-panel',url:offline.url(),red:'offline'});
  fs.writeFileSync(path.join(out,'registro_capturas.json'),JSON.stringify(log,null,2));await browser.close();console.log('Capturas y tres descargas reales creadas.');
 })().catch(e=>{console.error(e);process.exitCode=1;});

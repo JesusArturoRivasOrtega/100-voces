@@ -1,6 +1,6 @@
 # Diccionario de datos y método
 
-Fuente de verdad: `dist/data/ccpc_resumen.json`. Serie nacional de seis elecciones, selección demostrativa de ocho entidades en 2024 y 18 grupos de edad nacionales de 2024. La selección territorial no constituye una muestra probabilística ni un ranking completo de México. Son datos agregados, sin información individual. Los grupos de edad no se cruzan con entidades ni se promedian sin denominadores; proceden de la gráfica 5 del Estudio de Participación Ciudadana 2024, p. 18. Ver `fuentes/EDADES_2024.md`.
+Fuente de verdad: `public/data/ccpc_resumen.json`. Serie nacional de seis elecciones, cobertura de 32 entidades en 2024 y 18 grupos de edad nacionales de 2024. Las 32 entidades se ordenan alfabéticamente; no se promedian para obtener la tasa nacional. Son datos agregados, sin información individual. Los grupos de edad no se cruzan con entidades ni se promedian sin denominadores; proceden de la gráfica 5 del Estudio de Participación Ciudadana 2024, p. 18. Ver `fuentes/EDADES_2024.md`.
 
 | Campo | Tipo | Significado |
 |---|---|---|
@@ -10,7 +10,7 @@ Fuente de verdad: `dist/data/ccpc_resumen.json`. Serie nacional de seis eleccion
 | `kind` | enumeración | `presidencial` o `intermedia` |
 | `scope` | texto | Nacional, nombre de entidad o México y grupo de edad |
 | `age_group` | texto en edades | Grupo publicado, de 18–19 a 100 años o más |
-| `name` | texto en entidades | Nombre de la entidad, sin inferir cobertura nacional |
+| `name` | texto en entidades | Nombre de entidad; México se identifica como Estado de México |
 | `source` | URL | Documento INE con número de página |
 | `source_title`, `source_short` | texto | Título completo y título breve para la tarjeta |
 | `source_page` | entero | Manual: 21 nacional, 16 territorial; Estudio 2024: 18 edades |
@@ -36,6 +36,6 @@ Presidenciales: 2012, 2018, 2024. Intermedias: 2009, 2015, 2021. Manual p.30 pro
 
 ## Verificación y mantenimiento
 
-Las 14 cifras coinciden visualmente con Manual pp.16/21 y Estudio INE 2024 pp.16/25. Se conservaron documentos, capturas y hashes en `fuentes/`. No se descargó/procesó el ZIP de bases completas; esa conciliación queda pendiente antes de ampliar cobertura. Los cálculos de pp parten de cifras ya redondeadas y no representan precisión superior.
+Las seis cifras nacionales y las 32 estatales coinciden visualmente con Manual pp.16/21 y Estudio INE 2024 pp.16/25. Ver fuentes/ENTIDADES_2024.md y el CSV de cotejo. Se conservaron documentos, capturas y hashes en `fuentes/`. No se descargó/procesó el ZIP de bases completas; no se presentan las transcripciones como recálculo de microdatos. Los cálculos de pp parten de cifras ya redondeadas y no representan precisión superior.
 
 Para incorporar una nueva base: conservar original y hash, verificar esquema y denominadores, agregar sin datos personales, conciliar totales por territorio/año, contrastar con publicación oficial, registrar fecha/estado y revisar todas las narrativas/exportaciones. La aprobación editorial no se sustituye por pasar una validación de tipo numérico. Mantener “dato no disponible” si falta evidencia.

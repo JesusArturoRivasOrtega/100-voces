@@ -52,6 +52,8 @@ Voces.initVisuals = function (data) {
       .querySelectorAll("button")
       .forEach((el) => {
         el.setAttribute("aria-pressed", Number(el.dataset.year) === b.year);
+        const role=Number(el.dataset.year)===a.year&&a.year===b.year?'Origen y destino':Number(el.dataset.year)===a.year?'Origen':Number(el.dataset.year)===b.year?'Destino':'Contexto';
+        el.querySelector('.history-role').textContent=role;
       });
   }
   function kind(k) {
@@ -77,7 +79,7 @@ Voces.initVisuals = function (data) {
           "aria-label",
           `${d.year}, ${V.fmt(d.participation)} %. Usar como destino de comparación.`,
         );
-        b.innerHTML = `<span class="history-year">${d.year}</span><span class="history-track"><span style="width:${d.participation}%"></span></span><strong>${V.fmt(d.participation)} %</strong>`;
+        b.innerHTML = `<span class="history-year">${d.year}<small class="history-role"></small></span><span class="history-track"><span style="width:${d.participation}%"></span></span><strong>${V.fmt(d.participation)} %</strong>`;
         b.onclick = () => {
           $("compareTo").value = d.year;
           updateComparison();
@@ -130,8 +132,20 @@ Voces.initVisuals = function (data) {
         .find((b) => b.dataset.state === focusedName)
         ?.focus({ preventScroll: true });
     }
+    $('stateSearch').dispatchEvent(new Event('input'));
   }
   state("Veracruz");
   $("stateSelect").onchange = (e) => state(e.target.value);
+  $('stateSearch').addEventListener('input',()=>{
+    const normalize=s=>s.normalize('NFD').replace(/[\u0300-\u036f]/g,'').toLowerCase();
+    const query=normalize($('stateSearch').value.trim());let visible=0;
+    for(const button of $('stateRankings').children){button.hidden=!normalize(button.dataset.state).includes(query);if(!button.hidden)visible++;}
+    $('stateSearchStatus').textContent=visible?`${visible} entidades disponibles en esta selección.`:'No hay coincidencias. Prueba el nombre de una entidad federativa; no se incluyen municipios.';
+  });
+  $('stateShare').onclick=()=>{
+    $('cardType').value='state';$('cardType').dispatchEvent(new Event('change'));
+    $('cardState').value=$('stateSelect').value;$('cardState').dispatchEvent(new Event('change'));
+    $('compartir').scrollIntoView({behavior:'instant'});$('cardFormat').focus({preventScroll:true});
+  };
   return { setYear, kind, state };
 };

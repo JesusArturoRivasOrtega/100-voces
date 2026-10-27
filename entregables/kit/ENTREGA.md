@@ -1,5 +1,5 @@
 # Lista de cierre · evidencia antes de enviar
-Edición 21/10/2026 · Todas las casillas parten sin marcar. Son comprobaciones por ejecutar sobre la versión final, no una declaración de cumplimiento.
+Edición 27/10/2026 · Todas las casillas parten sin marcar. Son comprobaciones por ejecutar sobre la versión final, no una declaración de cumplimiento.
 
 ## Paquete y coherencia
 - [ ] Identificar la versión final y retirar del paquete versiones obsoletas que puedan confundirse con ella.
@@ -20,7 +20,7 @@ Edición 21/10/2026 · Todas las casillas parten sin marcar. Son comprobaciones 
 ## Evaluación y límites
 - [ ] Aplicar el piloto si el calendario lo permite y reportar resultados reales. Si no se realiza, mantener «pendiente» y entregar el protocolo como tal.
 - [ ] Declarar el alcance de revisión con lectores de pantalla, teléfonos físicos y navegadores. No convertir resultados automáticos en certificación de accesibilidad.
-- [ ] Conservar la nota de selección ilustrativa de ocho entidades, el ámbito nacional de edades y la exclusión de no especificados.
+- [ ] Conservar la nota de cobertura de 32 entidades y su cotejo, el ámbito nacional de edades y la exclusión de no especificados.
 - [ ] Identificar el proyecto como experiencia independiente, sin afirmar aval institucional.
 
 ## Evidencia por casilla

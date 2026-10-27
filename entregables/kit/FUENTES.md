@@ -1,5 +1,5 @@
 # Fuentes y uso del kit
-Edición 21/10/2026 · Kit educativo de 100 VOCES · Experiencia independiente, sin aval del INE.
+Edición 27/10/2026 · Kit educativo de 100 VOCES · Experiencia independiente, sin aval del INE.
 
 ## Fuentes primarias utilizadas
 - INE, Manual de Conteos Censales de Participación Ciudadana 2009–2024. Entidades: p. 16. Denominador y no especificados: pp. 17–18. Serie nacional: p. 21. Comparaciones por tipo: p. 30.
@@ -8,7 +8,7 @@ https://ine.mx/wp-content/uploads/2025/06/Manual-Conteos-Censales-2009-2024.pdf
 https://repositoriodocumental.ine.mx/xmlui/bitstream/handle/123456789/186643/Deceyec-Estudio-Participaci%C3%B3n-ciudadada-2024.pdf
 
 ## Trazabilidad local
-En el paquete principal: fuentes/INE_Manual_CCPC_2009_2024.pdf y fuentes/INE_Estudio_Participacion_2024.pdf contienen las copias consultadas. fuentes/VERIFICACION_CCPC.md y fuentes/EDADES_2024.md registran cotejos y límites. dist/data/ccpc_resumen.json conserva indicadores y metadatos. El ZIP del kit no duplica los PDF oficiales; usa los enlaces o el paquete principal.
+En el paquete principal: fuentes/INE_Manual_CCPC_2009_2024.pdf y fuentes/INE_Estudio_Participacion_2024.pdf contienen las copias consultadas. fuentes/VERIFICACION_CCPC.md y fuentes/EDADES_2024.md registran cotejos y límites. public/data/ccpc_resumen.json conserva indicadores y metadatos. El ZIP del kit no duplica los PDF oficiales; usa los enlaces o el paquete principal.
 
 ## Archivos de este kit
 - guia_facilitacion.md: actividad de 15 minutos y respuestas de siete conceptos.

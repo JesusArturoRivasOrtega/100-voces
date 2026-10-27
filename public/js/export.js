@@ -46,8 +46,9 @@ Voces.initExport = function (data) {
   }
   function description() {
     const { d, type, value, label, scope } = selection();
-    return `100 VOCES — ${label.toLowerCase()} en ${scope}, ${d.year}, elección ${d.kind}: ${V.fmt(value)} %. ${Math.round(value)} de 100 puntos representan esta tasa de forma redondeada. ${type === "complement" ? "Complemento calculado: 100 menos la tasa publicada. " : ""}Denominador CCPC: registros con sí votaron o no votaron; excluye no especificados. ${V.contexts[$("cardAudience").value]} Fuente: INE, ${d.source_title}, p. ${d.source_page}. ${d.source} Revisión: ${d.reviewed_at}; ${d.verification}. Proyecto independiente, sin aval institucional. No permite inferir causas ni motivos individuales.`;
+    return `100 VOCES — ${label.toLowerCase()} en ${scope}, ${d.year}, elección ${d.kind}: ${V.fmt(value)} %. ${Math.round(value)} de 100 puntos representan esta tasa de forma redondeada. ${type === "complement" ? "Complemento calculado: 100 menos la tasa publicada. " : ""}Denominador CCPC: registros con sí votaron o no votaron; excluye no especificados. ${message()} Fuente: INE, ${d.source_title}, p. ${d.source_page}. ${d.source} Revisión: ${d.reviewed_at}; ${d.verification}. Proyecto independiente, sin aval institucional. No permite inferir causas ni motivos individuales.`;
   }
+  function message(){return $('cardMessage').value==='conclusion'?'Una tasa describe un agregado; no explica motivos individuales.':V.contexts[$('cardAudience').value];}
   function lines(
     text,
     x,
@@ -188,7 +189,7 @@ Voces.initExport = function (data) {
       );
     const questionY = horizontal ? 419 : noteY + 85;
     lines(
-      V.contexts[$("cardAudience").value],
+      message(),
       margin,
       questionY,
       horizontal ? 670 : content,
@@ -256,6 +257,7 @@ Voces.initExport = function (data) {
     "cardAge",
     "cardAudience",
     "cardFormat",
+    "cardMessage",
   ])
     $(id).onchange = () => {
       draw();
@@ -284,6 +286,7 @@ Voces.initExport = function (data) {
       document.body.append(a);
       a.click();
       a.remove();
+      document.dispatchEvent(new CustomEvent('voces:activity',{detail:{step:'share',text:description()}}));
       setTimeout(() => URL.revokeObjectURL(url), 30000);
       $("shareStatus").textContent =
         "PNG generado. El navegador gestiona la descarga.";

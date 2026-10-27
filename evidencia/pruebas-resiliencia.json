@@ -1,0 +1,25 @@
+{
+  "fecha": "2026-10-27T14:01:19.785Z",
+  "resultados": [
+    {
+      "prueba": "Selección de cifras y contexto ambiguo",
+      "estado": "VERIFICADO",
+      "detalle": "Dos cifras seleccionables, año ausente sin valor heredado y ámbitos mezclados sin inferencia automática."
+    },
+    {
+      "prueba": "Recuperación de sala y gráfico estable",
+      "estado": "VERIFICADO",
+      "detalle": "Salir y retomar conserva control; error de red y recuperación; barras conservan sus nodos."
+    },
+    {
+      "prueba": "OCR cancelado y captura oscura",
+      "estado": "VERIFICADO",
+      "detalle": "Cancelar y repetir el mismo archivo; dos cifras detectadas en captura sintética de fondo oscuro."
+    },
+    {
+      "prueba": "Interacciones nuevas accesibles",
+      "estado": "VERIFICADO",
+      "detalle": "Cero infracciones axe; cinco anchos sin desbordamiento y sin animaciones activas con movimiento reducido."
+    }
+  ]
+}

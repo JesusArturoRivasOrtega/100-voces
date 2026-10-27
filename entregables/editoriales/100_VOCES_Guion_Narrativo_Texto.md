@@ -36,7 +36,7 @@ Entre las presidenciales de 2018 y 2024, 59,7 menos 62,4 equivale a −2,7 punto
 
 ### Tercera escena: territorio
 
-El explorador conserva una selección demostrativa de ocho entidades en 2024: Aguascalientes, Baja California, Chiapas, Ciudad de México, Sonora, Tlaxcala, Veracruz y Yucatán. No representa una muestra probabilística ni un ranking de las treinta y dos entidades. Por ejemplo, Veracruz registra 58,4%, frente a 59,7% nacional: una diferencia de −1,3 pp. Esta comparación no justifica etiquetar a una comunidad como apática o inferir causas individuales.
+El explorador reúne las 32 entidades de 2024 con búsqueda y orden alfabético. Las tasas se cotejaron en el Manual CCPC y el Estudio de Participación 2024; las ocho cifras originales se conservaron. Por ejemplo, Veracruz registra 58,4%, frente a 59,7% nacional: una diferencia de −1,3 pp. Esta comparación no justifica etiquetar a una comunidad como apática o inferir causas individuales.
 
 ### Lo que mide la tasa
 
@@ -60,13 +60,13 @@ El laboratorio compara dos tasas hipotéticas entre 0% y 100% con la referencia 
 
 Predecir responsablemente requeriría, como mínimo, definir el fenómeno y la unidad de análisis, disponer de series comparables, separar datos de entrenamiento y evaluación, medir errores fuera de muestra y comunicar incertidumbre. Atribuir efectos a una intervención requeriría además un diseño que permita identificarlos. 100 VOCES no sustituye esas tareas con un deslizador; emplea el ejercicio para enseñar la diferencia entre observar e imaginar.
 
-### Sexta escena: una explicación que viaja
+### Sala en vivo para el aula
 
-El generador permite preparar una pieza nacional, su complemento, una entidad o un grupo de edad de 2024, y elegir aula, comunidad o redes como contexto. Las salidas previstas en el producto son PNG horizontal de 1200 × 630, publicación de 1080 × 1350 e historia de 1080 × 1920 píxeles, acompañadas de texto accesible. El valor, el año, el alcance y la referencia deben viajar dentro de la imagen; la descripción escrita permite explicar la misma información sin depender de la gráfica.
+Una sala compartida permite estimar la tasa de 2024, calcular la diferencia respecto a 2018 y recuperar el dato después de explicarlo. El presentador invita con QR, revela evidencia y controla tres rondas. El servidor guarda respuestas numéricas con identificadores aleatorios temporales; no solicita nombres ni preferencias políticas. Caducan a las dos horas. El resumen describe la sesión y el recuerdo inmediato, no una muestra representativa ni aprendizaje duradero.
 
-### Un cierre sin exageraciones
+### Lente Ciudadana y cierre
 
-La persona termina con una afirmación verificable y una pregunta mejor formulada. Por ejemplo: «La participación nacional CCPC de 2024 fue 59,7%; ¿qué fuente y denominador sustentan esa cifra?». El recurso local funciona como respaldo para conectividad limitada y la demostración manual organiza seis escenas en tres minutos. El video local se verifica por separado. El sitio está privado en la cuenta propietaria; el acceso público, los requisitos administrativos y el piloto no se dan por cumplidos.
+La Lente extrae texto de una captura en el dispositivo o recibe una afirmación escrita. Permite elegir entre varias cifras y exige confirmar año, ámbito, indicador, signo y unidad. Contrasta con la base local y ofrece fuentes y una ficha PNG; no verifica toda la afirmación ni la autenticidad de la imagen. Los seis capítulos originales, la demo de sala y el contraste de texto tienen respaldo local. Las salas compartidas requieren internet; el acceso público y el piloto siguen pendientes.
 
 ## Difundir con la fuente a la vista
 
@@ -86,9 +86,9 @@ Antes de difundir, una persona revisa cifras, unidades y alcance; otra comprueba
 
 Un piloto propuesto observa tareas concretas: explicar el 59,7%, distinguir pp de cambio relativo, comparar procesos del mismo tipo, localizar una entidad y exportar una imagen con fuente. Se documentarán número de participantes, fecha, respuestas, dificultades y correcciones, sin identificadores personales. Antes y después pueden utilizar preguntas equivalentes. Las metas orientan el diseño; solo los resultados registrados podrán describirse como evidencia de aprendizaje.
 
-### Adaptación institucional y cierre
+### Adaptación institucional y mantenimiento
 
-El código estático, los datos agregados, el guion editable y la ficha docente favorecen la revisión y adaptación. La posible incorporación a actividades del INE requeriría validación metodológica, editorial, de accesibilidad y operativa. Actualizar cifras, atender incidencias y mantener materiales requiere responsables. La presentación ejecutiva expone esta viabilidad en diez diapositivas y el pitch reserva dos minutos cincuenta segundos. Frase de cierre: «Los datos ya hablan. Hagamos que se entiendan».
+La aplicación combina recursos estáticos con una API y base D1 para salas. Sus datos agregados, guion editable y kit docente permiten revisión. Una adopción institucional requiere validación metodológica, editorial, de accesibilidad y operativa. La presentación mantiene diez diapositivas; el video dura dos minutos cincuenta segundos. Las pruebas automáticas no sustituyen participantes ni dispositivos físicos. El sitio conserva los permisos de su propietario.
 
 Fuente documental: https://ine.mx/wp-content/uploads/2025/06/Manual-Conteos-Censales-2009-2024.pdf
 

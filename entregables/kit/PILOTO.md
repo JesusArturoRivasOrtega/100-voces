@@ -1,5 +1,5 @@
 # Piloto de comprensión · protocolo sin resultados
-Plan para 5–8 personas · Sesión individual de 15 minutos · Edición 21/10/2026
+Plan para 5–8 personas · Sesión individual de 15 minutos · Edición 27/10/2026
 
 ## Estado y propósito
 Este documento es un protocolo listo para aplicar. No acredita que se hayan realizado sesiones. El CSV adjunto contiene únicamente encabezados. El piloto busca errores de comprensión y dificultades de uso; no demuestra eficacia causal ni representa a toda la población.

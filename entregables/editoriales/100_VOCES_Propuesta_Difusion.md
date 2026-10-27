@@ -4,7 +4,7 @@ Estado: materiales locales preparados, sin campaña publicada ni resultados de a
 
 | Canal | Pieza y público | Mensaje | Acción propuesta | Control previo |
 |---|---|---|---|---|
-| Micrositio | Historia de seis capítulos; público general | Entiende, compara y verifica | Explorar evidencia | Probar enlace cuando exista publicación |
+| Micrositio | Seis capítulos, sala y Lente; público general | Entiende, compara y verifica | Explorar evidencia | Probar enlace cuando exista publicación |
 | Instagram | Carrusel de cinco láminas; jóvenes | 59,7% y aproximadamente 60 puntos | Abrir historia completa | Tasa, año, fuente y texto alternativo |
 | Reels/TikTok/Shorts | Video de 20–40 s; público general | Una cifra no demuestra causas | Formular una pregunta | Subtítulos y sin recortes de fuente |
 | Aula | Kit docente de 15 min; jóvenes sin formación estadística | Diferenciar tasa, pp y cambio relativo | Resolver y explicar | Ofrecer versión impresa/oral |
@@ -25,7 +25,7 @@ Estado: materiales locales preparados, sin campaña publicada ni resultados de a
 
 **Comparación.** En elecciones presidenciales, la tasa CCPC pasó de 62,4% en 2018 a 59,7% en 2024: −2,7 puntos porcentuales. El cambio relativo es aproximadamente −4,3%. Distinguir las unidades evita contar otra historia. Fuente: INE, Manual CCPC, p. 21.
 
-**Territorio.** Veracruz registró 58,4% de participación CCPC en 2024, frente a 59,7% nacional: −1,3 pp. La aplicación presenta una selección demostrativa de ocho entidades; no un ranking nacional completo. Fuente: INE, Manual CCPC, pp. 16 y 21. La diferencia no prueba causas.
+**Territorio.** Veracruz registró 58,4% de participación CCPC en 2024, frente a 59,7% nacional: −1,3 pp. La aplicación presenta las 32 entidades verificadas, en orden alfabético. Fuente: INE, Manual CCPC, pp. 16 y 21. La diferencia no prueba causas.
 
 **Escenario educativo.** A = 54,7% y B = 64,7% se comparan con 59,7% observado: −5,0 pp y +5,0 pp, respectivamente. Entre A y B hay 10,0 pp. El aumento relativo de B frente al observado es aproximadamente +8,4%. Es un escenario aritmético hipotético, no una predicción ni el efecto estimado de una intervención.
 
