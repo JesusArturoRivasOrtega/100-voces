@@ -93,7 +93,7 @@
   },
   "docs/PRUEBAS.md": {
     "bytes": 7537,
-    "sha256": "3ecc8420d1c4a065878bea1478d48654495aaec2c9a2262d863cfc355f1b4c72"
+    "sha256": "3c58af5ddca44fbcc3caf5e1db146c75f4c1c9495492173ad3173f29fb10ded9"
   },
   "docs/SEGURIDAD_PRIVACIDAD.md": {
     "bytes": 3719,
@@ -341,7 +341,7 @@
   },
   "evidencia/pruebas-resiliencia.json": {
     "bytes": 935,
-    "sha256": "75d3a6cebcc1fe1ca94d1e099468be4c9d67c6c07236b3ae0f5e7e5328c4853a"
+    "sha256": "0c32b5f1964eb231f1d03dfebf464e7a01f63fdf32104d5be64c3cb7ab14ce61"
   },
   "evidencia/pruebas-territorio.json": {
     "bytes": 386,
@@ -804,8 +804,8 @@
     "sha256": "877f5d3baabd6c734047b5a3eb3b4730a9d0924084434c6db86f7a8ffc0a6d44"
   },
   "tests/resilience.cjs": {
-    "bytes": 5218,
-    "sha256": "fa3534c3c0ec8f310fd29870f5cbc769fe5b9d0ea7f4e3ea73278cb8b8a1ed46"
+    "bytes": 5463,
+    "sha256": "04d4ebe8a3f73cfb72f17488302142fab156f68839fdcefaaf2a9ae04fec2b7c"
   },
   "tests/run.cjs": {
     "bytes": 3076,
