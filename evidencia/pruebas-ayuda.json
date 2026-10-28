@@ -1,0 +1,25 @@
+{
+  "fecha": "2026-10-28T01:24:16.451Z",
+  "resultados": [
+    {
+      "prueba": "Cobertura y ayuda con mouse",
+      "estado": "VERIFICADO",
+      "detalle": "16 ayudas con propósito, pasos y límites. Permanecen abiertas al mover el mouse al panel y cierran con Escape."
+    },
+    {
+      "prueba": "Teclado y cierre",
+      "estado": "VERIFICADO",
+      "detalle": "Foco abre la ayuda, Enter permite acceder al cierre, Escape restaura el foco y Tab sale sin atraparlo. Clic exterior cierra."
+    },
+    {
+      "prueba": "Adaptación y accesibilidad",
+      "estado": "VERIFICADO",
+      "detalle": "Panel dentro de ocho anchos de 320 a 1440 px; apertura y cierre por toque emulado; cero infracciones axe con ayuda abierta. No sustituye dispositivos físicos."
+    },
+    {
+      "prueba": "Respaldo autónomo",
+      "estado": "VERIFICADO",
+      "detalle": "Ayuda disponible al abrir el HTML por file://, sin servidor ni consultas externas."
+    }
+  ]
+}

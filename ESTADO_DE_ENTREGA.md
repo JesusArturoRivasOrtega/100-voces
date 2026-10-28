@@ -2,6 +2,8 @@
 
 ## Implementado
 
+Ayudas contextuales «?» en 16 capítulos y apartados, con propósito, instrucciones y límites. Funcionan con mouse, teclado y toque, también en el respaldo autónomo. El cumplimiento del prompt maestro se desglosa en `docs/AUDITORIA_FINAL.md`: no se declara un cierre del 100 %.
+
 Seis capítulos; seis elecciones, 32 entidades verificadas y 18 grupos de edad nacionales. Comparador con contexto, denominador interactivo, búsqueda territorial, escenarios A/B, siete preguntas con repaso y tres casos opcionales, tarjetas con fuente, recorrido de acciones, Sala en vivo y Lente Ciudadana. OCR cancelable, recuperación de salas, cupos atómicos y animaciones respetuosas de movimiento reducido.
 
 Guion de cuatro páginas y DOCX; presentación PDF/PPTX de diez diapositivas; kit docente de once páginas y editables; carrusel de cinco piezas; video 1080p de 170 s con voz sintética declarada, subtítulos y transcripción. HTML autónomo y código reproducible.
@@ -17,3 +19,7 @@ La integración con el Worker y D1, así como la publicación, tienen evidencias
 Piloto real de 5–8 personas, lector de pantalla y teléfonos físicos; capacidad del alojamiento con grupos reales; purga programada sin tráfico; permisos externos del sitio/video; nombre del equipo, inscripción, elegibilidad, firmas y envío. El CSV del piloto sigue vacío. No se simulan resultados, firmas ni aval institucional.
 
 El sitio conserva acceso privado del propietario. GitHub no cambia ese permiso. Consultar docs/PENDIENTES_HUMANOS.md antes de la postulación.
+
+## Propuestas del prompt aún no implementadas
+
+Pregunta previa del denominador con respuesta inicialmente oculta; doble nube de cien puntos y tarjeta específica de comparación histórica (opcionales); edición libre del mensaje educativo. Las tarjetas actuales permiten elegir pregunta o conclusión sugerida. Estos pendientes no deben confundirse con funciones ya entregadas ni con las validaciones humanas.

@@ -105,7 +105,7 @@ const record = (name, expected, observed) =>
   record(
     "Territorios",
     "32 entidades; diferencias respecto a 2024 nacional",
-    "8/8 coinciden; selección declarada",
+    `${data.states_2024.length}/${data.states_2024.length} coinciden; cobertura declarada`,
   );
   const answers = [0, 1, 2, 0, 1, 1, 0];
   for (let i = 0; i < 7; i++) {

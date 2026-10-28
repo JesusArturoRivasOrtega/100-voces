@@ -65,6 +65,7 @@ server.listen(0, "127.0.0.1", async () => {
       "resilience.cjs",
       "education.cjs",
       "territory.cjs",
+      "help.cjs",
       ...(process.env.VOCES_CROSS_BROWSER==='1'||process.argv.includes('engines.cjs')?["engines.cjs"]:[]),
     ];
     for (const name of (process.argv.length>2 ? suites.filter(n=>process.argv.slice(2).includes(n)) : suites)) {

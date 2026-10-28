@@ -2,7 +2,47 @@
 
 Corte: 26 de octubre de 2026. Se conserva el proyecto existente, su identidad visual y sus fuentes. Este documento distingue implementación, pruebas de software y validación humana. No certifica ausencia de defectos ni aprobación institucional.
 
-## Matriz funcional
+## Cumplimiento del prompt maestro: no equivale a un cierre del 100 %
+
+El adjunto revisado en esta continuación tiene el mismo SHA-256 que el prompt anterior: `0db62682e60747909fccc51e0948e973caa5e0153ae9df3cd439107694625474`. La versión 1.3 implementa el núcleo técnico y contiene materiales, pruebas y documentación; siguen existiendo validaciones pendientes y propuestas opcionales sin implementar. No debe presentarse como cumplimiento literal de todos los pasos.
+
+| Fases del prompt | Evidencia existente | Estado y límite |
+|---|---|---|
+| 0: auditoría | Esta matriz, `AUDITORIA_Y_ARQUITECTURA.md`, reportes en `evidencia/` | Realizada con hallazgos y límites documentados |
+| 1: acceso y estabilidad | `DESPLIEGUE_Y_ENTREGA.md`, integración Worker/D1, GitHub Actions | Publicación verificada; acceso externo del jurado pendiente |
+| 2–3: diseño y portada | `public/styles.css`, `public/features.css`, navegación y recorridos | Implementado y probado; comprensión con público pendiente |
+| 4: cien puntos | Visualización y denominador interactivo | La explicación ya está visible: no hay una pregunta previa que oculte la respuesta; tampoco doble nube de puntos opcional |
+| 5: comparador | Selector de años, barras y diferencias | Funcional; tarjeta específica de comparación histórica opcional pendiente |
+| 6–9: territorios, aprendizaje, escenarios y tarjetas | 32 entidades, 18 edades nacionales, quiz, A/B, PNG | Implementados; mensajes de tarjeta mediante opciones, sin edición libre |
+| 10–12: En vivo, Lente y recorrido | `EN_VIVO_Y_LENTE.md`, pruebas API y navegadores | Implementados; prueba de capacidad del alojamiento con usuarios reales pendiente |
+| 13: datos | `DATOS_Y_METODOLOGIA.md`, `fuentes/` y pruebas territoriales | Cotejo de tasas publicadas; no recálculo de microdatos |
+| 14: accesibilidad | `ACCESIBILIDAD.md`, axe, teclado, anchos y movimiento reducido | Verificación automática y visual; lector de pantalla y teléfonos físicos pendientes |
+| 15–16: seguridad y autonomía | `SEGURIDAD_PRIVACIDAD.md`, auditoría de dependencias, HTML autónomo | Revisados; purga sin tráfico y carga de producción pendientes |
+| 17: validación educativa | `VALIDACION_EDUCATIVA.md`, protocolo y CSV de piloto | Protocolo preparado; piloto sin ejecutar, sin resultados inventados |
+| 18–21: materiales y entrega | Kit, presentación, guion, MP4, índice y ZIP | Archivos generados y revisados; alojamiento externo del video, firmas y envío pendientes |
+| 22–23: pruebas y revisión visual | `PRUEBAS.md`, capturas y reportes | Pruebas ejecutadas con su alcance; no garantía de ausencia de defectos |
+| 24–25: criterios y difusión | `entregables/editoriales/100_VOCES_Matriz_Criterios_y_Demo.md`, `100_VOCES_Propuesta_Difusion.md` | Documentos existentes equivalentes; no es necesario duplicarlos con otros nombres |
+| 26: prioridades | Prioridades al final de esta auditoría y `PENDIENTES_HUMANOS.md` | Cierre externo aún pendiente |
+
+La observación de un compañero, transmitida por el autor, indica dificultad para entender la utilidad de las secciones. Es una señal de usabilidad, no un piloto formal ni una medida de aprendizaje. Motiva las ayudas contextuales de esta revisión.
+
+### Mejora de comprensión por sección
+
+**Estado:** implementación y verificación registradas en `evidencia/pruebas-ayuda.json` tras su ejecución.
+
+**Archivos:** `public/js/help.js`, `public/features.css`, `public/index.html`, `tests/help.cjs` y HTML autónomo regenerado.
+
+**Problema:** nombres narrativos y múltiples herramientas no siempre explican al visitante para qué sirve cada sección.
+
+**Implementación:** 16 botones «?» para capítulos, portada, denominador, edades, recorrido y descargas. Cada panel explica propósito, dos pasos y límites. Apertura con mouse, foco, clic o toque; cierre con Escape, botón, clic exterior o salida por teclado. También se corrige la etiqueta antigua de ocho entidades y el enlace de portada hacia las fuentes.
+
+**Verificación:** suite dedicada con contenido, persistencia al pasar el mouse al panel, teclado, toque emulado, ocho anchos, axe y apertura del HTML autónomo. Los resultados ejecutados se registran en el informe de pruebas.
+
+**Impacto:** el visitante puede entender una herramienta antes de interactuar y consultar instrucciones sin abandonar el capítulo.
+
+**Limitaciones:** necesita volver a probarse con el compañero y con participantes; no se afirma haber resuelto toda dificultad de comprensión.
+
+## Matriz de la versión implementada
 
 | Función | Revisión y cambio | Evidencia o límite |
 |---|---|---|

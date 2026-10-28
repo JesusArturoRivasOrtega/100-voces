@@ -1,5 +1,11 @@
 # Cambios
 
+### Revisión de comprensión sobre 1.3.0
+
+- Ayuda «?» en 16 capítulos y apartados: explica propósito, instrucciones y límites; admite mouse, teclado y toque sin depender de conexión.
+- Corrección del enlace de fuentes en portada y de la etiqueta antigua de ocho entidades en el generador.
+- Pruebas dedicadas de ayudas; trazabilidad del prompt maestro con pendientes técnicos opcionales y validaciones humanas explícitos.
+
 ## 1.3.0 · 27 de octubre de 2026
 
 - Sala: recuperación tras salir, recargar o perder red; histogramas estables; cupos atómicos y límites por participante que permiten grupos en una misma red.

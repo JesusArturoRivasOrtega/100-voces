@@ -1,10 +1,10 @@
 {
-  "fecha": "2026-10-27T14:01:23.579Z",
+  "fecha": "2026-10-28T01:20:41.071Z",
   "nota": "Una carga local sin caché de este contexto; no es una medición de usuarios reales.",
   "navigation": [
     {
-      "domInteractiveMs": 56.60000002384186,
-      "domContentLoadedMs": 730.6999999880791
+      "domInteractiveMs": 409.5,
+      "domContentLoadedMs": 1320
     }
   ],
   "resources": [
@@ -14,7 +14,7 @@
     },
     {
       "path": "/public/features.css",
-      "bytes": 9264
+      "bytes": 11964
     },
     {
       "path": "/public/js/data.js",
@@ -30,15 +30,15 @@
     },
     {
       "path": "/public/js/visualization.js",
-      "bytes": 7369
+      "bytes": 7218
     },
     {
       "path": "/public/js/contrasts.js",
-      "bytes": 4309
+      "bytes": 4219
     },
     {
       "path": "/public/js/learning.js",
-      "bytes": 9303
+      "bytes": 9132
     },
     {
       "path": "/public/js/scenarios.js",
@@ -46,7 +46,7 @@
     },
     {
       "path": "/public/js/export.js",
-      "bytes": 9538
+      "bytes": 9223
     },
     {
       "path": "/public/js/navigation.js",
@@ -73,8 +73,12 @@
       "bytes": 3550
     },
     {
+      "path": "/public/js/help.js",
+      "bytes": 14427
+    },
+    {
       "path": "/public/recursos/pitch.vtt",
-      "bytes": 2713
+      "bytes": 2718
     },
     {
       "path": "/public/fonts/dmsans.ttf",

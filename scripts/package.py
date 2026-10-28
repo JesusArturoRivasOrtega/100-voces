@@ -1,17 +1,22 @@
 from pathlib import Path
-import zipfile,hashlib,json
+import zipfile,hashlib,json,os
 root=Path(__file__).resolve().parents[1]
 target=root.parent/'100_VOCES_RETO3_ENTREGA.zip'
 skip_dirs={'.git','.tools','node_modules','__pycache__','.sites-runtime','trabajo','capturas','audio','frames','.qa','dist','.wrangler','.vinext','outputs','.next'}
 files=[]
-for p in root.rglob('*'):
- if not p.is_file() or any(x in skip_dirs for x in p.relative_to(root).parts):continue
- rel=p.relative_to(root)
- if p.name=='MANIFIESTO_SHA256.json' or p.name.startswith(('.env','.dev.vars')) or p.suffix in ['.pyc','.wav','.log','.tsbuildinfo']:continue
- if p.suffix=='.zip' and not ('recursos' in rel.parts or 'kit' in rel.parts):continue
- if 'evidencia' in rel.parts and p.suffix=='.png':continue
- if 'video' in rel.parts and (p.name.startswith('frame_') or p.name.startswith('revision_') or p.suffix=='.mp4' or p.name=='frames.txt'):continue
- files.append(p)
+# Prune excluded trees before visiting them: dependencies and browser outputs
+# can contain thousands of files but never belong in the delivery archive.
+for directory,subdirs,names in os.walk(root):
+ subdirs[:]=sorted(name for name in subdirs if name not in skip_dirs)
+ for name in sorted(names):
+  p=Path(directory)/name
+  if not p.is_file():continue
+  rel=p.relative_to(root)
+  if p.name=='MANIFIESTO_SHA256.json' or p.name.startswith(('.env','.dev.vars')) or p.suffix in ['.pyc','.wav','.log','.tsbuildinfo']:continue
+  if p.suffix=='.zip' and not ('recursos' in rel.parts or 'kit' in rel.parts):continue
+  if 'evidencia' in rel.parts and p.suffix=='.png':continue
+  if 'video' in rel.parts and (p.name.startswith('frame_') or p.name.startswith('revision_') or p.suffix=='.mp4' or p.name=='frames.txt'):continue
+  files.append(p)
 # Normalize text before hashing so Git checkouts and delivery files agree.
 text_extensions={'.md','.txt','.json','.html','.css','.js','.cjs','.py','.ps1','.csv','.srt','.vtt','.yml','.yaml','.sha256'}
 for p in files:

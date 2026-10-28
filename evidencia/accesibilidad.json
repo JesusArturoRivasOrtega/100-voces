@@ -1,10 +1,334 @@
 {
-  "fecha": "2026-10-27T14:00:24.371Z",
+  "fecha": "2026-10-28T01:18:58.081Z",
   "states": [
     {
       "state": "initial",
       "violations": [],
       "incomplete": [
+        {
+          "id": "aria-valid-attr-value",
+          "impact": "critical",
+          "tags": [
+            "cat.aria",
+            "wcag2a",
+            "wcag412",
+            "EN-301-549",
+            "EN-9.4.1.2"
+          ],
+          "description": "Ensure all ARIA attributes have valid values",
+          "help": "ARIA attributes must conform to valid values",
+          "helpUrl": "https://dequeuniversity.com/rules/axe/4.10/aria-valid-attr-value?application=axeAPI",
+          "nodes": [
+            {
+              "any": [],
+              "all": [
+                {
+                  "id": "aria-valid-attr-value",
+                  "data": {
+                    "messageKey": "controlsWithinPopup",
+                    "needsReview": "aria-controls=\"section-help-panel\""
+                  },
+                  "relatedNodes": [],
+                  "impact": "critical",
+                  "message": "Unable to determine if aria-controls referenced ID exists on the page while using aria-haspopup: aria-controls=\"section-help-panel\""
+                }
+              ],
+              "none": [],
+              "impact": "critical",
+              "html": "<button type=\"button\" class=\"section-help-trigger\" data-help=\"inicio\" aria-label=\"Ayuda: Empieza aquí\" aria-expanded=\"false\" aria-controls=\"section-help-panel\" aria-haspopup=\"dialog\">?</button>",
+              "target": [
+                "button[data-help=\"inicio\"]"
+              ],
+              "failureSummary": "Fix all of the following:\n  Unable to determine if aria-controls referenced ID exists on the page while using aria-haspopup: aria-controls=\"section-help-panel\""
+            },
+            {
+              "any": [],
+              "all": [
+                {
+                  "id": "aria-valid-attr-value",
+                  "data": {
+                    "messageKey": "controlsWithinPopup",
+                    "needsReview": "aria-controls=\"section-help-panel\""
+                  },
+                  "relatedNodes": [],
+                  "impact": "critical",
+                  "message": "Unable to determine if aria-controls referenced ID exists on the page while using aria-haspopup: aria-controls=\"section-help-panel\""
+                }
+              ],
+              "none": [],
+              "impact": "critical",
+              "html": "<button type=\"button\" class=\"section-help-trigger\" data-help=\"historia\" aria-label=\"Ayuda: Explorar los cien puntos\" aria-expanded=\"false\" aria-controls=\"section-help-panel\" aria-haspopup=\"dialog\">?</button>",
+              "target": [
+                "button[data-help=\"historia\"]"
+              ],
+              "failureSummary": "Fix all of the following:\n  Unable to determine if aria-controls referenced ID exists on the page while using aria-haspopup: aria-controls=\"section-help-panel\""
+            },
+            {
+              "any": [],
+              "all": [
+                {
+                  "id": "aria-valid-attr-value",
+                  "data": {
+                    "messageKey": "controlsWithinPopup",
+                    "needsReview": "aria-controls=\"section-help-panel\""
+                  },
+                  "relatedNodes": [],
+                  "impact": "critical",
+                  "message": "Unable to determine if aria-controls referenced ID exists on the page while using aria-haspopup: aria-controls=\"section-help-panel\""
+                }
+              ],
+              "none": [],
+              "impact": "critical",
+              "html": "<button type=\"button\" class=\"section-help-trigger\" data-help=\"denominador\" aria-label=\"Ayuda: Entender a quiénes se cuenta\" aria-expanded=\"false\" aria-controls=\"section-help-panel\" aria-haspopup=\"dialog\">?</button>",
+              "target": [
+                "button[data-help=\"denominador\"]"
+              ],
+              "failureSummary": "Fix all of the following:\n  Unable to determine if aria-controls referenced ID exists on the page while using aria-haspopup: aria-controls=\"section-help-panel\""
+            },
+            {
+              "any": [],
+              "all": [
+                {
+                  "id": "aria-valid-attr-value",
+                  "data": {
+                    "messageKey": "controlsWithinPopup",
+                    "needsReview": "aria-controls=\"section-help-panel\""
+                  },
+                  "relatedNodes": [],
+                  "impact": "critical",
+                  "message": "Unable to determine if aria-controls referenced ID exists on the page while using aria-haspopup: aria-controls=\"section-help-panel\""
+                }
+              ],
+              "none": [],
+              "impact": "critical",
+              "html": "<button type=\"button\" class=\"section-help-trigger\" data-help=\"tiempo\" aria-label=\"Ayuda: Comparar elecciones\" aria-expanded=\"false\" aria-controls=\"section-help-panel\" aria-haspopup=\"dialog\">?</button>",
+              "target": [
+                "button[data-help=\"tiempo\"]"
+              ],
+              "failureSummary": "Fix all of the following:\n  Unable to determine if aria-controls referenced ID exists on the page while using aria-haspopup: aria-controls=\"section-help-panel\""
+            },
+            {
+              "any": [],
+              "all": [
+                {
+                  "id": "aria-valid-attr-value",
+                  "data": {
+                    "messageKey": "controlsWithinPopup",
+                    "needsReview": "aria-controls=\"section-help-panel\""
+                  },
+                  "relatedNodes": [],
+                  "impact": "critical",
+                  "message": "Unable to determine if aria-controls referenced ID exists on the page while using aria-haspopup: aria-controls=\"section-help-panel\""
+                }
+              ],
+              "none": [],
+              "impact": "critical",
+              "html": "<button type=\"button\" class=\"section-help-trigger\" data-help=\"territorio\" aria-label=\"Ayuda: Explorar entidades y edades\" aria-expanded=\"false\" aria-controls=\"section-help-panel\" aria-haspopup=\"dialog\">?</button>",
+              "target": [
+                "button[data-help=\"territorio\"]"
+              ],
+              "failureSummary": "Fix all of the following:\n  Unable to determine if aria-controls referenced ID exists on the page while using aria-haspopup: aria-controls=\"section-help-panel\""
+            },
+            {
+              "any": [],
+              "all": [
+                {
+                  "id": "aria-valid-attr-value",
+                  "data": {
+                    "messageKey": "controlsWithinPopup",
+                    "needsReview": "aria-controls=\"section-help-panel\""
+                  },
+                  "relatedNodes": [],
+                  "impact": "critical",
+                  "message": "Unable to determine if aria-controls referenced ID exists on the page while using aria-haspopup: aria-controls=\"section-help-panel\""
+                }
+              ],
+              "none": [],
+              "impact": "critical",
+              "html": "<button type=\"button\" class=\"section-help-trigger\" data-help=\"aprender\" aria-label=\"Ayuda: Practicar la lectura de datos\" aria-expanded=\"false\" aria-controls=\"section-help-panel\" aria-haspopup=\"dialog\">?</button>",
+              "target": [
+                "button[data-help=\"aprender\"]"
+              ],
+              "failureSummary": "Fix all of the following:\n  Unable to determine if aria-controls referenced ID exists on the page while using aria-haspopup: aria-controls=\"section-help-panel\""
+            },
+            {
+              "any": [],
+              "all": [
+                {
+                  "id": "aria-valid-attr-value",
+                  "data": {
+                    "messageKey": "controlsWithinPopup",
+                    "needsReview": "aria-controls=\"section-help-panel\""
+                  },
+                  "relatedNodes": [],
+                  "impact": "critical",
+                  "message": "Unable to determine if aria-controls referenced ID exists on the page while using aria-haspopup: aria-controls=\"section-help-panel\""
+                }
+              ],
+              "none": [],
+              "impact": "critical",
+              "html": "<button type=\"button\" class=\"section-help-trigger\" data-help=\"escenarios\" aria-label=\"Ayuda: Probar escenarios A y B\" aria-expanded=\"false\" aria-controls=\"section-help-panel\" aria-haspopup=\"dialog\">?</button>",
+              "target": [
+                "button[data-help=\"escenarios\"]"
+              ],
+              "failureSummary": "Fix all of the following:\n  Unable to determine if aria-controls referenced ID exists on the page while using aria-haspopup: aria-controls=\"section-help-panel\""
+            },
+            {
+              "any": [],
+              "all": [
+                {
+                  "id": "aria-valid-attr-value",
+                  "data": {
+                    "messageKey": "controlsWithinPopup",
+                    "needsReview": "aria-controls=\"section-help-panel\""
+                  },
+                  "relatedNodes": [],
+                  "impact": "critical",
+                  "message": "Unable to determine if aria-controls referenced ID exists on the page while using aria-haspopup: aria-controls=\"section-help-panel\""
+                }
+              ],
+              "none": [],
+              "impact": "critical",
+              "html": "<button type=\"button\" class=\"section-help-trigger\" data-help=\"compartir\" aria-label=\"Ayuda: Crear una tarjeta con fuente\" aria-expanded=\"false\" aria-controls=\"section-help-panel\" aria-haspopup=\"dialog\">?</button>",
+              "target": [
+                "button[data-help=\"compartir\"]"
+              ],
+              "failureSummary": "Fix all of the following:\n  Unable to determine if aria-controls referenced ID exists on the page while using aria-haspopup: aria-controls=\"section-help-panel\""
+            },
+            {
+              "any": [],
+              "all": [
+                {
+                  "id": "aria-valid-attr-value",
+                  "data": {
+                    "messageKey": "controlsWithinPopup",
+                    "needsReview": "aria-controls=\"section-help-panel\""
+                  },
+                  "relatedNodes": [],
+                  "impact": "critical",
+                  "message": "Unable to determine if aria-controls referenced ID exists on the page while using aria-haspopup: aria-controls=\"section-help-panel\""
+                }
+              ],
+              "none": [],
+              "impact": "critical",
+              "html": "<button type=\"button\" class=\"section-help-trigger\" data-help=\"en-vivo\" aria-label=\"Ayuda: Participar en una sala en vivo\" aria-expanded=\"false\" aria-controls=\"section-help-panel\" aria-haspopup=\"dialog\">?</button>",
+              "target": [
+                "button[data-help=\"en-vivo\"]"
+              ],
+              "failureSummary": "Fix all of the following:\n  Unable to determine if aria-controls referenced ID exists on the page while using aria-haspopup: aria-controls=\"section-help-panel\""
+            },
+            {
+              "any": [],
+              "all": [
+                {
+                  "id": "aria-valid-attr-value",
+                  "data": {
+                    "messageKey": "controlsWithinPopup",
+                    "needsReview": "aria-controls=\"section-help-panel\""
+                  },
+                  "relatedNodes": [],
+                  "impact": "critical",
+                  "message": "Unable to determine if aria-controls referenced ID exists on the page while using aria-haspopup: aria-controls=\"section-help-panel\""
+                }
+              ],
+              "none": [],
+              "impact": "critical",
+              "html": "<button type=\"button\" class=\"section-help-trigger\" data-help=\"lente\" aria-label=\"Ayuda: Contrastar una cifra con Lente\" aria-expanded=\"false\" aria-controls=\"section-help-panel\" aria-haspopup=\"dialog\">?</button>",
+              "target": [
+                "button[data-help=\"lente\"]"
+              ],
+              "failureSummary": "Fix all of the following:\n  Unable to determine if aria-controls referenced ID exists on the page while using aria-haspopup: aria-controls=\"section-help-panel\""
+            },
+            {
+              "any": [],
+              "all": [
+                {
+                  "id": "aria-valid-attr-value",
+                  "data": {
+                    "messageKey": "controlsWithinPopup",
+                    "needsReview": "aria-controls=\"section-help-panel\""
+                  },
+                  "relatedNodes": [],
+                  "impact": "critical",
+                  "message": "Unable to determine if aria-controls referenced ID exists on the page while using aria-haspopup: aria-controls=\"section-help-panel\""
+                }
+              ],
+              "none": [],
+              "impact": "critical",
+              "html": "<button type=\"button\" class=\"section-help-trigger\" data-help=\"metodo\" aria-label=\"Ayuda: Usar la actividad en el aula\" aria-expanded=\"false\" aria-controls=\"section-help-panel\" aria-haspopup=\"dialog\">?</button>",
+              "target": [
+                "button[data-help=\"metodo\"]"
+              ],
+              "failureSummary": "Fix all of the following:\n  Unable to determine if aria-controls referenced ID exists on the page while using aria-haspopup: aria-controls=\"section-help-panel\""
+            },
+            {
+              "any": [],
+              "all": [
+                {
+                  "id": "aria-valid-attr-value",
+                  "data": {
+                    "messageKey": "controlsWithinPopup",
+                    "needsReview": "aria-controls=\"section-help-panel\""
+                  },
+                  "relatedNodes": [],
+                  "impact": "critical",
+                  "message": "Unable to determine if aria-controls referenced ID exists on the page while using aria-haspopup: aria-controls=\"section-help-panel\""
+                }
+              ],
+              "none": [],
+              "impact": "critical",
+              "html": "<button type=\"button\" class=\"section-help-trigger\" data-help=\"recursos\" aria-label=\"Ayuda: Descargar los materiales\" aria-expanded=\"false\" aria-controls=\"section-help-panel\" aria-haspopup=\"dialog\">?</button>",
+              "target": [
+                "button[data-help=\"recursos\"]"
+              ],
+              "failureSummary": "Fix all of the following:\n  Unable to determine if aria-controls referenced ID exists on the page while using aria-haspopup: aria-controls=\"section-help-panel\""
+            },
+            {
+              "any": [],
+              "all": [
+                {
+                  "id": "aria-valid-attr-value",
+                  "data": {
+                    "messageKey": "controlsWithinPopup",
+                    "needsReview": "aria-controls=\"section-help-panel\""
+                  },
+                  "relatedNodes": [],
+                  "impact": "critical",
+                  "message": "Unable to determine if aria-controls referenced ID exists on the page while using aria-haspopup: aria-controls=\"section-help-panel\""
+                }
+              ],
+              "none": [],
+              "impact": "critical",
+              "html": "<button type=\"button\" class=\"section-help-trigger\" data-help=\"fuentes\" aria-label=\"Ayuda: Revisar fuentes y metodología\" aria-expanded=\"false\" aria-controls=\"section-help-panel\" aria-haspopup=\"dialog\">?</button>",
+              "target": [
+                "button[data-help=\"fuentes\"]"
+              ],
+              "failureSummary": "Fix all of the following:\n  Unable to determine if aria-controls referenced ID exists on the page while using aria-haspopup: aria-controls=\"section-help-panel\""
+            },
+            {
+              "any": [],
+              "all": [
+                {
+                  "id": "aria-valid-attr-value",
+                  "data": {
+                    "messageKey": "controlsWithinPopup",
+                    "needsReview": "aria-controls=\"section-help-panel\""
+                  },
+                  "relatedNodes": [],
+                  "impact": "critical",
+                  "message": "Unable to determine if aria-controls referenced ID exists on the page while using aria-haspopup: aria-controls=\"section-help-panel\""
+                }
+              ],
+              "none": [],
+              "impact": "critical",
+              "html": "<button type=\"button\" class=\"section-help-trigger\" data-help=\"descargas\" aria-label=\"Ayuda: Descargar los datos\" aria-expanded=\"false\" aria-controls=\"section-help-panel\" aria-haspopup=\"dialog\">?</button>",
+              "target": [
+                "button[data-help=\"descargas\"]"
+              ],
+              "failureSummary": "Fix all of the following:\n  Unable to determine if aria-controls referenced ID exists on the page while using aria-haspopup: aria-controls=\"section-help-panel\""
+            }
+          ]
+        },
         {
           "id": "color-contrast",
           "impact": "serious",
@@ -1710,6 +2034,330 @@
       "violations": [],
       "incomplete": [
         {
+          "id": "aria-valid-attr-value",
+          "impact": "critical",
+          "tags": [
+            "cat.aria",
+            "wcag2a",
+            "wcag412",
+            "EN-301-549",
+            "EN-9.4.1.2"
+          ],
+          "description": "Ensure all ARIA attributes have valid values",
+          "help": "ARIA attributes must conform to valid values",
+          "helpUrl": "https://dequeuniversity.com/rules/axe/4.10/aria-valid-attr-value?application=axeAPI",
+          "nodes": [
+            {
+              "any": [],
+              "all": [
+                {
+                  "id": "aria-valid-attr-value",
+                  "data": {
+                    "messageKey": "controlsWithinPopup",
+                    "needsReview": "aria-controls=\"section-help-panel\""
+                  },
+                  "relatedNodes": [],
+                  "impact": "critical",
+                  "message": "Unable to determine if aria-controls referenced ID exists on the page while using aria-haspopup: aria-controls=\"section-help-panel\""
+                }
+              ],
+              "none": [],
+              "impact": "critical",
+              "html": "<button type=\"button\" class=\"section-help-trigger\" data-help=\"inicio\" aria-label=\"Ayuda: Empieza aquí\" aria-expanded=\"false\" aria-controls=\"section-help-panel\" aria-haspopup=\"dialog\">?</button>",
+              "target": [
+                "button[data-help=\"inicio\"]"
+              ],
+              "failureSummary": "Fix all of the following:\n  Unable to determine if aria-controls referenced ID exists on the page while using aria-haspopup: aria-controls=\"section-help-panel\""
+            },
+            {
+              "any": [],
+              "all": [
+                {
+                  "id": "aria-valid-attr-value",
+                  "data": {
+                    "messageKey": "controlsWithinPopup",
+                    "needsReview": "aria-controls=\"section-help-panel\""
+                  },
+                  "relatedNodes": [],
+                  "impact": "critical",
+                  "message": "Unable to determine if aria-controls referenced ID exists on the page while using aria-haspopup: aria-controls=\"section-help-panel\""
+                }
+              ],
+              "none": [],
+              "impact": "critical",
+              "html": "<button type=\"button\" class=\"section-help-trigger\" data-help=\"historia\" aria-label=\"Ayuda: Explorar los cien puntos\" aria-expanded=\"false\" aria-controls=\"section-help-panel\" aria-haspopup=\"dialog\">?</button>",
+              "target": [
+                "button[data-help=\"historia\"]"
+              ],
+              "failureSummary": "Fix all of the following:\n  Unable to determine if aria-controls referenced ID exists on the page while using aria-haspopup: aria-controls=\"section-help-panel\""
+            },
+            {
+              "any": [],
+              "all": [
+                {
+                  "id": "aria-valid-attr-value",
+                  "data": {
+                    "messageKey": "controlsWithinPopup",
+                    "needsReview": "aria-controls=\"section-help-panel\""
+                  },
+                  "relatedNodes": [],
+                  "impact": "critical",
+                  "message": "Unable to determine if aria-controls referenced ID exists on the page while using aria-haspopup: aria-controls=\"section-help-panel\""
+                }
+              ],
+              "none": [],
+              "impact": "critical",
+              "html": "<button type=\"button\" class=\"section-help-trigger\" data-help=\"denominador\" aria-label=\"Ayuda: Entender a quiénes se cuenta\" aria-expanded=\"false\" aria-controls=\"section-help-panel\" aria-haspopup=\"dialog\">?</button>",
+              "target": [
+                "button[data-help=\"denominador\"]"
+              ],
+              "failureSummary": "Fix all of the following:\n  Unable to determine if aria-controls referenced ID exists on the page while using aria-haspopup: aria-controls=\"section-help-panel\""
+            },
+            {
+              "any": [],
+              "all": [
+                {
+                  "id": "aria-valid-attr-value",
+                  "data": {
+                    "messageKey": "controlsWithinPopup",
+                    "needsReview": "aria-controls=\"section-help-panel\""
+                  },
+                  "relatedNodes": [],
+                  "impact": "critical",
+                  "message": "Unable to determine if aria-controls referenced ID exists on the page while using aria-haspopup: aria-controls=\"section-help-panel\""
+                }
+              ],
+              "none": [],
+              "impact": "critical",
+              "html": "<button type=\"button\" class=\"section-help-trigger\" data-help=\"tiempo\" aria-label=\"Ayuda: Comparar elecciones\" aria-expanded=\"false\" aria-controls=\"section-help-panel\" aria-haspopup=\"dialog\">?</button>",
+              "target": [
+                "button[data-help=\"tiempo\"]"
+              ],
+              "failureSummary": "Fix all of the following:\n  Unable to determine if aria-controls referenced ID exists on the page while using aria-haspopup: aria-controls=\"section-help-panel\""
+            },
+            {
+              "any": [],
+              "all": [
+                {
+                  "id": "aria-valid-attr-value",
+                  "data": {
+                    "messageKey": "controlsWithinPopup",
+                    "needsReview": "aria-controls=\"section-help-panel\""
+                  },
+                  "relatedNodes": [],
+                  "impact": "critical",
+                  "message": "Unable to determine if aria-controls referenced ID exists on the page while using aria-haspopup: aria-controls=\"section-help-panel\""
+                }
+              ],
+              "none": [],
+              "impact": "critical",
+              "html": "<button type=\"button\" class=\"section-help-trigger\" data-help=\"territorio\" aria-label=\"Ayuda: Explorar entidades y edades\" aria-expanded=\"false\" aria-controls=\"section-help-panel\" aria-haspopup=\"dialog\">?</button>",
+              "target": [
+                "button[data-help=\"territorio\"]"
+              ],
+              "failureSummary": "Fix all of the following:\n  Unable to determine if aria-controls referenced ID exists on the page while using aria-haspopup: aria-controls=\"section-help-panel\""
+            },
+            {
+              "any": [],
+              "all": [
+                {
+                  "id": "aria-valid-attr-value",
+                  "data": {
+                    "messageKey": "controlsWithinPopup",
+                    "needsReview": "aria-controls=\"section-help-panel\""
+                  },
+                  "relatedNodes": [],
+                  "impact": "critical",
+                  "message": "Unable to determine if aria-controls referenced ID exists on the page while using aria-haspopup: aria-controls=\"section-help-panel\""
+                }
+              ],
+              "none": [],
+              "impact": "critical",
+              "html": "<button type=\"button\" class=\"section-help-trigger\" data-help=\"aprender\" aria-label=\"Ayuda: Practicar la lectura de datos\" aria-expanded=\"false\" aria-controls=\"section-help-panel\" aria-haspopup=\"dialog\">?</button>",
+              "target": [
+                "button[data-help=\"aprender\"]"
+              ],
+              "failureSummary": "Fix all of the following:\n  Unable to determine if aria-controls referenced ID exists on the page while using aria-haspopup: aria-controls=\"section-help-panel\""
+            },
+            {
+              "any": [],
+              "all": [
+                {
+                  "id": "aria-valid-attr-value",
+                  "data": {
+                    "messageKey": "controlsWithinPopup",
+                    "needsReview": "aria-controls=\"section-help-panel\""
+                  },
+                  "relatedNodes": [],
+                  "impact": "critical",
+                  "message": "Unable to determine if aria-controls referenced ID exists on the page while using aria-haspopup: aria-controls=\"section-help-panel\""
+                }
+              ],
+              "none": [],
+              "impact": "critical",
+              "html": "<button type=\"button\" class=\"section-help-trigger\" data-help=\"escenarios\" aria-label=\"Ayuda: Probar escenarios A y B\" aria-expanded=\"false\" aria-controls=\"section-help-panel\" aria-haspopup=\"dialog\">?</button>",
+              "target": [
+                "button[data-help=\"escenarios\"]"
+              ],
+              "failureSummary": "Fix all of the following:\n  Unable to determine if aria-controls referenced ID exists on the page while using aria-haspopup: aria-controls=\"section-help-panel\""
+            },
+            {
+              "any": [],
+              "all": [
+                {
+                  "id": "aria-valid-attr-value",
+                  "data": {
+                    "messageKey": "controlsWithinPopup",
+                    "needsReview": "aria-controls=\"section-help-panel\""
+                  },
+                  "relatedNodes": [],
+                  "impact": "critical",
+                  "message": "Unable to determine if aria-controls referenced ID exists on the page while using aria-haspopup: aria-controls=\"section-help-panel\""
+                }
+              ],
+              "none": [],
+              "impact": "critical",
+              "html": "<button type=\"button\" class=\"section-help-trigger\" data-help=\"compartir\" aria-label=\"Ayuda: Crear una tarjeta con fuente\" aria-expanded=\"false\" aria-controls=\"section-help-panel\" aria-haspopup=\"dialog\">?</button>",
+              "target": [
+                "button[data-help=\"compartir\"]"
+              ],
+              "failureSummary": "Fix all of the following:\n  Unable to determine if aria-controls referenced ID exists on the page while using aria-haspopup: aria-controls=\"section-help-panel\""
+            },
+            {
+              "any": [],
+              "all": [
+                {
+                  "id": "aria-valid-attr-value",
+                  "data": {
+                    "messageKey": "controlsWithinPopup",
+                    "needsReview": "aria-controls=\"section-help-panel\""
+                  },
+                  "relatedNodes": [],
+                  "impact": "critical",
+                  "message": "Unable to determine if aria-controls referenced ID exists on the page while using aria-haspopup: aria-controls=\"section-help-panel\""
+                }
+              ],
+              "none": [],
+              "impact": "critical",
+              "html": "<button type=\"button\" class=\"section-help-trigger\" data-help=\"en-vivo\" aria-label=\"Ayuda: Participar en una sala en vivo\" aria-expanded=\"false\" aria-controls=\"section-help-panel\" aria-haspopup=\"dialog\">?</button>",
+              "target": [
+                "button[data-help=\"en-vivo\"]"
+              ],
+              "failureSummary": "Fix all of the following:\n  Unable to determine if aria-controls referenced ID exists on the page while using aria-haspopup: aria-controls=\"section-help-panel\""
+            },
+            {
+              "any": [],
+              "all": [
+                {
+                  "id": "aria-valid-attr-value",
+                  "data": {
+                    "messageKey": "controlsWithinPopup",
+                    "needsReview": "aria-controls=\"section-help-panel\""
+                  },
+                  "relatedNodes": [],
+                  "impact": "critical",
+                  "message": "Unable to determine if aria-controls referenced ID exists on the page while using aria-haspopup: aria-controls=\"section-help-panel\""
+                }
+              ],
+              "none": [],
+              "impact": "critical",
+              "html": "<button type=\"button\" class=\"section-help-trigger\" data-help=\"lente\" aria-label=\"Ayuda: Contrastar una cifra con Lente\" aria-expanded=\"false\" aria-controls=\"section-help-panel\" aria-haspopup=\"dialog\">?</button>",
+              "target": [
+                "button[data-help=\"lente\"]"
+              ],
+              "failureSummary": "Fix all of the following:\n  Unable to determine if aria-controls referenced ID exists on the page while using aria-haspopup: aria-controls=\"section-help-panel\""
+            },
+            {
+              "any": [],
+              "all": [
+                {
+                  "id": "aria-valid-attr-value",
+                  "data": {
+                    "messageKey": "controlsWithinPopup",
+                    "needsReview": "aria-controls=\"section-help-panel\""
+                  },
+                  "relatedNodes": [],
+                  "impact": "critical",
+                  "message": "Unable to determine if aria-controls referenced ID exists on the page while using aria-haspopup: aria-controls=\"section-help-panel\""
+                }
+              ],
+              "none": [],
+              "impact": "critical",
+              "html": "<button type=\"button\" class=\"section-help-trigger\" data-help=\"metodo\" aria-label=\"Ayuda: Usar la actividad en el aula\" aria-expanded=\"false\" aria-controls=\"section-help-panel\" aria-haspopup=\"dialog\">?</button>",
+              "target": [
+                "button[data-help=\"metodo\"]"
+              ],
+              "failureSummary": "Fix all of the following:\n  Unable to determine if aria-controls referenced ID exists on the page while using aria-haspopup: aria-controls=\"section-help-panel\""
+            },
+            {
+              "any": [],
+              "all": [
+                {
+                  "id": "aria-valid-attr-value",
+                  "data": {
+                    "messageKey": "controlsWithinPopup",
+                    "needsReview": "aria-controls=\"section-help-panel\""
+                  },
+                  "relatedNodes": [],
+                  "impact": "critical",
+                  "message": "Unable to determine if aria-controls referenced ID exists on the page while using aria-haspopup: aria-controls=\"section-help-panel\""
+                }
+              ],
+              "none": [],
+              "impact": "critical",
+              "html": "<button type=\"button\" class=\"section-help-trigger\" data-help=\"recursos\" aria-label=\"Ayuda: Descargar los materiales\" aria-expanded=\"false\" aria-controls=\"section-help-panel\" aria-haspopup=\"dialog\">?</button>",
+              "target": [
+                "button[data-help=\"recursos\"]"
+              ],
+              "failureSummary": "Fix all of the following:\n  Unable to determine if aria-controls referenced ID exists on the page while using aria-haspopup: aria-controls=\"section-help-panel\""
+            },
+            {
+              "any": [],
+              "all": [
+                {
+                  "id": "aria-valid-attr-value",
+                  "data": {
+                    "messageKey": "controlsWithinPopup",
+                    "needsReview": "aria-controls=\"section-help-panel\""
+                  },
+                  "relatedNodes": [],
+                  "impact": "critical",
+                  "message": "Unable to determine if aria-controls referenced ID exists on the page while using aria-haspopup: aria-controls=\"section-help-panel\""
+                }
+              ],
+              "none": [],
+              "impact": "critical",
+              "html": "<button type=\"button\" class=\"section-help-trigger\" data-help=\"fuentes\" aria-label=\"Ayuda: Revisar fuentes y metodología\" aria-expanded=\"false\" aria-controls=\"section-help-panel\" aria-haspopup=\"dialog\">?</button>",
+              "target": [
+                "button[data-help=\"fuentes\"]"
+              ],
+              "failureSummary": "Fix all of the following:\n  Unable to determine if aria-controls referenced ID exists on the page while using aria-haspopup: aria-controls=\"section-help-panel\""
+            },
+            {
+              "any": [],
+              "all": [
+                {
+                  "id": "aria-valid-attr-value",
+                  "data": {
+                    "messageKey": "controlsWithinPopup",
+                    "needsReview": "aria-controls=\"section-help-panel\""
+                  },
+                  "relatedNodes": [],
+                  "impact": "critical",
+                  "message": "Unable to determine if aria-controls referenced ID exists on the page while using aria-haspopup: aria-controls=\"section-help-panel\""
+                }
+              ],
+              "none": [],
+              "impact": "critical",
+              "html": "<button type=\"button\" class=\"section-help-trigger\" data-help=\"descargas\" aria-label=\"Ayuda: Descargar los datos\" aria-expanded=\"false\" aria-controls=\"section-help-panel\" aria-haspopup=\"dialog\">?</button>",
+              "target": [
+                "button[data-help=\"descargas\"]"
+              ],
+              "failureSummary": "Fix all of the following:\n  Unable to determine if aria-controls referenced ID exists on the page while using aria-haspopup: aria-controls=\"section-help-panel\""
+            }
+          ]
+        },
+        {
           "id": "color-contrast",
           "impact": "serious",
           "tags": [
@@ -3030,6 +3678,330 @@
       "violations": [],
       "incomplete": [
         {
+          "id": "aria-valid-attr-value",
+          "impact": "critical",
+          "tags": [
+            "cat.aria",
+            "wcag2a",
+            "wcag412",
+            "EN-301-549",
+            "EN-9.4.1.2"
+          ],
+          "description": "Ensure all ARIA attributes have valid values",
+          "help": "ARIA attributes must conform to valid values",
+          "helpUrl": "https://dequeuniversity.com/rules/axe/4.10/aria-valid-attr-value?application=axeAPI",
+          "nodes": [
+            {
+              "any": [],
+              "all": [
+                {
+                  "id": "aria-valid-attr-value",
+                  "data": {
+                    "messageKey": "controlsWithinPopup",
+                    "needsReview": "aria-controls=\"section-help-panel\""
+                  },
+                  "relatedNodes": [],
+                  "impact": "critical",
+                  "message": "Unable to determine if aria-controls referenced ID exists on the page while using aria-haspopup: aria-controls=\"section-help-panel\""
+                }
+              ],
+              "none": [],
+              "impact": "critical",
+              "html": "<button type=\"button\" class=\"section-help-trigger\" data-help=\"inicio\" aria-label=\"Ayuda: Empieza aquí\" aria-expanded=\"false\" aria-controls=\"section-help-panel\" aria-haspopup=\"dialog\">?</button>",
+              "target": [
+                "button[data-help=\"inicio\"]"
+              ],
+              "failureSummary": "Fix all of the following:\n  Unable to determine if aria-controls referenced ID exists on the page while using aria-haspopup: aria-controls=\"section-help-panel\""
+            },
+            {
+              "any": [],
+              "all": [
+                {
+                  "id": "aria-valid-attr-value",
+                  "data": {
+                    "messageKey": "controlsWithinPopup",
+                    "needsReview": "aria-controls=\"section-help-panel\""
+                  },
+                  "relatedNodes": [],
+                  "impact": "critical",
+                  "message": "Unable to determine if aria-controls referenced ID exists on the page while using aria-haspopup: aria-controls=\"section-help-panel\""
+                }
+              ],
+              "none": [],
+              "impact": "critical",
+              "html": "<button type=\"button\" class=\"section-help-trigger\" data-help=\"historia\" aria-label=\"Ayuda: Explorar los cien puntos\" aria-expanded=\"false\" aria-controls=\"section-help-panel\" aria-haspopup=\"dialog\">?</button>",
+              "target": [
+                "button[data-help=\"historia\"]"
+              ],
+              "failureSummary": "Fix all of the following:\n  Unable to determine if aria-controls referenced ID exists on the page while using aria-haspopup: aria-controls=\"section-help-panel\""
+            },
+            {
+              "any": [],
+              "all": [
+                {
+                  "id": "aria-valid-attr-value",
+                  "data": {
+                    "messageKey": "controlsWithinPopup",
+                    "needsReview": "aria-controls=\"section-help-panel\""
+                  },
+                  "relatedNodes": [],
+                  "impact": "critical",
+                  "message": "Unable to determine if aria-controls referenced ID exists on the page while using aria-haspopup: aria-controls=\"section-help-panel\""
+                }
+              ],
+              "none": [],
+              "impact": "critical",
+              "html": "<button type=\"button\" class=\"section-help-trigger\" data-help=\"denominador\" aria-label=\"Ayuda: Entender a quiénes se cuenta\" aria-expanded=\"false\" aria-controls=\"section-help-panel\" aria-haspopup=\"dialog\">?</button>",
+              "target": [
+                "button[data-help=\"denominador\"]"
+              ],
+              "failureSummary": "Fix all of the following:\n  Unable to determine if aria-controls referenced ID exists on the page while using aria-haspopup: aria-controls=\"section-help-panel\""
+            },
+            {
+              "any": [],
+              "all": [
+                {
+                  "id": "aria-valid-attr-value",
+                  "data": {
+                    "messageKey": "controlsWithinPopup",
+                    "needsReview": "aria-controls=\"section-help-panel\""
+                  },
+                  "relatedNodes": [],
+                  "impact": "critical",
+                  "message": "Unable to determine if aria-controls referenced ID exists on the page while using aria-haspopup: aria-controls=\"section-help-panel\""
+                }
+              ],
+              "none": [],
+              "impact": "critical",
+              "html": "<button type=\"button\" class=\"section-help-trigger\" data-help=\"tiempo\" aria-label=\"Ayuda: Comparar elecciones\" aria-expanded=\"false\" aria-controls=\"section-help-panel\" aria-haspopup=\"dialog\">?</button>",
+              "target": [
+                "button[data-help=\"tiempo\"]"
+              ],
+              "failureSummary": "Fix all of the following:\n  Unable to determine if aria-controls referenced ID exists on the page while using aria-haspopup: aria-controls=\"section-help-panel\""
+            },
+            {
+              "any": [],
+              "all": [
+                {
+                  "id": "aria-valid-attr-value",
+                  "data": {
+                    "messageKey": "controlsWithinPopup",
+                    "needsReview": "aria-controls=\"section-help-panel\""
+                  },
+                  "relatedNodes": [],
+                  "impact": "critical",
+                  "message": "Unable to determine if aria-controls referenced ID exists on the page while using aria-haspopup: aria-controls=\"section-help-panel\""
+                }
+              ],
+              "none": [],
+              "impact": "critical",
+              "html": "<button type=\"button\" class=\"section-help-trigger\" data-help=\"territorio\" aria-label=\"Ayuda: Explorar entidades y edades\" aria-expanded=\"false\" aria-controls=\"section-help-panel\" aria-haspopup=\"dialog\">?</button>",
+              "target": [
+                "button[data-help=\"territorio\"]"
+              ],
+              "failureSummary": "Fix all of the following:\n  Unable to determine if aria-controls referenced ID exists on the page while using aria-haspopup: aria-controls=\"section-help-panel\""
+            },
+            {
+              "any": [],
+              "all": [
+                {
+                  "id": "aria-valid-attr-value",
+                  "data": {
+                    "messageKey": "controlsWithinPopup",
+                    "needsReview": "aria-controls=\"section-help-panel\""
+                  },
+                  "relatedNodes": [],
+                  "impact": "critical",
+                  "message": "Unable to determine if aria-controls referenced ID exists on the page while using aria-haspopup: aria-controls=\"section-help-panel\""
+                }
+              ],
+              "none": [],
+              "impact": "critical",
+              "html": "<button type=\"button\" class=\"section-help-trigger\" data-help=\"aprender\" aria-label=\"Ayuda: Practicar la lectura de datos\" aria-expanded=\"false\" aria-controls=\"section-help-panel\" aria-haspopup=\"dialog\">?</button>",
+              "target": [
+                "button[data-help=\"aprender\"]"
+              ],
+              "failureSummary": "Fix all of the following:\n  Unable to determine if aria-controls referenced ID exists on the page while using aria-haspopup: aria-controls=\"section-help-panel\""
+            },
+            {
+              "any": [],
+              "all": [
+                {
+                  "id": "aria-valid-attr-value",
+                  "data": {
+                    "messageKey": "controlsWithinPopup",
+                    "needsReview": "aria-controls=\"section-help-panel\""
+                  },
+                  "relatedNodes": [],
+                  "impact": "critical",
+                  "message": "Unable to determine if aria-controls referenced ID exists on the page while using aria-haspopup: aria-controls=\"section-help-panel\""
+                }
+              ],
+              "none": [],
+              "impact": "critical",
+              "html": "<button type=\"button\" class=\"section-help-trigger\" data-help=\"escenarios\" aria-label=\"Ayuda: Probar escenarios A y B\" aria-expanded=\"false\" aria-controls=\"section-help-panel\" aria-haspopup=\"dialog\">?</button>",
+              "target": [
+                "button[data-help=\"escenarios\"]"
+              ],
+              "failureSummary": "Fix all of the following:\n  Unable to determine if aria-controls referenced ID exists on the page while using aria-haspopup: aria-controls=\"section-help-panel\""
+            },
+            {
+              "any": [],
+              "all": [
+                {
+                  "id": "aria-valid-attr-value",
+                  "data": {
+                    "messageKey": "controlsWithinPopup",
+                    "needsReview": "aria-controls=\"section-help-panel\""
+                  },
+                  "relatedNodes": [],
+                  "impact": "critical",
+                  "message": "Unable to determine if aria-controls referenced ID exists on the page while using aria-haspopup: aria-controls=\"section-help-panel\""
+                }
+              ],
+              "none": [],
+              "impact": "critical",
+              "html": "<button type=\"button\" class=\"section-help-trigger\" data-help=\"compartir\" aria-label=\"Ayuda: Crear una tarjeta con fuente\" aria-expanded=\"false\" aria-controls=\"section-help-panel\" aria-haspopup=\"dialog\">?</button>",
+              "target": [
+                "button[data-help=\"compartir\"]"
+              ],
+              "failureSummary": "Fix all of the following:\n  Unable to determine if aria-controls referenced ID exists on the page while using aria-haspopup: aria-controls=\"section-help-panel\""
+            },
+            {
+              "any": [],
+              "all": [
+                {
+                  "id": "aria-valid-attr-value",
+                  "data": {
+                    "messageKey": "controlsWithinPopup",
+                    "needsReview": "aria-controls=\"section-help-panel\""
+                  },
+                  "relatedNodes": [],
+                  "impact": "critical",
+                  "message": "Unable to determine if aria-controls referenced ID exists on the page while using aria-haspopup: aria-controls=\"section-help-panel\""
+                }
+              ],
+              "none": [],
+              "impact": "critical",
+              "html": "<button type=\"button\" class=\"section-help-trigger\" data-help=\"en-vivo\" aria-label=\"Ayuda: Participar en una sala en vivo\" aria-expanded=\"false\" aria-controls=\"section-help-panel\" aria-haspopup=\"dialog\">?</button>",
+              "target": [
+                "button[data-help=\"en-vivo\"]"
+              ],
+              "failureSummary": "Fix all of the following:\n  Unable to determine if aria-controls referenced ID exists on the page while using aria-haspopup: aria-controls=\"section-help-panel\""
+            },
+            {
+              "any": [],
+              "all": [
+                {
+                  "id": "aria-valid-attr-value",
+                  "data": {
+                    "messageKey": "controlsWithinPopup",
+                    "needsReview": "aria-controls=\"section-help-panel\""
+                  },
+                  "relatedNodes": [],
+                  "impact": "critical",
+                  "message": "Unable to determine if aria-controls referenced ID exists on the page while using aria-haspopup: aria-controls=\"section-help-panel\""
+                }
+              ],
+              "none": [],
+              "impact": "critical",
+              "html": "<button type=\"button\" class=\"section-help-trigger\" data-help=\"lente\" aria-label=\"Ayuda: Contrastar una cifra con Lente\" aria-expanded=\"false\" aria-controls=\"section-help-panel\" aria-haspopup=\"dialog\">?</button>",
+              "target": [
+                "button[data-help=\"lente\"]"
+              ],
+              "failureSummary": "Fix all of the following:\n  Unable to determine if aria-controls referenced ID exists on the page while using aria-haspopup: aria-controls=\"section-help-panel\""
+            },
+            {
+              "any": [],
+              "all": [
+                {
+                  "id": "aria-valid-attr-value",
+                  "data": {
+                    "messageKey": "controlsWithinPopup",
+                    "needsReview": "aria-controls=\"section-help-panel\""
+                  },
+                  "relatedNodes": [],
+                  "impact": "critical",
+                  "message": "Unable to determine if aria-controls referenced ID exists on the page while using aria-haspopup: aria-controls=\"section-help-panel\""
+                }
+              ],
+              "none": [],
+              "impact": "critical",
+              "html": "<button type=\"button\" class=\"section-help-trigger\" data-help=\"metodo\" aria-label=\"Ayuda: Usar la actividad en el aula\" aria-expanded=\"false\" aria-controls=\"section-help-panel\" aria-haspopup=\"dialog\">?</button>",
+              "target": [
+                "button[data-help=\"metodo\"]"
+              ],
+              "failureSummary": "Fix all of the following:\n  Unable to determine if aria-controls referenced ID exists on the page while using aria-haspopup: aria-controls=\"section-help-panel\""
+            },
+            {
+              "any": [],
+              "all": [
+                {
+                  "id": "aria-valid-attr-value",
+                  "data": {
+                    "messageKey": "controlsWithinPopup",
+                    "needsReview": "aria-controls=\"section-help-panel\""
+                  },
+                  "relatedNodes": [],
+                  "impact": "critical",
+                  "message": "Unable to determine if aria-controls referenced ID exists on the page while using aria-haspopup: aria-controls=\"section-help-panel\""
+                }
+              ],
+              "none": [],
+              "impact": "critical",
+              "html": "<button type=\"button\" class=\"section-help-trigger\" data-help=\"recursos\" aria-label=\"Ayuda: Descargar los materiales\" aria-expanded=\"false\" aria-controls=\"section-help-panel\" aria-haspopup=\"dialog\">?</button>",
+              "target": [
+                "button[data-help=\"recursos\"]"
+              ],
+              "failureSummary": "Fix all of the following:\n  Unable to determine if aria-controls referenced ID exists on the page while using aria-haspopup: aria-controls=\"section-help-panel\""
+            },
+            {
+              "any": [],
+              "all": [
+                {
+                  "id": "aria-valid-attr-value",
+                  "data": {
+                    "messageKey": "controlsWithinPopup",
+                    "needsReview": "aria-controls=\"section-help-panel\""
+                  },
+                  "relatedNodes": [],
+                  "impact": "critical",
+                  "message": "Unable to determine if aria-controls referenced ID exists on the page while using aria-haspopup: aria-controls=\"section-help-panel\""
+                }
+              ],
+              "none": [],
+              "impact": "critical",
+              "html": "<button type=\"button\" class=\"section-help-trigger\" data-help=\"fuentes\" aria-label=\"Ayuda: Revisar fuentes y metodología\" aria-expanded=\"false\" aria-controls=\"section-help-panel\" aria-haspopup=\"dialog\">?</button>",
+              "target": [
+                "button[data-help=\"fuentes\"]"
+              ],
+              "failureSummary": "Fix all of the following:\n  Unable to determine if aria-controls referenced ID exists on the page while using aria-haspopup: aria-controls=\"section-help-panel\""
+            },
+            {
+              "any": [],
+              "all": [
+                {
+                  "id": "aria-valid-attr-value",
+                  "data": {
+                    "messageKey": "controlsWithinPopup",
+                    "needsReview": "aria-controls=\"section-help-panel\""
+                  },
+                  "relatedNodes": [],
+                  "impact": "critical",
+                  "message": "Unable to determine if aria-controls referenced ID exists on the page while using aria-haspopup: aria-controls=\"section-help-panel\""
+                }
+              ],
+              "none": [],
+              "impact": "critical",
+              "html": "<button type=\"button\" class=\"section-help-trigger\" data-help=\"descargas\" aria-label=\"Ayuda: Descargar los datos\" aria-expanded=\"false\" aria-controls=\"section-help-panel\" aria-haspopup=\"dialog\">?</button>",
+              "target": [
+                "button[data-help=\"descargas\"]"
+              ],
+              "failureSummary": "Fix all of the following:\n  Unable to determine if aria-controls referenced ID exists on the page while using aria-haspopup: aria-controls=\"section-help-panel\""
+            }
+          ]
+        },
+        {
           "id": "color-contrast",
           "impact": "serious",
           "tags": [
@@ -4349,6 +5321,330 @@
       "state": "mobile-menu",
       "violations": [],
       "incomplete": [
+        {
+          "id": "aria-valid-attr-value",
+          "impact": "critical",
+          "tags": [
+            "cat.aria",
+            "wcag2a",
+            "wcag412",
+            "EN-301-549",
+            "EN-9.4.1.2"
+          ],
+          "description": "Ensure all ARIA attributes have valid values",
+          "help": "ARIA attributes must conform to valid values",
+          "helpUrl": "https://dequeuniversity.com/rules/axe/4.10/aria-valid-attr-value?application=axeAPI",
+          "nodes": [
+            {
+              "any": [],
+              "all": [
+                {
+                  "id": "aria-valid-attr-value",
+                  "data": {
+                    "messageKey": "controlsWithinPopup",
+                    "needsReview": "aria-controls=\"section-help-panel\""
+                  },
+                  "relatedNodes": [],
+                  "impact": "critical",
+                  "message": "Unable to determine if aria-controls referenced ID exists on the page while using aria-haspopup: aria-controls=\"section-help-panel\""
+                }
+              ],
+              "none": [],
+              "impact": "critical",
+              "html": "<button type=\"button\" class=\"section-help-trigger\" data-help=\"inicio\" aria-label=\"Ayuda: Empieza aquí\" aria-expanded=\"false\" aria-controls=\"section-help-panel\" aria-haspopup=\"dialog\">?</button>",
+              "target": [
+                "button[data-help=\"inicio\"]"
+              ],
+              "failureSummary": "Fix all of the following:\n  Unable to determine if aria-controls referenced ID exists on the page while using aria-haspopup: aria-controls=\"section-help-panel\""
+            },
+            {
+              "any": [],
+              "all": [
+                {
+                  "id": "aria-valid-attr-value",
+                  "data": {
+                    "messageKey": "controlsWithinPopup",
+                    "needsReview": "aria-controls=\"section-help-panel\""
+                  },
+                  "relatedNodes": [],
+                  "impact": "critical",
+                  "message": "Unable to determine if aria-controls referenced ID exists on the page while using aria-haspopup: aria-controls=\"section-help-panel\""
+                }
+              ],
+              "none": [],
+              "impact": "critical",
+              "html": "<button type=\"button\" class=\"section-help-trigger\" data-help=\"historia\" aria-label=\"Ayuda: Explorar los cien puntos\" aria-expanded=\"false\" aria-controls=\"section-help-panel\" aria-haspopup=\"dialog\">?</button>",
+              "target": [
+                "button[data-help=\"historia\"]"
+              ],
+              "failureSummary": "Fix all of the following:\n  Unable to determine if aria-controls referenced ID exists on the page while using aria-haspopup: aria-controls=\"section-help-panel\""
+            },
+            {
+              "any": [],
+              "all": [
+                {
+                  "id": "aria-valid-attr-value",
+                  "data": {
+                    "messageKey": "controlsWithinPopup",
+                    "needsReview": "aria-controls=\"section-help-panel\""
+                  },
+                  "relatedNodes": [],
+                  "impact": "critical",
+                  "message": "Unable to determine if aria-controls referenced ID exists on the page while using aria-haspopup: aria-controls=\"section-help-panel\""
+                }
+              ],
+              "none": [],
+              "impact": "critical",
+              "html": "<button type=\"button\" class=\"section-help-trigger\" data-help=\"denominador\" aria-label=\"Ayuda: Entender a quiénes se cuenta\" aria-expanded=\"false\" aria-controls=\"section-help-panel\" aria-haspopup=\"dialog\">?</button>",
+              "target": [
+                "button[data-help=\"denominador\"]"
+              ],
+              "failureSummary": "Fix all of the following:\n  Unable to determine if aria-controls referenced ID exists on the page while using aria-haspopup: aria-controls=\"section-help-panel\""
+            },
+            {
+              "any": [],
+              "all": [
+                {
+                  "id": "aria-valid-attr-value",
+                  "data": {
+                    "messageKey": "controlsWithinPopup",
+                    "needsReview": "aria-controls=\"section-help-panel\""
+                  },
+                  "relatedNodes": [],
+                  "impact": "critical",
+                  "message": "Unable to determine if aria-controls referenced ID exists on the page while using aria-haspopup: aria-controls=\"section-help-panel\""
+                }
+              ],
+              "none": [],
+              "impact": "critical",
+              "html": "<button type=\"button\" class=\"section-help-trigger\" data-help=\"tiempo\" aria-label=\"Ayuda: Comparar elecciones\" aria-expanded=\"false\" aria-controls=\"section-help-panel\" aria-haspopup=\"dialog\">?</button>",
+              "target": [
+                "button[data-help=\"tiempo\"]"
+              ],
+              "failureSummary": "Fix all of the following:\n  Unable to determine if aria-controls referenced ID exists on the page while using aria-haspopup: aria-controls=\"section-help-panel\""
+            },
+            {
+              "any": [],
+              "all": [
+                {
+                  "id": "aria-valid-attr-value",
+                  "data": {
+                    "messageKey": "controlsWithinPopup",
+                    "needsReview": "aria-controls=\"section-help-panel\""
+                  },
+                  "relatedNodes": [],
+                  "impact": "critical",
+                  "message": "Unable to determine if aria-controls referenced ID exists on the page while using aria-haspopup: aria-controls=\"section-help-panel\""
+                }
+              ],
+              "none": [],
+              "impact": "critical",
+              "html": "<button type=\"button\" class=\"section-help-trigger\" data-help=\"territorio\" aria-label=\"Ayuda: Explorar entidades y edades\" aria-expanded=\"false\" aria-controls=\"section-help-panel\" aria-haspopup=\"dialog\">?</button>",
+              "target": [
+                "button[data-help=\"territorio\"]"
+              ],
+              "failureSummary": "Fix all of the following:\n  Unable to determine if aria-controls referenced ID exists on the page while using aria-haspopup: aria-controls=\"section-help-panel\""
+            },
+            {
+              "any": [],
+              "all": [
+                {
+                  "id": "aria-valid-attr-value",
+                  "data": {
+                    "messageKey": "controlsWithinPopup",
+                    "needsReview": "aria-controls=\"section-help-panel\""
+                  },
+                  "relatedNodes": [],
+                  "impact": "critical",
+                  "message": "Unable to determine if aria-controls referenced ID exists on the page while using aria-haspopup: aria-controls=\"section-help-panel\""
+                }
+              ],
+              "none": [],
+              "impact": "critical",
+              "html": "<button type=\"button\" class=\"section-help-trigger\" data-help=\"aprender\" aria-label=\"Ayuda: Practicar la lectura de datos\" aria-expanded=\"false\" aria-controls=\"section-help-panel\" aria-haspopup=\"dialog\">?</button>",
+              "target": [
+                "button[data-help=\"aprender\"]"
+              ],
+              "failureSummary": "Fix all of the following:\n  Unable to determine if aria-controls referenced ID exists on the page while using aria-haspopup: aria-controls=\"section-help-panel\""
+            },
+            {
+              "any": [],
+              "all": [
+                {
+                  "id": "aria-valid-attr-value",
+                  "data": {
+                    "messageKey": "controlsWithinPopup",
+                    "needsReview": "aria-controls=\"section-help-panel\""
+                  },
+                  "relatedNodes": [],
+                  "impact": "critical",
+                  "message": "Unable to determine if aria-controls referenced ID exists on the page while using aria-haspopup: aria-controls=\"section-help-panel\""
+                }
+              ],
+              "none": [],
+              "impact": "critical",
+              "html": "<button type=\"button\" class=\"section-help-trigger\" data-help=\"escenarios\" aria-label=\"Ayuda: Probar escenarios A y B\" aria-expanded=\"false\" aria-controls=\"section-help-panel\" aria-haspopup=\"dialog\">?</button>",
+              "target": [
+                "button[data-help=\"escenarios\"]"
+              ],
+              "failureSummary": "Fix all of the following:\n  Unable to determine if aria-controls referenced ID exists on the page while using aria-haspopup: aria-controls=\"section-help-panel\""
+            },
+            {
+              "any": [],
+              "all": [
+                {
+                  "id": "aria-valid-attr-value",
+                  "data": {
+                    "messageKey": "controlsWithinPopup",
+                    "needsReview": "aria-controls=\"section-help-panel\""
+                  },
+                  "relatedNodes": [],
+                  "impact": "critical",
+                  "message": "Unable to determine if aria-controls referenced ID exists on the page while using aria-haspopup: aria-controls=\"section-help-panel\""
+                }
+              ],
+              "none": [],
+              "impact": "critical",
+              "html": "<button type=\"button\" class=\"section-help-trigger\" data-help=\"compartir\" aria-label=\"Ayuda: Crear una tarjeta con fuente\" aria-expanded=\"false\" aria-controls=\"section-help-panel\" aria-haspopup=\"dialog\">?</button>",
+              "target": [
+                "button[data-help=\"compartir\"]"
+              ],
+              "failureSummary": "Fix all of the following:\n  Unable to determine if aria-controls referenced ID exists on the page while using aria-haspopup: aria-controls=\"section-help-panel\""
+            },
+            {
+              "any": [],
+              "all": [
+                {
+                  "id": "aria-valid-attr-value",
+                  "data": {
+                    "messageKey": "controlsWithinPopup",
+                    "needsReview": "aria-controls=\"section-help-panel\""
+                  },
+                  "relatedNodes": [],
+                  "impact": "critical",
+                  "message": "Unable to determine if aria-controls referenced ID exists on the page while using aria-haspopup: aria-controls=\"section-help-panel\""
+                }
+              ],
+              "none": [],
+              "impact": "critical",
+              "html": "<button type=\"button\" class=\"section-help-trigger\" data-help=\"en-vivo\" aria-label=\"Ayuda: Participar en una sala en vivo\" aria-expanded=\"false\" aria-controls=\"section-help-panel\" aria-haspopup=\"dialog\">?</button>",
+              "target": [
+                "button[data-help=\"en-vivo\"]"
+              ],
+              "failureSummary": "Fix all of the following:\n  Unable to determine if aria-controls referenced ID exists on the page while using aria-haspopup: aria-controls=\"section-help-panel\""
+            },
+            {
+              "any": [],
+              "all": [
+                {
+                  "id": "aria-valid-attr-value",
+                  "data": {
+                    "messageKey": "controlsWithinPopup",
+                    "needsReview": "aria-controls=\"section-help-panel\""
+                  },
+                  "relatedNodes": [],
+                  "impact": "critical",
+                  "message": "Unable to determine if aria-controls referenced ID exists on the page while using aria-haspopup: aria-controls=\"section-help-panel\""
+                }
+              ],
+              "none": [],
+              "impact": "critical",
+              "html": "<button type=\"button\" class=\"section-help-trigger\" data-help=\"lente\" aria-label=\"Ayuda: Contrastar una cifra con Lente\" aria-expanded=\"false\" aria-controls=\"section-help-panel\" aria-haspopup=\"dialog\">?</button>",
+              "target": [
+                "button[data-help=\"lente\"]"
+              ],
+              "failureSummary": "Fix all of the following:\n  Unable to determine if aria-controls referenced ID exists on the page while using aria-haspopup: aria-controls=\"section-help-panel\""
+            },
+            {
+              "any": [],
+              "all": [
+                {
+                  "id": "aria-valid-attr-value",
+                  "data": {
+                    "messageKey": "controlsWithinPopup",
+                    "needsReview": "aria-controls=\"section-help-panel\""
+                  },
+                  "relatedNodes": [],
+                  "impact": "critical",
+                  "message": "Unable to determine if aria-controls referenced ID exists on the page while using aria-haspopup: aria-controls=\"section-help-panel\""
+                }
+              ],
+              "none": [],
+              "impact": "critical",
+              "html": "<button type=\"button\" class=\"section-help-trigger\" data-help=\"metodo\" aria-label=\"Ayuda: Usar la actividad en el aula\" aria-expanded=\"false\" aria-controls=\"section-help-panel\" aria-haspopup=\"dialog\">?</button>",
+              "target": [
+                "button[data-help=\"metodo\"]"
+              ],
+              "failureSummary": "Fix all of the following:\n  Unable to determine if aria-controls referenced ID exists on the page while using aria-haspopup: aria-controls=\"section-help-panel\""
+            },
+            {
+              "any": [],
+              "all": [
+                {
+                  "id": "aria-valid-attr-value",
+                  "data": {
+                    "messageKey": "controlsWithinPopup",
+                    "needsReview": "aria-controls=\"section-help-panel\""
+                  },
+                  "relatedNodes": [],
+                  "impact": "critical",
+                  "message": "Unable to determine if aria-controls referenced ID exists on the page while using aria-haspopup: aria-controls=\"section-help-panel\""
+                }
+              ],
+              "none": [],
+              "impact": "critical",
+              "html": "<button type=\"button\" class=\"section-help-trigger\" data-help=\"recursos\" aria-label=\"Ayuda: Descargar los materiales\" aria-expanded=\"false\" aria-controls=\"section-help-panel\" aria-haspopup=\"dialog\">?</button>",
+              "target": [
+                "button[data-help=\"recursos\"]"
+              ],
+              "failureSummary": "Fix all of the following:\n  Unable to determine if aria-controls referenced ID exists on the page while using aria-haspopup: aria-controls=\"section-help-panel\""
+            },
+            {
+              "any": [],
+              "all": [
+                {
+                  "id": "aria-valid-attr-value",
+                  "data": {
+                    "messageKey": "controlsWithinPopup",
+                    "needsReview": "aria-controls=\"section-help-panel\""
+                  },
+                  "relatedNodes": [],
+                  "impact": "critical",
+                  "message": "Unable to determine if aria-controls referenced ID exists on the page while using aria-haspopup: aria-controls=\"section-help-panel\""
+                }
+              ],
+              "none": [],
+              "impact": "critical",
+              "html": "<button type=\"button\" class=\"section-help-trigger\" data-help=\"fuentes\" aria-label=\"Ayuda: Revisar fuentes y metodología\" aria-expanded=\"false\" aria-controls=\"section-help-panel\" aria-haspopup=\"dialog\">?</button>",
+              "target": [
+                "button[data-help=\"fuentes\"]"
+              ],
+              "failureSummary": "Fix all of the following:\n  Unable to determine if aria-controls referenced ID exists on the page while using aria-haspopup: aria-controls=\"section-help-panel\""
+            },
+            {
+              "any": [],
+              "all": [
+                {
+                  "id": "aria-valid-attr-value",
+                  "data": {
+                    "messageKey": "controlsWithinPopup",
+                    "needsReview": "aria-controls=\"section-help-panel\""
+                  },
+                  "relatedNodes": [],
+                  "impact": "critical",
+                  "message": "Unable to determine if aria-controls referenced ID exists on the page while using aria-haspopup: aria-controls=\"section-help-panel\""
+                }
+              ],
+              "none": [],
+              "impact": "critical",
+              "html": "<button type=\"button\" class=\"section-help-trigger\" data-help=\"descargas\" aria-label=\"Ayuda: Descargar los datos\" aria-expanded=\"false\" aria-controls=\"section-help-panel\" aria-haspopup=\"dialog\">?</button>",
+              "target": [
+                "button[data-help=\"descargas\"]"
+              ],
+              "failureSummary": "Fix all of the following:\n  Unable to determine if aria-controls referenced ID exists on the page while using aria-haspopup: aria-controls=\"section-help-panel\""
+            }
+          ]
+        },
         {
           "id": "color-contrast",
           "impact": "serious",

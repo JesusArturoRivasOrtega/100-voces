@@ -61,7 +61,7 @@ Por defecto las pruebas usan Microsoft Edge instalado. En otro entorno, ejecutar
 
 El flujo de GitHub Actions hace esa preparación en Linux; su resultado se comprueba en Actions después del envío.
 
-`npm test` inicia su propio servidor en un puerto disponible y ejecuta diez suites. El alcance y los resultados actuales están en [PRUEBAS](docs/PRUEBAS.md), [auditoría final](docs/AUDITORIA_FINAL.md) y `evidencia/`. No es certificación WCAG ni prueba con usuarios.
+`npm test` inicia su propio servidor en un puerto disponible y ejecuta once suites. El alcance y los resultados actuales están en [PRUEBAS](docs/PRUEBAS.md), [auditoría final](docs/AUDITORIA_FINAL.md) y `evidencia/`. No es certificación WCAG ni prueba con usuarios.
 
 El contenido mantenido está en `public/`; los módulos nuevos se editan en `lib/client/`. La API está en `lib/live-service.mjs`. `dist/` contiene exclusivamente el Worker generado. Los datos se editan en `public/data/ccpc_resumen.json`. `scripts/build.py` sincroniza bundles, CSV, materiales y HTML autónomo; `npm run build` también construye el servidor. `scripts/prepare.py` es histórico y no se debe ejecutar como build.
 
@@ -75,6 +75,10 @@ python scripts/package.py
 ```
 
 El paquete, `100_VOCES_RETO3_ENTREGA.zip`, se crea en la carpeta superior junto a su SHA-256. Incluye manifiesto interno; verifica datos de edades, escenarios A/B y materiales. El nombre administrativo definitivo depende del equipo y su inscripción.
+
+## Ayuda dentro de la aplicación
+
+El botón «?» explica para qué sirve cada capítulo y cómo usarlo. Pasa el mouse, enfócalo con el teclado o tócalo en móvil. Puedes mantener la ayuda abierta con un clic y cerrarla con Escape, el botón de cierre o un clic fuera.
 
 ## Alcance y pendientes
 

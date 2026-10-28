@@ -4,14 +4,14 @@ Ejecución reproducible: npm ci y npm test. El ejecutor inicia y detiene su serv
 
 ## Base
 
-Fecha UTC: 2026-10-27T13:59:46.447Z
+Fecha UTC: 2026-10-28T01:23:57.202Z
 
 | Prueba | Resultado observado |
 |---|---|
 | Cálculos y validación | Coinciden; cuatro casos inválidos rechazados |
 | Seis años | 6/6 años coinciden |
 | Comparador | Tres diferencias coinciden y cada grupo tiene 3 años |
-| Territorios | 8/8 coinciden; selección declarada |
+| Territorios | 32/32 coinciden; cobertura declarada |
 | Aprendizaje | 7/7; pantalla final; reinicio a cero |
 | Escenarios | 5 valores y extremos comprobados; cálculos coinciden |
 | Descargas PNG | 3 PNG descargados; dimensiones verificadas en cabecera; revisión visual separada |
@@ -26,7 +26,7 @@ Fecha UTC: 2026-10-27T13:59:46.447Z
 
 ## Ampliaciones
 
-Fecha UTC: 2026-10-27T14:00:04.800Z
+Fecha UTC: 2026-10-28T01:18:42.247Z
 
 | Prueba | Resultado observado |
 |---|---|
@@ -42,20 +42,20 @@ Fecha UTC: 2026-10-27T14:00:04.800Z
 
 ## Versión 1.1
 
-Fecha UTC: 2026-10-27T14:03:46.054Z
+Fecha UTC: 2026-10-28T01:19:37.005Z
 
 | Prueba | Resultado observado |
 |---|---|
 | Foco territorial | Enter conserva el botón y la entidad seleccionada |
 | Demostración repetible | Entidad, edad, A/B, quiz y tarjeta restablecidos |
-| Navegación móvil | Menú, Escape, foco en destino; portada 821 px a 375×812 |
+| Navegación móvil | Menú, Escape, foco en destino; portada 851 px a 375×812 |
 | Recursos y texto ampliado | Carrusel sin desborde en 4 anchos; texto base 200% a 640px |
 | Recursos descargables | 14 destinos locales existen y responden con contenido |
 | Distribución autónoma | Siete preguntas y rutas al kit local correctas sin red |
 
 ## En vivo y Lente
 
-Fecha UTC: 2026-10-27T14:01:03.460Z
+Fecha UTC: 2026-10-28T01:20:14.024Z
 
 | Prueba | Resultado observado |
 |---|---|
@@ -67,18 +67,18 @@ Fecha UTC: 2026-10-27T14:01:03.460Z
 
 ## Carga local
 
-Fecha UTC: 2026-10-27T14:01:05.192Z
+Fecha UTC: 2026-10-28T01:20:18.475Z
 
 | Prueba | Resultado observado |
 |---|---|
-| Carga local 50 identificadores | Misma IP, lotes concurrentes de 50 y 50 lecturas concurrentes; sin respuestas perdidas. 85 ms en SQLite local; no mide capacidad de producción. |
-| Carga local 100 identificadores | Misma IP, lotes concurrentes de 50 y 50 lecturas concurrentes; sin respuestas perdidas. 124 ms en SQLite local; no mide capacidad de producción. |
-| Carga local 500 identificadores | Misma IP, lotes concurrentes de 50 y 50 lecturas concurrentes; sin respuestas perdidas. 472 ms en SQLite local; no mide capacidad de producción. |
+| Carga local 50 identificadores | Misma IP, lotes concurrentes de 50 y 50 lecturas concurrentes; sin respuestas perdidas. 112 ms en SQLite local; no mide capacidad de producción. |
+| Carga local 100 identificadores | Misma IP, lotes concurrentes de 50 y 50 lecturas concurrentes; sin respuestas perdidas. 133 ms en SQLite local; no mide capacidad de producción. |
+| Carga local 500 identificadores | Misma IP, lotes concurrentes de 50 y 50 lecturas concurrentes; sin respuestas perdidas. 664 ms en SQLite local; no mide capacidad de producción. |
 | Abuso, concurrencia y limpieza | Límite individual sin bloquear otros participantes; 500 exactos, actualización a capacidad completa, control duplicado rechazado, límite por bytes y borrado de respuestas vencidas. |
 
 ## Resiliencia
 
-Fecha UTC: 2026-10-28T00:41:19.066Z
+Fecha UTC: 2026-10-28T01:20:35.382Z
 
 | Prueba | Resultado observado |
 |---|---|
@@ -89,7 +89,7 @@ Fecha UTC: 2026-10-28T00:41:19.066Z
 
 ## Educación
 
-Fecha UTC: 2026-10-27T14:01:29.585Z
+Fecha UTC: 2026-10-28T01:20:46.008Z
 
 | Prueba | Resultado observado |
 |---|---|
@@ -99,7 +99,7 @@ Fecha UTC: 2026-10-27T14:01:29.585Z
 
 ## Cobertura territorial
 
-Fecha UTC: 2026-10-27T14:03:55.507Z
+Fecha UTC: 2026-10-28T01:20:53.019Z
 
 | Prueba | Resultado observado |
 |---|---|
@@ -114,12 +114,23 @@ Fecha UTC: 2026-10-27T14:02:06.089Z
 | Firefox de escritorio automatizado | Motor 153.0: datos, edades, escenarios, quiz, contraste, PNG, demo, sala real local y OCR. Cuatro anchos y cero infracciones axe. WebKit no equivale a Safari físico. |
 | WebKit de escritorio automatizado | Motor 26.5: datos, edades, escenarios, quiz, contraste, PNG, demo, sala real local y OCR. Cuatro anchos y cero infracciones axe. WebKit no equivale a Safari físico. |
 
+## Ayudas por sección
+
+Fecha UTC: 2026-10-28T01:24:16.451Z
+
+| Prueba | Resultado observado |
+|---|---|
+| Cobertura y ayuda con mouse | 16 ayudas con propósito, pasos y límites. Permanecen abiertas al mover el mouse al panel y cierran con Escape. |
+| Teclado y cierre | Foco abre la ayuda, Enter permite acceder al cierre, Escape restaura el foco y Tab sale sin atraparlo. Clic exterior cierra. |
+| Adaptación y accesibilidad | Panel dentro de ocho anchos de 320 a 1440 px; apertura y cierre por toque emulado; cero infracciones axe con ayuda abierta. No sustituye dispositivos físicos. |
+| Respaldo autónomo | Ayuda disponible al abrir el HTML por file://, sin servidor ni consultas externas. |
+
 ## Accesibilidad automática
 
 6 estados examinados con axe-core: initial, expanded, resources, mobile-menu, ages, evidence-and-cards. Cero infracciones detectadas. La suite devuelve salida de error si aparecen infracciones.
 
 ## Alcance y límites
 
-49 grupos de comprobaciones funcionales aprobados. Las diez suites predeterminadas incluyen comprobaciones API además de estos grupos; la suite engines se ejecuta por separado. El piloto sigue sin ejecutarse. Las pruebas no certifican WCAG ni sustituyen lector de pantalla, Safari en dispositivos físicos ni teléfonos reales. La ampliación de texto se comprobó como tamaño base 200% a 640px; no equivale a una auditoría completa de zoom. Las tasas se comparan con referencias locales ya cotejadas, no se vuelven a extraer del PDF oficial en cada ejecución.
+53 grupos de comprobaciones funcionales aprobados. Las once suites predeterminadas incluyen comprobaciones API además de estos grupos; la suite engines se ejecuta por separado. El piloto sigue sin ejecutarse. Las pruebas no certifican WCAG ni sustituyen lector de pantalla, Safari en dispositivos físicos ni teléfonos reales. La ampliación de texto se comprobó como tamaño base 200% a 640px; no equivale a una auditoría completa de zoom. Las tasas se comparan con referencias locales ya cotejadas, no se vuelven a extraer del PDF oficial en cada ejecución.
 
 Se revisaron capturas móviles/escritorio, PNG, PDF, DOCX exportado por Word y presentación renderizada. Los archivos generados se conservan en evidencia/. El informe de video está en entregables/video/verificacion_video.json.
