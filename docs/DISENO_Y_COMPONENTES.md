@@ -8,13 +8,21 @@ El contenedor tiene máximo 1240 px; márgenes móviles de 18 px; paneles de 14�
 
 ## Contratos de módulos
 
+### Refinamiento visual de octubre de 2026
+
+`public/features.css` mantiene las mejoras de superficies y estados sobre los estilos existentes: acentos de capítulo, sombras compartidas, relieve de los puntos, cabeceras, tarjetas y botones. `public/js/polish.js` controla únicamente decoración: SVG orbital oculto a lectores, luz de mouse limitada a puntero fino, entrada de capítulos, aparición de resultados y una línea de desplazamiento en la navegación. La línea mide posición en la página, no aprendizaje ni actividades completadas.
+
+Los efectos duran entre 220 y 800 ms, sin bucles ni imágenes externas. Las entradas no ocultan contenido antes de ejecutarse. No hay interpolación de porcentajes: la cifra oficial aparece inmediatamente. La opción de movimiento reducido cancela las animaciones que este módulo inició; no termina animaciones ajenas. Al ocultar la pestaña, los efectos pendientes finalizan. La iluminación usa como máximo un `requestAnimationFrame` por actualización y se restablece al salir.
+
+La suite `tests/visual.cjs` verifica movimiento normal/reducido, precisión, ausencia de animaciones permanentes, desplazamiento y desbordamientos en doce secciones a ocho anchos. Genera 24 capturas para revisión visual. Esto complementa pruebas funcionales y axe; no sustituye dispositivos físicos ni un piloto.
+
 | Módulo | Responsabilidad / entradas | Salidas / estados |
 |---|---|---|
 | `data.js` | Copia generada del JSON | `window.VOCES_DATA`; nunca editar a mano |
 | `core.js` | Validar indicadores; tasas numéricas | `validate`, `year`, `fmt`, `delta`, `pp`, `relative`, `complement`; lanza error si el conjunto no es válido |
 | `narrative.js` | Indicador validado o par de años | Evidencia HTML y narración descriptiva; contextos aula/comunidad/redes |
 | `visualization.js` | Conjunto validado | Selector de años, 100 puntos, comparación por tipo y territorio; `aria-pressed` en selecciones |
-| `learning.js` | Cinco reactivos locales | Pregunta, respuesta bloqueada, feedback, progreso, resultado, reinicio; nada se persiste |
+| `learning.js` | Siete reactivos locales y tres casos opcionales | Pregunta, respuesta bloqueada, feedback, progreso, resultado, reinicio; nada se persiste |
 | `scenarios.js` | Base nacional 2024 y slider 0–100 | Tasa hipotética, pp, variación relativa, puntos, reinicio |
 | `export.js` | Año, indicador, contexto, formato | Canvas, PNG real, descripción, estado de preparación/éxito/error; entidad obliga año 2024 |
 | `app.js` | Coordinación de módulos | Arranque, fallo de datos, recorridos manuales, impresión docente |

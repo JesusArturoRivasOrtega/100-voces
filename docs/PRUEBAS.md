@@ -4,7 +4,7 @@ Ejecución reproducible: npm ci y npm test. El ejecutor inicia y detiene su serv
 
 ## Base
 
-Fecha UTC: 2026-10-28T01:23:57.202Z
+Fecha UTC: 2026-10-28T14:56:49.271Z
 
 | Prueba | Resultado observado |
 |---|---|
@@ -26,7 +26,7 @@ Fecha UTC: 2026-10-28T01:23:57.202Z
 
 ## Ampliaciones
 
-Fecha UTC: 2026-10-28T01:18:42.247Z
+Fecha UTC: 2026-10-28T14:57:09.394Z
 
 | Prueba | Resultado observado |
 |---|---|
@@ -42,20 +42,20 @@ Fecha UTC: 2026-10-28T01:18:42.247Z
 
 ## Versión 1.1
 
-Fecha UTC: 2026-10-28T01:19:37.005Z
+Fecha UTC: 2026-10-28T14:57:38.592Z
 
 | Prueba | Resultado observado |
 |---|---|
 | Foco territorial | Enter conserva el botón y la entidad seleccionada |
 | Demostración repetible | Entidad, edad, A/B, quiz y tarjeta restablecidos |
-| Navegación móvil | Menú, Escape, foco en destino; portada 851 px a 375×812 |
+| Navegación móvil | Menú, Escape, foco en destino; portada 890 px a 375×812 |
 | Recursos y texto ampliado | Carrusel sin desborde en 4 anchos; texto base 200% a 640px |
 | Recursos descargables | 14 destinos locales existen y responden con contenido |
 | Distribución autónoma | Siete preguntas y rutas al kit local correctas sin red |
 
 ## En vivo y Lente
 
-Fecha UTC: 2026-10-28T01:20:14.024Z
+Fecha UTC: 2026-10-28T14:58:16.721Z
 
 | Prueba | Resultado observado |
 |---|---|
@@ -67,18 +67,18 @@ Fecha UTC: 2026-10-28T01:20:14.024Z
 
 ## Carga local
 
-Fecha UTC: 2026-10-28T01:20:18.475Z
+Fecha UTC: 2026-10-28T14:58:19.378Z
 
 | Prueba | Resultado observado |
 |---|---|
-| Carga local 50 identificadores | Misma IP, lotes concurrentes de 50 y 50 lecturas concurrentes; sin respuestas perdidas. 112 ms en SQLite local; no mide capacidad de producción. |
-| Carga local 100 identificadores | Misma IP, lotes concurrentes de 50 y 50 lecturas concurrentes; sin respuestas perdidas. 133 ms en SQLite local; no mide capacidad de producción. |
-| Carga local 500 identificadores | Misma IP, lotes concurrentes de 50 y 50 lecturas concurrentes; sin respuestas perdidas. 664 ms en SQLite local; no mide capacidad de producción. |
+| Carga local 50 identificadores | Misma IP, lotes concurrentes de 50 y 50 lecturas concurrentes; sin respuestas perdidas. 111 ms en SQLite local; no mide capacidad de producción. |
+| Carga local 100 identificadores | Misma IP, lotes concurrentes de 50 y 50 lecturas concurrentes; sin respuestas perdidas. 190 ms en SQLite local; no mide capacidad de producción. |
+| Carga local 500 identificadores | Misma IP, lotes concurrentes de 50 y 50 lecturas concurrentes; sin respuestas perdidas. 818 ms en SQLite local; no mide capacidad de producción. |
 | Abuso, concurrencia y limpieza | Límite individual sin bloquear otros participantes; 500 exactos, actualización a capacidad completa, control duplicado rechazado, límite por bytes y borrado de respuestas vencidas. |
 
 ## Resiliencia
 
-Fecha UTC: 2026-10-28T01:20:35.382Z
+Fecha UTC: 2026-10-28T14:58:37.830Z
 
 | Prueba | Resultado observado |
 |---|---|
@@ -89,7 +89,7 @@ Fecha UTC: 2026-10-28T01:20:35.382Z
 
 ## Educación
 
-Fecha UTC: 2026-10-28T01:20:46.008Z
+Fecha UTC: 2026-10-28T14:58:51.110Z
 
 | Prueba | Resultado observado |
 |---|---|
@@ -99,7 +99,7 @@ Fecha UTC: 2026-10-28T01:20:46.008Z
 
 ## Cobertura territorial
 
-Fecha UTC: 2026-10-28T01:20:53.019Z
+Fecha UTC: 2026-10-28T14:59:00.739Z
 
 | Prueba | Resultado observado |
 |---|---|
@@ -107,7 +107,7 @@ Fecha UTC: 2026-10-28T01:20:53.019Z
 
 ## Motores adicionales
 
-Fecha UTC: 2026-10-27T14:02:06.089Z
+Fecha UTC: 2026-10-28T15:00:43.972Z
 
 | Prueba | Resultado observado |
 |---|---|
@@ -116,7 +116,7 @@ Fecha UTC: 2026-10-27T14:02:06.089Z
 
 ## Ayudas por sección
 
-Fecha UTC: 2026-10-28T01:24:16.451Z
+Fecha UTC: 2026-10-28T14:59:26.845Z
 
 | Prueba | Resultado observado |
 |---|---|
@@ -125,12 +125,22 @@ Fecha UTC: 2026-10-28T01:24:16.451Z
 | Adaptación y accesibilidad | Panel dentro de ocho anchos de 320 a 1440 px; apertura y cierre por toque emulado; cero infracciones axe con ayuda abierta. No sustituye dispositivos físicos. |
 | Respaldo autónomo | Ayuda disponible al abrir el HTML por file://, sin servidor ni consultas externas. |
 
+## Refinamiento visual
+
+Fecha UTC: 2026-10-28T14:59:43.220Z
+
+| Prueba | Resultado observado |
+|---|---|
+| Movimiento y precisión | Luz decorativa responde al mouse y se restablece; la cifra exacta aparece inmediatamente; cambiar a movimiento reducido detiene los efectos y conserva los cien puntos. |
+| Efectos finitos y progreso visual | Los efectos terminan; el indicador de desplazamiento no registra aprendizaje ni altera Mi recorrido. |
+| Composición adaptable | Doce secciones en ocho anchos sin desbordamiento; 24 capturas de escritorio y móvil para revisión visual; sin errores JavaScript. |
+
 ## Accesibilidad automática
 
 6 estados examinados con axe-core: initial, expanded, resources, mobile-menu, ages, evidence-and-cards. Cero infracciones detectadas. La suite devuelve salida de error si aparecen infracciones.
 
 ## Alcance y límites
 
-53 grupos de comprobaciones funcionales aprobados. Las once suites predeterminadas incluyen comprobaciones API además de estos grupos; la suite engines se ejecuta por separado. El piloto sigue sin ejecutarse. Las pruebas no certifican WCAG ni sustituyen lector de pantalla, Safari en dispositivos físicos ni teléfonos reales. La ampliación de texto se comprobó como tamaño base 200% a 640px; no equivale a una auditoría completa de zoom. Las tasas se comparan con referencias locales ya cotejadas, no se vuelven a extraer del PDF oficial en cada ejecución.
+56 grupos de comprobaciones funcionales aprobados. Las doce suites predeterminadas incluyen comprobaciones API además de estos grupos; la suite engines se ejecuta por separado. El piloto sigue sin ejecutarse. Las pruebas no certifican WCAG ni sustituyen lector de pantalla, Safari en dispositivos físicos ni teléfonos reales. La ampliación de texto se comprobó como tamaño base 200% a 640px; no equivale a una auditoría completa de zoom. Las tasas se comparan con referencias locales ya cotejadas, no se vuelven a extraer del PDF oficial en cada ejecución.
 
 Se revisaron capturas móviles/escritorio, PNG, PDF, DOCX exportado por Word y presentación renderizada. Los archivos generados se conservan en evidencia/. El informe de video está en entregables/video/verificacion_video.json.

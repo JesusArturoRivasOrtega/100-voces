@@ -1,5 +1,12 @@
 # Cambios
 
+### Refinamiento visual · 28 de octubre de 2026
+
+- Portada con iluminación suave, relieve y detalle orbital decorativo; navegación con indicador de desplazamiento.
+- Superficies, bordes, sombras, estados de botones, cabeceras y ayudas alineadas en móvil; controles y gráficos mantienen sus datos y escalas.
+- Entradas escalonadas breves, transiciones de barras y confirmaciones visuales de cifras/resultados. Sin animaciones continuas ni contadores que muestren cifras intermedias.
+- Efectos cancelados al activar movimiento reducido o esconder la página; pruebas de movimiento, precisión y composición en doce secciones y ocho anchos.
+
 ### Revisión de comprensión sobre 1.3.0
 
 - Ayuda «?» en 16 capítulos y apartados: explica propósito, instrucciones y límites; admite mouse, teclado y toque sin depender de conexión.

@@ -1,5 +1,5 @@
 {
-  "fecha": "2026-10-28T01:19:37.005Z",
+  "fecha": "2026-10-28T14:57:38.592Z",
   "resultados": [
     {
       "prueba": "Foco territorial",
@@ -14,7 +14,7 @@
     {
       "prueba": "Navegación móvil",
       "estado": "VERIFICADO",
-      "detalle": "Menú, Escape, foco en destino; portada 851 px a 375×812"
+      "detalle": "Menú, Escape, foco en destino; portada 890 px a 375×812"
     },
     {
       "prueba": "Recursos y texto ampliado",

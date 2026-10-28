@@ -57,6 +57,60 @@
         "id": "color-contrast",
         "nodes": [
           [
+            ".hero-left > .eyebrow"
+          ],
+          [
+            "h1"
+          ],
+          [
+            "em"
+          ],
+          [
+            ".hero-ending"
+          ],
+          [
+            ".hero-text"
+          ],
+          [
+            ".hero-audience"
+          ],
+          [
+            ".cta-primary.cta[href$=\"#historia\"]"
+          ],
+          [
+            ".cta-ghost.cta[href$=\"#fuentes\"]"
+          ],
+          [
+            ".hero-promise"
+          ],
+          [
+            ".independent"
+          ],
+          [
+            "#quickMode"
+          ],
+          [
+            "#juryMode"
+          ],
+          [
+            ".text-link[href$=\"#metodo\"]"
+          ],
+          [
+            ".feature-shortcut.text-link[href$=\"#en-vivo\"]"
+          ],
+          [
+            ".feature-shortcut.text-link[href$=\"#lente\"]"
+          ],
+          [
+            ".mini-trust > span:nth-child(1)"
+          ],
+          [
+            ".mini-trust > span:nth-child(2)"
+          ],
+          [
+            ".mini-trust > span:nth-child(3)"
+          ],
+          [
             ".hero-visual-top > span:nth-child(1)"
           ],
           [
@@ -78,10 +132,154 @@
             ".hero-visual-bottom > span:nth-child(2)"
           ],
           [
+            ".ticker > span:nth-child(1)"
+          ],
+          [
+            ".ticker > span:nth-child(3)"
+          ],
+          [
+            ".ticker > span:nth-child(5)"
+          ],
+          [
+            ".ticker > span:nth-child(7)"
+          ],
+          [
+            "#historia > .section-head > div > .overline"
+          ],
+          [
+            "#historia > .section-head > div > h2"
+          ],
+          [
+            "#historia > .section-head > div > h2 > i"
+          ],
+          [
+            "#historia > .section-head > p"
+          ],
+          [
+            ".dark-eye"
+          ],
+          [
+            ".live-tag"
+          ],
+          [
+            ".grid-legend > span:nth-child(1)"
+          ],
+          [
+            ".grid-legend > span:nth-child(2)"
+          ],
+          [
+            "#statKind"
+          ],
+          [
+            "#participationValue"
+          ],
+          [
+            "#participationStory"
+          ],
+          [
+            ".stat-split > div:nth-child(1)"
+          ],
+          [
+            "#splitYes"
+          ],
+          [
+            ".stat-split > div:nth-child(2)"
+          ],
+          [
+            "#splitNo"
+          ],
+          [
+            ".stat-column > .evidence > summary"
+          ],
+          [
             "button[data-denominator=\"yes\"] > .denominator-symbol"
           ],
           [
             "button[data-denominator=\"no\"] > .denominator-symbol"
+          ],
+          [
+            ".narrative-quote > p"
+          ],
+          [
+            "b"
+          ],
+          [
+            "#tiempo > .shell > .section-head > div > .overline"
+          ],
+          [
+            "#tiempo > .shell > .section-head > div > h2"
+          ],
+          [
+            "#tiempo > .shell > .section-head > div > h2 > i"
+          ],
+          [
+            "#tiempo > .shell > .section-head > p"
+          ],
+          [
+            "#midBtn"
+          ],
+          [
+            ".compare-note"
+          ],
+          [
+            ".comparison-selects > label:nth-child(1)"
+          ],
+          [
+            ".comparison-selects > label:nth-child(2)"
+          ],
+          [
+            ".shell > .scale-note"
+          ],
+          [
+            ".insight-kicker"
+          ],
+          [
+            "#compareSummary"
+          ],
+          [
+            "#territorio > .section-head > div > .overline"
+          ],
+          [
+            "#territorio > .section-head > div > h2"
+          ],
+          [
+            "#territorio > .section-head > div > h2 > i"
+          ],
+          [
+            "#territorio > .section-head > p"
+          ],
+          [
+            "#viewStates"
+          ],
+          [
+            "#contrastContext"
+          ],
+          [
+            "#ageShare"
+          ],
+          [
+            "#aprender > .shell > .section-head > div > .overline"
+          ],
+          [
+            "#aprender > .shell > .section-head > div > h2"
+          ],
+          [
+            "#aprender > .shell > .section-head > div > h2 > i"
+          ],
+          [
+            "#aprender > .shell > .section-head > p"
+          ],
+          [
+            "#escenarios > .section-head > div > .overline"
+          ],
+          [
+            "#escenarios > .section-head > div > h2"
+          ],
+          [
+            "#escenarios > .section-head > div > h2 > i"
+          ],
+          [
+            "#escenarios > .section-head > p"
           ],
           [
             "#downloadCard > span[aria-hidden=\"true\"]"
@@ -90,7 +288,157 @@
             "#accessibleText"
           ],
           [
+            "#en-vivo > .section-head > div > .overline"
+          ],
+          [
+            "#liveTitle"
+          ],
+          [
+            "#liveTitle > i"
+          ],
+          [
+            "#en-vivo > .section-head > p"
+          ],
+          [
+            ".feature-intro > p"
+          ],
+          [
+            "#liveCreate"
+          ],
+          [
+            "#liveJoinForm > .cta-primary.cta[type=\"submit\"]"
+          ],
+          [
+            "#en-vivo > .feature-privacy > summary"
+          ],
+          [
+            "#lente > .section-head > div > .overline"
+          ],
+          [
+            "#lensTitle"
+          ],
+          [
+            "#lensTitle > i"
+          ],
+          [
+            "#lente > .section-head > p"
+          ],
+          [
             "#lensText"
+          ],
+          [
+            "#lensDetect"
+          ],
+          [
+            "#lensForm > .cta-primary.cta[type=\"submit\"]"
+          ],
+          [
+            "#lente > .feature-privacy > summary"
+          ],
+          [
+            "#metodo > .section-head > div > .overline"
+          ],
+          [
+            "#metodo > .section-head > div > h2"
+          ],
+          [
+            "#metodo > .section-head > div > h2 > i"
+          ],
+          [
+            "#metodo > .section-head > p"
+          ],
+          [
+            ".lesson-intro"
+          ],
+          [
+            ".evidence:nth-child(4) > summary"
+          ],
+          [
+            "#journey > summary"
+          ],
+          [
+            "#recursos > .section-head > div > .overline"
+          ],
+          [
+            "#resourceTitle"
+          ],
+          [
+            "#resourceTitle > i"
+          ],
+          [
+            "#recursos > .section-head > p"
+          ],
+          [
+            ".resource-card:nth-child(1) > .cta-primary.cta[download=\"\"]"
+          ],
+          [
+            ".resource-card:nth-child(2) > .cta-primary.cta[download=\"\"]"
+          ],
+          [
+            ".resource-card:nth-child(3) > .cta-primary.cta[download=\"\"]"
+          ],
+          [
+            ".carousel-preview > summary"
+          ],
+          [
+            ".video-preview > summary"
+          ],
+          [
+            ".resource-note"
+          ],
+          [
+            ".shell > .overline"
+          ],
+          [
+            ".shell > h2"
+          ],
+          [
+            ".shell > h2 > i"
+          ],
+          [
+            ".sources-grid > div:nth-child(1) > h3"
+          ],
+          [
+            ".sources-grid > div:nth-child(1) > p"
+          ],
+          [
+            "div:nth-child(1) > a[rel=\"noopener noreferrer\"][target=\"_blank\"]:nth-child(3)"
+          ],
+          [
+            "a[rel=\"noopener noreferrer\"][target=\"_blank\"]:nth-child(4)"
+          ],
+          [
+            "a[rel=\"noopener noreferrer\"][target=\"_blank\"]:nth-child(5)"
+          ],
+          [
+            ".sources-grid > div:nth-child(2) > h3"
+          ],
+          [
+            ".sources-grid > div:nth-child(2) > p:nth-child(2)"
+          ],
+          [
+            ".sources-grid > div:nth-child(2) > p:nth-child(3)"
+          ],
+          [
+            "div:nth-child(3) > h3"
+          ],
+          [
+            "div:nth-child(3) > p:nth-child(2)"
+          ],
+          [
+            ".sources-date"
+          ],
+          [
+            ".data-download > h3"
+          ],
+          [
+            ".data-download > p"
+          ],
+          [
+            "a[href$=\"ccpc_resumen.json\"]"
+          ],
+          [
+            "a[href$=\"indicadores.csv\"]"
           ]
         ]
       }
@@ -155,6 +503,60 @@
         "id": "color-contrast",
         "nodes": [
           [
+            ".hero-left > .eyebrow"
+          ],
+          [
+            "h1"
+          ],
+          [
+            "em"
+          ],
+          [
+            ".hero-ending"
+          ],
+          [
+            ".hero-text"
+          ],
+          [
+            ".hero-audience"
+          ],
+          [
+            ".cta-primary.cta[href$=\"#historia\"]"
+          ],
+          [
+            ".cta-ghost.cta[href$=\"#fuentes\"]"
+          ],
+          [
+            ".hero-promise"
+          ],
+          [
+            ".independent"
+          ],
+          [
+            "#quickMode"
+          ],
+          [
+            "#juryMode"
+          ],
+          [
+            ".text-link[href$=\"#metodo\"]"
+          ],
+          [
+            ".feature-shortcut.text-link[href$=\"#en-vivo\"]"
+          ],
+          [
+            ".feature-shortcut.text-link[href$=\"#lente\"]"
+          ],
+          [
+            ".mini-trust > span:nth-child(1)"
+          ],
+          [
+            ".mini-trust > span:nth-child(2)"
+          ],
+          [
+            ".mini-trust > span:nth-child(3)"
+          ],
+          [
             ".hero-visual-top > span:nth-child(1)"
           ],
           [
@@ -176,10 +578,154 @@
             ".hero-visual-bottom > span:nth-child(2)"
           ],
           [
+            ".ticker > span:nth-child(1)"
+          ],
+          [
+            ".ticker > span:nth-child(3)"
+          ],
+          [
+            ".ticker > span:nth-child(5)"
+          ],
+          [
+            ".ticker > span:nth-child(7)"
+          ],
+          [
+            "#historia > .section-head > div > .overline"
+          ],
+          [
+            "#historia > .section-head > div > h2"
+          ],
+          [
+            "#historia > .section-head > div > h2 > i"
+          ],
+          [
+            "#historia > .section-head > p"
+          ],
+          [
+            ".dark-eye"
+          ],
+          [
+            ".live-tag"
+          ],
+          [
+            ".grid-legend > span:nth-child(1)"
+          ],
+          [
+            ".grid-legend > span:nth-child(2)"
+          ],
+          [
+            "#statKind"
+          ],
+          [
+            "#participationValue"
+          ],
+          [
+            "#participationStory"
+          ],
+          [
+            ".stat-split > div:nth-child(1)"
+          ],
+          [
+            "#splitYes"
+          ],
+          [
+            ".stat-split > div:nth-child(2)"
+          ],
+          [
+            "#splitNo"
+          ],
+          [
+            ".stat-column > .evidence > summary"
+          ],
+          [
             "button[data-denominator=\"yes\"] > .denominator-symbol"
           ],
           [
             "button[data-denominator=\"no\"] > .denominator-symbol"
+          ],
+          [
+            ".narrative-quote > p"
+          ],
+          [
+            "b"
+          ],
+          [
+            "#tiempo > .shell > .section-head > div > .overline"
+          ],
+          [
+            "#tiempo > .shell > .section-head > div > h2"
+          ],
+          [
+            "#tiempo > .shell > .section-head > div > h2 > i"
+          ],
+          [
+            "#tiempo > .shell > .section-head > p"
+          ],
+          [
+            "#midBtn"
+          ],
+          [
+            ".compare-note"
+          ],
+          [
+            ".comparison-selects > label:nth-child(1)"
+          ],
+          [
+            ".comparison-selects > label:nth-child(2)"
+          ],
+          [
+            ".shell > .scale-note"
+          ],
+          [
+            ".insight-kicker"
+          ],
+          [
+            "#compareSummary"
+          ],
+          [
+            "#territorio > .section-head > div > .overline"
+          ],
+          [
+            "#territorio > .section-head > div > h2"
+          ],
+          [
+            "#territorio > .section-head > div > h2 > i"
+          ],
+          [
+            "#territorio > .section-head > p"
+          ],
+          [
+            "#viewStates"
+          ],
+          [
+            "#contrastContext"
+          ],
+          [
+            "#ageShare"
+          ],
+          [
+            "#aprender > .shell > .section-head > div > .overline"
+          ],
+          [
+            "#aprender > .shell > .section-head > div > h2"
+          ],
+          [
+            "#aprender > .shell > .section-head > div > h2 > i"
+          ],
+          [
+            "#aprender > .shell > .section-head > p"
+          ],
+          [
+            "#escenarios > .section-head > div > .overline"
+          ],
+          [
+            "#escenarios > .section-head > div > h2"
+          ],
+          [
+            "#escenarios > .section-head > div > h2 > i"
+          ],
+          [
+            "#escenarios > .section-head > p"
           ],
           [
             "#downloadCard > span[aria-hidden=\"true\"]"
@@ -188,7 +734,157 @@
             "#accessibleText"
           ],
           [
+            "#en-vivo > .section-head > div > .overline"
+          ],
+          [
+            "#liveTitle"
+          ],
+          [
+            "#liveTitle > i"
+          ],
+          [
+            "#en-vivo > .section-head > p"
+          ],
+          [
+            ".feature-intro > p"
+          ],
+          [
+            "#liveCreate"
+          ],
+          [
+            "#liveJoinForm > .cta-primary.cta[type=\"submit\"]"
+          ],
+          [
+            "#en-vivo > .feature-privacy > summary"
+          ],
+          [
+            "#lente > .section-head > div > .overline"
+          ],
+          [
+            "#lensTitle"
+          ],
+          [
+            "#lensTitle > i"
+          ],
+          [
+            "#lente > .section-head > p"
+          ],
+          [
             "#lensText"
+          ],
+          [
+            "#lensDetect"
+          ],
+          [
+            "#lensForm > .cta-primary.cta[type=\"submit\"]"
+          ],
+          [
+            "#lente > .feature-privacy > summary"
+          ],
+          [
+            "#metodo > .section-head > div > .overline"
+          ],
+          [
+            "#metodo > .section-head > div > h2"
+          ],
+          [
+            "#metodo > .section-head > div > h2 > i"
+          ],
+          [
+            "#metodo > .section-head > p"
+          ],
+          [
+            ".lesson-intro"
+          ],
+          [
+            ".evidence:nth-child(4) > summary"
+          ],
+          [
+            "#journey > summary"
+          ],
+          [
+            "#recursos > .section-head > div > .overline"
+          ],
+          [
+            "#resourceTitle"
+          ],
+          [
+            "#resourceTitle > i"
+          ],
+          [
+            "#recursos > .section-head > p"
+          ],
+          [
+            ".resource-card:nth-child(1) > .cta-primary.cta[download=\"\"]"
+          ],
+          [
+            ".resource-card:nth-child(2) > .cta-primary.cta[download=\"\"]"
+          ],
+          [
+            ".resource-card:nth-child(3) > .cta-primary.cta[download=\"\"]"
+          ],
+          [
+            ".carousel-preview > summary"
+          ],
+          [
+            ".video-preview > summary"
+          ],
+          [
+            ".resource-note"
+          ],
+          [
+            ".shell > .overline"
+          ],
+          [
+            ".shell > h2"
+          ],
+          [
+            ".shell > h2 > i"
+          ],
+          [
+            ".sources-grid > div:nth-child(1) > h3"
+          ],
+          [
+            ".sources-grid > div:nth-child(1) > p"
+          ],
+          [
+            "div:nth-child(1) > a[rel=\"noopener noreferrer\"][target=\"_blank\"]:nth-child(3)"
+          ],
+          [
+            "a[rel=\"noopener noreferrer\"][target=\"_blank\"]:nth-child(4)"
+          ],
+          [
+            "a[rel=\"noopener noreferrer\"][target=\"_blank\"]:nth-child(5)"
+          ],
+          [
+            ".sources-grid > div:nth-child(2) > h3"
+          ],
+          [
+            ".sources-grid > div:nth-child(2) > p:nth-child(2)"
+          ],
+          [
+            ".sources-grid > div:nth-child(2) > p:nth-child(3)"
+          ],
+          [
+            "div:nth-child(3) > h3"
+          ],
+          [
+            "div:nth-child(3) > p:nth-child(2)"
+          ],
+          [
+            ".sources-date"
+          ],
+          [
+            ".data-download > h3"
+          ],
+          [
+            ".data-download > p"
+          ],
+          [
+            "a[href$=\"ccpc_resumen.json\"]"
+          ],
+          [
+            "a[href$=\"indicadores.csv\"]"
           ]
         ]
       }

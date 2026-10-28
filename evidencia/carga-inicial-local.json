@@ -1,10 +1,10 @@
 {
-  "fecha": "2026-10-28T01:20:41.071Z",
+  "fecha": "2026-10-28T14:58:43.542Z",
   "nota": "Una carga local sin caché de este contexto; no es una medición de usuarios reales.",
   "navigation": [
     {
-      "domInteractiveMs": 409.5,
-      "domContentLoadedMs": 1320
+      "domInteractiveMs": 77.89999999850988,
+      "domContentLoadedMs": 1147.5
     }
   ],
   "resources": [
@@ -14,7 +14,7 @@
     },
     {
       "path": "/public/features.css",
-      "bytes": 11964
+      "bytes": 19271
     },
     {
       "path": "/public/js/data.js",
@@ -66,7 +66,7 @@
     },
     {
       "path": "/public/js/polish.js",
-      "bytes": 1596
+      "bytes": 6279
     },
     {
       "path": "/public/js/journey.js",

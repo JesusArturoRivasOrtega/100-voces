@@ -1,0 +1,20 @@
+{
+  "fecha": "2026-10-28T14:59:43.220Z",
+  "resultados": [
+    {
+      "prueba": "Movimiento y precisión",
+      "estado": "VERIFICADO",
+      "detalle": "Luz decorativa responde al mouse y se restablece; la cifra exacta aparece inmediatamente; cambiar a movimiento reducido detiene los efectos y conserva los cien puntos."
+    },
+    {
+      "prueba": "Efectos finitos y progreso visual",
+      "estado": "VERIFICADO",
+      "detalle": "Los efectos terminan; el indicador de desplazamiento no registra aprendizaje ni altera Mi recorrido."
+    },
+    {
+      "prueba": "Composición adaptable",
+      "estado": "VERIFICADO",
+      "detalle": "Doce secciones en ocho anchos sin desbordamiento; 24 capturas de escritorio y móvil para revisión visual; sin errores JavaScript."
+    }
+  ]
+}

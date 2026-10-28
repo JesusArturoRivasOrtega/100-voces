@@ -44,6 +44,24 @@ La observación de un compañero, transmitida por el autor, indica dificultad pa
 
 ## Matriz de la versión implementada
 
+### Revisión visual y efectos
+
+**Fase realizada:** refinamiento visual solicitado el 28 de octubre de 2026.
+
+**Estado:** implementada; resultados de ejecución en `evidencia/pruebas-visuales.json` y `PRUEBAS.md`.
+
+**Archivos modificados:** `public/features.css`, `public/js/polish.js`, `tests/visual.cjs`, ejecutor e informe de pruebas; HTML autónomo regenerado.
+
+**Problema solucionado:** falta de profundidad y coherencia entre superficies, transiciones discretas y ayuda desalineada en cabeceras móviles largas.
+
+**Implementación:** portada con iluminación y detalle orbital, tarjetas y botones refinados, cabeceras con acentos, indicador de desplazamiento y animaciones finitas de entrada y respuesta. Cifras y escala no se animan mediante valores inventados.
+
+**Verificación:** pruebas de efectos, cancelación, precisión, 96 combinaciones de sección/ancho y capturas; suite funcional y accesibilidad. Se corrigió durante la revisión un contraste insuficiente de una etiqueta expandida sobre fondo oscuro.
+
+**Impacto:** mayor jerarquía y respuesta visual sin añadir pasos al uso de las herramientas.
+
+**Limitaciones:** no certifica ausencia de errores; quedan las pruebas humanas y con dispositivos físicos señaladas en este informe. Los materiales audiovisuales previos explican las mismas funciones con el acabado visual anterior.
+
 | Función | Revisión y cambio | Evidencia o límite |
 |---|---|---|
 | 1. Portada y narrativa | Pregunta 59,7 %, accesos a rutas y funciones | Capturas y suite release; no estudio de comprensión |
