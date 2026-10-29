@@ -1,10 +1,10 @@
 {
-  "fecha": "2026-10-28T14:58:16.721Z",
+  "fecha": "2026-10-29T05:16:05.007Z",
   "resultados": [
     {
       "prueba": "Contraste numérico y ámbitos",
       "estado": "VERIFICADO",
-      "detalle": "Tasas, complementos, edad, unidades, signos y ámbitos no disponibles"
+      "detalle": "Tasas, complementos, edad y unidades; rechaza años, ámbito, indicador y cifra contradictorios con el texto; rechaza cronología inversa"
     },
     {
       "prueba": "Sala compartida",
@@ -14,7 +14,7 @@
     {
       "prueba": "Demo y exportaciones",
       "estado": "VERIFICADO",
-      "detalle": "Tres rondas ficticias, resumen y ficha PNG descargados"
+      "detalle": "Tres rondas ficticias, lotes variables comprobados con aleatoriedad controlada, resumen y ficha PNG; aviso de servidor estático y ensayo disponible"
     },
     {
       "prueba": "OCR local",
@@ -24,7 +24,7 @@
     {
       "prueba": "Accesibilidad y adaptación",
       "estado": "VERIFICADO",
-      "detalle": "Sin infracciones axe en el estado expandido; sin desbordamiento en 320,375,768,1440 px"
+      "detalle": "Cuadrícula anclada al revelar evidencia; fechas ordenadas; glosario; sin infracciones axe ni desbordamiento en 320,375,768,1440 px"
     }
   ]
 }

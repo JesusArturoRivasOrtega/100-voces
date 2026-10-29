@@ -4,7 +4,7 @@ Ejecución reproducible: npm ci y npm test. El ejecutor inicia y detiene su serv
 
 ## Base
 
-Fecha UTC: 2026-10-28T14:56:49.271Z
+Fecha UTC: 2026-10-29T05:14:46.268Z
 
 | Prueba | Resultado observado |
 |---|---|
@@ -26,7 +26,7 @@ Fecha UTC: 2026-10-28T14:56:49.271Z
 
 ## Ampliaciones
 
-Fecha UTC: 2026-10-28T14:57:09.394Z
+Fecha UTC: 2026-10-29T05:15:02.899Z
 
 | Prueba | Resultado observado |
 |---|---|
@@ -42,7 +42,7 @@ Fecha UTC: 2026-10-28T14:57:09.394Z
 
 ## Versión 1.1
 
-Fecha UTC: 2026-10-28T14:57:38.592Z
+Fecha UTC: 2026-10-29T05:15:28.314Z
 
 | Prueba | Resultado observado |
 |---|---|
@@ -55,30 +55,30 @@ Fecha UTC: 2026-10-28T14:57:38.592Z
 
 ## En vivo y Lente
 
-Fecha UTC: 2026-10-28T14:58:16.721Z
+Fecha UTC: 2026-10-29T05:16:05.007Z
 
 | Prueba | Resultado observado |
 |---|---|
-| Contraste numérico y ámbitos | Tasas, complementos, edad, unidades, signos y ámbitos no disponibles |
+| Contraste numérico y ámbitos | Tasas, complementos, edad y unidades; rechaza años, ámbito, indicador y cifra contradictorios con el texto; rechaza cronología inversa |
 | Sala compartida | Presentador y dos contextos independientes; sincronización, recuperación y control de rondas |
-| Demo y exportaciones | Tres rondas ficticias, resumen y ficha PNG descargados |
+| Demo y exportaciones | Tres rondas ficticias, lotes variables comprobados con aleatoriedad controlada, resumen y ficha PNG; aviso de servidor estático y ensayo disponible |
 | OCR local | Captura sintética leída en español, sin subida ni solicitudes a otro origen |
-| Accesibilidad y adaptación | Sin infracciones axe en el estado expandido; sin desbordamiento en 320,375,768,1440 px |
+| Accesibilidad y adaptación | Cuadrícula anclada al revelar evidencia; fechas ordenadas; glosario; sin infracciones axe ni desbordamiento en 320,375,768,1440 px |
 
 ## Carga local
 
-Fecha UTC: 2026-10-28T14:58:19.378Z
+Fecha UTC: 2026-10-29T05:16:07.161Z
 
 | Prueba | Resultado observado |
 |---|---|
-| Carga local 50 identificadores | Misma IP, lotes concurrentes de 50 y 50 lecturas concurrentes; sin respuestas perdidas. 111 ms en SQLite local; no mide capacidad de producción. |
-| Carga local 100 identificadores | Misma IP, lotes concurrentes de 50 y 50 lecturas concurrentes; sin respuestas perdidas. 190 ms en SQLite local; no mide capacidad de producción. |
-| Carga local 500 identificadores | Misma IP, lotes concurrentes de 50 y 50 lecturas concurrentes; sin respuestas perdidas. 818 ms en SQLite local; no mide capacidad de producción. |
+| Carga local 50 identificadores | Misma IP, lotes concurrentes de 50 y 50 lecturas concurrentes; sin respuestas perdidas. 79 ms en SQLite local; no mide capacidad de producción. |
+| Carga local 100 identificadores | Misma IP, lotes concurrentes de 50 y 50 lecturas concurrentes; sin respuestas perdidas. 146 ms en SQLite local; no mide capacidad de producción. |
+| Carga local 500 identificadores | Misma IP, lotes concurrentes de 50 y 50 lecturas concurrentes; sin respuestas perdidas. 749 ms en SQLite local; no mide capacidad de producción. |
 | Abuso, concurrencia y limpieza | Límite individual sin bloquear otros participantes; 500 exactos, actualización a capacidad completa, control duplicado rechazado, límite por bytes y borrado de respuestas vencidas. |
 
 ## Resiliencia
 
-Fecha UTC: 2026-10-28T14:58:37.830Z
+Fecha UTC: 2026-10-29T05:18:04.386Z
 
 | Prueba | Resultado observado |
 |---|---|
@@ -89,7 +89,7 @@ Fecha UTC: 2026-10-28T14:58:37.830Z
 
 ## Educación
 
-Fecha UTC: 2026-10-28T14:58:51.110Z
+Fecha UTC: 2026-10-29T05:18:15.527Z
 
 | Prueba | Resultado observado |
 |---|---|
@@ -99,7 +99,7 @@ Fecha UTC: 2026-10-28T14:58:51.110Z
 
 ## Cobertura territorial
 
-Fecha UTC: 2026-10-28T14:59:00.739Z
+Fecha UTC: 2026-10-29T05:18:26.179Z
 
 | Prueba | Resultado observado |
 |---|---|
@@ -116,7 +116,7 @@ Fecha UTC: 2026-10-28T15:00:43.972Z
 
 ## Ayudas por sección
 
-Fecha UTC: 2026-10-28T14:59:26.845Z
+Fecha UTC: 2026-10-29T05:18:49.957Z
 
 | Prueba | Resultado observado |
 |---|---|
@@ -127,7 +127,7 @@ Fecha UTC: 2026-10-28T14:59:26.845Z
 
 ## Refinamiento visual
 
-Fecha UTC: 2026-10-28T14:59:43.220Z
+Fecha UTC: 2026-10-29T05:19:03.013Z
 
 | Prueba | Resultado observado |
 |---|---|

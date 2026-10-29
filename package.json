@@ -19,7 +19,8 @@
     "resources": "node scripts/carousel.cjs",
     "package:delivery": "python scripts/package.py",
     "build:content": "python scripts/build.py",
-    "test:engines": "node tests/run.cjs engines.cjs"
+    "test:engines": "node tests/run.cjs engines.cjs",
+    "db:local": "node scripts/init-local-db.mjs"
   },
   "dependencies": {
     "drizzle-orm": "0.45.2",

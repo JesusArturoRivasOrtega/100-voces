@@ -45,6 +45,11 @@ Voces.initVisuals = function (data) {
   });
   setYear(2024);
   function updateComparison() {
+    if (Number($("compareFrom").value) > Number($("compareTo").value)) {
+      const earlier = $("compareTo").value;
+      $("compareTo").value = $("compareFrom").value;
+      $("compareFrom").value = earlier;
+    }
     const a = V.year(data, $("compareFrom").value),
       b = V.year(data, $("compareTo").value);
     $("compareSummary").textContent = V.compareText(a, b);

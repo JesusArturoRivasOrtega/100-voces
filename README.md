@@ -14,9 +14,22 @@ Para servir la versión modular desde la raíz:
 python -m http.server 8765 --bind 127.0.0.1
 ```
 
-Visita http://127.0.0.1:8765/public/ . No se necesita instalar paquetes para usar el sitio.
+Visita http://127.0.0.1:8765/public/ . Esta modalidad sirve archivos: funcionan los capítulos, Lente por texto y el ensayo ficticio, pero no crea salas compartidas. No requiere instalar paquetes.
 
 El sitio en https://cien-voces-mexico.arthojust.chatgpt.site conserva acceso privado del propietario. El repositorio y el sitio tienen permisos independientes. No se presenta ese enlace como acceso ya comprobado para el jurado.
+
+## Salas compartidas en local
+
+Con Node.js 22.13+ y Python 3, desde la raíz del repositorio:
+
+```sh
+npm ci
+npm run build
+npm run db:local
+npm start -- --port 8787
+```
+
+Abre http://127.0.0.1:8787 . `db:local` crea las tablas iniciales que falten en la base local sin borrar las salas existentes. Python HTTP no sustituye este servidor. Para conectar otros dispositivos necesitas una dirección accesible para ellos; 127.0.0.1 solo funciona en el propio equipo. La web publicada conserva su acceso privado: un código de sala no concede acceso al sitio.
 
 ## Qué incluye
 

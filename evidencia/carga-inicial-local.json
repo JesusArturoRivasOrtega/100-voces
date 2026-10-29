@@ -1,10 +1,10 @@
 {
-  "fecha": "2026-10-28T14:58:43.542Z",
+  "fecha": "2026-10-29T05:18:09.355Z",
   "nota": "Una carga local sin caché de este contexto; no es una medición de usuarios reales.",
   "navigation": [
     {
-      "domInteractiveMs": 77.89999999850988,
-      "domContentLoadedMs": 1147.5
+      "domInteractiveMs": 120,
+      "domContentLoadedMs": 1654.5999999940395
     }
   ],
   "resources": [
@@ -14,7 +14,7 @@
     },
     {
       "path": "/public/features.css",
-      "bytes": 19271
+      "bytes": 20088
     },
     {
       "path": "/public/js/data.js",
@@ -25,12 +25,12 @@
       "bytes": 3196
     },
     {
-      "path": "/public/js/narrative.js",
-      "bytes": 1903
+      "path": "/public/js/visualization.js",
+      "bytes": 7434
     },
     {
-      "path": "/public/js/visualization.js",
-      "bytes": 7218
+      "path": "/public/js/narrative.js",
+      "bytes": 1903
     },
     {
       "path": "/public/js/contrasts.js",
@@ -58,15 +58,15 @@
     },
     {
       "path": "/public/js/live.js",
-      "bytes": 36326
+      "bytes": 37206
     },
     {
       "path": "/public/js/lens.js",
-      "bytes": 32530
+      "bytes": 34114
     },
     {
       "path": "/public/js/polish.js",
-      "bytes": 6279
+      "bytes": 6189
     },
     {
       "path": "/public/js/journey.js",
@@ -87,6 +87,10 @@
     {
       "path": "/public/fonts/manrope.ttf",
       "bytes": 165000
+    },
+    {
+      "path": "/api/live/health",
+      "bytes": 337
     }
   ]
 }

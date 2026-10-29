@@ -48,3 +48,7 @@
 - Paquete y manifiesto sincronizados; el checksum externo se regenera automáticamente.
 
 El piloto, pruebas manuales con lectores de pantalla/dispositivos físicos y requisitos administrativos siguen pendientes. Publicar código no acredita inscripción ni envío al concurso.
+
+## Revisión de observaciones · 2026-10-28
+
+Anclaje de puntos, comparación cronológica, explicación de escenarios, diagnóstico de salas, simulación variable, coherencia entre texto y contexto en Lente, materiales fijos identificados y glosario. Regresiones ampliadas y ajuste de espera de movimiento reducido en Chromium. Véase docs/REVISION_OBSERVACIONES.md.

@@ -3,6 +3,15 @@ const {compare,suggest}=require('../lib/lens-domain.cjs'),data=require('../publi
 const base={type:'rate',scope:'national',year:2024,unit:'%',value:59.7,indicator:'participation'};
 assert.equal(compare(base,data).status,'match');
 assert.equal(compare({...base,value:60},data).status,'review');
+for(const input of [
+ {...base,text:'En 2018 la participación fue 59,7 %.'},
+ {...base,text:'En Yucatán en 2024 la participación fue 59,7 %.'},
+ {...base,text:'En 2024 no participó el 59,7 %.'},
+ {...base,text:'En México en 2024 la participación fue 60 %.'},
+ {...base,type:'change',from:2024,to:2012,value:2.4,unit:'pp'}
+])assert.equal(compare(input,data).status,'unknown');
+assert.equal(compare({...base,text:'En México en 2024 la participación fue 59,7 %.'},data).status,'match');
+
 assert.equal(compare({...base,year:2026},data).status,'unknown');
 assert.equal(compare({...base,scope:'state',entity:'No existe'},data).status,'unknown');
 assert.equal(compare({...base,scope:'age',entity:'25–29 años',value:47.3},data).status,'match');
@@ -18,9 +27,28 @@ const {chromium,browserOptions,baseURL,axePath}=require('./runtime.cjs');
 (async()=>{const browser=await chromium.launch(browserOptions);try{
  const p=await browser.newPage({viewport:{width:1440,height:1000},reducedMotion:'reduce'}),errors=[];
  p.on('pageerror',e=>errors.push(e.message));await p.goto(baseURL+'/public/');
+ await p.waitForFunction(()=>document.documentElement.dataset.ready==='true');
+ await p.locator('#historia').scrollIntoViewIfNeeded();
+ const dotTop=await p.locator('#dotGrid').evaluate(e=>e.getBoundingClientRect().top+scrollY);
+ await p.locator('#historia .stat-column details summary').click();
+ assert.ok(Math.abs(await p.locator('#dotGrid').evaluate(e=>e.getBoundingClientRect().top+scrollY)-dotTop)<1,'Opening evidence must not move the grid');
+ await p.locator('#compareFrom').selectOption('2024');await p.locator('#compareTo').selectOption('2012');
+ assert.equal(await p.locator('#compareFrom').inputValue(),'2012');assert.equal(await p.locator('#compareTo').inputValue(),'2024');
+ assert.match(await p.locator('#compareSummary').textContent(),/De 2012 a 2024/);
+ assert.equal(await p.locator('#glosario dt').count(),9);
+ await p.locator('#liveAvailability').filter({hasText:'Servicio de salas disponible'}).waitFor();
+ const staticPage=await browser.newPage();await staticPage.route('**/api/live/health',route=>route.fulfill({status:404,contentType:'text/html',body:'Not found'}));
+ await staticPage.goto(baseURL+'/public/');await staticPage.locator('#liveAvailability').filter({hasText:'no está disponible'}).waitFor();
+ await staticPage.locator('#liveDemo').click();await staticPage.evaluate(()=>{window.savedRandom=Math.random;Math.random=()=>0.1;});await staticPage.locator('#liveDemoAdd').click();assert.equal(await staticPage.locator('#liveCount').textContent(),'6');
+ await staticPage.evaluate(()=>{Math.random=()=>0.9;});await staticPage.locator('#liveDemoAdd').click();assert.equal(await staticPage.locator('#liveCount').textContent(),'12');
+ assert.equal(await staticPage.locator('#liveCloud .live-bin').nth(2).locator('span').textContent(),'6');assert.equal(await staticPage.locator('#liveCloud .live-bin').nth(18).locator('span').textContent(),'6');
+ await staticPage.evaluate(()=>{Math.random=window.savedRandom;});await staticPage.close();
+
  await p.locator('[data-lens-example="0"]').click();await p.locator('#lensConfirm').check();await p.locator('#lensForm button[type=submit]').click();
  assert.match(await p.locator('#lensReason').innerText(),/-4,3/);assert.match(await p.locator('#lensVerdict').innerText(),/Revisa/);
  await p.locator('#lensUnit').selectOption('pp');assert.equal(await p.locator('#lensConfirm').isChecked(),false);
+ await p.locator('#lensConfirm').check();await p.locator('#lensForm button[type=submit]').click();assert.match(await p.locator('#lensReason').innerText(),/no concuerdan/);
+ await p.locator('#lensText').fill('La participación cayó 2,7 pp entre 2018 y 2024.');await p.locator('#lensDetect').click();
  await p.locator('#lensConfirm').check();await p.locator('#lensForm button[type=submit]').click();assert.match(await p.locator('#lensVerdict').innerText(),/coincide/);
  const dl=p.waitForEvent('download');await p.locator('#lensExport').click();const card=await dl;assert.match(card.suggestedFilename(),/\.png$/);await card.saveAs(path.join(__dirname,'../evidencia/lente-ficha.png'));
  await p.locator('#lensText').fill('<img src=x onerror=alert(1)> 59.7 % en 2024');await p.locator('#lensDetect').click();assert.equal(await p.locator('#lensDetected img').count(),0);
@@ -51,11 +79,11 @@ const {chromium,browserOptions,baseURL,axePath}=require('./runtime.cjs');
  p.off('request',record);assert.deepEqual(ocrRequests.filter(r=>r.method==='POST'||(!r.url.startsWith(baseURL)&&!r.url.startsWith('blob:'+baseURL)&&!r.url.startsWith('data:'))),[],'OCR debe permanecer en el origen local');
  assert.deepEqual(errors,[]);
  fs.writeFileSync(path.join(__dirname,'../evidencia/pruebas-version-1.2.json'),JSON.stringify({fecha:new Date().toISOString(),resultados:[
- {prueba:'Contraste numérico y ámbitos',estado:'VERIFICADO',detalle:'Tasas, complementos, edad, unidades, signos y ámbitos no disponibles'},
+ {prueba:'Contraste numérico y ámbitos',estado:'VERIFICADO',detalle:'Tasas, complementos, edad y unidades; rechaza años, ámbito, indicador y cifra contradictorios con el texto; rechaza cronología inversa'},
  {prueba:'Sala compartida',estado:'VERIFICADO',detalle:'Presentador y dos contextos independientes; sincronización, recuperación y control de rondas'},
- {prueba:'Demo y exportaciones',estado:'VERIFICADO',detalle:'Tres rondas ficticias, resumen y ficha PNG descargados'},
+ {prueba:'Demo y exportaciones',estado:'VERIFICADO',detalle:'Tres rondas ficticias, lotes variables comprobados con aleatoriedad controlada, resumen y ficha PNG; aviso de servidor estático y ensayo disponible'},
  {prueba:'OCR local',estado:'VERIFICADO',detalle:'Captura sintética leída en español, sin subida ni solicitudes a otro origen'},
- {prueba:'Accesibilidad y adaptación',estado:'VERIFICADO',detalle:'Sin infracciones axe en el estado expandido; sin desbordamiento en 320,375,768,1440 px'}
+ {prueba:'Accesibilidad y adaptación',estado:'VERIFICADO',detalle:'Cuadrícula anclada al revelar evidencia; fechas ordenadas; glosario; sin infracciones axe ni desbordamiento en 320,375,768,1440 px'}
  ]},null,2));
  console.log('Lente, sala con dos participantes, reanudar presentador, OCR local, demo, exportaciones, accesibilidad y responsive: OK');
 }finally{await browser.close();}})().catch(e=>{console.error(e);process.exitCode=1;});

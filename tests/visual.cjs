@@ -9,7 +9,11 @@ const {chromium,browserOptions,baseURL}=require('./runtime.cjs');
  await page.mouse.move(0,0);assert.equal(await page.locator('.hero-right').evaluate(e=>e.style.getPropertyValue('--light-x')),'');
  await page.locator('[data-year="2018"]').first().click();assert.equal(await page.locator('#participationValue').textContent(),'62,4');
  await page.waitForFunction(()=>document.getElementById('participationValue').getAnimations().length>0);
+ // Keep the effect alive longer than the assertion deadline so natural completion
+ // cannot disguise a broken media-change handler. Chromium dispatches it async.
+ await page.locator('#participationValue').evaluate(e=>e.getAnimations().forEach(a=>a.effect.updateTiming({duration:10000})));
  await page.emulateMedia({reducedMotion:'reduce'});
+ await page.waitForFunction(()=>matchMedia('(prefers-reduced-motion: reduce)').matches&&document.getElementById('participationValue').getAnimations().every(a=>a.playState!=='running'),{},{timeout:1500});
  assert.equal(await page.locator('#participationValue').evaluate(e=>e.getAnimations().filter(a=>a.playState==='running').length),0);
  await page.locator('[data-year="2024"]').first().click();assert.equal(await page.locator('#participationValue').textContent(),'59,7');
  assert.equal(await page.locator('#participationValue').evaluate(e=>e.getAnimations().length),0);

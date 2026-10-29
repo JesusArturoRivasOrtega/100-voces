@@ -234,6 +234,9 @@
             ".insight-kicker"
           ],
           [
+            "#comparisonOrder"
+          ],
+          [
             "#compareSummary"
           ],
           [
@@ -303,6 +306,12 @@
             ".feature-intro > p"
           ],
           [
+            "#liveAvailability"
+          ],
+          [
+            "#en-vivo > .evidence > summary"
+          ],
+          [
             "#liveCreate"
           ],
           [
@@ -351,7 +360,7 @@
             ".lesson-intro"
           ],
           [
-            ".evidence:nth-child(4) > summary"
+            "#metodo > .evidence:nth-child(4) > summary"
           ],
           [
             "#journey > summary"
@@ -439,11 +448,23 @@
           ],
           [
             "a[href$=\"indicadores.csv\"]"
+          ],
+          [
+            "#glosario > .section-head > div > .overline"
+          ],
+          [
+            "#glossaryTitle"
+          ],
+          [
+            "#glossaryTitle > i"
+          ],
+          [
+            "#glosario > .section-head > p"
           ]
         ]
       }
     ],
-    "passes": 28
+    "passes": 30
   },
   {
     "state": "evidence-and-cards",
@@ -680,6 +701,9 @@
             ".insight-kicker"
           ],
           [
+            "#comparisonOrder"
+          ],
+          [
             "#compareSummary"
           ],
           [
@@ -749,6 +773,12 @@
             ".feature-intro > p"
           ],
           [
+            "#liveAvailability"
+          ],
+          [
+            "#en-vivo > .evidence > summary"
+          ],
+          [
             "#liveCreate"
           ],
           [
@@ -797,7 +827,7 @@
             ".lesson-intro"
           ],
           [
-            ".evidence:nth-child(4) > summary"
+            "#metodo > .evidence:nth-child(4) > summary"
           ],
           [
             "#journey > summary"
@@ -885,6 +915,18 @@
           ],
           [
             "a[href$=\"indicadores.csv\"]"
+          ],
+          [
+            "#glosario > .section-head > div > .overline"
+          ],
+          [
+            "#glossaryTitle"
+          ],
+          [
+            "#glossaryTitle > i"
+          ],
+          [
+            "#glosario > .section-head > p"
           ]
         ]
       }

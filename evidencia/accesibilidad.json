@@ -1,5 +1,5 @@
 {
-  "fecha": "2026-10-28T14:57:25.917Z",
+  "fecha": "2026-10-29T05:15:18.414Z",
   "states": [
     {
       "state": "initial",
@@ -2123,7 +2123,7 @@
               "all": [],
               "none": [],
               "impact": "serious",
-              "html": "<label>Desde<select id=\"compareFrom\"><option value=\"2012\">2012</option><option value=\"2018\">2018</option><option value=\"2024\">2024</option></select></label>",
+              "html": "<label>Desde<select aria-describedby=\"comparisonOrder\" id=\"compareFrom\"><option value=\"2012\">2012</option><option value=\"2018\">2018</option><option value=\"2024\">2024</option></select></label>",
               "target": [
                 ".comparison-selects > label:nth-child(1)"
               ],
@@ -2155,7 +2155,7 @@
               "all": [],
               "none": [],
               "impact": "serious",
-              "html": "<label>Hasta<select id=\"compareTo\"><option value=\"2012\">2012</option><option value=\"2018\">2018</option><option value=\"2024\">2024</option></select></label>",
+              "html": "<label>Hasta<select aria-describedby=\"comparisonOrder\" id=\"compareTo\"><option value=\"2012\">2012</option><option value=\"2018\">2018</option><option value=\"2024\">2024</option></select></label>",
               "target": [
                 ".comparison-selects > label:nth-child(2)"
               ],
@@ -2222,6 +2222,38 @@
               "html": "<div class=\"insight-kicker\">LECTURA CLAVE</div>",
               "target": [
                 ".insight-kicker"
+              ],
+              "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+            },
+            {
+              "any": [
+                {
+                  "id": "color-contrast",
+                  "data": {
+                    "contrastRatio": 0,
+                    "fontSize": "12.8pt (17px)",
+                    "fontWeight": "normal",
+                    "messageKey": "bgGradient",
+                    "expectedContrastRatio": "4.5:1"
+                  },
+                  "relatedNodes": [
+                    {
+                      "html": "<section id=\"tiempo\" class=\"section section-alt\">",
+                      "target": [
+                        "#tiempo"
+                      ]
+                    }
+                  ],
+                  "impact": "serious",
+                  "message": "Element's background color could not be determined due to a background gradient"
+                }
+              ],
+              "all": [],
+              "none": [],
+              "impact": "serious",
+              "html": "<p id=\"comparisonOrder\" class=\"tiny\">El intervalo se ordena del año más antiguo al más reciente. Si eliges un destino anterior al origen, ambos se intercambian. pp significa puntos porcentuales: la tasa final menos la inicial.</p>",
+              "target": [
+                "#comparisonOrder"
               ],
               "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
             },
@@ -4049,7 +4081,7 @@
               "all": [],
               "none": [],
               "impact": "serious",
-              "html": "<p>Dos escenarios pueden ayudar a hacer mejores preguntas. Compara posibilidades y distingue lo que observamos de lo que solo estamos suponiendo.</p>",
+              "html": "<p>Prueba dos tasas de participación inventadas y observa cuánto se alejan del 59,7 % registrado en México en 2024. Aprenderás a distinguir una diferencia en puntos porcentuales de un cambio relativo.</p>",
               "target": [
                 "#escenarios > .section-head > p"
               ],
@@ -4134,7 +4166,7 @@
               "all": [],
               "none": [],
               "impact": "serious",
-              "html": "<div class=\"overline\">07 / LA HISTORIA SE CONSTRUYE EN GRUPO<button type=\"button\" class=\"section-help-trigger\" data-help=\"en-vivo\" aria-label=\"Ayuda: Participar en una sala en vivo\" aria-expanded=\"false\" aria-controls=\"section-help-panel\" aria-haspopup=\"dialog\">?</button></div>",
+              "html": "<div class=\"overline\">CAPÍTULO 07 / LA HISTORIA SE CONSTRUYE EN GRUPO<button type=\"button\" class=\"section-help-trigger\" data-help=\"en-vivo\" aria-label=\"Ayuda: Participar en una sala en vivo\" aria-expanded=\"false\" aria-controls=\"section-help-panel\" aria-haspopup=\"dialog\">?</button></div>",
               "target": [
                 "#en-vivo > .section-head > div > .overline"
               ],
@@ -4274,6 +4306,70 @@
                   "id": "color-contrast",
                   "data": {
                     "contrastRatio": 0,
+                    "fontSize": "10.5pt (14px)",
+                    "fontWeight": "normal",
+                    "messageKey": "bgGradient",
+                    "expectedContrastRatio": "4.5:1"
+                  },
+                  "relatedNodes": [
+                    {
+                      "html": "<body>",
+                      "target": [
+                        "body"
+                      ]
+                    }
+                  ],
+                  "impact": "serious",
+                  "message": "Element's background color could not be determined due to a background gradient"
+                }
+              ],
+              "all": [],
+              "none": [],
+              "impact": "serious",
+              "html": "<p id=\"liveAvailability\" class=\"feature-status\" role=\"status\">Servicio de salas disponible. Crea una sala y comparte el código con quienes puedan acceder a esta web. Las salas caducan a las dos horas.</p>",
+              "target": [
+                "#liveAvailability"
+              ],
+              "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+            },
+            {
+              "any": [
+                {
+                  "id": "color-contrast",
+                  "data": {
+                    "contrastRatio": 0,
+                    "fontSize": "9.8pt (13px)",
+                    "fontWeight": "bold",
+                    "messageKey": "bgGradient",
+                    "expectedContrastRatio": "4.5:1"
+                  },
+                  "relatedNodes": [
+                    {
+                      "html": "<body>",
+                      "target": [
+                        "body"
+                      ]
+                    }
+                  ],
+                  "impact": "serious",
+                  "message": "Element's background color could not be determined due to a background gradient"
+                }
+              ],
+              "all": [],
+              "none": [],
+              "impact": "serious",
+              "html": "<summary>¿Por qué no se crean salas con el servidor de Python?</summary>",
+              "target": [
+                "#en-vivo > .evidence > summary"
+              ],
+              "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+            },
+            {
+              "any": [
+                {
+                  "id": "color-contrast",
+                  "data": {
+                    "contrastRatio": 0,
                     "fontSize": "9.8pt (13px)",
                     "fontWeight": "bold",
                     "messageKey": "bgGradient",
@@ -4390,7 +4486,7 @@
               "all": [],
               "none": [],
               "impact": "serious",
-              "html": "<div class=\"overline\">08 / ANTES DE COMPARTIR, CONTRASTA<button type=\"button\" class=\"section-help-trigger\" data-help=\"lente\" aria-label=\"Ayuda: Contrastar una cifra con Lente\" aria-expanded=\"false\" aria-controls=\"section-help-panel\" aria-haspopup=\"dialog\">?</button></div>",
+              "html": "<div class=\"overline\">CAPÍTULO 08 / ANTES DE COMPARTIR, CONTRASTA<button type=\"button\" class=\"section-help-trigger\" data-help=\"lente\" aria-label=\"Ayuda: Contrastar una cifra con Lente\" aria-expanded=\"false\" aria-controls=\"section-help-panel\" aria-haspopup=\"dialog\">?</button></div>",
               "target": [
                 "#lente > .section-head > div > .overline"
               ],
@@ -4486,7 +4582,7 @@
               "all": [],
               "none": [],
               "impact": "serious",
-              "html": "<p>Pega una afirmación o lee una captura. Contrasta su cifra con las publicaciones del INE y llévate una explicación con fuentes.</p>",
+              "html": "<p>Revisa una cifra antes de compartirla: pega una afirmación, identifica su año, población y unidad, y compara el número con la base del INE. Verás el contexto revisado, la referencia y la cuenta. Esto no verifica causas, opiniones ni la autenticidad de una captura.</p>",
               "target": [
                 "#lente > .section-head > p"
               ],
@@ -4808,7 +4904,7 @@
               "impact": "serious",
               "html": "<summary>Guía docente y evaluación</summary>",
               "target": [
-                ".evidence:nth-child(4) > summary"
+                "#metodo > .evidence:nth-child(4) > summary"
               ],
               "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
             },
@@ -5739,11 +5835,139 @@
                 "a[href$=\"indicadores.csv\"]"
               ],
               "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+            },
+            {
+              "any": [
+                {
+                  "id": "color-contrast",
+                  "data": {
+                    "contrastRatio": 0,
+                    "fontSize": "8.3pt (11px)",
+                    "fontWeight": "bold",
+                    "messageKey": "bgGradient",
+                    "expectedContrastRatio": "4.5:1"
+                  },
+                  "relatedNodes": [
+                    {
+                      "html": "<body>",
+                      "target": [
+                        "body"
+                      ]
+                    }
+                  ],
+                  "impact": "serious",
+                  "message": "Element's background color could not be determined due to a background gradient"
+                }
+              ],
+              "all": [],
+              "none": [],
+              "impact": "serious",
+              "html": "<div class=\"overline\">CONSULTA / PALABRAS PARA LEER LOS DATOS</div>",
+              "target": [
+                "#glosario > .section-head > div > .overline"
+              ],
+              "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+            },
+            {
+              "any": [
+                {
+                  "id": "color-contrast",
+                  "data": {
+                    "contrastRatio": 0,
+                    "fontSize": "51.8pt (69px)",
+                    "fontWeight": "bold",
+                    "messageKey": "bgGradient",
+                    "expectedContrastRatio": "3:1"
+                  },
+                  "relatedNodes": [
+                    {
+                      "html": "<body>",
+                      "target": [
+                        "body"
+                      ]
+                    }
+                  ],
+                  "impact": "serious",
+                  "message": "Element's background color could not be determined due to a background gradient"
+                }
+              ],
+              "all": [],
+              "none": [],
+              "impact": "serious",
+              "html": "<h2 id=\"glossaryTitle\">Un pequeño <i>glosario.</i></h2>",
+              "target": [
+                "#glossaryTitle"
+              ],
+              "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+            },
+            {
+              "any": [
+                {
+                  "id": "color-contrast",
+                  "data": {
+                    "contrastRatio": 0,
+                    "fontSize": "51.8pt (69px)",
+                    "fontWeight": "normal",
+                    "messageKey": "bgGradient",
+                    "expectedContrastRatio": "3:1"
+                  },
+                  "relatedNodes": [
+                    {
+                      "html": "<body>",
+                      "target": [
+                        "body"
+                      ]
+                    }
+                  ],
+                  "impact": "serious",
+                  "message": "Element's background color could not be determined due to a background gradient"
+                }
+              ],
+              "all": [],
+              "none": [],
+              "impact": "serious",
+              "html": "<i>glosario.</i>",
+              "target": [
+                "#glossaryTitle > i"
+              ],
+              "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+            },
+            {
+              "any": [
+                {
+                  "id": "color-contrast",
+                  "data": {
+                    "contrastRatio": 0,
+                    "fontSize": "12.8pt (17px)",
+                    "fontWeight": "normal",
+                    "messageKey": "bgGradient",
+                    "expectedContrastRatio": "4.5:1"
+                  },
+                  "relatedNodes": [
+                    {
+                      "html": "<body>",
+                      "target": [
+                        "body"
+                      ]
+                    }
+                  ],
+                  "impact": "serious",
+                  "message": "Element's background color could not be determined due to a background gradient"
+                }
+              ],
+              "all": [],
+              "none": [],
+              "impact": "serious",
+              "html": "<p>Vuelve aquí cuando una unidad o un concepto te impida interpretar una cifra.</p>",
+              "target": [
+                "#glosario > .section-head > p"
+              ],
+              "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
             }
           ]
         }
       ],
-      "passes": 29
+      "passes": 31
     },
     {
       "state": "expanded",
@@ -8251,7 +8475,7 @@
               "all": [],
               "none": [],
               "impact": "serious",
-              "html": "<label>Desde<select id=\"compareFrom\"><option value=\"2012\">2012</option><option value=\"2018\">2018</option><option value=\"2024\">2024</option></select></label>",
+              "html": "<label>Desde<select aria-describedby=\"comparisonOrder\" id=\"compareFrom\"><option value=\"2012\">2012</option><option value=\"2018\">2018</option><option value=\"2024\">2024</option></select></label>",
               "target": [
                 ".comparison-selects > label:nth-child(1)"
               ],
@@ -8283,7 +8507,7 @@
               "all": [],
               "none": [],
               "impact": "serious",
-              "html": "<label>Hasta<select id=\"compareTo\"><option value=\"2012\">2012</option><option value=\"2018\">2018</option><option value=\"2024\">2024</option></select></label>",
+              "html": "<label>Hasta<select aria-describedby=\"comparisonOrder\" id=\"compareTo\"><option value=\"2012\">2012</option><option value=\"2018\">2018</option><option value=\"2024\">2024</option></select></label>",
               "target": [
                 ".comparison-selects > label:nth-child(2)"
               ],
@@ -8350,6 +8574,38 @@
               "html": "<div class=\"insight-kicker\">LECTURA CLAVE</div>",
               "target": [
                 ".insight-kicker"
+              ],
+              "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+            },
+            {
+              "any": [
+                {
+                  "id": "color-contrast",
+                  "data": {
+                    "contrastRatio": 0,
+                    "fontSize": "12.8pt (17px)",
+                    "fontWeight": "normal",
+                    "messageKey": "bgGradient",
+                    "expectedContrastRatio": "4.5:1"
+                  },
+                  "relatedNodes": [
+                    {
+                      "html": "<section id=\"tiempo\" class=\"section section-alt\">",
+                      "target": [
+                        "#tiempo"
+                      ]
+                    }
+                  ],
+                  "impact": "serious",
+                  "message": "Element's background color could not be determined due to a background gradient"
+                }
+              ],
+              "all": [],
+              "none": [],
+              "impact": "serious",
+              "html": "<p id=\"comparisonOrder\" class=\"tiny\">El intervalo se ordena del año más antiguo al más reciente. Si eliges un destino anterior al origen, ambos se intercambian. pp significa puntos porcentuales: la tasa final menos la inicial.</p>",
+              "target": [
+                "#comparisonOrder"
               ],
               "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
             },
@@ -9825,7 +10081,7 @@
               "all": [],
               "none": [],
               "impact": "serious",
-              "html": "<p>Dos escenarios pueden ayudar a hacer mejores preguntas. Compara posibilidades y distingue lo que observamos de lo que solo estamos suponiendo.</p>",
+              "html": "<p>Prueba dos tasas de participación inventadas y observa cuánto se alejan del 59,7 % registrado en México en 2024. Aprenderás a distinguir una diferencia en puntos porcentuales de un cambio relativo.</p>",
               "target": [
                 "#escenarios > .section-head > p"
               ],
@@ -9910,7 +10166,7 @@
               "all": [],
               "none": [],
               "impact": "serious",
-              "html": "<div class=\"overline\">07 / LA HISTORIA SE CONSTRUYE EN GRUPO<button type=\"button\" class=\"section-help-trigger\" data-help=\"en-vivo\" aria-label=\"Ayuda: Participar en una sala en vivo\" aria-expanded=\"false\" aria-controls=\"section-help-panel\" aria-haspopup=\"dialog\">?</button></div>",
+              "html": "<div class=\"overline\">CAPÍTULO 07 / LA HISTORIA SE CONSTRUYE EN GRUPO<button type=\"button\" class=\"section-help-trigger\" data-help=\"en-vivo\" aria-label=\"Ayuda: Participar en una sala en vivo\" aria-expanded=\"false\" aria-controls=\"section-help-panel\" aria-haspopup=\"dialog\">?</button></div>",
               "target": [
                 "#en-vivo > .section-head > div > .overline"
               ],
@@ -10050,6 +10306,70 @@
                   "id": "color-contrast",
                   "data": {
                     "contrastRatio": 0,
+                    "fontSize": "10.5pt (14px)",
+                    "fontWeight": "normal",
+                    "messageKey": "bgGradient",
+                    "expectedContrastRatio": "4.5:1"
+                  },
+                  "relatedNodes": [
+                    {
+                      "html": "<body>",
+                      "target": [
+                        "body"
+                      ]
+                    }
+                  ],
+                  "impact": "serious",
+                  "message": "Element's background color could not be determined due to a background gradient"
+                }
+              ],
+              "all": [],
+              "none": [],
+              "impact": "serious",
+              "html": "<p id=\"liveAvailability\" class=\"feature-status\" role=\"status\">Servicio de salas disponible. Crea una sala y comparte el código con quienes puedan acceder a esta web. Las salas caducan a las dos horas.</p>",
+              "target": [
+                "#liveAvailability"
+              ],
+              "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+            },
+            {
+              "any": [
+                {
+                  "id": "color-contrast",
+                  "data": {
+                    "contrastRatio": 0,
+                    "fontSize": "9.8pt (13px)",
+                    "fontWeight": "bold",
+                    "messageKey": "bgGradient",
+                    "expectedContrastRatio": "4.5:1"
+                  },
+                  "relatedNodes": [
+                    {
+                      "html": "<body>",
+                      "target": [
+                        "body"
+                      ]
+                    }
+                  ],
+                  "impact": "serious",
+                  "message": "Element's background color could not be determined due to a background gradient"
+                }
+              ],
+              "all": [],
+              "none": [],
+              "impact": "serious",
+              "html": "<summary>¿Por qué no se crean salas con el servidor de Python?</summary>",
+              "target": [
+                "#en-vivo > .evidence > summary"
+              ],
+              "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+            },
+            {
+              "any": [
+                {
+                  "id": "color-contrast",
+                  "data": {
+                    "contrastRatio": 0,
                     "fontSize": "9.8pt (13px)",
                     "fontWeight": "bold",
                     "messageKey": "bgGradient",
@@ -10166,7 +10486,7 @@
               "all": [],
               "none": [],
               "impact": "serious",
-              "html": "<div class=\"overline\">08 / ANTES DE COMPARTIR, CONTRASTA<button type=\"button\" class=\"section-help-trigger\" data-help=\"lente\" aria-label=\"Ayuda: Contrastar una cifra con Lente\" aria-expanded=\"false\" aria-controls=\"section-help-panel\" aria-haspopup=\"dialog\">?</button></div>",
+              "html": "<div class=\"overline\">CAPÍTULO 08 / ANTES DE COMPARTIR, CONTRASTA<button type=\"button\" class=\"section-help-trigger\" data-help=\"lente\" aria-label=\"Ayuda: Contrastar una cifra con Lente\" aria-expanded=\"false\" aria-controls=\"section-help-panel\" aria-haspopup=\"dialog\">?</button></div>",
               "target": [
                 "#lente > .section-head > div > .overline"
               ],
@@ -10262,7 +10582,7 @@
               "all": [],
               "none": [],
               "impact": "serious",
-              "html": "<p>Pega una afirmación o lee una captura. Contrasta su cifra con las publicaciones del INE y llévate una explicación con fuentes.</p>",
+              "html": "<p>Revisa una cifra antes de compartirla: pega una afirmación, identifica su año, población y unidad, y compara el número con la base del INE. Verás el contexto revisado, la referencia y la cuenta. Esto no verifica causas, opiniones ni la autenticidad de una captura.</p>",
               "target": [
                 "#lente > .section-head > p"
               ],
@@ -10584,7 +10904,7 @@
               "impact": "serious",
               "html": "<summary>Guía docente y evaluación</summary>",
               "target": [
-                ".evidence:nth-child(4) > summary"
+                "#metodo > .evidence:nth-child(4) > summary"
               ],
               "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
             },
@@ -11513,6 +11833,134 @@
               "html": "<a class=\"cta cta-ghost\" href=\"data/indicadores.csv\" download=\"\">Tabla de indicadores · CSV ↓</a>",
               "target": [
                 "a[href$=\"indicadores.csv\"]"
+              ],
+              "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+            },
+            {
+              "any": [
+                {
+                  "id": "color-contrast",
+                  "data": {
+                    "contrastRatio": 0,
+                    "fontSize": "8.3pt (11px)",
+                    "fontWeight": "bold",
+                    "messageKey": "bgGradient",
+                    "expectedContrastRatio": "4.5:1"
+                  },
+                  "relatedNodes": [
+                    {
+                      "html": "<body>",
+                      "target": [
+                        "body"
+                      ]
+                    }
+                  ],
+                  "impact": "serious",
+                  "message": "Element's background color could not be determined due to a background gradient"
+                }
+              ],
+              "all": [],
+              "none": [],
+              "impact": "serious",
+              "html": "<div class=\"overline\">CONSULTA / PALABRAS PARA LEER LOS DATOS</div>",
+              "target": [
+                "#glosario > .section-head > div > .overline"
+              ],
+              "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+            },
+            {
+              "any": [
+                {
+                  "id": "color-contrast",
+                  "data": {
+                    "contrastRatio": 0,
+                    "fontSize": "51.8pt (69px)",
+                    "fontWeight": "bold",
+                    "messageKey": "bgGradient",
+                    "expectedContrastRatio": "3:1"
+                  },
+                  "relatedNodes": [
+                    {
+                      "html": "<body>",
+                      "target": [
+                        "body"
+                      ]
+                    }
+                  ],
+                  "impact": "serious",
+                  "message": "Element's background color could not be determined due to a background gradient"
+                }
+              ],
+              "all": [],
+              "none": [],
+              "impact": "serious",
+              "html": "<h2 id=\"glossaryTitle\">Un pequeño <i>glosario.</i></h2>",
+              "target": [
+                "#glossaryTitle"
+              ],
+              "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+            },
+            {
+              "any": [
+                {
+                  "id": "color-contrast",
+                  "data": {
+                    "contrastRatio": 0,
+                    "fontSize": "51.8pt (69px)",
+                    "fontWeight": "normal",
+                    "messageKey": "bgGradient",
+                    "expectedContrastRatio": "3:1"
+                  },
+                  "relatedNodes": [
+                    {
+                      "html": "<body>",
+                      "target": [
+                        "body"
+                      ]
+                    }
+                  ],
+                  "impact": "serious",
+                  "message": "Element's background color could not be determined due to a background gradient"
+                }
+              ],
+              "all": [],
+              "none": [],
+              "impact": "serious",
+              "html": "<i>glosario.</i>",
+              "target": [
+                "#glossaryTitle > i"
+              ],
+              "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+            },
+            {
+              "any": [
+                {
+                  "id": "color-contrast",
+                  "data": {
+                    "contrastRatio": 0,
+                    "fontSize": "12.8pt (17px)",
+                    "fontWeight": "normal",
+                    "messageKey": "bgGradient",
+                    "expectedContrastRatio": "4.5:1"
+                  },
+                  "relatedNodes": [
+                    {
+                      "html": "<body>",
+                      "target": [
+                        "body"
+                      ]
+                    }
+                  ],
+                  "impact": "serious",
+                  "message": "Element's background color could not be determined due to a background gradient"
+                }
+              ],
+              "all": [],
+              "none": [],
+              "impact": "serious",
+              "html": "<p>Vuelve aquí cuando una unidad o un concepto te impida interpretar una cifra.</p>",
+              "target": [
+                "#glosario > .section-head > p"
               ],
               "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
             }
@@ -14027,7 +14475,7 @@
               "all": [],
               "none": [],
               "impact": "serious",
-              "html": "<label>Desde<select id=\"compareFrom\"><option value=\"2012\">2012</option><option value=\"2018\">2018</option><option value=\"2024\">2024</option></select></label>",
+              "html": "<label>Desde<select aria-describedby=\"comparisonOrder\" id=\"compareFrom\"><option value=\"2012\">2012</option><option value=\"2018\">2018</option><option value=\"2024\">2024</option></select></label>",
               "target": [
                 ".comparison-selects > label:nth-child(1)"
               ],
@@ -14059,7 +14507,7 @@
               "all": [],
               "none": [],
               "impact": "serious",
-              "html": "<label>Hasta<select id=\"compareTo\"><option value=\"2012\">2012</option><option value=\"2018\">2018</option><option value=\"2024\">2024</option></select></label>",
+              "html": "<label>Hasta<select aria-describedby=\"comparisonOrder\" id=\"compareTo\"><option value=\"2012\">2012</option><option value=\"2018\">2018</option><option value=\"2024\">2024</option></select></label>",
               "target": [
                 ".comparison-selects > label:nth-child(2)"
               ],
@@ -14126,6 +14574,38 @@
               "html": "<div class=\"insight-kicker\">LECTURA CLAVE</div>",
               "target": [
                 ".insight-kicker"
+              ],
+              "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+            },
+            {
+              "any": [
+                {
+                  "id": "color-contrast",
+                  "data": {
+                    "contrastRatio": 0,
+                    "fontSize": "12.8pt (17px)",
+                    "fontWeight": "normal",
+                    "messageKey": "bgGradient",
+                    "expectedContrastRatio": "4.5:1"
+                  },
+                  "relatedNodes": [
+                    {
+                      "html": "<section id=\"tiempo\" class=\"section section-alt\">",
+                      "target": [
+                        "#tiempo"
+                      ]
+                    }
+                  ],
+                  "impact": "serious",
+                  "message": "Element's background color could not be determined due to a background gradient"
+                }
+              ],
+              "all": [],
+              "none": [],
+              "impact": "serious",
+              "html": "<p id=\"comparisonOrder\" class=\"tiny\">El intervalo se ordena del año más antiguo al más reciente. Si eliges un destino anterior al origen, ambos se intercambian. pp significa puntos porcentuales: la tasa final menos la inicial.</p>",
+              "target": [
+                "#comparisonOrder"
               ],
               "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
             },
@@ -15601,7 +16081,7 @@
               "all": [],
               "none": [],
               "impact": "serious",
-              "html": "<p>Dos escenarios pueden ayudar a hacer mejores preguntas. Compara posibilidades y distingue lo que observamos de lo que solo estamos suponiendo.</p>",
+              "html": "<p>Prueba dos tasas de participación inventadas y observa cuánto se alejan del 59,7 % registrado en México en 2024. Aprenderás a distinguir una diferencia en puntos porcentuales de un cambio relativo.</p>",
               "target": [
                 "#escenarios > .section-head > p"
               ],
@@ -15686,7 +16166,7 @@
               "all": [],
               "none": [],
               "impact": "serious",
-              "html": "<div class=\"overline\">07 / LA HISTORIA SE CONSTRUYE EN GRUPO<button type=\"button\" class=\"section-help-trigger\" data-help=\"en-vivo\" aria-label=\"Ayuda: Participar en una sala en vivo\" aria-expanded=\"false\" aria-controls=\"section-help-panel\" aria-haspopup=\"dialog\">?</button></div>",
+              "html": "<div class=\"overline\">CAPÍTULO 07 / LA HISTORIA SE CONSTRUYE EN GRUPO<button type=\"button\" class=\"section-help-trigger\" data-help=\"en-vivo\" aria-label=\"Ayuda: Participar en una sala en vivo\" aria-expanded=\"false\" aria-controls=\"section-help-panel\" aria-haspopup=\"dialog\">?</button></div>",
               "target": [
                 "#en-vivo > .section-head > div > .overline"
               ],
@@ -15826,6 +16306,70 @@
                   "id": "color-contrast",
                   "data": {
                     "contrastRatio": 0,
+                    "fontSize": "10.5pt (14px)",
+                    "fontWeight": "normal",
+                    "messageKey": "bgGradient",
+                    "expectedContrastRatio": "4.5:1"
+                  },
+                  "relatedNodes": [
+                    {
+                      "html": "<body>",
+                      "target": [
+                        "body"
+                      ]
+                    }
+                  ],
+                  "impact": "serious",
+                  "message": "Element's background color could not be determined due to a background gradient"
+                }
+              ],
+              "all": [],
+              "none": [],
+              "impact": "serious",
+              "html": "<p id=\"liveAvailability\" class=\"feature-status\" role=\"status\">Servicio de salas disponible. Crea una sala y comparte el código con quienes puedan acceder a esta web. Las salas caducan a las dos horas.</p>",
+              "target": [
+                "#liveAvailability"
+              ],
+              "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+            },
+            {
+              "any": [
+                {
+                  "id": "color-contrast",
+                  "data": {
+                    "contrastRatio": 0,
+                    "fontSize": "9.8pt (13px)",
+                    "fontWeight": "bold",
+                    "messageKey": "bgGradient",
+                    "expectedContrastRatio": "4.5:1"
+                  },
+                  "relatedNodes": [
+                    {
+                      "html": "<body>",
+                      "target": [
+                        "body"
+                      ]
+                    }
+                  ],
+                  "impact": "serious",
+                  "message": "Element's background color could not be determined due to a background gradient"
+                }
+              ],
+              "all": [],
+              "none": [],
+              "impact": "serious",
+              "html": "<summary>¿Por qué no se crean salas con el servidor de Python?</summary>",
+              "target": [
+                "#en-vivo > .evidence > summary"
+              ],
+              "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+            },
+            {
+              "any": [
+                {
+                  "id": "color-contrast",
+                  "data": {
+                    "contrastRatio": 0,
                     "fontSize": "9.8pt (13px)",
                     "fontWeight": "bold",
                     "messageKey": "bgGradient",
@@ -15942,7 +16486,7 @@
               "all": [],
               "none": [],
               "impact": "serious",
-              "html": "<div class=\"overline\">08 / ANTES DE COMPARTIR, CONTRASTA<button type=\"button\" class=\"section-help-trigger\" data-help=\"lente\" aria-label=\"Ayuda: Contrastar una cifra con Lente\" aria-expanded=\"false\" aria-controls=\"section-help-panel\" aria-haspopup=\"dialog\">?</button></div>",
+              "html": "<div class=\"overline\">CAPÍTULO 08 / ANTES DE COMPARTIR, CONTRASTA<button type=\"button\" class=\"section-help-trigger\" data-help=\"lente\" aria-label=\"Ayuda: Contrastar una cifra con Lente\" aria-expanded=\"false\" aria-controls=\"section-help-panel\" aria-haspopup=\"dialog\">?</button></div>",
               "target": [
                 "#lente > .section-head > div > .overline"
               ],
@@ -16038,7 +16582,7 @@
               "all": [],
               "none": [],
               "impact": "serious",
-              "html": "<p>Pega una afirmación o lee una captura. Contrasta su cifra con las publicaciones del INE y llévate una explicación con fuentes.</p>",
+              "html": "<p>Revisa una cifra antes de compartirla: pega una afirmación, identifica su año, población y unidad, y compara el número con la base del INE. Verás el contexto revisado, la referencia y la cuenta. Esto no verifica causas, opiniones ni la autenticidad de una captura.</p>",
               "target": [
                 "#lente > .section-head > p"
               ],
@@ -16360,7 +16904,7 @@
               "impact": "serious",
               "html": "<summary>Guía docente y evaluación</summary>",
               "target": [
-                ".evidence:nth-child(4) > summary"
+                "#metodo > .evidence:nth-child(4) > summary"
               ],
               "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
             },
@@ -17449,6 +17993,134 @@
               "html": "<a class=\"cta cta-ghost\" href=\"data/indicadores.csv\" download=\"\">Tabla de indicadores · CSV ↓</a>",
               "target": [
                 "a[href$=\"indicadores.csv\"]"
+              ],
+              "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+            },
+            {
+              "any": [
+                {
+                  "id": "color-contrast",
+                  "data": {
+                    "contrastRatio": 0,
+                    "fontSize": "8.3pt (11px)",
+                    "fontWeight": "bold",
+                    "messageKey": "bgGradient",
+                    "expectedContrastRatio": "4.5:1"
+                  },
+                  "relatedNodes": [
+                    {
+                      "html": "<body>",
+                      "target": [
+                        "body"
+                      ]
+                    }
+                  ],
+                  "impact": "serious",
+                  "message": "Element's background color could not be determined due to a background gradient"
+                }
+              ],
+              "all": [],
+              "none": [],
+              "impact": "serious",
+              "html": "<div class=\"overline\">CONSULTA / PALABRAS PARA LEER LOS DATOS</div>",
+              "target": [
+                "#glosario > .section-head > div > .overline"
+              ],
+              "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+            },
+            {
+              "any": [
+                {
+                  "id": "color-contrast",
+                  "data": {
+                    "contrastRatio": 0,
+                    "fontSize": "51.8pt (69px)",
+                    "fontWeight": "bold",
+                    "messageKey": "bgGradient",
+                    "expectedContrastRatio": "3:1"
+                  },
+                  "relatedNodes": [
+                    {
+                      "html": "<body>",
+                      "target": [
+                        "body"
+                      ]
+                    }
+                  ],
+                  "impact": "serious",
+                  "message": "Element's background color could not be determined due to a background gradient"
+                }
+              ],
+              "all": [],
+              "none": [],
+              "impact": "serious",
+              "html": "<h2 id=\"glossaryTitle\">Un pequeño <i>glosario.</i></h2>",
+              "target": [
+                "#glossaryTitle"
+              ],
+              "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+            },
+            {
+              "any": [
+                {
+                  "id": "color-contrast",
+                  "data": {
+                    "contrastRatio": 0,
+                    "fontSize": "51.8pt (69px)",
+                    "fontWeight": "normal",
+                    "messageKey": "bgGradient",
+                    "expectedContrastRatio": "3:1"
+                  },
+                  "relatedNodes": [
+                    {
+                      "html": "<body>",
+                      "target": [
+                        "body"
+                      ]
+                    }
+                  ],
+                  "impact": "serious",
+                  "message": "Element's background color could not be determined due to a background gradient"
+                }
+              ],
+              "all": [],
+              "none": [],
+              "impact": "serious",
+              "html": "<i>glosario.</i>",
+              "target": [
+                "#glossaryTitle > i"
+              ],
+              "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+            },
+            {
+              "any": [
+                {
+                  "id": "color-contrast",
+                  "data": {
+                    "contrastRatio": 0,
+                    "fontSize": "12.8pt (17px)",
+                    "fontWeight": "normal",
+                    "messageKey": "bgGradient",
+                    "expectedContrastRatio": "4.5:1"
+                  },
+                  "relatedNodes": [
+                    {
+                      "html": "<body>",
+                      "target": [
+                        "body"
+                      ]
+                    }
+                  ],
+                  "impact": "serious",
+                  "message": "Element's background color could not be determined due to a background gradient"
+                }
+              ],
+              "all": [],
+              "none": [],
+              "impact": "serious",
+              "html": "<p>Vuelve aquí cuando una unidad o un concepto te impida interpretar una cifra.</p>",
+              "target": [
+                "#glosario > .section-head > p"
               ],
               "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
             }
@@ -19745,7 +20417,7 @@
               "all": [],
               "none": [],
               "impact": "serious",
-              "html": "<label>Desde<select id=\"compareFrom\"><option value=\"2012\">2012</option><option value=\"2018\">2018</option><option value=\"2024\">2024</option></select></label>",
+              "html": "<label>Desde<select aria-describedby=\"comparisonOrder\" id=\"compareFrom\"><option value=\"2012\">2012</option><option value=\"2018\">2018</option><option value=\"2024\">2024</option></select></label>",
               "target": [
                 ".comparison-selects > label:nth-child(1)"
               ],
@@ -19777,7 +20449,7 @@
               "all": [],
               "none": [],
               "impact": "serious",
-              "html": "<label>Hasta<select id=\"compareTo\"><option value=\"2012\">2012</option><option value=\"2018\">2018</option><option value=\"2024\">2024</option></select></label>",
+              "html": "<label>Hasta<select aria-describedby=\"comparisonOrder\" id=\"compareTo\"><option value=\"2012\">2012</option><option value=\"2018\">2018</option><option value=\"2024\">2024</option></select></label>",
               "target": [
                 ".comparison-selects > label:nth-child(2)"
               ],
@@ -19844,6 +20516,38 @@
               "html": "<div class=\"insight-kicker\">LECTURA CLAVE</div>",
               "target": [
                 ".insight-kicker"
+              ],
+              "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+            },
+            {
+              "any": [
+                {
+                  "id": "color-contrast",
+                  "data": {
+                    "contrastRatio": 0,
+                    "fontSize": "12.8pt (17px)",
+                    "fontWeight": "normal",
+                    "messageKey": "bgGradient",
+                    "expectedContrastRatio": "4.5:1"
+                  },
+                  "relatedNodes": [
+                    {
+                      "html": "<section id=\"tiempo\" class=\"section section-alt\">",
+                      "target": [
+                        "#tiempo"
+                      ]
+                    }
+                  ],
+                  "impact": "serious",
+                  "message": "Element's background color could not be determined due to a background gradient"
+                }
+              ],
+              "all": [],
+              "none": [],
+              "impact": "serious",
+              "html": "<p id=\"comparisonOrder\" class=\"tiny\">El intervalo se ordena del año más antiguo al más reciente. Si eliges un destino anterior al origen, ambos se intercambian. pp significa puntos porcentuales: la tasa final menos la inicial.</p>",
+              "target": [
+                "#comparisonOrder"
               ],
               "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
             },
@@ -21767,7 +22471,7 @@
               "all": [],
               "none": [],
               "impact": "serious",
-              "html": "<p>Dos escenarios pueden ayudar a hacer mejores preguntas. Compara posibilidades y distingue lo que observamos de lo que solo estamos suponiendo.</p>",
+              "html": "<p>Prueba dos tasas de participación inventadas y observa cuánto se alejan del 59,7 % registrado en México en 2024. Aprenderás a distinguir una diferencia en puntos porcentuales de un cambio relativo.</p>",
               "target": [
                 "#escenarios > .section-head > p"
               ],
@@ -21852,7 +22556,7 @@
               "all": [],
               "none": [],
               "impact": "serious",
-              "html": "<div class=\"overline\">07 / LA HISTORIA SE CONSTRUYE EN GRUPO<button type=\"button\" class=\"section-help-trigger\" data-help=\"en-vivo\" aria-label=\"Ayuda: Participar en una sala en vivo\" aria-expanded=\"false\" aria-controls=\"section-help-panel\" aria-haspopup=\"dialog\">?</button></div>",
+              "html": "<div class=\"overline\">CAPÍTULO 07 / LA HISTORIA SE CONSTRUYE EN GRUPO<button type=\"button\" class=\"section-help-trigger\" data-help=\"en-vivo\" aria-label=\"Ayuda: Participar en una sala en vivo\" aria-expanded=\"false\" aria-controls=\"section-help-panel\" aria-haspopup=\"dialog\">?</button></div>",
               "target": [
                 "#en-vivo > .section-head > div > .overline"
               ],
@@ -21992,6 +22696,70 @@
                   "id": "color-contrast",
                   "data": {
                     "contrastRatio": 0,
+                    "fontSize": "10.5pt (14px)",
+                    "fontWeight": "normal",
+                    "messageKey": "bgGradient",
+                    "expectedContrastRatio": "4.5:1"
+                  },
+                  "relatedNodes": [
+                    {
+                      "html": "<body>",
+                      "target": [
+                        "body"
+                      ]
+                    }
+                  ],
+                  "impact": "serious",
+                  "message": "Element's background color could not be determined due to a background gradient"
+                }
+              ],
+              "all": [],
+              "none": [],
+              "impact": "serious",
+              "html": "<p id=\"liveAvailability\" class=\"feature-status\" role=\"status\">Servicio de salas disponible. Crea una sala y comparte el código con quienes puedan acceder a esta web. Las salas caducan a las dos horas.</p>",
+              "target": [
+                "#liveAvailability"
+              ],
+              "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+            },
+            {
+              "any": [
+                {
+                  "id": "color-contrast",
+                  "data": {
+                    "contrastRatio": 0,
+                    "fontSize": "9.8pt (13px)",
+                    "fontWeight": "bold",
+                    "messageKey": "bgGradient",
+                    "expectedContrastRatio": "4.5:1"
+                  },
+                  "relatedNodes": [
+                    {
+                      "html": "<body>",
+                      "target": [
+                        "body"
+                      ]
+                    }
+                  ],
+                  "impact": "serious",
+                  "message": "Element's background color could not be determined due to a background gradient"
+                }
+              ],
+              "all": [],
+              "none": [],
+              "impact": "serious",
+              "html": "<summary>¿Por qué no se crean salas con el servidor de Python?</summary>",
+              "target": [
+                "#en-vivo > .evidence > summary"
+              ],
+              "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+            },
+            {
+              "any": [
+                {
+                  "id": "color-contrast",
+                  "data": {
+                    "contrastRatio": 0,
                     "fontSize": "9.8pt (13px)",
                     "fontWeight": "bold",
                     "messageKey": "bgGradient",
@@ -22108,7 +22876,7 @@
               "all": [],
               "none": [],
               "impact": "serious",
-              "html": "<div class=\"overline\">08 / ANTES DE COMPARTIR, CONTRASTA<button type=\"button\" class=\"section-help-trigger\" data-help=\"lente\" aria-label=\"Ayuda: Contrastar una cifra con Lente\" aria-expanded=\"false\" aria-controls=\"section-help-panel\" aria-haspopup=\"dialog\">?</button></div>",
+              "html": "<div class=\"overline\">CAPÍTULO 08 / ANTES DE COMPARTIR, CONTRASTA<button type=\"button\" class=\"section-help-trigger\" data-help=\"lente\" aria-label=\"Ayuda: Contrastar una cifra con Lente\" aria-expanded=\"false\" aria-controls=\"section-help-panel\" aria-haspopup=\"dialog\">?</button></div>",
               "target": [
                 "#lente > .section-head > div > .overline"
               ],
@@ -22204,7 +22972,7 @@
               "all": [],
               "none": [],
               "impact": "serious",
-              "html": "<p>Pega una afirmación o lee una captura. Contrasta su cifra con las publicaciones del INE y llévate una explicación con fuentes.</p>",
+              "html": "<p>Revisa una cifra antes de compartirla: pega una afirmación, identifica su año, población y unidad, y compara el número con la base del INE. Verás el contexto revisado, la referencia y la cuenta. Esto no verifica causas, opiniones ni la autenticidad de una captura.</p>",
               "target": [
                 "#lente > .section-head > p"
               ],
@@ -22526,7 +23294,7 @@
               "impact": "serious",
               "html": "<summary>Guía docente y evaluación</summary>",
               "target": [
-                ".evidence:nth-child(4) > summary"
+                "#metodo > .evidence:nth-child(4) > summary"
               ],
               "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
             },
@@ -23615,6 +24383,134 @@
               "html": "<a class=\"cta cta-ghost\" href=\"data/indicadores.csv\" download=\"\">Tabla de indicadores · CSV ↓</a>",
               "target": [
                 "a[href$=\"indicadores.csv\"]"
+              ],
+              "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+            },
+            {
+              "any": [
+                {
+                  "id": "color-contrast",
+                  "data": {
+                    "contrastRatio": 0,
+                    "fontSize": "8.3pt (11px)",
+                    "fontWeight": "bold",
+                    "messageKey": "bgGradient",
+                    "expectedContrastRatio": "4.5:1"
+                  },
+                  "relatedNodes": [
+                    {
+                      "html": "<body>",
+                      "target": [
+                        "body"
+                      ]
+                    }
+                  ],
+                  "impact": "serious",
+                  "message": "Element's background color could not be determined due to a background gradient"
+                }
+              ],
+              "all": [],
+              "none": [],
+              "impact": "serious",
+              "html": "<div class=\"overline\">CONSULTA / PALABRAS PARA LEER LOS DATOS</div>",
+              "target": [
+                "#glosario > .section-head > div > .overline"
+              ],
+              "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+            },
+            {
+              "any": [
+                {
+                  "id": "color-contrast",
+                  "data": {
+                    "contrastRatio": 0,
+                    "fontSize": "24.8pt (33px)",
+                    "fontWeight": "bold",
+                    "messageKey": "bgGradient",
+                    "expectedContrastRatio": "3:1"
+                  },
+                  "relatedNodes": [
+                    {
+                      "html": "<body>",
+                      "target": [
+                        "body"
+                      ]
+                    }
+                  ],
+                  "impact": "serious",
+                  "message": "Element's background color could not be determined due to a background gradient"
+                }
+              ],
+              "all": [],
+              "none": [],
+              "impact": "serious",
+              "html": "<h2 id=\"glossaryTitle\">Un pequeño <i>glosario.</i></h2>",
+              "target": [
+                "#glossaryTitle"
+              ],
+              "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+            },
+            {
+              "any": [
+                {
+                  "id": "color-contrast",
+                  "data": {
+                    "contrastRatio": 0,
+                    "fontSize": "24.8pt (33px)",
+                    "fontWeight": "normal",
+                    "messageKey": "bgGradient",
+                    "expectedContrastRatio": "3:1"
+                  },
+                  "relatedNodes": [
+                    {
+                      "html": "<body>",
+                      "target": [
+                        "body"
+                      ]
+                    }
+                  ],
+                  "impact": "serious",
+                  "message": "Element's background color could not be determined due to a background gradient"
+                }
+              ],
+              "all": [],
+              "none": [],
+              "impact": "serious",
+              "html": "<i>glosario.</i>",
+              "target": [
+                "#glossaryTitle > i"
+              ],
+              "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+            },
+            {
+              "any": [
+                {
+                  "id": "color-contrast",
+                  "data": {
+                    "contrastRatio": 0,
+                    "fontSize": "11.3pt (15px)",
+                    "fontWeight": "normal",
+                    "messageKey": "bgGradient",
+                    "expectedContrastRatio": "4.5:1"
+                  },
+                  "relatedNodes": [
+                    {
+                      "html": "<body>",
+                      "target": [
+                        "body"
+                      ]
+                    }
+                  ],
+                  "impact": "serious",
+                  "message": "Element's background color could not be determined due to a background gradient"
+                }
+              ],
+              "all": [],
+              "none": [],
+              "impact": "serious",
+              "html": "<p>Vuelve aquí cuando una unidad o un concepto te impida interpretar una cifra.</p>",
+              "target": [
+                "#glosario > .section-head > p"
               ],
               "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
             }

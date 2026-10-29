@@ -128,3 +128,13 @@ select:focus-visible,input:focus-visible,textarea:focus-visible{box-shadow:0 0 0
  .cta-primary::after{display:none}
 }
 @media print{.reading-progress,.orbit-detail{display:none!important}.panel,.feature-panel,.resource-card{box-shadow:none}}
+
+/* Keep the representation anchored while adjacent evidence expands. */
+#historia .data-content{align-items:start}
+.glossary-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:24px;margin:0}
+.glossary-grid>div{border-top:2px solid #8956a6;padding:20px;background:#fff;border-radius:0 0 14px 14px}
+.glossary-grid dt{font-weight:700;color:#412453;margin-bottom:10px}
+.glossary-grid dd{margin:0;font-size:15px;line-height:1.7;color:#494452}
+#liveAvailability{border-left:3px solid #8956a6;padding-left:16px}
+@media(max-width:800px){.glossary-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:520px){.glossary-grid{grid-template-columns:1fr}}
