@@ -11,6 +11,7 @@ const mime = {
   ".css": "text/css; charset=utf-8",
   ".json": "application/json",
   ".ttf": "font/ttf",
+  ".woff2": "font/woff2",
   ".png": "image/png",
   ".pdf": "application/pdf",
   ".csv": "text/csv; charset=utf-8",
@@ -67,9 +68,12 @@ server.listen(0, "127.0.0.1", async () => {
       "territory.cjs",
       "help.cjs",
       "visual.cjs",
+      "critical.cjs",
       ...(process.env.VOCES_CROSS_BROWSER==='1'||process.argv.includes('engines.cjs')?["engines.cjs"]:[]),
     ];
-    for (const name of (process.argv.length>2 ? suites.filter(n=>process.argv.slice(2).includes(n)) : suites)) {
+    const requested=process.argv.slice(2),unknown=requested.filter(name=>!suites.includes(name));
+    if(unknown.length)throw Error('Suites desconocidas: '+unknown.join(', '));
+    for (const name of (requested.length ? suites.filter(n=>requested.includes(n)) : suites)) {
       console.log(`Verificando ${name}`);
       await new Promise((resolve, reject) => {
         const child = spawn(process.execPath, [path.join(__dirname, name)], {

@@ -1,5 +1,5 @@
 {
-  "fecha": "2026-10-29T05:15:18.414Z",
+  "fecha": "2026-10-29T05:38:42.935Z",
   "states": [
     {
       "state": "initial",
@@ -2295,6 +2295,38 @@
                   "id": "color-contrast",
                   "data": {
                     "contrastRatio": 0,
+                    "fontSize": "12.0pt (16px)",
+                    "fontWeight": "bold",
+                    "messageKey": "bgGradient",
+                    "expectedContrastRatio": "4.5:1"
+                  },
+                  "relatedNodes": [
+                    {
+                      "html": "<section id=\"tiempo\" class=\"section section-alt\">",
+                      "target": [
+                        "#tiempo"
+                      ]
+                    }
+                  ],
+                  "impact": "serious",
+                  "message": "Element's background color could not be determined due to a background gradient"
+                }
+              ],
+              "all": [],
+              "none": [],
+              "impact": "serious",
+              "html": "<summary>Ver la cuenta y sus fuentes</summary>",
+              "target": [
+                ".comparison-work > summary"
+              ],
+              "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+            },
+            {
+              "any": [
+                {
+                  "id": "color-contrast",
+                  "data": {
+                    "contrastRatio": 0,
                     "fontSize": "8.3pt (11px)",
                     "fontWeight": "bold",
                     "messageKey": "bgGradient",
@@ -4358,9 +4390,73 @@
               "all": [],
               "none": [],
               "impact": "serious",
+              "html": "<button id=\"liveRetry\" class=\"cta cta-ghost\" type=\"button\">Volver a comprobar conexión</button>",
+              "target": [
+                "#liveRetry"
+              ],
+              "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+            },
+            {
+              "any": [
+                {
+                  "id": "color-contrast",
+                  "data": {
+                    "contrastRatio": 0,
+                    "fontSize": "9.8pt (13px)",
+                    "fontWeight": "bold",
+                    "messageKey": "bgGradient",
+                    "expectedContrastRatio": "4.5:1"
+                  },
+                  "relatedNodes": [
+                    {
+                      "html": "<body>",
+                      "target": [
+                        "body"
+                      ]
+                    }
+                  ],
+                  "impact": "serious",
+                  "message": "Element's background color could not be determined due to a background gradient"
+                }
+              ],
+              "all": [],
+              "none": [],
+              "impact": "serious",
               "html": "<summary>¿Por qué no se crean salas con el servidor de Python?</summary>",
               "target": [
-                "#en-vivo > .evidence > summary"
+                "#en-vivo > .evidence:nth-child(5) > summary"
+              ],
+              "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+            },
+            {
+              "any": [
+                {
+                  "id": "color-contrast",
+                  "data": {
+                    "contrastRatio": 0,
+                    "fontSize": "9.8pt (13px)",
+                    "fontWeight": "bold",
+                    "messageKey": "bgGradient",
+                    "expectedContrastRatio": "4.5:1"
+                  },
+                  "relatedNodes": [
+                    {
+                      "html": "<body>",
+                      "target": [
+                        "body"
+                      ]
+                    }
+                  ],
+                  "impact": "serious",
+                  "message": "Element's background color could not be determined due to a background gradient"
+                }
+              ],
+              "all": [],
+              "none": [],
+              "impact": "serious",
+              "html": "<summary>Organiza la actividad: qué hace cada persona</summary>",
+              "target": [
+                ".live-guide > summary"
               ],
               "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
             },
@@ -4904,7 +5000,7 @@
               "impact": "serious",
               "html": "<summary>Guía docente y evaluación</summary>",
               "target": [
-                "#metodo > .evidence:nth-child(4) > summary"
+                ".evidence:nth-child(4) > summary"
               ],
               "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
             },
@@ -8647,6 +8743,38 @@
                   "id": "color-contrast",
                   "data": {
                     "contrastRatio": 0,
+                    "fontSize": "12.0pt (16px)",
+                    "fontWeight": "bold",
+                    "messageKey": "bgGradient",
+                    "expectedContrastRatio": "4.5:1"
+                  },
+                  "relatedNodes": [
+                    {
+                      "html": "<section id=\"tiempo\" class=\"section section-alt\">",
+                      "target": [
+                        "#tiempo"
+                      ]
+                    }
+                  ],
+                  "impact": "serious",
+                  "message": "Element's background color could not be determined due to a background gradient"
+                }
+              ],
+              "all": [],
+              "none": [],
+              "impact": "serious",
+              "html": "<summary>Ver la cuenta y sus fuentes</summary>",
+              "target": [
+                ".comparison-work > summary"
+              ],
+              "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+            },
+            {
+              "any": [
+                {
+                  "id": "color-contrast",
+                  "data": {
+                    "contrastRatio": 0,
                     "fontSize": "8.3pt (11px)",
                     "fontWeight": "bold",
                     "messageKey": "bgGradient",
@@ -10358,9 +10486,73 @@
               "all": [],
               "none": [],
               "impact": "serious",
+              "html": "<button id=\"liveRetry\" class=\"cta cta-ghost\" type=\"button\">Volver a comprobar conexión</button>",
+              "target": [
+                "#liveRetry"
+              ],
+              "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+            },
+            {
+              "any": [
+                {
+                  "id": "color-contrast",
+                  "data": {
+                    "contrastRatio": 0,
+                    "fontSize": "9.8pt (13px)",
+                    "fontWeight": "bold",
+                    "messageKey": "bgGradient",
+                    "expectedContrastRatio": "4.5:1"
+                  },
+                  "relatedNodes": [
+                    {
+                      "html": "<body>",
+                      "target": [
+                        "body"
+                      ]
+                    }
+                  ],
+                  "impact": "serious",
+                  "message": "Element's background color could not be determined due to a background gradient"
+                }
+              ],
+              "all": [],
+              "none": [],
+              "impact": "serious",
               "html": "<summary>¿Por qué no se crean salas con el servidor de Python?</summary>",
               "target": [
-                "#en-vivo > .evidence > summary"
+                "#en-vivo > .evidence:nth-child(5) > summary"
+              ],
+              "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+            },
+            {
+              "any": [
+                {
+                  "id": "color-contrast",
+                  "data": {
+                    "contrastRatio": 0,
+                    "fontSize": "9.8pt (13px)",
+                    "fontWeight": "bold",
+                    "messageKey": "bgGradient",
+                    "expectedContrastRatio": "4.5:1"
+                  },
+                  "relatedNodes": [
+                    {
+                      "html": "<body>",
+                      "target": [
+                        "body"
+                      ]
+                    }
+                  ],
+                  "impact": "serious",
+                  "message": "Element's background color could not be determined due to a background gradient"
+                }
+              ],
+              "all": [],
+              "none": [],
+              "impact": "serious",
+              "html": "<summary>Organiza la actividad: qué hace cada persona</summary>",
+              "target": [
+                ".live-guide > summary"
               ],
               "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
             },
@@ -10904,7 +11096,7 @@
               "impact": "serious",
               "html": "<summary>Guía docente y evaluación</summary>",
               "target": [
-                "#metodo > .evidence:nth-child(4) > summary"
+                ".evidence:nth-child(4) > summary"
               ],
               "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
             },
@@ -14647,6 +14839,38 @@
                   "id": "color-contrast",
                   "data": {
                     "contrastRatio": 0,
+                    "fontSize": "12.0pt (16px)",
+                    "fontWeight": "bold",
+                    "messageKey": "bgGradient",
+                    "expectedContrastRatio": "4.5:1"
+                  },
+                  "relatedNodes": [
+                    {
+                      "html": "<section id=\"tiempo\" class=\"section section-alt\">",
+                      "target": [
+                        "#tiempo"
+                      ]
+                    }
+                  ],
+                  "impact": "serious",
+                  "message": "Element's background color could not be determined due to a background gradient"
+                }
+              ],
+              "all": [],
+              "none": [],
+              "impact": "serious",
+              "html": "<summary>Ver la cuenta y sus fuentes</summary>",
+              "target": [
+                ".comparison-work > summary"
+              ],
+              "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+            },
+            {
+              "any": [
+                {
+                  "id": "color-contrast",
+                  "data": {
+                    "contrastRatio": 0,
                     "fontSize": "8.3pt (11px)",
                     "fontWeight": "bold",
                     "messageKey": "bgGradient",
@@ -16358,9 +16582,73 @@
               "all": [],
               "none": [],
               "impact": "serious",
+              "html": "<button id=\"liveRetry\" class=\"cta cta-ghost\" type=\"button\">Volver a comprobar conexión</button>",
+              "target": [
+                "#liveRetry"
+              ],
+              "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+            },
+            {
+              "any": [
+                {
+                  "id": "color-contrast",
+                  "data": {
+                    "contrastRatio": 0,
+                    "fontSize": "9.8pt (13px)",
+                    "fontWeight": "bold",
+                    "messageKey": "bgGradient",
+                    "expectedContrastRatio": "4.5:1"
+                  },
+                  "relatedNodes": [
+                    {
+                      "html": "<body>",
+                      "target": [
+                        "body"
+                      ]
+                    }
+                  ],
+                  "impact": "serious",
+                  "message": "Element's background color could not be determined due to a background gradient"
+                }
+              ],
+              "all": [],
+              "none": [],
+              "impact": "serious",
               "html": "<summary>¿Por qué no se crean salas con el servidor de Python?</summary>",
               "target": [
-                "#en-vivo > .evidence > summary"
+                "#en-vivo > .evidence:nth-child(5) > summary"
+              ],
+              "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+            },
+            {
+              "any": [
+                {
+                  "id": "color-contrast",
+                  "data": {
+                    "contrastRatio": 0,
+                    "fontSize": "9.8pt (13px)",
+                    "fontWeight": "bold",
+                    "messageKey": "bgGradient",
+                    "expectedContrastRatio": "4.5:1"
+                  },
+                  "relatedNodes": [
+                    {
+                      "html": "<body>",
+                      "target": [
+                        "body"
+                      ]
+                    }
+                  ],
+                  "impact": "serious",
+                  "message": "Element's background color could not be determined due to a background gradient"
+                }
+              ],
+              "all": [],
+              "none": [],
+              "impact": "serious",
+              "html": "<summary>Organiza la actividad: qué hace cada persona</summary>",
+              "target": [
+                ".live-guide > summary"
               ],
               "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
             },
@@ -16904,7 +17192,7 @@
               "impact": "serious",
               "html": "<summary>Guía docente y evaluación</summary>",
               "target": [
-                "#metodo > .evidence:nth-child(4) > summary"
+                ".evidence:nth-child(4) > summary"
               ],
               "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
             },
@@ -18524,6 +18812,38 @@
               "html": "<a href=\"#fuentes\">Fuentes</a>",
               "target": [
                 "#chapterMenu > a[href$=\"#fuentes\"]"
+              ],
+              "failureSummary": "Fix any of the following:\n  Element's background color could not be determined because it's partially obscured by another element"
+            },
+            {
+              "any": [
+                {
+                  "id": "color-contrast",
+                  "data": {
+                    "contrastRatio": 0,
+                    "fontSize": "12.0pt (16px)",
+                    "fontWeight": "normal",
+                    "messageKey": "elmPartiallyObscured",
+                    "expectedContrastRatio": "4.5:1"
+                  },
+                  "relatedNodes": [
+                    {
+                      "html": "<header class=\"nav-wrap\">",
+                      "target": [
+                        "header"
+                      ]
+                    }
+                  ],
+                  "impact": "serious",
+                  "message": "Element's background color could not be determined because it's partially obscured by another element"
+                }
+              ],
+              "all": [],
+              "none": [],
+              "impact": "serious",
+              "html": "<a href=\"#glosario\">Glosario</a>",
+              "target": [
+                "#chapterMenu > a[href$=\"#glosario\"]"
               ],
               "failureSummary": "Fix any of the following:\n  Element's background color could not be determined because it's partially obscured by another element"
             },
@@ -20580,6 +20900,38 @@
               "html": "<p id=\"compareSummary\" aria-live=\"polite\">De 2018 a 2024, la tasa disminuye de 62,4 % a 59,7 %: -2,7 pp. Son elecciones presidenciales. La diferencia no explica sus causas.</p>",
               "target": [
                 "#compareSummary"
+              ],
+              "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+            },
+            {
+              "any": [
+                {
+                  "id": "color-contrast",
+                  "data": {
+                    "contrastRatio": 0,
+                    "fontSize": "12.0pt (16px)",
+                    "fontWeight": "bold",
+                    "messageKey": "bgGradient",
+                    "expectedContrastRatio": "4.5:1"
+                  },
+                  "relatedNodes": [
+                    {
+                      "html": "<section id=\"tiempo\" class=\"section section-alt\">",
+                      "target": [
+                        "#tiempo"
+                      ]
+                    }
+                  ],
+                  "impact": "serious",
+                  "message": "Element's background color could not be determined due to a background gradient"
+                }
+              ],
+              "all": [],
+              "none": [],
+              "impact": "serious",
+              "html": "<summary>Ver la cuenta y sus fuentes</summary>",
+              "target": [
+                ".comparison-work > summary"
               ],
               "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
             },
@@ -22748,9 +23100,73 @@
               "all": [],
               "none": [],
               "impact": "serious",
+              "html": "<button id=\"liveRetry\" class=\"cta cta-ghost\" type=\"button\">Volver a comprobar conexión</button>",
+              "target": [
+                "#liveRetry"
+              ],
+              "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+            },
+            {
+              "any": [
+                {
+                  "id": "color-contrast",
+                  "data": {
+                    "contrastRatio": 0,
+                    "fontSize": "9.8pt (13px)",
+                    "fontWeight": "bold",
+                    "messageKey": "bgGradient",
+                    "expectedContrastRatio": "4.5:1"
+                  },
+                  "relatedNodes": [
+                    {
+                      "html": "<body>",
+                      "target": [
+                        "body"
+                      ]
+                    }
+                  ],
+                  "impact": "serious",
+                  "message": "Element's background color could not be determined due to a background gradient"
+                }
+              ],
+              "all": [],
+              "none": [],
+              "impact": "serious",
               "html": "<summary>¿Por qué no se crean salas con el servidor de Python?</summary>",
               "target": [
-                "#en-vivo > .evidence > summary"
+                "#en-vivo > .evidence:nth-child(5) > summary"
+              ],
+              "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+            },
+            {
+              "any": [
+                {
+                  "id": "color-contrast",
+                  "data": {
+                    "contrastRatio": 0,
+                    "fontSize": "9.8pt (13px)",
+                    "fontWeight": "bold",
+                    "messageKey": "bgGradient",
+                    "expectedContrastRatio": "4.5:1"
+                  },
+                  "relatedNodes": [
+                    {
+                      "html": "<body>",
+                      "target": [
+                        "body"
+                      ]
+                    }
+                  ],
+                  "impact": "serious",
+                  "message": "Element's background color could not be determined due to a background gradient"
+                }
+              ],
+              "all": [],
+              "none": [],
+              "impact": "serious",
+              "html": "<summary>Organiza la actividad: qué hace cada persona</summary>",
+              "target": [
+                ".live-guide > summary"
               ],
               "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
             },
@@ -23294,7 +23710,7 @@
               "impact": "serious",
               "html": "<summary>Guía docente y evaluación</summary>",
               "target": [
-                "#metodo > .evidence:nth-child(4) > summary"
+                ".evidence:nth-child(4) > summary"
               ],
               "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
             },

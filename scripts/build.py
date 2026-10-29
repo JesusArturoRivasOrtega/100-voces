@@ -11,7 +11,9 @@ carousel=resources/'carrusel'
 if carousel.exists():
  with zipfile.ZipFile(resources/'100_VOCES_Carrusel.zip','w',zipfile.ZIP_DEFLATED) as z:
   for p in sorted(carousel.iterdir()):
-   if p.is_file():z.write(p,p.name)
+   if p.is_file():
+    info=zipfile.ZipInfo(p.name,(2026,1,1,0,0,0));info.compress_type=zipfile.ZIP_DEFLATED;info.external_attr=0o644<<16
+    z.writestr(info,p.read_bytes())
 segments=root/'entregables/video/segmentos.json'
 if segments.exists():
  parts=json.loads(segments.read_text(encoding='utf-8'))

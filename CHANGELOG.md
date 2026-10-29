@@ -52,3 +52,7 @@ El piloto, pruebas manuales con lectores de pantalla/dispositivos físicos y req
 ## Revisión de observaciones · 2026-10-28
 
 Anclaje de puntos, comparación cronológica, explicación de escenarios, diagnóstico de salas, simulación variable, coherencia entre texto y contexto en Lente, materiales fijos identificados y glosario. Regresiones ampliadas y ajuste de espera de movimiento reducido en Chromium. Véase docs/REVISION_OBSERVACIONES.md.
+
+## Auditoría crítica · 2026-10-29
+
+Lente rechaza contextos no cubiertos, negaciones, límites e indicadores ajenos, y reconoce rangos de edad escritos con palabras. Comparador con cuenta y fuentes desplegables. Salas con guía por fase, caducidad, reintento y protección frente a resultados tardíos; ensayo limitado a 500 respuestas. Glosario integrado en navegación, carrusel reproducible y pruebas adversas con rechazo de suites inexistentes. Alcance y pendientes en docs/AUDITORIA_CRITICA.md.

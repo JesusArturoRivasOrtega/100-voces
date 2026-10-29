@@ -138,3 +138,6 @@ select:focus-visible,input:focus-visible,textarea:focus-visible{box-shadow:0 0 0
 #liveAvailability{border-left:3px solid #8956a6;padding-left:16px}
 @media(max-width:800px){.glossary-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
 @media(max-width:520px){.glossary-grid{grid-template-columns:1fr}}
+
+.live-step{background:#eee5fb;border-left:4px solid #78508e;border-radius:8px;padding:18px 22px;line-height:1.65;color:#29213b}
+.live-guide{margin:20px 0}.live-guide li{margin:10px 0;line-height:1.7}.comparison-work{margin-top:20px;line-height:1.7}.comparison-work summary{cursor:pointer;font-weight:700;padding:10px 0}.comparison-work p{font-size:15px}

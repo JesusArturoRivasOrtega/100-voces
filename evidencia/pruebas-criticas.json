@@ -1,0 +1,35 @@
+{
+  "fecha": "2026-10-29T05:40:36.108Z",
+  "resultados": [
+    {
+      "prueba": "Lente ante afirmaciones adversas",
+      "estado": "VERIFICADO",
+      "detalle": "Rechaza mezcla de ámbitos, municipio, aprobación, votos nulos, negación, límites y ausencia de cifra; distingue tasa destino de magnitud del cambio y declara consultas manuales."
+    },
+    {
+      "prueba": "Cálculo visible y trazabilidad",
+      "estado": "VERIFICADO",
+      "detalle": "La comparación 2018–2024 muestra −2,7 pp y −4,3 % con dos fuentes; el mismo año muestra cero y una sola fuente."
+    },
+    {
+      "prueba": "Ensayo acotado y guía por fase",
+      "estado": "VERIFICADO",
+      "detalle": "500 respuestas máximas, límite desactiva añadir, revelar orienta la conversación y siguiente ronda vuelve a cero."
+    },
+    {
+      "prueba": "Recuperación de disponibilidad",
+      "estado": "VERIFICADO",
+      "detalle": "Servicio 503 explicado sin ocultar el ensayo; reintento posterior restaura disponibilidad."
+    },
+    {
+      "prueba": "Respuesta tardía tras salir",
+      "estado": "VERIFICADO",
+      "detalle": "Una respuesta de red retenida y liberada después de salir no reabre la sala, no anuncia recepción en otra vista y no genera errores JavaScript."
+    },
+    {
+      "prueba": "Accesibilidad de estados nuevos",
+      "estado": "VERIFICADO",
+      "detalle": "Cálculo desplegado y sala cerrada sin infracciones axe; cuatro anchos sin desbordamiento; ninguna excepción JavaScript."
+    }
+  ]
+}

@@ -240,6 +240,9 @@
             "#compareSummary"
           ],
           [
+            ".comparison-work > summary"
+          ],
+          [
             "#territorio > .section-head > div > .overline"
           ],
           [
@@ -309,7 +312,13 @@
             "#liveAvailability"
           ],
           [
-            "#en-vivo > .evidence > summary"
+            "#liveRetry"
+          ],
+          [
+            "#en-vivo > .evidence:nth-child(5) > summary"
+          ],
+          [
+            ".live-guide > summary"
           ],
           [
             "#liveCreate"
@@ -360,7 +369,7 @@
             ".lesson-intro"
           ],
           [
-            "#metodo > .evidence:nth-child(4) > summary"
+            ".evidence:nth-child(4) > summary"
           ],
           [
             "#journey > summary"
@@ -707,6 +716,9 @@
             "#compareSummary"
           ],
           [
+            ".comparison-work > summary"
+          ],
+          [
             "#territorio > .section-head > div > .overline"
           ],
           [
@@ -776,7 +788,13 @@
             "#liveAvailability"
           ],
           [
-            "#en-vivo > .evidence > summary"
+            "#liveRetry"
+          ],
+          [
+            "#en-vivo > .evidence:nth-child(5) > summary"
+          ],
+          [
+            ".live-guide > summary"
           ],
           [
             "#liveCreate"
@@ -827,7 +845,7 @@
             ".lesson-intro"
           ],
           [
-            "#metodo > .evidence:nth-child(4) > summary"
+            ".evidence:nth-child(4) > summary"
           ],
           [
             "#journey > summary"

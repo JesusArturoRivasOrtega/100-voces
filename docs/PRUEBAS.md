@@ -4,7 +4,7 @@ Ejecución reproducible: npm ci y npm test. El ejecutor inicia y detiene su serv
 
 ## Base
 
-Fecha UTC: 2026-10-29T05:14:46.268Z
+Fecha UTC: 2026-10-29T05:38:15.965Z
 
 | Prueba | Resultado observado |
 |---|---|
@@ -26,7 +26,7 @@ Fecha UTC: 2026-10-29T05:14:46.268Z
 
 ## Ampliaciones
 
-Fecha UTC: 2026-10-29T05:15:02.899Z
+Fecha UTC: 2026-10-29T05:38:32.239Z
 
 | Prueba | Resultado observado |
 |---|---|
@@ -42,7 +42,7 @@ Fecha UTC: 2026-10-29T05:15:02.899Z
 
 ## Versión 1.1
 
-Fecha UTC: 2026-10-29T05:15:28.314Z
+Fecha UTC: 2026-10-29T05:38:50.621Z
 
 | Prueba | Resultado observado |
 |---|---|
@@ -55,7 +55,7 @@ Fecha UTC: 2026-10-29T05:15:28.314Z
 
 ## En vivo y Lente
 
-Fecha UTC: 2026-10-29T05:16:05.007Z
+Fecha UTC: 2026-10-29T05:39:21.088Z
 
 | Prueba | Resultado observado |
 |---|---|
@@ -67,18 +67,18 @@ Fecha UTC: 2026-10-29T05:16:05.007Z
 
 ## Carga local
 
-Fecha UTC: 2026-10-29T05:16:07.161Z
+Fecha UTC: 2026-10-29T05:39:22.850Z
 
 | Prueba | Resultado observado |
 |---|---|
-| Carga local 50 identificadores | Misma IP, lotes concurrentes de 50 y 50 lecturas concurrentes; sin respuestas perdidas. 79 ms en SQLite local; no mide capacidad de producción. |
-| Carga local 100 identificadores | Misma IP, lotes concurrentes de 50 y 50 lecturas concurrentes; sin respuestas perdidas. 146 ms en SQLite local; no mide capacidad de producción. |
-| Carga local 500 identificadores | Misma IP, lotes concurrentes de 50 y 50 lecturas concurrentes; sin respuestas perdidas. 749 ms en SQLite local; no mide capacidad de producción. |
+| Carga local 50 identificadores | Misma IP, lotes concurrentes de 50 y 50 lecturas concurrentes; sin respuestas perdidas. 100 ms en SQLite local; no mide capacidad de producción. |
+| Carga local 100 identificadores | Misma IP, lotes concurrentes de 50 y 50 lecturas concurrentes; sin respuestas perdidas. 105 ms en SQLite local; no mide capacidad de producción. |
+| Carga local 500 identificadores | Misma IP, lotes concurrentes de 50 y 50 lecturas concurrentes; sin respuestas perdidas. 470 ms en SQLite local; no mide capacidad de producción. |
 | Abuso, concurrencia y limpieza | Límite individual sin bloquear otros participantes; 500 exactos, actualización a capacidad completa, control duplicado rechazado, límite por bytes y borrado de respuestas vencidas. |
 
 ## Resiliencia
 
-Fecha UTC: 2026-10-29T05:18:04.386Z
+Fecha UTC: 2026-10-29T05:39:37.291Z
 
 | Prueba | Resultado observado |
 |---|---|
@@ -89,7 +89,7 @@ Fecha UTC: 2026-10-29T05:18:04.386Z
 
 ## Educación
 
-Fecha UTC: 2026-10-29T05:18:15.527Z
+Fecha UTC: 2026-10-29T05:39:46.057Z
 
 | Prueba | Resultado observado |
 |---|---|
@@ -99,7 +99,7 @@ Fecha UTC: 2026-10-29T05:18:15.527Z
 
 ## Cobertura territorial
 
-Fecha UTC: 2026-10-29T05:18:26.179Z
+Fecha UTC: 2026-10-29T05:39:52.146Z
 
 | Prueba | Resultado observado |
 |---|---|
@@ -116,7 +116,7 @@ Fecha UTC: 2026-10-28T15:00:43.972Z
 
 ## Ayudas por sección
 
-Fecha UTC: 2026-10-29T05:18:49.957Z
+Fecha UTC: 2026-10-29T05:40:10.819Z
 
 | Prueba | Resultado observado |
 |---|---|
@@ -127,7 +127,7 @@ Fecha UTC: 2026-10-29T05:18:49.957Z
 
 ## Refinamiento visual
 
-Fecha UTC: 2026-10-29T05:19:03.013Z
+Fecha UTC: 2026-10-29T05:40:21.770Z
 
 | Prueba | Resultado observado |
 |---|---|
@@ -135,12 +135,25 @@ Fecha UTC: 2026-10-29T05:19:03.013Z
 | Efectos finitos y progreso visual | Los efectos terminan; el indicador de desplazamiento no registra aprendizaje ni altera Mi recorrido. |
 | Composición adaptable | Doce secciones en ocho anchos sin desbordamiento; 24 capturas de escritorio y móvil para revisión visual; sin errores JavaScript. |
 
+## Auditoría crítica
+
+Fecha UTC: 2026-10-29T05:40:36.108Z
+
+| Prueba | Resultado observado |
+|---|---|
+| Lente ante afirmaciones adversas | Rechaza mezcla de ámbitos, municipio, aprobación, votos nulos, negación, límites y ausencia de cifra; distingue tasa destino de magnitud del cambio y declara consultas manuales. |
+| Cálculo visible y trazabilidad | La comparación 2018–2024 muestra −2,7 pp y −4,3 % con dos fuentes; el mismo año muestra cero y una sola fuente. |
+| Ensayo acotado y guía por fase | 500 respuestas máximas, límite desactiva añadir, revelar orienta la conversación y siguiente ronda vuelve a cero. |
+| Recuperación de disponibilidad | Servicio 503 explicado sin ocultar el ensayo; reintento posterior restaura disponibilidad. |
+| Respuesta tardía tras salir | Una respuesta de red retenida y liberada después de salir no reabre la sala, no anuncia recepción en otra vista y no genera errores JavaScript. |
+| Accesibilidad de estados nuevos | Cálculo desplegado y sala cerrada sin infracciones axe; cuatro anchos sin desbordamiento; ninguna excepción JavaScript. |
+
 ## Accesibilidad automática
 
 6 estados examinados con axe-core: initial, expanded, resources, mobile-menu, ages, evidence-and-cards. Cero infracciones detectadas. La suite devuelve salida de error si aparecen infracciones.
 
 ## Alcance y límites
 
-56 grupos de comprobaciones funcionales aprobados. Las doce suites predeterminadas incluyen comprobaciones API además de estos grupos; la suite engines se ejecuta por separado. El piloto sigue sin ejecutarse. Las pruebas no certifican WCAG ni sustituyen lector de pantalla, Safari en dispositivos físicos ni teléfonos reales. La ampliación de texto se comprobó como tamaño base 200% a 640px; no equivale a una auditoría completa de zoom. Las tasas se comparan con referencias locales ya cotejadas, no se vuelven a extraer del PDF oficial en cada ejecución.
+62 grupos de comprobaciones funcionales aprobados. Las trece suites predeterminadas incluyen comprobaciones API además de estos grupos; la suite engines se ejecuta por separado. El piloto sigue sin ejecutarse. Las pruebas no certifican WCAG ni sustituyen lector de pantalla, Safari en dispositivos físicos ni teléfonos reales. La ampliación de texto se comprobó como tamaño base 200% a 640px; no equivale a una auditoría completa de zoom. Las tasas se comparan con referencias locales ya cotejadas, no se vuelven a extraer del PDF oficial en cada ejecución.
 
 Se revisaron capturas móviles/escritorio, PNG, PDF, DOCX exportado por Word y presentación renderizada. Los archivos generados se conservan en evidencia/. El informe de video está en entregables/video/verificacion_video.json.

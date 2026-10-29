@@ -1,0 +1,16 @@
+[
+  {
+    "font": "manrope",
+    "ttf_bytes": 164700,
+    "woff2_bytes": 53720,
+    "glyphs": 742,
+    "glyphs_and_variable_axes_preserved": true
+  },
+  {
+    "font": "dmsans",
+    "ttf_bytes": 240164,
+    "woff2_bytes": 88712,
+    "glyphs": 486,
+    "glyphs_and_variable_axes_preserved": true
+  }
+]

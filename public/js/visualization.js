@@ -53,6 +53,9 @@ Voces.initVisuals = function (data) {
     const a = V.year(data, $("compareFrom").value),
       b = V.year(data, $("compareTo").value);
     $("compareSummary").textContent = V.compareText(a, b);
+    const difference=V.delta(a.participation,b.participation),relative=V.relative(a.participation,b.participation);
+    $('compareCalculation').textContent=`Puntos porcentuales: ${V.fmt(b.participation)} − ${V.fmt(a.participation)} = ${V.fmt(difference)} pp. Cambio relativo: (${V.fmt(b.participation)} − ${V.fmt(a.participation)}) ÷ ${V.fmt(a.participation)} × 100 = ${relative===null?'no definido':V.fmt(relative)+' %'}. La primera cuenta resta tasas; la segunda mide el cambio respecto al valor inicial.`;
+    $('compareSources').replaceChildren(...[a,b].filter((row,i,all)=>all.findIndex(r=>r.year===row.year)===i).map(row=>{const link=document.createElement('a');link.href=row.source;link.textContent=`${row.year}: ${V.fmt(row.participation)} % · ${row.source_title}, p. ${row.source_page}`;link.target='_blank';link.rel='noopener noreferrer';return link;}));
     $("compareBars")
       .querySelectorAll("button")
       .forEach((el) => {

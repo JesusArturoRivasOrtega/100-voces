@@ -1,21 +1,21 @@
 {
-  "fecha": "2026-10-29T05:16:07.161Z",
+  "fecha": "2026-10-29T05:39:22.850Z",
   "entorno": "SQLite en memoria con el mismo controlador de producción. No es un piloto humano ni una prueba de carga del alojamiento.",
   "resultados": [
     {
       "prueba": "Carga local 50 identificadores",
       "estado": "VERIFICADO",
-      "detalle": "Misma IP, lotes concurrentes de 50 y 50 lecturas concurrentes; sin respuestas perdidas. 79 ms en SQLite local; no mide capacidad de producción."
+      "detalle": "Misma IP, lotes concurrentes de 50 y 50 lecturas concurrentes; sin respuestas perdidas. 100 ms en SQLite local; no mide capacidad de producción."
     },
     {
       "prueba": "Carga local 100 identificadores",
       "estado": "VERIFICADO",
-      "detalle": "Misma IP, lotes concurrentes de 50 y 50 lecturas concurrentes; sin respuestas perdidas. 146 ms en SQLite local; no mide capacidad de producción."
+      "detalle": "Misma IP, lotes concurrentes de 50 y 50 lecturas concurrentes; sin respuestas perdidas. 105 ms en SQLite local; no mide capacidad de producción."
     },
     {
       "prueba": "Carga local 500 identificadores",
       "estado": "VERIFICADO",
-      "detalle": "Misma IP, lotes concurrentes de 50 y 50 lecturas concurrentes; sin respuestas perdidas. 749 ms en SQLite local; no mide capacidad de producción."
+      "detalle": "Misma IP, lotes concurrentes de 50 y 50 lecturas concurrentes; sin respuestas perdidas. 470 ms en SQLite local; no mide capacidad de producción."
     },
     {
       "prueba": "Abuso, concurrencia y limpieza",

@@ -49,6 +49,7 @@ Voces.initNavigation = function () {
     metodo: "Actividad · 15 minutos",
     recursos: "Materiales para llevar",
     fuentes: "Fuentes y metodología",
+    glosario: "Glosario · entiende los términos",
   };
   const sections = Object.keys(labels).map((id) => document.getElementById(id));
   let queued = false;

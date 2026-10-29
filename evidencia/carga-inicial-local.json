@@ -1,20 +1,20 @@
 {
-  "fecha": "2026-10-29T05:18:09.355Z",
+  "fecha": "2026-10-29T05:39:41.082Z",
   "nota": "Una carga local sin caché de este contexto; no es una medición de usuarios reales.",
   "navigation": [
     {
-      "domInteractiveMs": 120,
-      "domContentLoadedMs": 1654.5999999940395
+      "domInteractiveMs": 78,
+      "domContentLoadedMs": 842
     }
   ],
   "resources": [
     {
       "path": "/public/styles.css",
-      "bytes": 45544
+      "bytes": 45542
     },
     {
       "path": "/public/features.css",
-      "bytes": 20088
+      "bytes": 20446
     },
     {
       "path": "/public/js/data.js",
@@ -25,12 +25,12 @@
       "bytes": 3196
     },
     {
-      "path": "/public/js/visualization.js",
-      "bytes": 7434
-    },
-    {
       "path": "/public/js/narrative.js",
       "bytes": 1903
+    },
+    {
+      "path": "/public/js/visualization.js",
+      "bytes": 8306
     },
     {
       "path": "/public/js/contrasts.js",
@@ -50,7 +50,7 @@
     },
     {
       "path": "/public/js/navigation.js",
-      "bytes": 2888
+      "bytes": 2940
     },
     {
       "path": "/public/js/app.js",
@@ -58,11 +58,11 @@
     },
     {
       "path": "/public/js/live.js",
-      "bytes": 37206
+      "bytes": 38785
     },
     {
       "path": "/public/js/lens.js",
-      "bytes": 34114
+      "bytes": 35294
     },
     {
       "path": "/public/js/polish.js",
@@ -81,12 +81,12 @@
       "bytes": 2718
     },
     {
-      "path": "/public/fonts/dmsans.ttf",
-      "bytes": 240464
+      "path": "/public/fonts/dmsans.woff2",
+      "bytes": 89012
     },
     {
-      "path": "/public/fonts/manrope.ttf",
-      "bytes": 165000
+      "path": "/public/fonts/manrope.woff2",
+      "bytes": 54020
     },
     {
       "path": "/api/live/health",

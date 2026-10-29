@@ -1,12 +1,12 @@
 @font-face {
   font-family: Manrope;
-  src: url("fonts/manrope.ttf") format("truetype");
+  src: url("fonts/manrope.woff2") format("woff2");
   font-weight: 200 800;
   font-display: swap;
 }
 @font-face {
   font-family: "DM Sans";
-  src: url("fonts/dmsans.ttf") format("truetype");
+  src: url("fonts/dmsans.woff2") format("woff2");
   font-weight: 100 1000;
   font-display: swap;
 }

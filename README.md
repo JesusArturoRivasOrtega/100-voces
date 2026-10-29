@@ -74,7 +74,7 @@ Por defecto las pruebas usan Microsoft Edge instalado. En otro entorno, ejecutar
 
 El flujo de GitHub Actions hace esa preparación en Linux; su resultado se comprueba en Actions después del envío.
 
-`npm test` inicia su propio servidor en un puerto disponible y ejecuta doce suites. El alcance y los resultados actuales están en [PRUEBAS](docs/PRUEBAS.md), [auditoría final](docs/AUDITORIA_FINAL.md) y `evidencia/`. No es certificación WCAG ni prueba con usuarios.
+`npm test` inicia su propio servidor en un puerto disponible y ejecuta trece suites. El alcance y los resultados actuales están en [PRUEBAS](docs/PRUEBAS.md), [auditoría final](docs/AUDITORIA_FINAL.md) y `evidencia/`. No es certificación WCAG ni prueba con usuarios.
 
 El contenido mantenido está en `public/`; los módulos nuevos se editan en `lib/client/`. La API está en `lib/live-service.mjs`. `dist/` contiene exclusivamente el Worker generado. Los datos se editan en `public/data/ccpc_resumen.json`. `scripts/build.py` sincroniza bundles, CSV, materiales y HTML autónomo; `npm run build` también construye el servidor. `scripts/prepare.py` es histórico y no se debe ejecutar como build.
 
@@ -100,3 +100,7 @@ Las tasas son transcripciones de publicaciones oficiales, no cálculos desde la 
 Pendientes reales: realizar el piloto, probar lectores de pantalla y teléfonos físicos, validar Safari en dispositivos reales, comprobar acceso para evaluadores y completar registro/cartas con evidencias del equipo. No se firmaron documentos ni se envió la postulación.
 
 Manrope y DM Sans incluyen sus licencias SIL OFL. No se usa identidad institucional. Las salas utilizan identificadores temporales y hashes para control de abuso; consulta [privacidad](docs/SEGURIDAD_PRIVACIDAD.md). El equipo debe verificar autoría y permisos antes de cualquier cesión.
+
+## Revisión crítica
+
+La auditoría transversal y las limitaciones están en [AUDITORIA_CRITICA](docs/AUDITORIA_CRITICA.md). Las pruebas adversas de Lente, recuperación de salas y cálculos explicados se ejecutan con `node tests/run.cjs critical.cjs`. Un nombre de suite incorrecto devuelve error; nunca cuenta como prueba aprobada.
