@@ -12,10 +12,11 @@
   "enlaces": "67 referencias locales verificadas en los dos HTML y documentación; sin destinos ausentes, anclas rotas ni identificadores HTML duplicados.",
   "materiales": "ZIP de carrusel (6 entradas) y kit (11 entradas) sin errores CRC; SHA-256 del MP4 coincide con la verificación audiovisual conservada.",
   "visual": "Inspeccionadas capturas actuales de portada en escritorio/móvil, Sala en vivo móvil y Lente en escritorio; sin solapamientos visibles en esas capturas.",
-  "github": "Flujo ampliado con tipos, Chromium/Firefox/WebKit e integración Worker/D1. Consultar Actions para el resultado del commit enviado.",
+  "github": "GitHub Actions 41202724388: todos los pasos aprobaron para 0d684ef, incluida instalación limpia, tipos, build, trece suites, Firefox/WebKit y Worker/D1. La corrección posterior del empaquetador tiene su propia ejecución en Actions.",
   "piloto": "Pendiente; no se registraron participantes ni resultados inventados.",
   "lectores_y_telefonos": "Pendientes; WebKit automatizado no equivale a Safari físico.",
   "acceso": "El acceso de evaluadores al sitio y video sigue pendiente. Subir a GitHub no modifica los permisos ni despliega el sitio.",
   "envio": "No se firmaron cartas ni se envió la postulación.",
-  "limite": "Pruebas automatizadas y revisión visual no certifican ausencia de defectos, capacidad de producción ni aprendizaje humano."
+  "limite": "Pruebas automatizadas y revisión visual no certifican ausencia de defectos, capacidad de producción ni aprendizaje humano.",
+  "empaque": "Corregida normalización de CRLF a LF en TypeScript, ESM, SQL y shell; el manifiesto se coteja contra los bytes del índice Git antes de confirmar el commit."
 }

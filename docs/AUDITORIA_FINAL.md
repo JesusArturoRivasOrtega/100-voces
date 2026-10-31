@@ -8,6 +8,8 @@ Se reejecutaron con éxito la construcción, TypeScript, las trece suites predet
 
 Se comprobaron 67 referencias locales, la integridad de los ZIP de materiales y la huella del video contra su verificación existente. Se inspeccionaron capturas actuales de portada móvil/escritorio, Sala en vivo móvil y Lente en escritorio. La evidencia fechada está en `evidencia/verificacion-entrega.json`, `evidencia/integracion-worker.json` y [PRUEBAS.md](PRUEBAS.md).
 
+La comparación del paquete con Git detectó cinco archivos TypeScript/ESM con CRLF que producían huellas distintas a sus versiones LF en el repositorio. Se corrigió la normalización del empaquetador, se regeneró el ZIP y se cotejó cada entrada versionada contra el contenido preparado para Git.
+
 GitHub Actions ahora incluye comprobación de tipos, los tres motores y la integración Worker/D1. Se corrigieron las instrucciones de despliegue y el recuento antiguo de suites. La publicación del código en GitHub no modifica el acceso privado del sitio ni acredita el acceso del jurado; permanecen los pendientes humanos y de producción enumerados en este documento.
 
 ## Cumplimiento del prompt maestro: no equivale a un cierre del 100 %

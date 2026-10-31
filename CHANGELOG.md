@@ -5,6 +5,7 @@
 - Reejecución de las pruebas funcionales, accesibilidad, Firefox/WebKit e integración del Worker con D1 local; informes y manifiesto de entrega actualizados con sus resultados.
 - GitHub Actions comprueba también tipos, Firefox/WebKit y salas en el Worker construido, además de las trece suites existentes.
 - Documentación de despliegue corregida para reflejar las trece suites y el comando de inicialización local que conserva las salas.
+- El empaquetador normaliza también TypeScript, módulos ESM, SQL y shell a LF antes de calcular las huellas; el manifiesto coincide con los archivos versionados en GitHub desde Windows.
 
 ### Refinamiento visual · 28 de octubre de 2026
 
