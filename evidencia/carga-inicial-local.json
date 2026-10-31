@@ -1,10 +1,10 @@
 {
-  "fecha": "2026-10-29T05:39:41.082Z",
+  "fecha": "2026-10-31T12:45:04.694Z",
   "nota": "Una carga local sin caché de este contexto; no es una medición de usuarios reales.",
   "navigation": [
     {
-      "domInteractiveMs": 78,
-      "domContentLoadedMs": 842
+      "domInteractiveMs": 187.30000001192093,
+      "domContentLoadedMs": 1507.699999988079
     }
   ],
   "resources": [
@@ -14,7 +14,7 @@
     },
     {
       "path": "/public/features.css",
-      "bytes": 20446
+      "bytes": 20303
     },
     {
       "path": "/public/js/data.js",

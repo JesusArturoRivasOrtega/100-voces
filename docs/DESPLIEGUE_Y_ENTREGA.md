@@ -10,12 +10,14 @@
 
 1. Node 22.13+ y Python 3; `npm ci` instala versiones fijadas.
 2. `npm run build` sincroniza contenido y construye Worker; `npx tsc --noEmit` comprueba tipos.
-3. `npm test` inicia un servidor efímero y ejecuta diez suites. La API probada es el mismo controlador, con SQLite local.
+3. `npm test` inicia un servidor efímero y ejecuta trece suites. La API probada es el mismo controlador, con SQLite local.
 4. Para Firefox/WebKit: `npx playwright install firefox webkit`, después `npm run test:engines`. Por defecto las otras suites usan Edge; CI establece `VOCES_BROWSER=chromium` e instala Chromium.
-5. Para Worker local, aplicar `drizzle/0000_cheerful_shen.sql` a D1 local antes de `npm start`. No aplicar migraciones remotas a ciegas; el esquema de 1.3 no cambia respecto de 1.2. En Windows detener Wrangler antes de reconstruir.
+5. Para Worker local, ejecutar `npm run db:local` y después `npm start -- --port 8787`. La inicialización conserva las salas existentes. Con el servidor activo, `node tests/worker.cjs` verifica salud, participantes, recuperación y video. No aplicar migraciones remotas a ciegas; el esquema de 1.3 no cambia respecto de 1.2. En Windows detener Wrangler antes de reconstruir.
 6. `python scripts/report.py` actualiza el reporte desde evidencia ejecutada; `python scripts/package.py` genera ZIP y checksum en la carpeta superior.
 
 El empaquetador excluye secretos `.env*`/`.dev.vars*`, `.git`, dependencias, caches, bases locales y salidas intermedias. Conserva configuración no secreta necesaria para reconstruir. El MP4 se incluye una vez en `public/recursos/`. Verifica cada archivo contra el manifiesto dentro del ZIP.
+
+GitHub Actions instala desde el lockfile, comprueba tipos, construye la aplicación, ejecuta las trece suites y Firefox/WebKit, y prueba el Worker construido con D1 local. El resultado de cada envío debe comprobarse en Actions; una ejecución anterior no acredita un commit posterior.
 
 ## Publicación y acceso
 

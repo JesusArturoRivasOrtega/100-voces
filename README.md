@@ -72,7 +72,7 @@ npm test
 
 Por defecto las pruebas usan Microsoft Edge instalado. En otro entorno, ejecutar `npx playwright install chromium` y establecer `VOCES_BROWSER=chromium` antes de `npm test`. En PowerShell: `$env:VOCES_BROWSER='chromium'`; en bash: `VOCES_BROWSER=chromium npm test`. Para la comprobación adicional con Firefox y WebKit: `npx playwright install firefox webkit` y `npm run test:engines`. WebKit automatizado no equivale a Safari físico.
 
-El flujo de GitHub Actions hace esa preparación en Linux; su resultado se comprueba en Actions después del envío.
+El flujo de GitHub Actions prepara Chromium, Firefox y WebKit en Linux, comprueba tipos, construye la aplicación y ejecuta las suites funcionales y la integración del Worker con D1 local. Su resultado se comprueba en Actions después del envío.
 
 `npm test` inicia su propio servidor en un puerto disponible y ejecuta trece suites. El alcance y los resultados actuales están en [PRUEBAS](docs/PRUEBAS.md), [auditoría final](docs/AUDITORIA_FINAL.md) y `evidencia/`. No es certificación WCAG ni prueba con usuarios.
 

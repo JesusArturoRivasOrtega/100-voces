@@ -1,5 +1,11 @@
 # Cambios
 
+### Revisión final · 31 de octubre de 2026
+
+- Reejecución de las pruebas funcionales, accesibilidad, Firefox/WebKit e integración del Worker con D1 local; informes y manifiesto de entrega actualizados con sus resultados.
+- GitHub Actions comprueba también tipos, Firefox/WebKit y salas en el Worker construido, además de las trece suites existentes.
+- Documentación de despliegue corregida para reflejar las trece suites y el comando de inicialización local que conserva las salas.
+
 ### Refinamiento visual · 28 de octubre de 2026
 
 - Portada con iluminación suave, relieve y detalle orbital decorativo; navegación con indicador de desplazamiento.

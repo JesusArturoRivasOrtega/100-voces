@@ -2,6 +2,14 @@
 
 Corte: 26 de octubre de 2026. Se conserva el proyecto existente, su identidad visual y sus fuentes. Este documento distingue implementación, pruebas de software y validación humana. No certifica ausencia de defectos ni aprobación institucional.
 
+## Revisión técnica final · 31 de octubre de 2026
+
+Se reejecutaron con éxito la construcción, TypeScript, las trece suites predeterminadas, Firefox/WebKit y la integración del Worker construido con D1 local. Los reportes actualizados reúnen 62 grupos funcionales; la API también pasó sus pruebas de aislamiento, permisos, caducidad, concurrencia y cupo local. `npm audit` no informó vulnerabilidades conocidas.
+
+Se comprobaron 67 referencias locales, la integridad de los ZIP de materiales y la huella del video contra su verificación existente. Se inspeccionaron capturas actuales de portada móvil/escritorio, Sala en vivo móvil y Lente en escritorio. La evidencia fechada está en `evidencia/verificacion-entrega.json`, `evidencia/integracion-worker.json` y [PRUEBAS.md](PRUEBAS.md).
+
+GitHub Actions ahora incluye comprobación de tipos, los tres motores y la integración Worker/D1. Se corrigieron las instrucciones de despliegue y el recuento antiguo de suites. La publicación del código en GitHub no modifica el acceso privado del sitio ni acredita el acceso del jurado; permanecen los pendientes humanos y de producción enumerados en este documento.
+
 ## Cumplimiento del prompt maestro: no equivale a un cierre del 100 %
 
 El adjunto revisado en esta continuación tiene el mismo SHA-256 que el prompt anterior: `0db62682e60747909fccc51e0948e973caa5e0153ae9df3cd439107694625474`. La versión 1.3 implementa el núcleo técnico y contiene materiales, pruebas y documentación; siguen existiendo validaciones pendientes y propuestas opcionales sin implementar. No debe presentarse como cumplimiento literal de todos los pasos.

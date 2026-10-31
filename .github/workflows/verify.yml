@@ -7,6 +7,9 @@ permissions:
 jobs:
   verify:
     runs-on: ubuntu-latest
+    timeout-minutes: 20
+    env:
+      VOCES_BROWSER: chromium
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-node@v4
@@ -17,8 +20,29 @@ jobs:
         with:
           python-version: '3.12'
       - run: npm ci
-      - run: npx playwright install --with-deps chromium
+      - run: npx playwright install --with-deps chromium firefox webkit
+      - run: npx tsc --noEmit
       - run: npm run build
       - run: npm test
-        env:
-          VOCES_BROWSER: chromium
+      - run: npm run test:engines
+      - name: Verificar Worker construido y D1 local
+        shell: bash
+        run: |
+          npm run db:local
+          npm start -- --port 8787 > "$RUNNER_TEMP/100-voces-worker.log" 2>&1 &
+          worker_pid=$!
+          trap 'kill "$worker_pid" 2>/dev/null || true' EXIT
+          ready=false
+          for attempt in {1..60}; do
+            if curl --fail --silent http://127.0.0.1:8787/api/live/health > /dev/null; then
+              ready=true
+              break
+            fi
+            if ! kill -0 "$worker_pid" 2>/dev/null; then break; fi
+            sleep 1
+          done
+          if [ "$ready" != true ]; then
+            cat "$RUNNER_TEMP/100-voces-worker.log"
+            exit 1
+          fi
+          node tests/worker.cjs

@@ -4,8 +4,8 @@
     "sha256": "1704a9ed48cdcab7049b3a81a61ff0ae24d35bd1326410da15ad07476670394b"
   },
   ".github/workflows/verify.yml": {
-    "bytes": 530,
-    "sha256": "77051924b4b56fa99f9ed7081c078e3e02501578a0ad4e39e94daec3f8f941b3"
+    "bytes": 1374,
+    "sha256": "6d550130a52778ee198ad48f049a6432732dce306b0d9e5925fe2f91f9d716ea"
   },
   ".gitignore": {
     "bytes": 614,
@@ -40,8 +40,8 @@
     "sha256": "b62d9f49a9a36be3646f346801bd903ae0a062b4c2034a5aa247d3a934360022"
   },
   "CHANGELOG.md": {
-    "bytes": 5066,
-    "sha256": "1237af24f7dc0d9d1a39cfe6d6929b9f9ac270a54229225efad2346328d30eb1"
+    "bytes": 5557,
+    "sha256": "33a9784540593537fbfc9c5fcc9e2517720b8661efc685f9198be67564483ee4"
   },
   "cloudflare-env.d.ts": {
     "bytes": 99,
@@ -64,8 +64,8 @@
     "sha256": "32324bc26559265367744622c2cb78ed84ec2a5fc9b8aa3e6cf2428611dd586d"
   },
   "docs/AUDITORIA_FINAL.md": {
-    "bytes": 12839,
-    "sha256": "307ad48b87e98b4746f0d5cf9f0215fa8aaab1ffbf74a599706762f93900a808"
+    "bytes": 14012,
+    "sha256": "d4fddc89d18e2ba1b954323b76712cf99f21bb6d897103eff2a79feb56f11e71"
   },
   "docs/AUDITORIA_Y_ARQUITECTURA.md": {
     "bytes": 4220,
@@ -76,8 +76,8 @@
     "sha256": "8a55aba2068f5ed91c28b842ced46177ffc82172af21b70d27a12042d6a40228"
   },
   "docs/DESPLIEGUE_Y_ENTREGA.md": {
-    "bytes": 2834,
-    "sha256": "504c174b4b39716420047121b9161982b29695b524884f555794696ff2e4e085"
+    "bytes": 3267,
+    "sha256": "7137c236ceff23d953f8b64d4ee8df6e3dbb4847cd7782edc8b8da73a272a9d4"
   },
   "docs/DISENO_Y_COMPONENTES.md": {
     "bytes": 4672,
@@ -96,8 +96,8 @@
     "sha256": "09eef3b94d4fdbb8273bd791e37b8a1828f22275dfdc4b87911d5fb6800967dd"
   },
   "docs/PRUEBAS.md": {
-    "bytes": 10164,
-    "sha256": "67e1f484d058b76a14278f5430668667cf547481f44cee05d5eaf03f15bc91b7"
+    "bytes": 10165,
+    "sha256": "29b2ebcc8af53f0791ee495a3f8fc1373da6e6bad5236aa5aa464c3ad2110c84"
   },
   "docs/REVISION_OBSERVACIONES.md": {
     "bytes": 2315,
@@ -317,15 +317,15 @@
   },
   "evidencia/accesibilidad.json": {
     "bytes": 1023506,
-    "sha256": "ddcbaf1b1d3ea037b72196a3955517e0622b5f3b13153b4f4d58c98ee311b127"
+    "sha256": "4abc6ac77952a23f317bb92e3a142dc192281a73fe4976ee576ed12c0e1644ed"
   },
   "evidencia/auditoria-dependencias.json": {
     "bytes": 366,
     "sha256": "521cd855bff1e889ee54e892d07f3f46ca101e80be703247f420d7cf0edd748d"
   },
   "evidencia/carga-inicial-local.json": {
-    "bytes": 1778,
-    "sha256": "ece7fa20ec41dc30613e19ce38ec6706095d3c963ee2a8455df8859199fd5889"
+    "bytes": 1808,
+    "sha256": "8217b870d12299cb57a179c2811c7278e92b1f7d63beb8990f3528213960394b"
   },
   "evidencia/fuentes-optimizadas.json": {
     "bytes": 300,
@@ -333,63 +333,63 @@
   },
   "evidencia/integracion-worker.json": {
     "bytes": 469,
-    "sha256": "0c922824f8f23d38303ffc4da7d5b7d9bce7ef2149c4a50acdec4dd4a43f7225"
+    "sha256": "2943cd2f274f13bd13ccedef3ae4daa8e0d0e17c81444b931ee92b66e960a36a"
   },
   "evidencia/pruebas-ayuda.json": {
     "bytes": 960,
-    "sha256": "458a07af3edbac679c40c010b8b16aebf22cedf4fdbca7f0dcdaa5cac023feb4"
+    "sha256": "967a3296f170bad2e5b0bd858e8cfd242c7dbf1f36c73fca2c80bbb7402e6bbb"
   },
   "evidencia/pruebas-carga-local.json": {
-    "bytes": 1273,
-    "sha256": "b60b4e5d681a6d3b99cd9a8ee01f8957cbc2d905ceaf6323ede9809ccee30bd7"
+    "bytes": 1274,
+    "sha256": "8dce72d0252324cd1505991dbbe9d63000eeab11eee05ac8ea3eff7ff4e3f422"
   },
   "evidencia/pruebas-criticas.json": {
     "bytes": 1518,
-    "sha256": "f40538aa8fa571379351d202a8da889073d6884f0a8598ecddbe0de02beb62f7"
+    "sha256": "08f23e7c7f27b70061e6c57db07259f63fe48db0e9a10c7471c537b8b4bbbbd3"
   },
   "evidencia/pruebas-educacion.json": {
     "bytes": 885,
-    "sha256": "3a24b81db6f53f5230e13b6c9054962733a9734b7255bbf8821c5d9c71f808b4"
+    "sha256": "eb5a127893dcd5e14c800233804c8bfb73ad54e4d6505ef7cbbdaba768a07904"
   },
   "evidencia/pruebas-mejoras.json": {
     "bytes": 1499,
-    "sha256": "6f4d373e3b796a3b7dd32e97333da037e32ff958c0f5f5bf8d0c8c20ab519e13"
+    "sha256": "21412f52d65fe83d6ed274c8d293ef2816f95e27b1c1e91dc27ed635986d263e"
   },
   "evidencia/pruebas-motores.json": {
     "bytes": 627,
-    "sha256": "5b0b22852d53323f1a405070209b7becb15564b6b7ed5556c9ab62123bcc1e93"
+    "sha256": "1b603b4e1e8f05906a4ac68e71a224905078310d900c4d128b77bc7143630dea"
   },
   "evidencia/pruebas-resiliencia.json": {
     "bytes": 935,
-    "sha256": "b78d09fe9b0fd112d3d12624c7e2a66d13629d43fbc292d37c74af87d70714c5"
+    "sha256": "bc12a01dd3078045cfb527362706aee5cba0764dae88453733d2d5a899be5e4b"
   },
   "evidencia/pruebas-territorio.json": {
     "bytes": 386,
-    "sha256": "82c5b5835ab502a2d2952830ca1a5c2a7c740570b3284835491089069a8f6e84"
+    "sha256": "64a405a464e508766cf05cd1d670baf67ffd758220a2e30a75b2c624acc7f7df"
   },
   "evidencia/pruebas-version-1.1.json": {
     "bytes": 1007,
-    "sha256": "c65ec1d5ff42cd261029282284e16f3592d9dbb5a32d222ea3ed2b5e9644d768"
+    "sha256": "c3f4768713a661cf9c596a1749353839fefb7d03eb532b70116bde52fbcef30f"
   },
   "evidencia/pruebas-version-1.2.json": {
     "bytes": 1167,
-    "sha256": "badabb3af0647b6c171c5a72fd3ce8279b5ed3957b48d6b60039d43b0b3537fb"
+    "sha256": "3f1f63923227f18e5696365957090e726246e1669e6e34ee039b00e063769eac"
   },
   "evidencia/pruebas-visuales.json": {
     "bytes": 788,
-    "sha256": "3de3102b3f8a1c771a35fe689245c58d1e3ac893a92dc09e01846a4265bfd993"
+    "sha256": "9cfafb157a15cfb17a9bda7e2d5c1f0cf537e7530efe6bb112563bbc3fe02524"
   },
   "evidencia/pruebas.json": {
     "bytes": 3396,
-    "sha256": "f5b1e91a11845821cb8353a8991e817b82aaf0d6d02934bed78f66be9c6ee5c7"
+    "sha256": "299b7351923a5e13f8ddf9b293d1a003558e23fbc9f6a8b91a21d722894c9aff"
   },
   "evidencia/publicacion.json": {
     "bytes": 654,
     "sha256": "2adf336d124e652a484d0b0df8a8688cfab6fca8773d831e3cc40e3fa1d67c66"
   },
   "evidencia/verificacion-entrega.json": {
-    "bytes": 773,
-    "sha256": "caf7bab79b1f345f6df2ee046913d37e22081aac793f5ed1fcd37f0bb0ae6b32"
+    "bytes": 2218,
+    "sha256": "264134b9316e8d4f091e3a6d198c1bf7eaca9db3a96485610409444774b74d48"
   },
   "fuentes/EDADES_2024.md": {
     "bytes": 1746,
@@ -696,8 +696,8 @@
     "sha256": "3091e5f9ee7864948eab8393609db6324cabec2f376b52814aa0830a7569e1c1"
   },
   "README.md": {
-    "bytes": 7740,
-    "sha256": "8e9a026033be507023e9901ed7be65f7c0b2a8dcf2615c47ab7f1cc2c2a81616"
+    "bytes": 7871,
+    "sha256": "a01c3ada4c717dec5a596129d63a007c413867907d765aa3f84d987c90d2cf23"
   },
   "requirements-editoriales.txt": {
     "bytes": 102,
