@@ -14,7 +14,7 @@
 
 Repositorio: https://github.com/JesusArturoRivasOrtega/100-voces
 
-Sitio público: despliegue en Cloudflare Workers con D1; URL pendiente de confirmar en la cuenta del equipo. Un archivo en el repositorio no acredita por sí mismo reproducción pública ni aceptación del alojamiento por el concurso.
+Sitio: https://cien-voces-mexico.100-voces.workers.dev, desplegado en Cloudflare Workers con D1. Consultar la verificación de acceso en `evidencia/publicacion.json`. Un archivo en el repositorio no acredita por sí mismo reproducción pública ni aceptación del alojamiento por el concurso.
 
 Antes de enviar: comprobar inscripción y elegibilidad, cartas firmadas, nombre del equipo/eje y acceso de lectura del video desde una sesión ajena. La plantilla `entregables/kit/ENTREGA.md` no sustituye esas evidencias. No se han firmado documentos ni enviado la postulación. El piloto está preparado, pero aún no se ha realizado.
 

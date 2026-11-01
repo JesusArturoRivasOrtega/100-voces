@@ -4,7 +4,7 @@ No se completaron ni simularon estos pasos. El equipo debe adjuntar su evidencia
 
 - Confirmar inscripción previa, elegibilidad, integrantes y nombre administrativo. La convocatoria consultada indica cierre de inscripción el 15 de octubre y recepción de entregables el 31 de octubre de 2026 a las 23:59; comprobar aclaraciones oficiales antes del envío.
 - Revisar autoría, licencias y uso de recursos; obtener firmas reales de todos los integrantes en las cartas oficiales. Las plantillas no son documentos firmados.
-- Verificar acceso para evaluadores. La nueva URL de Cloudflare debe publicarse y comprobarse desde una sesión ajena; código en GitHub no acredita ese acceso.
+- Acceso técnico público verificado en https://cien-voces-mexico.100-voces.workers.dev con navegadores sin sesión y dos participantes. Confirmar además su apertura desde la red y dispositivos del jurado antes de la exposición.
 - Alojar el MP4 en uno de los servicios admitidos por la convocatoria y comprobar reproducción desde una sesión ajena. El archivo local y la URL del sitio no acreditan ese requisito.
 - Ejecutar el piloto y registrar resultados sin identificadores personales; verificar teléfonos físicos y lector de pantalla.
 - Ensayar PPTX, PDF, sonido, subtítulos y respaldos en el equipo real de exposición.

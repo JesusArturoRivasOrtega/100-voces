@@ -21,6 +21,8 @@ GitHub Actions instala desde el lockfile, comprueba tipos, construye la aplicaci
 
 ## Publicación y acceso
 
+Worker desplegado: https://cien-voces-mexico.100-voces.workers.dev. Versión de Cloudflare: `202ad5ad-0c31-494f-b170-af9e1b59fb61`. La base D1 del proyecto está creada y su migración aplicada. La comprobación pública se registra por separado en `evidencia/publicacion.json`.
+
 1. Ejecutar `npx wrangler login` y autorizar Cloudflare desde el navegador.
 2. Crear una base con `npx wrangler d1 create cien-voces-mexico`. Si ya existe, consultar `npx wrangler d1 list` y reutilizarla.
 3. Copiar el identificador devuelto a `d1_databases[0].database_id` en `wrangler.json`. El UUID de ceros es exclusivamente para desarrollo y el publicador lo rechaza.
@@ -29,7 +31,7 @@ GitHub Actions instala desde el lockfile, comprueba tipos, construye la aplicaci
 
 El despliegue usa `workers_dev: true` y no exige una cuenta de visitante. Los invitados entran con código; el token del presentador sigue siendo privado. Un dominio propio puede asociarse posteriormente en Cloudflare; no es necesario comprarlo para usar el sitio.
 
-La nueva base comienza sin salas: las sesiones temporales del alojamiento anterior no se transfieren. El alojamiento anterior no se elimina automáticamente. La migración no está publicada hasta obtener y comprobar la nueva URL. No guardar tokens de Cloudflare en Git; el identificador de base no es una credencial.
+La nueva base comienza sin salas: las sesiones temporales del alojamiento anterior no se transfieren. El alojamiento anterior no se elimina automáticamente. Un despliegue aceptado no sustituye la comprobación de acceso HTTPS y de las salas. No guardar tokens de Cloudflare en Git; el identificador de base no es una credencial.
 
 Referencias: [configuración de Wrangler](https://developers.cloudflare.com/workers/wrangler/configuration/) y [migraciones D1](https://developers.cloudflare.com/d1/reference/migrations/).
 

@@ -1,7 +1,8 @@
-// Run separately against a built Worker with migrated local D1: VOCES_WORKER_URL=http://127.0.0.1:8787 node tests/worker.cjs
+// Run against a built Worker with migrated D1 (local or public URL): VOCES_WORKER_URL=http://127.0.0.1:8787 node tests/worker.cjs
 const assert=require('node:assert/strict'),fs=require('node:fs'),path=require('node:path');
 const {chromium,browserOptions}=require('./runtime.cjs');
 const origin=process.env.VOCES_WORKER_URL||'http://127.0.0.1:8787';
+const remote=!['localhost','127.0.0.1','[::1]'].includes(new URL(origin).hostname);
 async function verifyRoutes(){
  const home=await fetch(origin);assert.equal(home.status,200);assert.match(await home.text(),/100 VOCES/);
  const unknown=await fetch(origin+'/api/unavailable');assert.equal(unknown.status,404);assert.ok(unknown.headers.get('content-type').includes('application/json'));
@@ -14,5 +15,5 @@ async function verifyRoutes(){
  await host.waitForFunction(()=>document.getElementById('liveCount').textContent==='2');await host.locator('#liveReveal').click();for(const p of guests)await p.locator('#liveEvidence').waitFor({state:'visible'});
  await host.reload();await host.locator('#liveResume').click();await host.locator('#liveNext').click();for(const p of guests)await p.locator('#liveRound').filter({hasText:'RONDA 2'}).waitFor();await host.locator('#liveClose').click();assert.deepEqual(errors,[]);
  const response=await fetch(origin+'/recursos/100_VOCES_Pitch_1080p_2m50.mp4');assert.equal(response.status,200);assert.ok(Number(response.headers.get('content-length'))>8000000);
- fs.writeFileSync(path.join(__dirname,'../evidencia/integracion-worker.json'),JSON.stringify({fecha:new Date().toISOString(),entorno:'Worker construido, Wrangler local y D1 persistente; no prueba de producción',estado:'VERIFICADO',comprobaciones:['Health 200','32 entidades en aplicación servida por Worker','Presentador y dos navegadores participantes','Respuestas sincronizadas, evidencia, reanudación, avance y cierre','Video servido 200 y tamaño >8 MB','Sin errores JavaScript en presentador']},null,2));console.log('Worker + D1: salud, aplicación, dos participantes, recuperación, controles y video OK');
+ fs.writeFileSync(path.join(__dirname,remote?'../evidencia/integracion-produccion.json':'../evidencia/integracion-worker.json'),JSON.stringify({fecha:new Date().toISOString(),url:origin,entorno:remote?'Worker público y D1 remota; prueba de producción':'Worker construido, Wrangler local y D1 persistente; no prueba de producción',estado:'VERIFICADO',comprobaciones:['Health 200','32 entidades en aplicación servida por Worker','Presentador y dos navegadores participantes','Respuestas sincronizadas, evidencia, reanudación, avance y cierre','Video servido 200 y tamaño >8 MB','Sin errores JavaScript en presentador']},null,2));console.log('Worker + D1: salud, aplicación, dos participantes, recuperación, controles y video OK');
 }finally{await browser.close();}})().catch(e=>{console.error(e);process.exitCode=1;});

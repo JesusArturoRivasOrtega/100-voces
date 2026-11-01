@@ -40,8 +40,8 @@
     "sha256": "f1022beb3a31883518b52c860eabdfc23b138606ba3579b49f23fc1013735af0"
   },
   "docs/AUDITORIA_FINAL.md": {
-    "bytes": 15064,
-    "sha256": "0cd83b7e441b6cbc2a745c087f7994cd1106be631a7e35bb56c975b4869f1c7f"
+    "bytes": 15084,
+    "sha256": "583e2aa58939ff62a4809ebcc121ec9438bb7a9adc840ef8311a9be52f6557d4"
   },
   "docs/AUDITORIA_Y_ARQUITECTURA.md": {
     "bytes": 4220,
@@ -52,8 +52,8 @@
     "sha256": "8a55aba2068f5ed91c28b842ced46177ffc82172af21b70d27a12042d6a40228"
   },
   "docs/DESPLIEGUE_Y_ENTREGA.md": {
-    "bytes": 4207,
-    "sha256": "3b4f199325a7ee77e8968ca2839b562671a1092956c708b4a712749bcdcad2ba"
+    "bytes": 4499,
+    "sha256": "efcc4e42d77c52aaabc5b4955ec0aba7bdf7ee6b432fbe84fbc99ad2f60148fb"
   },
   "docs/DISENO_Y_COMPONENTES.md": {
     "bytes": 4672,
@@ -68,8 +68,8 @@
     "sha256": "3af962e8daadd3e227f266e52da64e4540e880236ab1f0efc73385a744775899"
   },
   "docs/PENDIENTES_HUMANOS.md": {
-    "bytes": 1684,
-    "sha256": "fb2cb411d4a1ad26f572e9e800f29a77e5960b6bad609d1a5cc2241b8f613464"
+    "bytes": 1755,
+    "sha256": "04e0d91c790c45e7c0258a3571828f2a1d39e4e4b54bfe31419ef86ab0494cc0"
   },
   "docs/PRUEBAS.md": {
     "bytes": 10164,
@@ -307,6 +307,10 @@
     "bytes": 300,
     "sha256": "89fc88ddf6a43e9743f1a08ae9f7b2ffc7db57f24e571f256e60815ff2fc6a7b"
   },
+  "evidencia/integracion-produccion.json": {
+    "bytes": 503,
+    "sha256": "9583686b31b2683e9f731bc51935c22f8409b65f944a04f1e60a89ad91682182"
+  },
   "evidencia/integracion-worker.json": {
     "bytes": 469,
     "sha256": "9af509b6635743ef499b5a1cbbb21e1fdf5e156d737a3b57d786f9130debcfd5"
@@ -359,9 +363,13 @@
     "bytes": 3396,
     "sha256": "a74efc23d08667652b1b100f6018931940885a5db85fd0b256651ef45778f146"
   },
+  "evidencia/publicacion.json": {
+    "bytes": 770,
+    "sha256": "dd48de8d07d8c55a7115636d3e115c26c33bd7037a8d5a622882535b01e4b28a"
+  },
   "evidencia/verificacion-entrega.json": {
-    "bytes": 1680,
-    "sha256": "44fdc23d79b81a6873987543b56b4f3a2f5ed167e9ec3571998ec70b24194b8b"
+    "bytes": 1738,
+    "sha256": "ab194d6e815553c3ce78b116bbdaba7b44eef8e15a024c1680b65680f91b997e"
   },
   "fuentes/EDADES_2024.md": {
     "bytes": 1746,
@@ -412,8 +420,8 @@
     "sha256": "07e3c66fd72819c902ce536e98378729d777c14f8ba5bdd3d223112131aaf9bb"
   },
   "LEEME_ENTREGA.md": {
-    "bytes": 2306,
-    "sha256": "511f1fd9ec9c6879b38e37c447200db7ff37ff9da3ff4acb3d210d7bc2608c4b"
+    "bytes": 2364,
+    "sha256": "560833e5371934926075d8f2d2bf90cdf46344a708e9ddc3380ed7583c4df940"
   },
   "lib/client/lens-entry.js": {
     "bytes": 11937,
@@ -648,8 +656,8 @@
     "sha256": "3091e5f9ee7864948eab8393609db6324cabec2f376b52814aa0830a7569e1c1"
   },
   "README.md": {
-    "bytes": 7899,
-    "sha256": "4ef6d5c1768431c77d2ea2764c9208e0c403955a8e05f2885fa914a8f0ed7d09"
+    "bytes": 7923,
+    "sha256": "e9c63d4956370c0ebca2cd41cf005f579c9be5f81c67d4ecfefeef41aa09a91e"
   },
   "requirements-editoriales.txt": {
     "bytes": 102,
@@ -768,8 +776,8 @@
     "sha256": "4423c4dc0ce2faaedef6636807beb5f2ed00855379933a2453fc14caddff7369"
   },
   "tests/worker.cjs": {
-    "bytes": 3219,
-    "sha256": "bd865a00b4c56863d94582a69e31c77a2fc29c8fba6e2fc3b80c341a70562536"
+    "bytes": 3429,
+    "sha256": "947e84f059beb887383991dd00fb8e311de4d08f5a2ea9695d7b97214ed22ca6"
   },
   "tsconfig.json": {
     "bytes": 723,
@@ -785,6 +793,6 @@
   },
   "wrangler.json": {
     "bytes": 436,
-    "sha256": "1a25f3048ed07cfc7e18dd8c8b4f4a2cc92862d8ffd8f6e02f716d74c2f37ff9"
+    "sha256": "1d6eeb1d6f58269c4df8f0f4878a6c3cdc1c1836ae194b6038fa90695d98d2bd"
   }
 }

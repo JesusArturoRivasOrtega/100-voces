@@ -16,7 +16,7 @@ python -m http.server 8765 --bind 127.0.0.1
 
 Visita http://127.0.0.1:8765/public/ . Esta modalidad sirve archivos: funcionan los capítulos, Lente por texto y el ensayo ficticio, pero no crea salas compartidas. No requiere instalar paquetes.
 
-El despliegue público utiliza Cloudflare Workers y D1. La configuración está en `wrangler.json`; consulta [publicación](docs/DESPLIEGUE_Y_ENTREGA.md). La nueva URL se confirma al publicar en la cuenta del equipo.
+El despliegue utiliza Cloudflare Workers y D1: [100 VOCES](https://cien-voces-mexico.100-voces.workers.dev). La configuración está en `wrangler.json`; consulta el estado y las instrucciones de [publicación](docs/DESPLIEGUE_Y_ENTREGA.md).
 
 ## Salas compartidas en local
 

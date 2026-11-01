@@ -1,0 +1,13 @@
+{
+  "fecha": "2026-11-01T02:29:05.192295+00:00",
+  "url": "https://cien-voces-mexico.100-voces.workers.dev",
+  "estado": "PUBLICADO Y VERIFICADO",
+  "proveedor": "Cloudflare Workers y D1",
+  "version_worker": "202ad5ad-0c31-494f-b170-af9e1b59fb61",
+  "migraciones": "0000_cheerful_shen.sql aplicada en D1 remota",
+  "acceso": "HTTPS público sin sesión de visitante",
+  "prueba": "tests/worker.cjs contra la URL pública; salida 0",
+  "evidencia": "integracion-produccion.json",
+  "observacion": "El subdominio presentó fallos TLS durante su activación inicial; la comprobación posterior pasó sin desactivar validación TLS.",
+  "limites": "No es una prueba de carga ni un piloto con usuarios reales. No se trasladaron salas temporales del alojamiento anterior."
+}

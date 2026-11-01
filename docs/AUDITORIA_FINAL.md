@@ -4,7 +4,7 @@
 
 La versión actual usa un Worker directo, recursos estáticos y D1. Se retiraron la plantilla de alojamiento anterior, sus adaptadores de autenticación y conexiones sin uso, y las dependencias de renderizado que no necesitaba la aplicación. `wrangler.json` reemplaza esa configuración; `npm run deploy` aplica las migraciones y publica una vez configurada la base del equipo.
 
-La migración local y la publicación remota se verifican por separado. La nueva URL pública queda pendiente hasta autenticar la cuenta de Cloudflare y completar el despliegue. Los informes anteriores que siguen en este documento describen sus propias revisiones; la evidencia actual está en `evidencia/verificacion-entrega.json`.
+La migración local y la publicación remota se verifican por separado. El Worker y D1 ya se desplegaron en la cuenta del equipo; el estado de acceso público está en `evidencia/publicacion.json`. Los informes anteriores que siguen en este documento describen sus propias revisiones; la evidencia actual está en `evidencia/verificacion-entrega.json`.
 
 Corte: 26 de octubre de 2026. Se conserva el proyecto existente, su identidad visual y sus fuentes. Este documento distingue implementación, pruebas de software y validación humana. No certifica ausencia de defectos ni aprobación institucional.
 

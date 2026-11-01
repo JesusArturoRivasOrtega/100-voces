@@ -1,0 +1,14 @@
+{
+  "fecha": "2026-11-01T02:28:50.295Z",
+  "url": "https://cien-voces-mexico.100-voces.workers.dev",
+  "entorno": "Worker público y D1 remota; prueba de producción",
+  "estado": "VERIFICADO",
+  "comprobaciones": [
+    "Health 200",
+    "32 entidades en aplicación servida por Worker",
+    "Presentador y dos navegadores participantes",
+    "Respuestas sincronizadas, evidencia, reanudación, avance y cierre",
+    "Video servido 200 y tamaño >8 MB",
+    "Sin errores JavaScript en presentador"
+  ]
+}
