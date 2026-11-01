@@ -16,8 +16,8 @@
     "sha256": "a3909ac0447c469fda12c57374993be70f47ce73e49fd3124678c7c047f2214d"
   },
   "100_VOCES_ABRIR.html": {
-    "bytes": 607747,
-    "sha256": "3738ae4798d1d6edbec83e89f38f18782ba584481717aed7c2a8e75a65820721"
+    "bytes": 607664,
+    "sha256": "a7a901b659fc188fed84b5eced64d008aa0904f09afd4c924c0b4be69ea47b5e"
   },
   "CHANGELOG.md": {
     "bytes": 6125,
@@ -488,8 +488,8 @@
     "sha256": "8c9400144060efd88e8771dadce1c61e99a0350c1b5595398bdd3cc97534cfee"
   },
   "public/index.html": {
-    "bytes": 49253,
-    "sha256": "84404fa308bbd5645294cf8ab7a472c726dbdbc594d7272d4a6e72789ceaccc1"
+    "bytes": 49170,
+    "sha256": "2b79e64286be4e4875737194fec433cc23554047c38cb6c4b6359cf4c4ad5093"
   },
   "public/js/app.js": {
     "bytes": 6545,
