@@ -1,5 +1,12 @@
 # Cambios
 
+### Migración de alojamiento
+
+- Worker directo con recursos estáticos y D1; configuración independiente en `wrangler.json`.
+- Retirada de la plantilla anterior, autenticación y conectores sin uso.
+- Publicación mediante `npm run deploy`, con comprobación de configuración y migraciones D1.
+- Enlaces de exportación adaptados al dominio desde el que se abre la aplicación.
+
 ### Revisión final · 31 de octubre de 2026
 
 - Reejecución de las pruebas funcionales, accesibilidad, Firefox/WebKit e integración del Worker con D1 local; informes y manifiesto de entrega actualizados con sus resultados.
@@ -34,7 +41,7 @@
 ## 1.2.0 · 25 de octubre de 2026
 
 - 100 VOCES EN VIVO: salas por código/QR, tres rondas, controles del presentador, resumen y demostración local.
-- API Vinext y almacenamiento D1 con caducidad, validación y controles de acceso por sala.
+- API HTTP y almacenamiento D1 con caducidad, validación y controles de acceso por sala.
 - Lente Ciudadana: lectura local de capturas, contraste numérico confirmado, explicación con fuentes y ficha PNG.
 - Estados de carga, reconexión y caducidad; accesibilidad y diseño adaptable.
 - Fuentes estáticas trasladadas a `public/`; `dist/` ahora contiene la compilación del Worker.

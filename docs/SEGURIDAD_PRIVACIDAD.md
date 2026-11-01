@@ -5,11 +5,11 @@
 | Componente | Tratamiento | Retención / límites |
 |---|---|---|
 | Exploración, cuestionario, recorrido | Datos públicos y respuestas en memoria del navegador | Se pierden al recargar; no se transmiten al servidor |
-| Lente | Texto e imagen procesados en el dispositivo, OCR servido por el mismo sitio | Sin carga de imagen a IA; archivos de OCR pueden quedar en caché del navegador |
+| Lente | Texto e imagen procesados en el dispositivo, OCR servido por el mismo sitio | Sin carga de imagen a servicios externos; archivos de OCR pueden quedar en caché del navegador |
 | Sala compartida | Código, rondas, respuesta numérica, hash de identificador aleatorio | Caducidad lógica de dos horas; borrado posterior durante actividad de API |
 | Presentador | Secreto aleatorio en sessionStorage, hash en servidor | No se incluye en QR ni enlace de participante |
 | Protección de abuso | Hash de IP y ventana temporal; hash del participante | No almacena IP en claro; plataforma puede tener logs propios |
-| Publicación | Autorización de Sites separada de la aplicación | Sitio privado exige permisos de plataforma |
+| Publicación | Acceso público mediante Cloudflare Workers | Controles de presentador protegidos por token; invitados por código |
 
 No se solicitan nombres, correos, afiliación o intención de voto. Esto no equivale a ausencia total de datos personales: identificadores temporales e información técnica requieren tratamiento responsable. No se garantiza anonimato frente al proveedor. No hay publicidad, analítica de terceros ni perfiles políticos.
 
@@ -29,6 +29,6 @@ Los límites son defensas básicas; no impiden ataques distribuidos, enumeració
 
 ## Dependencias
 
-Se actualizaron Next, React/RSC y herramientas compatibles de Vinext/Vite/Cloudflare ante avisos conocidos. Se fijan versiones y lockfile; no se utilizó `audit fix --force`. Los overrides de Undici, fflate y esbuild transitivo corrigen avisos que la resolución superior arrastraba. Resultado final en `evidencia/auditoria-dependencias.json`; volver a ejecutar `npm audit` durante mantenimiento porque los avisos cambian.
+Se fijan versiones y lockfile. El servidor utiliza un Worker directo; las dependencias del framework anterior se retiraron. Resultado de la auditoría en `evidencia/auditoria-dependencias.json`; volver a ejecutar `npm audit` durante mantenimiento porque los avisos cambian.
 
 También se revisan dependencias de desarrollo: algunas intervienen en el bundle del servidor. Cero avisos en una consulta no certifica seguridad futura. Credenciales, tokens y bases locales se excluyen de Git y del paquete.

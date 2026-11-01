@@ -1,10 +1,10 @@
 {
-  "fecha": "2026-10-31T12:45:04.694Z",
+  "fecha": "2026-11-01T01:58:53.945Z",
   "nota": "Una carga local sin caché de este contexto; no es una medición de usuarios reales.",
   "navigation": [
     {
-      "domInteractiveMs": 187.30000001192093,
-      "domContentLoadedMs": 1507.699999988079
+      "domInteractiveMs": 233.20000004768372,
+      "domContentLoadedMs": 1411.300000011921
     }
   ],
   "resources": [
@@ -62,7 +62,7 @@
     },
     {
       "path": "/public/js/lens.js",
-      "bytes": 35294
+      "bytes": 35366
     },
     {
       "path": "/public/js/polish.js",

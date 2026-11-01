@@ -7,14 +7,14 @@
 5. **Pitch:** `public/recursos/100_VOCES_Pitch_1080p_2m50.mp4`. Video 1080p, 170 segundos. Transcripción y VTT en `public/recursos/`; SRT en `entregables/video/`.
 6. **Kit docente:** `public/recursos/100_VOCES_Kit_Docente.pdf` y `.zip`; originales editables y registro vacío en `entregables/kit/`.
 7. **Carrusel:** cinco PNG 1080×1350 en `public/recursos/carrusel/`, con textos accesibles; ZIP en `public/recursos/100_VOCES_Carrusel.zip`.
-8. **Código y pruebas:** `lib/`, `app/`, `db/`, `drizzle/`, `public/js/`, `public/styles.css`, `tests/`, `package.json`, `package-lock.json` y `scripts/`.
+8. **Código y pruebas:** `lib/`, `worker/`, `db/`, `drizzle/`, `public/js/`, `public/styles.css`, `tests/`, `package.json`, `package-lock.json` y `scripts/`.
 9. **Datos:** `public/data/ccpc_resumen.json`, CSV y fuentes documentales en `fuentes/`.
 10. **Auditoría y pendientes:** `docs/AUDITORIA_FINAL.md`, `docs/PENDIENTES_HUMANOS.md`, `docs/SEGURIDAD_PRIVACIDAD.md`.
 11. **Verificación:** `evidencia/`, `docs/PRUEBAS.md` y `MANIFIESTO_SHA256.json`.
 
 Repositorio: https://github.com/JesusArturoRivasOrtega/100-voces
 
-Sitio: https://cien-voces-mexico.arthojust.chatgpt.site . Conserva acceso privado del propietario hasta que se cambie explícitamente. El enlace al video hereda esos permisos; un archivo en el repositorio no acredita por sí mismo reproducción pública ni aceptación del alojamiento por el concurso.
+Sitio público: despliegue en Cloudflare Workers con D1; URL pendiente de confirmar en la cuenta del equipo. Un archivo en el repositorio no acredita por sí mismo reproducción pública ni aceptación del alojamiento por el concurso.
 
 Antes de enviar: comprobar inscripción y elegibilidad, cartas firmadas, nombre del equipo/eje y acceso de lectura del video desde una sesión ajena. La plantilla `entregables/kit/ENTREGA.md` no sustituye esas evidencias. No se han firmado documentos ni enviado la postulación. El piloto está preparado, pero aún no se ha realizado.
 

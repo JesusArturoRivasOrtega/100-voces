@@ -4,7 +4,7 @@
 
 **Estática:** servir `public/` por HTTP, o abrir `100_VOCES_ABRIR.html`. Incluye exploración, contraste de texto y sala de demostración. El OCR necesita HTTP(S) y sus archivos `public/vendor/ocr/`. Para descargas junto al archivo autónomo conservar `public/recursos/`.
 
-**Con salas compartidas:** construir y desplegar el Worker Vinext/Cloudflare con D1 `DB`. `dist/` es salida generada, nunca la fuente editable. `.openai/hosting.json` conserva identidad y binding. No crear otro sitio para esta actualización.
+**Con salas compartidas:** construir y desplegar el Worker directo de Cloudflare con D1 `DB`. `dist/` es salida generada, nunca la fuente editable. `wrangler.json` configura el Worker, los recursos estáticos y la base de datos. `worker/index.ts` dirige las solicitudes a la API y a los recursos.
 
 ## Construcción reproducible
 
@@ -21,9 +21,17 @@ GitHub Actions instala desde el lockfile, comprueba tipos, construye la aplicaci
 
 ## Publicación y acceso
 
-El sitio asociado es https://cien-voces-mexico.arthojust.chatgpt.site y conserva acceso privado del propietario. GitHub y el sitio tienen permisos independientes. La evidencia de despliegue anterior conserva fecha y commit; no demuestra que cambios locales posteriores estén publicados.
+1. Ejecutar `npx wrangler login` y autorizar Cloudflare desde el navegador.
+2. Crear una base con `npx wrangler d1 create cien-voces-mexico`. Si ya existe, consultar `npx wrangler d1 list` y reutilizarla.
+3. Copiar el identificador devuelto a `d1_databases[0].database_id` en `wrangler.json`. El UUID de ceros es exclusivamente para desarrollo y el publicador lo rechaza.
+4. Ejecutar `npm run build` y después `npm run deploy`. Se aplican las migraciones pendientes en D1 y se publica el Worker construido. No utilizar una base de otro proyecto.
+5. Abrir la URL `workers.dev` que devuelve Cloudflare, comprobar `/api/live/health` y probar una sala desde dos sesiones independientes.
 
-El flujo Sites prepara y empuja el commit exacto, empaqueta su build y publica esa versión conservando audiencia. En GitHub se envía el mismo código. Tras publicar, comprobar estado terminal y `/api/live/health` con acceso autorizado. No guardar tokens en archivos ni manifiestos.
+El despliegue usa `workers_dev: true` y no exige una cuenta de visitante. Los invitados entran con código; el token del presentador sigue siendo privado. Un dominio propio puede asociarse posteriormente en Cloudflare; no es necesario comprarlo para usar el sitio.
+
+La nueva base comienza sin salas: las sesiones temporales del alojamiento anterior no se transfieren. El alojamiento anterior no se elimina automáticamente. La migración no está publicada hasta obtener y comprobar la nueva URL. No guardar tokens de Cloudflare en Git; el identificador de base no es una credencial.
+
+Referencias: [configuración de Wrangler](https://developers.cloudflare.com/workers/wrangler/configuration/) y [migraciones D1](https://developers.cloudflare.com/d1/reference/migrations/).
 
 Para revertir, publicar el último commit verificado con sus dependencias y build; preservar D1. No se necesita revertir el esquema para 1.3. Validar recursos, OCR y sala después de revertir.
 

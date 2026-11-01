@@ -4,7 +4,7 @@ Ejecución reproducible: npm ci y npm test. El ejecutor inicia y detiene su serv
 
 ## Base
 
-Fecha UTC: 2026-10-31T12:43:02.494Z
+Fecha UTC: 2026-11-01T01:56:45.198Z
 
 | Prueba | Resultado observado |
 |---|---|
@@ -26,7 +26,7 @@ Fecha UTC: 2026-10-31T12:43:02.494Z
 
 ## Ampliaciones
 
-Fecha UTC: 2026-10-31T12:43:20.322Z
+Fecha UTC: 2026-11-01T01:57:06.414Z
 
 | Prueba | Resultado observado |
 |---|---|
@@ -42,7 +42,7 @@ Fecha UTC: 2026-10-31T12:43:20.322Z
 
 ## Versión 1.1
 
-Fecha UTC: 2026-10-31T12:43:43.119Z
+Fecha UTC: 2026-11-01T01:57:34.603Z
 
 | Prueba | Resultado observado |
 |---|---|
@@ -55,7 +55,7 @@ Fecha UTC: 2026-10-31T12:43:43.119Z
 
 ## En vivo y Lente
 
-Fecha UTC: 2026-10-31T12:44:19.487Z
+Fecha UTC: 2026-11-01T01:58:28.587Z
 
 | Prueba | Resultado observado |
 |---|---|
@@ -67,18 +67,18 @@ Fecha UTC: 2026-10-31T12:44:19.487Z
 
 ## Carga local
 
-Fecha UTC: 2026-10-31T12:44:28.401Z
+Fecha UTC: 2026-11-01T01:58:31.280Z
 
 | Prueba | Resultado observado |
 |---|---|
-| Carga local 50 identificadores | Misma IP, lotes concurrentes de 50 y 50 lecturas concurrentes; sin respuestas perdidas. 220 ms en SQLite local; no mide capacidad de producción. |
-| Carga local 100 identificadores | Misma IP, lotes concurrentes de 50 y 50 lecturas concurrentes; sin respuestas perdidas. 403 ms en SQLite local; no mide capacidad de producción. |
-| Carga local 500 identificadores | Misma IP, lotes concurrentes de 50 y 50 lecturas concurrentes; sin respuestas perdidas. 1740 ms en SQLite local; no mide capacidad de producción. |
+| Carga local 50 identificadores | Misma IP, lotes concurrentes de 50 y 50 lecturas concurrentes; sin respuestas perdidas. 210 ms en SQLite local; no mide capacidad de producción. |
+| Carga local 100 identificadores | Misma IP, lotes concurrentes de 50 y 50 lecturas concurrentes; sin respuestas perdidas. 185 ms en SQLite local; no mide capacidad de producción. |
+| Carga local 500 identificadores | Misma IP, lotes concurrentes de 50 y 50 lecturas concurrentes; sin respuestas perdidas. 618 ms en SQLite local; no mide capacidad de producción. |
 | Abuso, concurrencia y limpieza | Límite individual sin bloquear otros participantes; 500 exactos, actualización a capacidad completa, control duplicado rechazado, límite por bytes y borrado de respuestas vencidas. |
 
 ## Resiliencia
 
-Fecha UTC: 2026-10-31T12:44:56.482Z
+Fecha UTC: 2026-11-01T01:58:48.827Z
 
 | Prueba | Resultado observado |
 |---|---|
@@ -89,7 +89,7 @@ Fecha UTC: 2026-10-31T12:44:56.482Z
 
 ## Educación
 
-Fecha UTC: 2026-10-31T12:45:14.355Z
+Fecha UTC: 2026-11-01T01:58:59.975Z
 
 | Prueba | Resultado observado |
 |---|---|
@@ -99,7 +99,7 @@ Fecha UTC: 2026-10-31T12:45:14.355Z
 
 ## Cobertura territorial
 
-Fecha UTC: 2026-10-31T12:45:24.697Z
+Fecha UTC: 2026-11-01T01:59:08.342Z
 
 | Prueba | Resultado observado |
 |---|---|
@@ -107,7 +107,7 @@ Fecha UTC: 2026-10-31T12:45:24.697Z
 
 ## Motores adicionales
 
-Fecha UTC: 2026-10-31T12:45:35.730Z
+Fecha UTC: 2026-11-01T01:58:41.964Z
 
 | Prueba | Resultado observado |
 |---|---|
@@ -116,7 +116,7 @@ Fecha UTC: 2026-10-31T12:45:35.730Z
 
 ## Ayudas por sección
 
-Fecha UTC: 2026-10-31T12:45:48.518Z
+Fecha UTC: 2026-11-01T01:59:30.690Z
 
 | Prueba | Resultado observado |
 |---|---|
@@ -127,7 +127,7 @@ Fecha UTC: 2026-10-31T12:45:48.518Z
 
 ## Refinamiento visual
 
-Fecha UTC: 2026-10-31T12:46:03.376Z
+Fecha UTC: 2026-11-01T01:59:45.372Z
 
 | Prueba | Resultado observado |
 |---|---|
@@ -137,7 +137,7 @@ Fecha UTC: 2026-10-31T12:46:03.376Z
 
 ## Auditoría crítica
 
-Fecha UTC: 2026-10-31T12:46:20.293Z
+Fecha UTC: 2026-11-01T02:00:01.606Z
 
 | Prueba | Resultado observado |
 |---|---|

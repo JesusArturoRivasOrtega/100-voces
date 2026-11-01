@@ -16,7 +16,7 @@ python -m http.server 8765 --bind 127.0.0.1
 
 Visita http://127.0.0.1:8765/public/ . Esta modalidad sirve archivos: funcionan los capítulos, Lente por texto y el ensayo ficticio, pero no crea salas compartidas. No requiere instalar paquetes.
 
-El sitio en https://cien-voces-mexico.arthojust.chatgpt.site conserva acceso privado del propietario. El repositorio y el sitio tienen permisos independientes. No se presenta ese enlace como acceso ya comprobado para el jurado.
+El despliegue público utiliza Cloudflare Workers y D1. La configuración está en `wrangler.json`; consulta [publicación](docs/DESPLIEGUE_Y_ENTREGA.md). La nueva URL se confirma al publicar en la cuenta del equipo.
 
 ## Salas compartidas en local
 
@@ -29,7 +29,7 @@ npm run db:local
 npm start -- --port 8787
 ```
 
-Abre http://127.0.0.1:8787 . `db:local` crea las tablas iniciales que falten en la base local sin borrar las salas existentes. Python HTTP no sustituye este servidor. Para conectar otros dispositivos necesitas una dirección accesible para ellos; 127.0.0.1 solo funciona en el propio equipo. La web publicada conserva su acceso privado: un código de sala no concede acceso al sitio.
+Abre http://127.0.0.1:8787 . `db:local` crea las tablas iniciales que falten en la base local sin borrar las salas existentes. Python HTTP no sustituye este servidor. Para conectar otros dispositivos necesitas una dirección accesible para ellos; 127.0.0.1 solo funciona en el propio equipo. En el despliegue público, cada participante abre el enlace y entra con el código de sala.
 
 ## Qué incluye
 
@@ -76,7 +76,7 @@ El flujo de GitHub Actions prepara Chromium, Firefox y WebKit en Linux, comprueb
 
 `npm test` inicia su propio servidor en un puerto disponible y ejecuta trece suites. El alcance y los resultados actuales están en [PRUEBAS](docs/PRUEBAS.md), [auditoría final](docs/AUDITORIA_FINAL.md) y `evidencia/`. No es certificación WCAG ni prueba con usuarios.
 
-El contenido mantenido está en `public/`; los módulos nuevos se editan en `lib/client/`. La API está en `lib/live-service.mjs`. `dist/` contiene exclusivamente el Worker generado. Los datos se editan en `public/data/ccpc_resumen.json`. `scripts/build.py` sincroniza bundles, CSV, materiales y HTML autónomo; `npm run build` también construye el servidor. `scripts/prepare.py` es histórico y no se debe ejecutar como build.
+El contenido mantenido está en `public/`; los módulos nuevos se editan en `lib/client/`. La API está en `lib/live-service.mjs` y su entrada HTTP en `worker/index.ts`. `dist/` contiene exclusivamente el Worker generado. Los datos se editan en `public/data/ccpc_resumen.json`. `scripts/build.py` sincroniza bundles, CSV, materiales y HTML autónomo; `npm run build` también construye el servidor. `scripts/prepare.py` es histórico y no se debe ejecutar como build.
 
 Para regenerar el carrusel, mantener el servidor local en 8765 y ejecutar `npm run resources`, después `npm run build`. Los generadores editoriales requieren las bibliotecas de `requirements-editoriales.txt`; el video necesita además FFmpeg, Windows y voz Sabina para síntesis.
 

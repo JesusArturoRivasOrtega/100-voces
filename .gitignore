@@ -1,5 +1,4 @@
-.sites-runtime/
-.sites-checkout*/
+.runtime/
 node_modules/
 __pycache__/
 .tools/
@@ -24,10 +23,8 @@ entregables/video/revision_*.png
 # Hosted Worker build and local sessions
 dist/
 .wrangler/
-.vinext/
 .env*
 .dev.vars*
 *.tsbuildinfo
 outputs/
 !public/recursos/*.zip
-.next/

@@ -18,7 +18,7 @@ La integración con el Worker y D1, así como la publicación, tienen evidencias
 
 Piloto real de 5–8 personas, lector de pantalla y teléfonos físicos; capacidad del alojamiento con grupos reales; purga programada sin tráfico; permisos externos del sitio/video; nombre del equipo, inscripción, elegibilidad, firmas y envío. El CSV del piloto sigue vacío. No se simulan resultados, firmas ni aval institucional.
 
-El sitio conserva acceso privado del propietario. GitHub no cambia ese permiso. Consultar docs/PENDIENTES_HUMANOS.md antes de la postulación.
+La migración utiliza Cloudflare Workers y D1. La nueva URL pública requiere completar la autorización y publicación en la cuenta del equipo. Consultar docs/PENDIENTES_HUMANOS.md antes de la postulación.
 
 ## Propuestas del prompt aún no implementadas
 

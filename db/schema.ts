@@ -1,6 +1,3 @@
-// Intentionally empty by default.
-// Add Drizzle tables here when the site actually needs a database.
-// See examples/d1/db/schema.ts for an opt-in example.
 import { sqliteTable, text, integer, real, primaryKey, index } from "drizzle-orm/sqlite-core";
 export const rooms = sqliteTable("live_rooms", {
   code: text("code").primaryKey(), hostHash: text("host_hash").notNull(),

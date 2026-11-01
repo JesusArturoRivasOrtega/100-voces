@@ -4,7 +4,7 @@
 
 El presentador crea una sala, comparte QR/código y controla tres rondas: estimación de la tasa nacional de 2024, diferencia 2018–2024 en puntos porcentuales y recuperación del dato de 2024 tras la explicación. Las respuestas se sincronizan cada tres segundos. El presentador puede revelar, avanzar, cerrar y descargar el resumen. Recargar la misma pestaña permite retomar la sesión.
 
-Los participantes no crean cuentas de la aplicación. La audiencia de Sites se configura por separado: un sitio privado exige los permisos de acceso de la plataforma antes de entrar a una sala.
+Los participantes no crean cuentas de la aplicación. En el despliegue público de Cloudflare basta con abrir el enlace y entrar con el código de sala.
 
 Cada sala caduca a las dos horas y admite hasta 500 respuestas por ronda. Los controles requieren un secreto aleatorio conservado solo en sessionStorage; el servidor guarda su hash. El enlace para invitados nunca contiene ese secreto. Los participantes usan identificadores aleatorios por sala y sus respuestas se actualizan, no se duplican, mientras la ronda esté abierta. No es un sistema de voto ni garantiza una persona por dispositivo.
 
@@ -14,7 +14,7 @@ La demostración local funciona sin servidor y muestra claramente que sus respue
 
 ## Lente Ciudadana
 
-La entrada puede ser texto o imagen PNG/JPG/WebP de hasta 8 MB. Tesseract procesa la imagen en el navegador con un modelo de español servido desde el propio sitio. No sube la imagen ni el texto a un servicio de IA. La lectura OCR requiere HTTP(S); en el HTML abierto mediante file:// se conserva el pegado y contraste de texto.
+La entrada puede ser texto o imagen PNG/JPG/WebP de hasta 8 MB. Tesseract procesa la imagen en el navegador con un modelo de español servido desde el propio sitio. No sube la imagen ni el texto a servicios externos. La lectura OCR requiere HTTP(S); en el HTML abierto mediante file:// se conserva el pegado y contraste de texto.
 
 La detección sugiere cifra, signo, unidad, año y ámbito. El usuario confirma esos campos antes de comparar. Los resultados son **coincide**, **revisa** o **no comprobable**. Solo se contrasta la cifra confirmada; nunca se presenta como verificación completa de la afirmación ni de la autenticidad de una imagen.
 
@@ -26,9 +26,9 @@ Las comparaciones cubren seis tasas nacionales, 32 entidades y 18 grupos naciona
 - `lib/client/`: fuentes de las interfaces nuevas, empaquetadas por `scripts/build-features.mjs`.
 - `lib/lens-domain.cjs`: contraste numérico determinista, sin un modelo generativo.
 - `lib/live-service.mjs`: API con validación, control del presentador, límites y estados de ronda.
-- `app/api/live/[[...path]]/route.ts`: entrada Vinext/Cloudflare para la API.
+- `worker/index.ts`: entrada HTTP de Cloudflare para la API y los recursos.
 - `db/schema.ts` y `drizzle/`: esquema y migraciones D1.
-- `.openai/hosting.json`: identidad conservada del sitio y binding D1 `DB`.
+- `wrangler.json`: nombre del Worker, recursos estáticos y binding D1 `DB`.
 - `dist/`: salida generada del Worker; no editar ni versionar.
 
 Instalar con `npm ci`. `npm run build` genera HTML autónomo, bundles y Worker. `npm test` verifica las interacciones originales y nuevas; la integración usa el mismo controlador de API con SQLite en memoria y navegadores aislados. Para desarrollo: `npm run dev`; para probar el Worker construido: `npm start`, después de aplicar las migraciones D1 locales.

@@ -2,7 +2,7 @@ from pathlib import Path
 import zipfile,hashlib,json,os
 root=Path(__file__).resolve().parents[1]
 target=root.parent/'100_VOCES_RETO3_ENTREGA.zip'
-skip_dirs={'.git','.tools','node_modules','__pycache__','.sites-runtime','trabajo','capturas','audio','frames','.qa','dist','.wrangler','.vinext','outputs','.next'}
+skip_dirs={'.git','.tools','node_modules','__pycache__','.runtime','trabajo','capturas','audio','frames','.qa','dist','.wrangler','outputs'}
 files=[]
 # Prune excluded trees before visiting them: dependencies and browser outputs
 # can contain thousands of files but never belong in the delivery archive.

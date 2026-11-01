@@ -1,5 +1,5 @@
 from pathlib import Path
-import json,runpy,subprocess,wave,struct,math,sys,re,hashlib,textwrap
+import json,runpy,subprocess,wave,struct,math,sys,re,hashlib,textwrap,shutil
 from PIL import Image,ImageDraw,ImageFont,ImageOps
 
 ROOT=Path(__file__).resolve().parent; PROJECT=ROOT.parent.parent
@@ -86,8 +86,9 @@ def cmd(args):
  return r.stderr
 
 def audio(synthesize=True):
- ps=r'C:\Users\ARTU2\.cache\codex-runtimes\codex-primary-runtime\dependencies\native\powershell\pwsh.exe'
+ ps=shutil.which('pwsh') or shutil.which('powershell')
  if synthesize:
+  if not ps:raise RuntimeError('Instala PowerShell para generar la narración local.')
   r=subprocess.run([ps,'-NoProfile','-ExecutionPolicy','Bypass','-File',str(ROOT/'voz.ps1'),'-Folder',str(ROOT)],capture_output=True,text=True,encoding='utf-8',errors='replace')
   if r.returncode:raise RuntimeError(r.stdout+r.stderr)
   print(r.stdout,flush=True)

@@ -30,7 +30,7 @@ No hay fundamento para prometer una mejora “exponencial” ni ausencia absolut
 | Pruebas | Pedir una suite con nombre incorrecto podía terminar con éxito sin ejecutar ninguna. | El ejecutor rechaza nombres desconocidos. Se añade suite adversa, además de las comprobaciones existentes. |
 | Dependencias | Un informe antiguo no acredita el estado actual. | Nueva consulta npm audit registrada. Ausencia de avisos conocidos no equivale a seguridad certificada. |
 | Rendimiento | Se servían 404.864 bytes de tipografías TTF. | WOFF2 reduce esos archivos a 142.432 bytes (64,8 % menos), verificando glifos y ejes variables idénticos. Se conservan originales y licencias; no implica que toda la página cargue 64,8 % más rápido. |
-| Operación | Persistencia, acceso, limpieza sin tráfico y capacidad de alojamiento son problemas distintos a que el botón funcione. | Se conservan autenticación de Sites, cuotas y retención documentada. Pendientes: acceso deliberado del público objetivo, mantenimiento sin tráfico y carga real del alojamiento. |
+| Operación | Persistencia, acceso, limpieza sin tráfico y capacidad de alojamiento son problemas distintos a que el botón funcione. | La migración conserva controles de presentador, cuotas y retención documentada. Pendientes: acceso deliberado del público objetivo, mantenimiento sin tráfico y carga real del alojamiento. |
 
 ## Criterios de aceptación del siguiente piloto
 

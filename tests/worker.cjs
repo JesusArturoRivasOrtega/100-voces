@@ -2,7 +2,12 @@
 const assert=require('node:assert/strict'),fs=require('node:fs'),path=require('node:path');
 const {chromium,browserOptions}=require('./runtime.cjs');
 const origin=process.env.VOCES_WORKER_URL||'http://127.0.0.1:8787';
-(async()=>{const health=await fetch(origin+'/api/live/health');assert.equal(health.status,200);const browser=await chromium.launch(browserOptions);try{
+async function verifyRoutes(){
+ const home=await fetch(origin);assert.equal(home.status,200);assert.match(await home.text(),/100 VOCES/);
+ const unknown=await fetch(origin+'/api/unavailable');assert.equal(unknown.status,404);assert.ok(unknown.headers.get('content-type').includes('application/json'));
+ const css=await fetch(origin+'/styles.css');assert.equal(css.status,200);assert.equal(css.headers.get('x-content-type-options'),'nosniff');
+}
+(async()=>{await verifyRoutes();const health=await fetch(origin+'/api/live/health');assert.equal(health.status,200);const browser=await chromium.launch(browserOptions);try{
  const host=await browser.newPage(),errors=[];host.on('pageerror',e=>errors.push(e.message));await host.goto(origin);await host.waitForFunction(()=>document.documentElement.dataset.ready==='true');assert.equal(await host.locator('#stateSelect option').count(),32);
  await host.locator('#liveCreate').click();await host.locator('#liveRoomCode').filter({hasText:/^[A-Z2-9]{6}$/}).waitFor();const code=await host.locator('#liveRoomCode').textContent();
  const guests=[];for(const value of ['50','60']){const p=await browser.newPage();guests.push(p);await p.goto(origin);await p.locator('#liveJoinCode').fill(code);await p.locator('#liveJoinForm button').click();await p.locator('#liveValue').fill(value);await p.locator('#liveAnswerForm button').click();await p.locator('#liveAnswerStatus').filter({hasText:'recibida'}).waitFor();assert.equal(await p.locator('#liveHostControls').isVisible(),false);}
